@@ -1,7 +1,7 @@
 #include "analyzer.h"
 
 // Metodo della classe Analyzer per il caricamento dei file
-bool Analyzer::loadData(string fileName, vector<double>& data, double& xMin, double& xMax) {
+bool Analyzer::loadData(string fileName, vector<double>& data, double& min, double& max) {
     // Creo l'oggetto fileData
     fstream fileData;
 
@@ -32,19 +32,19 @@ bool Analyzer::loadData(string fileName, vector<double>& data, double& xMin, dou
 
         // Faccio un controllo per assegnare i primi valori di max e min
         if (first == true) {
-            xMin = value;
-            xMax = value;
+            min = value;
+            max = value;
 
             first = false;
         }
 
         // Se non è il primo ciclo controllo ogni volta se c'è un nuovo max o nuovo min
         else {
-            if (value < xMin) {
-                xMin = value;
+            if (value < min) {
+                min = value;
             }
-            if (value > xMax) {
-                xMax = value;
+            if (value > max) {
+                max = value;
             }
         }
     }

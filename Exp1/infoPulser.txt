@@ -1,0 +1,51 @@
+####### PULSER ######
+
+1.10 MeV
+    binning: 182
+    min: 630
+    max: max
+--------------------------
+2.09 MeV
+    binning: 100
+    min: min
+    max: max
+--------------------------
+3.09 MeV
+    binning: 186
+    min: 2140
+    max: max
+--------------------------
+4.09 MeV
+    binning: 100
+    min: 2920
+    max: max
+--------------------------
+5.09 MeV
+    binning: 197
+    min: 3680
+    max: max
+--------------------------
+6.09 MeV
+    binning: 182
+    min: 4437
+    max: max
+--------------------------
+7.09 MeV
+    binning: 205
+    min: 5000
+    max: max
+--------------------------
+8.09 MeV
+    binning: 221
+    min: 5950
+    max: max
+--------------------------
+9.09 MeV
+    binning: 100
+    min: 6700
+    max: max
+--------------------------
+9.98 MeV
+    binning:
+    min: 7370
+    max: max
