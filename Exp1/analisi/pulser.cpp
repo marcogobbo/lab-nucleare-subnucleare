@@ -42,17 +42,17 @@ void computeHisto(int index, int bin, int _min, int _max) {
     // Imposto il numero di bins
     int nBins = bin;
     
-    // Impsoto minimo e massimo
-    if (_min == 0) {
+    // Imposto minimo e massimo
+    if (_min != 0) {
         min = _min;
     }
 
-    if (_max == 0) {
+    if (_max != 0) {
         max = _max;
     }
 
     // Creo istogramma
-    TH1D* h1 = new TH1D("Dati", "Istogramma", nBins, 7370, max);
+    TH1D* h1 = new TH1D("Dati", "Pulser - 9.98 MeV", nBins, min, max);
 
     // Inserisco i dati nell'istogramma
     for (unsigned int i = 0; i < data.size(); i++) {
@@ -67,14 +67,14 @@ void computeHisto(int index, int bin, int _min, int _max) {
 
     // Disegno l'istogramma sul canvas
     h1->Draw();
-    h1->SetFillColor(kAzure+6);
+    h1->SetFillColor(kYellow-10);
     gStyle->SetOptFit(1112);
 
     h1->GetXaxis()->SetTitle("Tensione [mV]");
     h1->GetYaxis()->SetTitle("Conteggi");
 
     // Preparo il fit
-    TF1* funcFit = new TF1("funcFit", gaussFit, 7370, max, 3);
+    TF1* funcFit = new TF1("funcFit", gaussFit, min, max, 3);
     funcFit->SetParameter(1, h1->GetMean());
     funcFit->SetParameter(2, h1->GetRMS());
     funcFit->SetParName(0,"Ampiezza");
@@ -120,34 +120,36 @@ void computeGraph() {
         7405
     };
     double errTensione[10] = {
-        7.864,
-        7.848,
-        7.864,
-        7.87,
-        7.813,
-        7.9,
-        7.856,
-        7.867,
-        7.905,
-        7.838
+        7.757,
+        7.851,
+        7.877,
+        7.742,
+        7.696,
+        7.785,
+        7.76,
+        7.748,
+        7.753,
+        7.736
     };
 
-    for (unsigned int i = 0; i < 10; i++) {
+    /*for (unsigned int i = 0; i < 10; i++) {
         errEnergia[i] = 0;
         tensione[i] = tensione[i]/1000;
         errTensione[i] = errTensione[i]/1000;
-    }
+    }*/
 
-    TF1 fitFnc("fitFnc1","[0]*x+[1]",700,200000);
-    fitFnc.SetParameter(0,1.65);
+    TF1 fitFnc("fitFnc1","[0]*x+[1]",0,200000);
+    fitFnc.SetParameter(0,0.001414);
     fitFnc.SetParameter(1,0);
-
+    gStyle->SetOptFit(1112);
+    gStyle->SetStatX(0.9);
+    gStyle->SetStatY(0.45);
     TCanvas myCanv2;
     TGraphErrors graph(10, tensione, energia, errTensione, errEnergia);
 
     graph.SetTitle("Calibrazione");
     graph.GetYaxis()->SetTitle("Energia [MeV]");
-    graph.GetXaxis()->SetTitle("Tensione [V]");
+    graph.GetXaxis()->SetTitle("Tensione [mV]");
     graph.SetMarkerSize(2);
     graph.Draw("AP");
     graph.Fit("fitFnc1");
@@ -160,7 +162,7 @@ void computeGraph() {
 
 int main(int argc, char** argv) {
 
-    computeHisto(0, 182, 620, 0);
+    //computeHisto(9, 72, 7370, 0);
     computeGraph();
 
     return 0;
