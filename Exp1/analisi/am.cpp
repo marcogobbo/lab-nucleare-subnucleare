@@ -107,8 +107,56 @@ void computeHisto(int bin, double _min, double _max) {
     myCanv1->Print("241-Am.pdf", "pdf");
 } 
 
-int main(int argc, char** argv) {
-    computeHisto(170, 3930, 4100);
+void computeGraph() {
+    double tabulatedEnergyValues[4] = {
+        5.388,
+        5.443,
+        5.486,
+        5.545
+    };
 
+    double errTabulatedEnergyValues[4];
+
+    double tensioni[4] = {
+        3970,
+        4006,
+        4036,
+        4062
+    };
+
+    double errTensioni[4] = {
+        17,
+        12,
+        10,
+        14
+    };
+
+    TF1 fitFnc("fitFnc1","[0]*x+[1]",0,200000);
+    fitFnc.SetParameter(0,0.001359);
+    fitFnc.SetParameter(1,0);
+    gStyle->SetOptFit(1112);
+    gStyle->SetStatX(0.9);
+    gStyle->SetStatY(0.45);
+
+    TCanvas myCanv2;
+    TGraphErrors graph(4, tensioni, tabulatedEnergyValues, errTensioni, errTabulatedEnergyValues);
+
+    graph.SetTitle("Calibrazione 241-Am");
+    graph.GetYaxis()->SetTitle("Energia Tabulata [MeV]");
+    graph.GetXaxis()->SetTitle("Tensione [mV]");
+    graph.SetMarkerSize(2);
+    graph.Draw("AP");
+    graph.Fit("fitFnc1");
+    graph.GetFunction("fitFnc1")->SetLineColor(9);
+    graph.GetFunction("fitFnc1")->SetParName(0,"m");
+    graph.GetFunction("fitFnc1")->SetParName(1,"q");
+    myCanv2.Print("graph_241-Am.pdf", "pdf");
+
+}
+
+int main(int argc, char** argv) {
+    //computeHisto(170, 3930, 4100);
+    
+    computeGraph();
     return 0;
 }
