@@ -24,6 +24,7 @@ L'obiettivo di questa parte dell'esperienza è quello di allestire, ottimizzare 
 \section{Caratterizzazione con impulsatore calibrato in energia}
 Dopo aver posto il rivelatore al Silicio in una camera a vuoto, si sfutta la catena di lettura classica (pre-amplificatore, amplificatore, shaper, ACD/MCA) per generare sull'elettronica in uscita dei segnali la cui forma è analoga a quella che il rivelatore fornisce in seguito ad una interazione alfa. Come indicato, nel caso specifico il rivelatore è polarizzato con una tensione di 50V. Si fissano dei precisi valori di energia dell'impulsatore, in un intervallo che va da 1 MeV a 10 MeV, e con i dati ottenuti si costruiscono diversi istogrammi, uno per ciascun valore di energia. Da ognuno di questi istogrammi, tramite una estrapolazione gaussiana, è possibile ricavare la posizione, espressa in mV, del picco. Di seguito sono riportate le posizioni dei 10 picchi, relative alle 10 raccolte dati a nostra disposizione:\\
 
+\begin{center}
 \begin{tabular}{ccc}
 \toprule
 Energia [MeV] & Tensione picco [mV] & ErrTensione [mV]\\
@@ -40,6 +41,7 @@ Energia [MeV] & Tensione picco [mV] & ErrTensione [mV]\\
 9.98 & 7405 & 7.74\\
 \bottomrule
 \end{tabular}\\
+\end{center}
 
 Attraverso questi dati, si va a costruire un grafico \textit{energia vs. posizione del picco}. Questo grafico rappresenta la \textbf{curva di calibrazione}:\\
 
@@ -74,6 +76,7 @@ L'istogramma viene fittato con una somma di 4 gaussiane. Dal fit è possibile ri
 
 Di seguito invece, vengono riportate due tabelle: la prima mostra il confronto fra i parametri delle due rette di calibrazione, mentre la secondo il confronto fra i valori di energia tabulati dell'americio e quelli ottenuti attraverso la retta di calibrazione ottenuta nella prima parte:\\
 
+\begin{center}
 \begin{tabular}{ccccc}
 \toprule
 / & Impulsatore & ErrImpulsatore & 241-Am & Err241-Am\\
@@ -82,17 +85,19 @@ m & $1.32\cdot10^{-3}$ & $10^{-6}$ & $1.69\cdot10^{-3}$ & $3.63\cdot10^{-4}$\\
 q & $2.13\cdot10^{-1}$ & $6.90\cdot10^{-3}$ & $1.32$ & $1.46$\\
 \bottomrule
 \end{tabular}\\
-
+\end{center}
+\begin{center}
 \begin{tabular}{ccccc}
 \toprule
 Canale & E [KeV] & Errore [KeV] & Energia tabulata\\
 \midrule
-3970 & / & / & 5388\\
-4006 & / & / & 5443\\
-4036 & / & / & 5486\\
-4062 & / & / & 5545\\
+3970 & 5441.59 & 7.96 & 5388\\
+4006 & 5489.00 & 7.98 & 5443\\
+4036 & 5528.51 & 7.99 & 5486\\
+4062 & 5562.75 & 8.01 & 5545\\
 \bottomrule
 \end{tabular}\\
+\end{center}
 
 Come ultima cosa, è possibile calcolare la risoluzione del rivelatore:\\
 
