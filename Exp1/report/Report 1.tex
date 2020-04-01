@@ -51,11 +51,13 @@ Attraverso questi dati, si va a costruire un grafico \textit{energia vs. posizio
 \caption{Retta di calibrazione Energia vs. Picco}
 \end{figure}
 
-\subsection{Osservazioni}
-Il grafico di calibrazione ottenuto mostra con chiarezza l'andamento lineare della relazione fra energia e tensione del picco. In particolar modo ci restituisce come risultato: 
+Dal fit, si ottiene la seguente retta di calibrazione:
 \[
-Energia = (1.32\cdot10^{-3})\cdot Picco \pm 10^{-6}
+Energia = (1.32\cdot10^{-3} \pm 10^{-6})\cdot Picco + (0.21 \pm 0.7\cdot10^{-2})
 \]
+
+\subsection{Osservazioni}
+Il grafico di calibrazione ottenuto mostra con chiarezza l'andamento lineare della relazione fra energia e tensione del picco. Si pu\`o notare che l'intercetta della retta infatti \`e prossima all'origine: questa piccola discrepanza può essere dovuta ad un offset di base dello strumento. 
 \`E necessario però verificare l'attendibilit\`a dei risultati ottenuti andando a confrontare con lo spettro di una sorgente nota.
 \section{Caratterizzazione con sorgente di 241-Am}
 In questa parte successiva, nella camera viene inserita una sorgente di 241-Am, e ci\`o che in questo caso viene misurato \`e lo spettro in energia di questo materiale. Di seguito \`e riportato lo spettro, con una tabella che evidenzia i picchi relativi alle emissioni alfa della sorgente:\\
@@ -66,26 +68,32 @@ In questa parte successiva, nella camera viene inserita una sorgente di 241-Am, 
 \caption{Spettro 241-Am}
 \end{figure}
 
-L'istogramma viene fittato con una somma di 4 gaussiane. Dal fit \`e possibile risalire ai 4 picchi di emissione del 241-Am. Utilizzando le energie di emissione tabulate, si costruisce una nuova curva di calibrazione:\\
+\begin{center}
+\begin{tabular}{cc}
+\toprule
+Picco Canale[mV] & Sigma[mV] \\
+\midrule
+3970 & 17\\
+4006 & 12\\
+4036 & 10\\
+4062 & 14\\
+\bottomrule
+\end{tabular}\\
+\end{center}
+
+Dal fit \`e possibile dunque risalire ai 4 picchi di emissione del 241-Am. Utilizzando le energie di emissione tabulate, si costruisce una nuova curva di calibrazione:\\
 
 \begin{figure}[H]
 \centering
 \includegraphics[scale=0.5]{rettaame.jpg}
 \caption{Retta di calibrazione per il 241-Am}
 \end{figure}
+\[
+Energia = (1.7\cdot10^{-3} \pm 3.6\cdot10^{-4})\cdot Picco - (1.3 \pm 1.5)
+\]
 
-Di seguito invece, vengono riportate due tabelle: la prima mostra il confronto fra i parametri delle due rette di calibrazione, mentre la secondo il confronto fra i valori di energia tabulati dell'americio e quelli ottenuti attraverso la retta di calibrazione ottenuta nella prima parte:\\
+Di seguito viene invece riportata la tabella che mostra il confronto fra l'energia tabulata del 241-Am e l'energia calcolata tramite da retta di calibrazione ottenuta al primo punto:
 
-\begin{center}
-\begin{tabular}{ccccc}
-\toprule
-/ & Impulsatore & ErrImpulsatore & 241-Am & Err241-Am\\
-\midrule
-m & $1.32\cdot10^{-3}$ & $10^{-6}$ & $1.69\cdot10^{-3}$ & $3.63\cdot10^{-4}$\\
-q & $2.13\cdot10^{-1}$ & $6.90\cdot10^{-3}$ & $1.32$ & $1.46$\\
-\bottomrule
-\end{tabular}\\
-\end{center}
 \begin{center}
 \begin{tabular}{ccccc}
 \toprule
@@ -99,7 +107,22 @@ Canale & E [KeV] & Errore [KeV] & Energia tabulata\\
 \end{tabular}\\
 \end{center}
 
-Come ultima cosa, \`e possibile calcolare la risoluzione del rivelatore:\\
+Come ultima cosa, \`e nostro interesse calcolare la risoluzione del rivelatore. Sfruttando la relazione $R=\frac{FWHM}{Picco[mV]}$ andiamo a calcolare quella che è la risoluzione relativa per ognuno dei picchi estrapolati. La risoluzione relativa viene poi moltiplicata per l'energia corrispondente del picco, in modo da ottenere la risoluzione energetica. Si ottengono i seguenti risultati:
+
+\begin{center}
+\begin{tabular}{cccc}
+\toprule
+Canale[mV] & Risoluzione relativa & Energia [KeV] & Risoluzione energetica [eV] \\
+\midrule
+3970 & 0.01 & 5441.59 & 54.7\\
+4006 & 0.007 & 5489.00 & 38.6\\
+4036 & 0.005 & 5528.51 & 32.2\\
+4062 & 0.008 & 5562.75 & 45.1\\
+\bottomrule
+\end{tabular}\\
+\end{center}
+
+Andiamo a mostrare l'andamento della risoluzione energetica in funzione dei picchi stessi:
 
 \begin{figure}[H]
 \centering
@@ -109,9 +132,6 @@ Come ultima cosa, \`e possibile calcolare la risoluzione del rivelatore:\\
 
 \subsection{Osservazioni}
 I dati che abbiamo elaborato mostrano alcune informazioni importanti. Innanzitutto le due rette di calibrazione, quella ottenuta nella prima parte attraverso l'impulsatore e quella ottenuta dallo studio dello spettro del 241-Am, non risultano compatibili: questo è evidenziato anche dalla incompatibilit\`a dei valori di energia tabulati corrispondenti ai picchi con quelli estrapolati dalla retta di calibrazione dell'impulsatore. Questo mostra come la calibrazione ottenuta con l'impulsatore, seppur importante per evidenziare la relazione lineare fra energia e tensione, non \`e molto precisa. La calibrazione con l'americio pu\`o essere in questo senso pi\`u attendibile. Questa incongruenza pu\`o essere legata a diversi fattori: innanzitutto il 241-Am ha solo 4 picchi, per altro molto vicini, e quindi difficilmente distinguibili. Infatti, come indicato, la risoluzione dell'apparato utilizzato è di circa 30/40 mV e ci\`o pu\`o influenzare la forma dello spettro. In pi\`u (...non so cosa altro mettere...)\\
-Per quanto riguarda la risoluzione, essa \`e stata ottenuta dalla regola:
-\[
-R=\frac{FWHM}{E}=\frac{2.35\cdot\sigma}{E}
-\]
-L'andamento della risoluzione ottenuto \`e dunque consistente con quanto atteso per i primi 3 picchi: la risoluzione diminuisce all'aumentare dell'energia. Il fatto che il quarto ed ultimo punto non rispetti l'andamento pu\`o essere spiegato osservando lo spettro del 241-Am: l'ultimo picco, in corrispondeza del canale 4062, \`e quasi interamente coperto dal picco precendete, che corrisponde al decadimento dell'americio con il branching ratio più alto; questo rende difficile l'individuazione del picco stesso e della FWHM associata. 
+
+L'andamento della risoluzione ottenuto \`e consistente con quanto atteso per i primi 3 picchi: la risoluzione diminuisce all'aumentare dell'energia. Il fatto che il quarto ed ultimo punto non rispetti l'andamento pu\`o essere spiegato osservando lo spettro del 241-Am: l'ultimo picco, in corrispondeza del canale 4062, \`e quasi interamente coperto dal picco precendete, che corrisponde al decadimento dell'americio con il branching ratio più alto; questo rende difficile l'individuazione del picco stesso e della FWHM associata. 
 \end{document} 

@@ -1,5 +1,6 @@
 #include "lib/analyzer.h"
 
+
 using namespace std;
 
 double function (double* x, double* par) {
@@ -7,6 +8,8 @@ double function (double* x, double* par) {
 }
 
 void computeGraph() {
+	
+    ofstream OutFile ("risoluzioni.txt");
     double FWHM[4] = {
         2.35*17,
         2.35*12,
@@ -17,31 +20,48 @@ void computeGraph() {
     double errFWHM[4];
 
     double picco[4] = {
-        5388,
-        5443,
-        5486,
-        5545
+        3970,
+        4006,
+        4036,
+        4062
     };
-    double errTensione[4] = {
-        17,
-        12,
-        10,
-        14
+    double energie[4] = {
+        5441,
+        5489,
+        5528,
+        5561
+    };
+    double errEnergia[4] = {
+        7.96,
+        7.98,
+        7.99,
+        8.01
     };
     double risoluzione[4];
+    double risoluzioneenergetica[4];
 
     for (unsigned int i = 0; i < 4; i++) {
         errFWHM[i] = 0;
 	risoluzione[i] = FWHM[i]/picco[i];
+	risoluzioneenergetica[i] = risoluzione[i]*energie[i];
+	OutFile << risoluzione[i] << endl;
+	
+	
+    }
+
+    OutFile << "La risoluzione energetica dei picchi è:" << endl;
+    for (unsigned int i = 0; i < 4; i++) {
+	OutFile << risoluzioneenergetica[i] << endl;
+	
     }
 
     TCanvas myCanv2;
-    TGraphErrors graph(4, picco, risoluzione, errTensione, errFWHM);
+    TGraphErrors graph(4, energie, risoluzioneenergetica, errEnergia, errFWHM);
 
-    graph.SetTitle("Risoluzione impulsatore");
-    graph.GetYaxis()->SetTitle("Risoluzione");
+    graph.SetTitle("Risoluzione relativa");
+    graph.GetYaxis()->SetTitle("Risoluzione in energia [eV]");
     graph.GetXaxis()->SetTitle("Picco [KeV]");
-    graph.SetMarkerSize(2);
+    graph.SetMarkerSize(10);
     graph.Draw("AP");
     myCanv2.Print("risoluzione.pdf", "pdf");
 
