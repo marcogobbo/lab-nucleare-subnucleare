@@ -68,7 +68,7 @@ void computeHisto(int index, int bin, int _min, int _max) {
     // Disegno l'istogramma sul canvas
     h1->Draw();
     h1->SetFillColor(kYellow-10);
-    gStyle->SetOptFit(1112);
+    //gStyle->SetOptFit(1112);
 
     h1->GetXaxis()->SetTitle("Tensione [mV]");
     h1->GetYaxis()->SetTitle("Conteggi");
@@ -141,7 +141,7 @@ void computeGraph() {
     TF1 fitFnc("fitFnc1","[0]*x+[1]",0,200000);
     fitFnc.SetParameter(0,0.001414);
     fitFnc.SetParameter(1,0);
-    gStyle->SetOptFit(1112);
+    //gStyle->SetOptFit(1112);
     gStyle->SetStatX(0.9);
     gStyle->SetStatY(0.45);
     TCanvas myCanv2;

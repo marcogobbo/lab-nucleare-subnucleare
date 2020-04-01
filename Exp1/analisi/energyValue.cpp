@@ -64,6 +64,13 @@ int main(int argc, char** argv) {
         14
     };
 
+    double FWHM[4] = {
+        2.35*17,
+        2.35*12,
+        2.35*10,
+        2.35*14
+    };
+
     double energia[4];
     double errEnergia[4];
 
@@ -89,11 +96,11 @@ int main(int argc, char** argv) {
 
     ofstream OutFile ("compatibilityTestResults.txt");
     for (unsigned int i = 0; i < 4; i++) {
-        if (compatibilityTest(pvalue, energia[i], errEnergia[i], tabulatedEnergyValues[i], 0, 0.05, "Normal", 1, 1) == true) {
-            OutFile << "Il picco " << (i+1) << " a energia " << setprecision(2) << (float)energia[i] << " ± " << setprecision(2) << (float)errEnergia[i] << " keV è compatibile con il valore tabulato " << setprecision(2) << (float)tabulatedEnergyValues[i] << " keV con una confidenza del " << setprecision(2) << (float)pvalue*100 << "% > 5%\n";
+        if (compatibilityTest(pvalue, energia[i], FWHM[i], tabulatedEnergyValues[i], 0, 0.05, "Normal", 1, 1) == true) {
+            OutFile << "Il picco " << (i+1) << " a energia " << setprecision(2) << (float)energia[i] << " ± " << setprecision(2) << (float)FWHM[i] << " keV è compatibile con il valore tabulato " << setprecision(2) << (float)tabulatedEnergyValues[i] << " keV con una confidenza del " << setprecision(2) << (float)pvalue*100 << "% > 5%\n";
         }
         else {
-            OutFile << "Il picco " << (i+1) << " a energia " << setprecision(2) << (float)energia[i] << " ± " << setprecision(2) << (float)errEnergia[i] << " keV NON è compatibile con il valore tabulato " << setprecision(2) << (float)tabulatedEnergyValues[i] << " keV con una confidenza del " << setprecision(2) << (float)pvalue*100 << "% < 5%\n";
+            OutFile << "Il picco " << (i+1) << " a energia " << setprecision(2) << (float)energia[i] << " ± " << setprecision(2) << (float)FWHM[i] << " keV NON è compatibile con il valore tabulato " << setprecision(2) << (float)tabulatedEnergyValues[i] << " keV con una confidenza del " << setprecision(2) << (float)pvalue*100 << "% < 5%\n";
         }
     }
 

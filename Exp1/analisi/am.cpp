@@ -54,7 +54,7 @@ void computeHisto(int bin, double _min, double _max) {
 
     // Creo istogramma
     TH1D* h1 = new TH1D("Dati", "Istogramma 241-Am", nBins, min, max);
-
+    gStyle->SetOptStat("");
     // Inserisco i dati nell'istogramma
     for (unsigned int i = 0; i < data.size(); i++) {
         h1->Fill(data[i]);
@@ -69,7 +69,7 @@ void computeHisto(int bin, double _min, double _max) {
     // Disegno l'istogramma sul canvas
     h1->Draw();
     h1->SetFillColor(kYellow-10);
-    gStyle->SetOptFit(1112);
+    //gStyle->SetOptFit(1112);
 
     h1->GetXaxis()->SetTitle("Tensione [mV]");
     h1->GetYaxis()->SetTitle("Conteggi");
@@ -134,7 +134,8 @@ void computeGraph() {
     TF1 fitFnc("fitFnc1","[0]*x+[1]",0,200000);
     fitFnc.SetParameter(0,0.001359);
     fitFnc.SetParameter(1,0);
-    gStyle->SetOptFit(1112);
+    gStyle->SetOptStat("");
+    //gStyle->SetOptFit(1112);
     gStyle->SetStatX(0.9);
     gStyle->SetStatY(0.45);
 
