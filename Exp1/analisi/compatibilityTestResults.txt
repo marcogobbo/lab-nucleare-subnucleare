@@ -1,6 +1,6 @@
-Il picco 1 a energia 5.4e+03 ± 40 keV è compatibile con il valore tabulato 5.4e+03 keV con una confidenza del 18% > 5%
-Il picco 2 a energia 5.5e+03 ± 28 keV è compatibile con il valore tabulato 5.4e+03 keV con una confidenza del 10% > 5%
-Il picco 3 a energia 5.5e+03 ± 24 keV è compatibile con il valore tabulato 5.5e+03 keV con una confidenza del 7% > 5%
-Il picco 4 a energia 5.6e+03 ± 33 keV è compatibile con il valore tabulato 5.5e+03 keV con una confidenza del 59% > 5%
-La m della curva di calibrazione del 241-Am: 0.001689 ± 0.0003634 NON è compatibile con il valore trovato per la curva di calibrazione pulsar: 0.001317 ± 1e-06 con una confidenza del 0% < 5%
-La q della curva di calibrazione del 241-Am: -1.326 ± 1.463 NON è compatibile con il valore trovato per la curva di calibrazione pulsar: 0.2131 ± 0.0069 con una confidenza del 0% < 5%
+Il picco 1 a energia 5441.59 ± 23.7621 keV NON è compatibile con il valore tabulato 5388 keV con una confidenza del 2.41164% < 5%
+Il picco 2 a energia 5489 ± 17.7038 keV NON è compatibile con il valore tabulato 5443 keV con una confidenza del 0.936524% < 5%
+Il picco 3 a energia 5528.51 ± 15.4061 keV NON è compatibile con il valore tabulato 5486 keV con una confidenza del 0.579032% < 5%
+Il picco 4 a energia 5562.75 ± 20.1015 keV è compatibile con il valore tabulato 5545 keV con una confidenza del 37.7118% > 5%
+La m della curva di calibrazione del 241-Am: 0.001689 ± 0.0003634 è compatibile con il valore trovato per la curva di calibrazione pulsar: 0.001317 ± 1e-06 con una confidenza del 31% > 5%
+La q della curva di calibrazione del 241-Am: -1.326 ± 1.463 è compatibile con il valore trovato per la curva di calibrazione pulsar: 0.2131 ± 0.0069 con una confidenza del 29% > 5%

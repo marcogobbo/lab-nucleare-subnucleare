@@ -1,3 +1,5 @@
+// c++ -o compute risoluzione.cpp lib/analyzer.cc `root-config --cflags --glibs`
+
 #include "lib/analyzer.h"
 
 
@@ -59,8 +61,8 @@ void computeGraph() {
     TGraphErrors graph(4, energie, risoluzioneenergetica, errEnergia, errFWHM);
 
     graph.SetTitle("Risoluzione relativa");
-    graph.GetYaxis()->SetTitle("Risoluzione in energia [eV]");
-    graph.GetXaxis()->SetTitle("Picco [KeV]");
+    graph.GetYaxis()->SetTitle("Risoluzione in energia [keV]");
+    graph.GetXaxis()->SetTitle("Picco [keV]");
     graph.SetMarkerSize(10);
     graph.Draw("AP");
     myCanv2.Print("risoluzione.pdf", "pdf");

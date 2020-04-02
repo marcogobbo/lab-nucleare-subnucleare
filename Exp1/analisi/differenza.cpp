@@ -12,6 +12,13 @@ void computeGraph() {
         5563-5545
     };
 
+    double errDeltaEnergia[4] = {
+        23.76,
+        17.70,
+        15.41,
+        20.10
+    };
+
     double energiaComputed[4] = {
         5442,
         5489,
@@ -19,13 +26,21 @@ void computeGraph() {
         5563
     };
 
+    double errEnergiaComputed[4] = {
+        0,
+        0,
+        0,
+        0
+    };
+
     TF1 fitFnc("fitFnc2","[0]",0,200000);
     fitFnc.SetParameter(0,35);
-    gStyle->SetOptFit(1112);
+    gStyle->SetOptStat("");
+    //gStyle->SetOptFit(1112);
     TCanvas myCanv3;
-    TGraphErrors graph(4, energiaComputed, deltaEnergia);
+    TGraphErrors graph(4, energiaComputed, deltaEnergia, errEnergiaComputed, errDeltaEnergia);
 
-    graph.SetTitle("Differenza energia tabulata e calcolata in funzione dell'energia calcolata");
+    graph.SetTitle("Differenza energia calcolata e tabulata in funzione dell'energia calcolata");
     graph.GetYaxis()->SetTitle("Differenza di energia [keV]");
     graph.GetXaxis()->SetTitle("Energia calcolata [keV]");
     graph.SetMarkerSize(2);
@@ -39,7 +54,7 @@ void computeGraph() {
 
 int main(int argc, char** argv) {
 
-    //computeHisto(9, 72, 7370, 0);
+
     computeGraph();
 
     return 0;
