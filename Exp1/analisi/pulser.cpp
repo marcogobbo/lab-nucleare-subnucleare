@@ -70,7 +70,7 @@ void computeHisto(int index, int bin, int _min, int _max) {
     h1->SetFillColor(kYellow-10);
     //gStyle->SetOptFit(1112);
 
-    h1->GetXaxis()->SetTitle("Tensione [mV]");
+    h1->GetXaxis()->SetTitle("Canali [mV]");
     h1->GetYaxis()->SetTitle("Conteggi");
 
     // Preparo il fit
@@ -149,7 +149,7 @@ void computeGraph() {
 
     graph.SetTitle("Calibrazione");
     graph.GetYaxis()->SetTitle("Energia [MeV]");
-    graph.GetXaxis()->SetTitle("Tensione [mV]");
+    graph.GetXaxis()->SetTitle("Canali [mV]");
     graph.SetMarkerSize(2);
     graph.Draw("AP");
     graph.Fit("fitFnc1");

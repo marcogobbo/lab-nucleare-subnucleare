@@ -62,7 +62,7 @@ void computeGraph() {
 
     graph.SetTitle("Risoluzione relativa");
     graph.GetYaxis()->SetTitle("Risoluzione in energia [keV]");
-    graph.GetXaxis()->SetTitle("Picco [keV]");
+    graph.GetXaxis()->SetTitle("Picchi energia [keV]");
     graph.SetMarkerSize(10);
     graph.Draw("AP");
     myCanv2.Print("risoluzione.pdf", "pdf");

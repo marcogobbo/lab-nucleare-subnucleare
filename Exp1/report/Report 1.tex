@@ -6,6 +6,8 @@
 \usepackage{physics}
 \usepackage{mathtools}
 \usepackage{geometry}
+\renewcommand{\figurename}{Figura}
+\newcommand*{\unit}[1]{\ensuremath{\mathrm{\,#1}}}
 \geometry{a4paper,tmargin=4cm,bmargin=3.5cm, lmargin=3cm,rmargin=3cm}
 
 \title{Caratterizzazione rivelatore a barriera superficiale}
@@ -35,11 +37,11 @@
 %%% CARATTERIZZAZIONE CON PULSER %%%
 
 \section{Caratterizzazione con impulsatore calibrato in energia}
-Dopo aver posto il rivelatore al Silicio in una camera a vuoto, si sfutta la catena di lettura classica (pre-amplificatore, amplificatore, shaper, ACD/MCA) per generare sull'elettronica in uscita dei segnali la cui forma \`e analoga a quella che il rivelatore fornisce in seguito ad una interazione alfa. Come indicato, nel caso specifico il rivelatore \`e polarizzato con una tensione di 50 V. Si fissano dei precisi valori di energia dell'impulsatore, in un intervallo che va da 1 MeV a 10 MeV, e con i dati ottenuti si costruiscono diversi istogrammi, uno per ciascun valore di energia. Da ognuno di questi istogrammi, tramite una estrapolazione gaussiana, \`e possibile ricavare la posizione, espressa in mV, del picco. Di seguito sono riportate le posizioni dei 10 picchi, relative alle 10 raccolte dati a nostra disposizione:
+Dopo aver posto il rivelatore al Silicio in una camera a vuoto, si sfutta la catena di lettura classica (pre-amplificatore, amplificatore, shaper, ACD/MCA) per generare sull'elettronica in uscita dei segnali la cui forma \`e analoga a quella che il rivelatore fornisce in seguito ad una interazione alfa. Come indicato, nel caso specifico il rivelatore \`e polarizzato con una canale di 50 V. Si fissano dei precisi valori di energia dell'impulsatore, in un intervallo che va da 1 MeV a 10 MeV, e con i dati ottenuti si costruiscono diversi istogrammi, uno per ciascun valore di energia. Da ognuno di questi istogrammi, tramite una estrapolazione gaussiana, \`e possibile ricavare la posizione, espressa in mV, del picco. Di seguito sono riportate le posizioni dei 10 picchi, relative alle 10 raccolte dati a nostra disposizione:
 \begin{center}
     \begin{tabular}{ccc}
         \toprule
-        Energia [MeV] & Tensione picco [mV] & $\sigma$ [mV]\\
+        Energia [MeV] & Canale picco [mV] & $\sigma$ [mV]\\
         \midrule
         1.10 & 665 & 7\\
         2.09 & 1424 & 7\\
@@ -65,37 +67,37 @@ Dopo aver posto il rivelatore al Silicio in una camera a vuoto, si sfutta la cat
     \end{tabular}\\
 \end{center}
 
-\noindent Attraverso questi dati, si va a costruire un grafico \textit{energia vs tensione picco}. Questo grafico rappresenta la \textbf{curva di calibrazione}:
+\noindent Attraverso questi dati, si va a costruire un grafico \textit{energia vs canale picco}. Questo grafico rappresenta la \textbf{curva di calibrazione}:
 
 \begin{figure}[h!]
     \centering
-    \includegraphics[scale=0.7]{rettacalibrazione.jpg}
-    \caption{Retta di calibrazione Energia vs Tensione Picco}
+    \includegraphics[scale=0.45]{grafici/rettacalibrazione}
+    \caption{Retta di calibrazione Energia vs Canale Picco}
 \end{figure}
 
 \noindent Dal fit, si ottiene la seguente retta di calibrazione:
 $$
-    Energia = m \cdot Picco + q
+    \textrm{Energia} = m \cdot \textrm{Canale picco} + q
 $$
 Con coefficienti pari a:
 $$
-    m = 1.327\cdot10^{-3} \pm 10^{-6}\, \frac{MeV}{mV}
+    m = 1.327 \times 10^{-3} \pm 10^{-6}\, \unit{Mev/mV}
 $$
 $$
-    q = 0.213 \pm 0.7\cdot10^{-2}\, MeV
+    q = 0.213 \pm 0.7 \times 10^{-2}\, \unit{MeV}
 $$
 
 \noindent Con i seguenti valori per quanto riguarda $\chi$\textsuperscript{2} ridotto e \textit{P-Value}:
 $$
-    \frac{\chi\textsuperscript{2}}{NDF} = \frac{5.18}{8} = 0.6475
+    \frac{\chi\textsuperscript{2}}{\textrm{NDF}} = \frac{5.18}{8} = 0.648
 $$
 $$
-    \textit{P-Value} = 0.7382
+    \textrm{P-Value} = 0.738
 $$
 %% OSSERVAZIONI %%
 
 \subsection{Osservazioni}
-Il grafico di calibrazione ottenuto mostra con chiarezza l'andamento lineare della relazione fra energia e tensione del picco. Si pu\`o notare che l'intercetta della retta infatti \`e prossima all'origine: questa piccola discrepanza pu\`o essere dovuta ad un offset di base dello strumento. 
+Il grafico di calibrazione ottenuto mostra con chiarezza l'andamento lineare della relazione fra energia e canale del picco. Si pu\`o notare che l'intercetta della retta infatti \`e prossima all'origine: questa piccola discrepanza pu\`o essere dovuta ad un offset di base dello strumento. 
 \`E necessario per\`o verificare l'attendibilit\`a dei risultati ottenuti andando a confrontare con lo spettro di una sorgente nota.
 
 %% SORGENTE 241-Am %%
@@ -105,16 +107,16 @@ In questa parte successiva, nella camera viene inserita una sorgente di 241-Am, 
 
 \begin{figure}[h!]
     \centering
-    \includegraphics[scale=0.7]{istoame.jpg}
+    \includegraphics[scale=0.45]{grafici/istoame}
     \caption{Spettro 241-Am}
 \end{figure}
 
 \noindent Con i seguenti valori per quanto riguarda $\chi$\textsuperscript{2} ridotto e \textit{P-Value}:
 $$
-    \frac{\chi\textsuperscript{2}}{NDF} = \frac{194.2}{158} = 1.229
+    \frac{\chi\textsuperscript{2}}{\textrm{NDF}} = \frac{194.2}{158} = 1.229
 $$
 $$
-    \textit{P-Value} = 0.0263
+    \textrm{P-Value} = 0.026
 $$
 
 \noindent Ed i seguenti valori per ciascun picco:
@@ -122,7 +124,7 @@ $$
 \begin{center}
     \begin{tabular}{cc}
         \toprule
-        Picco Canale[mV] & $\sigma$[mV] \\
+        Canale picco[mV] & $\sigma$[mV] \\
         \midrule
         3970 & 17\\
         4006 & 12\\
@@ -136,26 +138,26 @@ $$
 
 \begin{figure}[H]
     \centering
-    \includegraphics[scale=0.7]{rettaame.jpg}
+    \includegraphics[scale=0.45]{grafici/rettaame}
     \caption{Retta di calibrazione per il 241-Am}
 \end{figure}
 $$
-    Energia = m \cdot Picco + q
+    \textrm{Energia} = m \times \textrm{Canale picco} + q
 $$
 Con coefficienti pari a:
 $$
-    m = 1.7\cdot10^{-3} \pm 3.6\cdot10^{-4}\, \frac{MeV}{mV}
+    m = 1.7 \times 10^{-3} \pm 3.6 \times 10^{-4}\, \unit{Mev/mV}
 $$
 $$
-    q = - 1.3 \pm 1.5\, MeV
+    q = - 1.3 \pm 1.5\, \unit{MeV}
 $$
 
 \noindent Con i seguenti valori per quanto riguarda $\chi$\textsuperscript{2} ridotto e \textit{P-Value}:
 $$
-    \frac{\chi\textsuperscript{2}}{NDF} = \frac{0.3406}{2} = 0.1703
+    \frac{\chi\textsuperscript{2}}{\textrm{NDF}} = \frac{0.3406}{2} = 0.170
 $$
 $$
-    \textit{P-Value} = 0.8434
+    \textrm{P-Value} = 0.843
 $$
 
 \noindent Di seguito viene invece riportata la tabella che mostra il confronto fra l'energia tabulata del 241-Am e l'energia calcolata tramite da retta di calibrazione ottenuta al primo punto:
@@ -163,7 +165,7 @@ $$
 \begin{center}
     \begin{tabular}{ccccc}
         \toprule
-        Canale & E [keV] & $\sigma$ [keV] & Energia tabulata[keV] & Compatibilit\`a \\
+        Canale [mV] & $E_c$ [keV] & $\sigma$ [keV] & $E_t$ [keV] & Compatibilit\`a \\
         \midrule
         3970 & 5441.59 & 23.76 & 5388 & 2.41\%\\
         4006 & 5489.00 & 17.70 & 5443 & 0.93\%\\
@@ -181,22 +183,22 @@ $$
 $$
 E si valuta quest'ultimo utilizzando il complementare della funzione degli errori:
 $$
-    Erfc(\tau) = \frac{2}{\sqrt{\pi}}\int_{\tau}^{+\infty} e^{-x^2}\, dx
+    \textrm{erfc} (\tau) = \frac{2}{\sqrt{\pi}}\int_{\tau}^{+\infty} e^{-x^2}\, dx
 $$
 
 \noindent Come ultima cosa, \`e nostro interesse calcolare la risoluzione del rivelatore. Sfruttando la relazione
 
 $$
-    R=\frac{FWHM}{Picco[mV]}
+    R=\frac{\textrm{FWHM}}{\textrm{Picco}[\unit{mV}]}
 $$
 andiamo a calcolare quella che \`e la risoluzione relativa per ognuno dei picchi estrapolati. La risoluzione relativa viene poi moltiplicata per l'energia corrispondente del picco, in modo da ottenere la risoluzione energetica. Si ottengono i seguenti risultati:
 
 \begin{center}
     \begin{tabular}{cccc}
         \toprule
-        Canale[mV] & Risoluzione relativa & Energia [keV] & Risoluzione energetica [keV] \\
+        Canale [mV] & Risoluzione relativa & Energia [keV] & Risoluzione energetica [keV] \\
         \midrule
-        3970 & 0.01 & 5441.59 & 54.7\\
+        3970 & 0.010 & 5441.59 & 54.7\\
         4006 & 0.007 & 5489.00 & 38.6\\
         4036 & 0.005 & 5528.51 & 32.2\\
         4062 & 0.008 & 5562.75 & 45.1\\
@@ -208,7 +210,7 @@ andiamo a calcolare quella che \`e la risoluzione relativa per ognuno dei picchi
 
 \begin{figure}[H]
     \centering
-    \includegraphics[scale=0.4]{risoluzione.png}
+    \includegraphics[scale=0.45]{grafici/risoluzione}
     \caption{Risoluzione energetica in funzione del picco di energia}
 \end{figure}
 
@@ -219,14 +221,14 @@ I dati che abbiamo elaborato mostrano alcune informazioni importanti. I test di 
 
 \begin{figure}[H]
     \centering
-    \includegraphics[scale=0.4]{discrepanza.png}
+    \includegraphics[scale=0.45]{grafici/discrepanza}
     \caption{Differenza tra energia calcolata e tabulata in funzione dell'energia calcolata}
 \end{figure}
 
 $$
-    \Delta E = 40.18 \pm 9.27\, keV
+    \Delta E = 40.18 \pm 9.27\, \unit{keV}
 $$
 
-\noindent Analizzando le due rette di calibrazione (Figura 1 e Figura 3), quella ottenuta nella prima parte attraverso l'impulsatore e quella ottenuta dallo studio dello spettro del 241-Am, non risultano compatibili: questo \`e evidenziato dalla non compatibilit\`a dei valori di energia tabulati corrispondenti ai picchi con quelli estrapolati dalla retta di calibrazione dell'impulsatore. Questo mostra come la calibrazione ottenuta con l'impulsatore, seppur importante per evidenziare la relazione lineare fra energia e tensione, non \`e molto precisa. La calibrazione con l'americio pu\`o essere in questo senso pi\`u attendibile. Questa incongruenza pu\`o essere legata a diversi fattori: innanzitutto il 241-Am ha solo 4 picchi, per altro molto vicini, e quindi difficilmente distinguibili. Infatti, come indicato, la risoluzione dell'apparato utilizzato \`e di circa 30/40 mV e ci\`o pu\`o influenzare la forma dello spettro.\\
+\noindent Analizzando le due rette di calibrazione (Figura 1 e Figura 3), quella ottenuta nella prima parte attraverso l'impulsatore e quella ottenuta dallo studio dello spettro del 241-Am, non risultano compatibili: questo \`e evidenziato dalla non compatibilit\`a dei valori di energia tabulati corrispondenti ai picchi con quelli estrapolati dalla retta di calibrazione dell'impulsatore. Questo mostra come la calibrazione ottenuta con l'impulsatore, seppur importante per evidenziare la relazione lineare fra energia e canale, non \`e molto precisa. La calibrazione con l'americio pu\`o essere in questo senso pi\`u attendibile. Questa incongruenza pu\`o essere legata a diversi fattori: innanzitutto il 241-Am ha solo 4 picchi, per altro molto vicini, e quindi difficilmente distinguibili. Infatti, come indicato, la risoluzione dell'apparato utilizzato \`e di circa 30/40 mV e ci\`o pu\`o influenzare la forma dello spettro.\\
 L'andamento della risoluzione ottenuto \`e consistente con quanto atteso per i primi 3 picchi: la risoluzione diminuisce all'aumentare dell'energia. Il fatto che il quarto ed ultimo punto non rispetti l'andamento pu\`o essere spiegato osservando lo spettro del 241-Am: l'ultimo picco, in corrispondeza del canale 4062, \`e quasi interamente coperto dal picco precendete, che corrisponde al decadimento dell'americio con il branching ratio pi\`u alto; questo rende difficile l'individuazione del picco stesso e della FWHM associata. 
 \end{document} 

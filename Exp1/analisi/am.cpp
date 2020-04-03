@@ -71,7 +71,7 @@ void computeHisto(int bin, double _min, double _max) {
     h1->SetFillColor(kYellow-10);
     //gStyle->SetOptFit(1112);
 
-    h1->GetXaxis()->SetTitle("Tensione [mV]");
+    h1->GetXaxis()->SetTitle("Canali [mV]");
     h1->GetYaxis()->SetTitle("Conteggi");
 
     TF1* funcFit = new TF1("funcFit", totalFit, 3930, 4100, 12);
@@ -144,7 +144,7 @@ void computeGraph() {
 
     graph.SetTitle("Calibrazione 241-Am");
     graph.GetYaxis()->SetTitle("Energia Tabulata [MeV]");
-    graph.GetXaxis()->SetTitle("Tensione [mV]");
+    graph.GetXaxis()->SetTitle("Canali [mV]");
     graph.SetMarkerSize(2);
     graph.Draw("AP");
     graph.Fit("fitFnc1");
@@ -156,8 +156,8 @@ void computeGraph() {
 }
 
 int main(int argc, char** argv) {
-    //computeHisto(170, 3930, 4100);
+    computeHisto(170, 3930, 4100);
     
-    computeGraph();
+    //computeGraph();
     return 0;
 }
