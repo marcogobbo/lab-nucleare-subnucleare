@@ -1,6 +1,6 @@
-// c++ -o compute differenza.cpp lib/analyzer.cc `root-config --cflags --glibs`
+// c++ -o compute differenza.cpp ../../lib/analyzer.cc `root-config --cflags --glibs`
 
-#include "lib/analyzer.h"
+#include "../../lib/analyzer.h"
 
 using namespace std;
 

@@ -1,7 +1,7 @@
-// c++ -o compute am.cpp lib/analyzer.cc `root-config --cflags --glibs`
+// c++ -o compute am.cpp ../../lib/analyzer.cc `root-config --cflags --glibs`
 // ./compute
 
-#include "lib/analyzer.h"
+#include "../../lib/analyzer.h"
 
 using namespace std;
 
