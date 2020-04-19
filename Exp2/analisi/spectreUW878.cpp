@@ -36,13 +36,13 @@ void computeGraph(double limInf, double limSup) {
     graph.SetMarkerSize(2);
     graph.GetXaxis()->SetLimits(limInf,limSup);
 
-    TF1 gaussFit("gauss", gauss, limInf, limSup, 3);
+    /*TF1 gaussFit("gauss", gauss, limInf, limSup, 3);
     gaussFit.SetParameter(1, 7200);
     gaussFit.SetParameter(2, 10);
     gaussFit.SetParName(0,"Ampiezza");
     gaussFit.SetParName(1,"Media");
     gaussFit.SetParName(2,"Dev Std");
-    graph.Fit("gauss");
+    graph.Fit("gauss");*/
     graph.Draw("AP");
 
     TString namePDF = "graphs/spectreUW878/graph_UW878.pdf";
@@ -72,6 +72,6 @@ void computeGraphCalib() {
 
 
 int main() {
-    computeGraph(0, 1000);
+    computeGraph(0, 16384);
     //computeGraphCalib();
 }
