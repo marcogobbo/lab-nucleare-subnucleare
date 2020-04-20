@@ -4,17 +4,24 @@
 
 using namespace std;
 
-double gauss(double* x, double* par)	{
+double gaussFit (double* x, double* par) {
   	return par[0] * exp(-0.5*((x[0]-par[1])*(x[0]-par[1])/(par[2]*par[2])));
 }
 
-void computeGraph(string valueHV, double limInf, double limSup) {
+double pol0 (double*x, double* par) {
+    return par[0];
+}
+
+double totalFit (double* x, double* par) {
+    return gaussFit(x, par) + pol0(x, &par[3]);
+}
+
+void computeHisto(string valueHV, int bin, double limInf, double limSup) {
     Analyzer HV;
     string fileName = "data/HPGe-Bias/" + valueHV + ".dat";
 
     // Creo il vettore dove salvare i dati, min e max
     vector<double> data;
-    double counts[8192], channels[8192];
     double min, max;
 
     // Carico i dati controllando che non via siano errori
@@ -22,37 +29,66 @@ void computeGraph(string valueHV, double limInf, double limSup) {
         cout << "Errore nel caricare il file: " << fileName.c_str() << endl;
     };
 
-    for (unsigned int i = 0; i < 8192; i++) {
-        counts[i] = data[i];
-        channels[i] = i;
-    }
+    // Imposto il numero di bin
+    int nBin = bin;
+
     gStyle->SetOptFit(1112);
-    TCanvas graphHV;
-    TGraph graph(5000, channels, counts);
+    
     TString titleGraph = "HV: " + valueHV + "V";
-    graph.SetTitle(titleGraph);
-    graph.GetYaxis()->SetTitle("Conteggi");
-    graph.GetXaxis()->SetTitle("Canali [V]");
-    graph.SetMarkerSize(2);
-    graph.GetXaxis()->SetLimits(limInf,limSup);
-
-    TF1 gaussFit("gauss", gauss, limInf, limSup, 3);
-    gaussFit.SetParameter(1, 1255);
-    gaussFit.SetParameter(2, 50);
-    gaussFit.SetParName(0,"Ampiezza");
-    gaussFit.SetParName(1,"Media");
-    gaussFit.SetParName(2,"Dev Std");
-    graph.Fit("gauss");
-    graph.Draw("AP");
-
     TString namePDF = "graphs/spectreHV/graph_HV" + valueHV + ".pdf";
-    graphHV.Print(namePDF);
 
+    TH1D* histoHV = new TH1D("Data", titleGraph, nBin, min, max);
+
+    for (unsigned int i = 0; i < data.size(); i++) {
+        histoHV->SetBinContent(i, data[i]);
+    }
+
+    TCanvas* canvasHV = new TCanvas("canvasHV", "canvasHV", 0, 0, 800, 500);
+
+    canvasHV->cd();
+
+    histoHV->Draw();
+    histoHV->SetFillColor(kYellow-10);
+    histoHV->GetXaxis()->SetTitle("Channels [mV]");
+    histoHV->GetYaxis()->SetTitle("Counts");
+    histoHV->GetXaxis()->SetRangeUser(limInf, limSup);
+
+    TF1* funcFit = new TF1("funcFit", totalFit, limInf, limSup, 4);
+    funcFit->SetParName(0,"Amp");
+    funcFit->SetParName(1,"Mean");
+    funcFit->SetParName(2,"Std Dev");
+    funcFit->SetParName(3,"Noise");
+    funcFit->SetParameter(0, 7800);
+    funcFit->SetParameter(1, 1170);
+    funcFit->SetParameter(2, 10);
+    funcFit->SetParameter(4, 150);
+
+    histoHV->Fit("funcFit");
+
+    canvasHV->Print(namePDF);
+
+    // Libero la memoria
+    delete histoHV;
+    delete funcFit;
+    delete canvasHV;
 }
 
 
 int main() {
-    for (int i = 2000; i < 5200; i += 200) {
-        computeGraph(to_string(i), 1200, 1300);
-    }
+    computeHisto("2000", 8192, 1100, 1250);
+    computeHisto("2000", 8192, 0, 9000);
+    computeHisto("2000", 8192, 0, 9000);
+    computeHisto("2000", 8192, 0, 9000);
+    computeHisto("2000", 8192, 0, 9000);
+    computeHisto("2000", 8192, 0, 9000);
+    computeHisto("2000", 8192, 0, 9000);
+    computeHisto("2000", 8192, 0, 9000);
+    computeHisto("2000", 8192, 0, 9000);
+    computeHisto("2000", 8192, 0, 9000);
+    computeHisto("2000", 8192, 0, 9000);
+    computeHisto("2000", 8192, 0, 9000);
+    computeHisto("2000", 8192, 0, 9000);
+    computeHisto("2000", 8192, 0, 9000);
+    computeHisto("2000", 8192, 0, 9000);
+    computeHisto("2000", 8192, 0, 9000);
 }
