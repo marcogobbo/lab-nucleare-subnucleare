@@ -61,7 +61,7 @@ void computeHisto (string valueHV, int bin, double limInf, double limSup) {
     funcFit->SetParameter(0, 7800);
     funcFit->SetParameter(1, 1250);
     funcFit->SetParameter(2, 10);
-    funcFit->SetParameter(4, 150);
+    funcFit->SetParameter(3, 150);
 
     histoHV->Fit("funcFit");
 
@@ -75,5 +75,20 @@ void computeHisto (string valueHV, int bin, double limInf, double limSup) {
 
 
 int main() {
-    computeHisto("2000", 8192, 1150, 1350);
+    //computeHisto("2000", 8192, 1150, 1350);
+    //computeHisto("2200", 8192, 1150, 1350);
+    //computeHisto("2400", 8192, 1150, 1350);
+    //computeHisto("2600", 8192, 1150, 1350);
+    //computeHisto("2800", 8192, 1150, 1350);
+    //computeHisto("3000", 8192, 1150, 1350);
+    //computeHisto("3200", 8192, 1150, 1350);
+    //computeHisto("3400", 8192, 1150, 1350);
+    //computeHisto("3600", 8192, 1150, 1350);
+    //computeHisto("3800", 8192, 1150, 1350);
+    //computeHisto("4000", 8192, 1150, 1350);
+    computeHisto("4200", 8192, 1150, 1350);
+    computeHisto("4400", 8192, 1150, 1350);
+    computeHisto("4600", 8192, 1150, 1350);
+    computeHisto("4800", 8192, 1150, 1350);
+    computeHisto("5000", 8192, 1150, 1350);
 }

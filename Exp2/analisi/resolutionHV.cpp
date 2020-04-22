@@ -10,45 +10,44 @@ void computeGraph() {
     ofstream OutFile ("HV_resolution.txt");
 
     //Creo i vettori contenenti FWHM, Picco, HV quelli per contenere gli errori
-    double FWHM[16] = {
-        2.35*6.75,
-        2.35*7.14,
-        2.35*7.28,
-        2.35*7.64,
-        2.35*7.70,
-        2.35*7.97,
-        2.35*8.10,
-        2.35*8.25,
-        2.35*8.35,
-        2.35*8.40,
-        2.35*8.24,
-        2.35*8.32,
-        2.35*8.31,
-        2.35*8.45,
-        2.35*8.52,
-        2.35*8.48,
+
+double sigma[16] = {
+        7.22,
+        7.03,
+        6.79,
+        6.66,
+        6.48,
+        6.13,
+        5.91,
+        5.63,
+        5.55,
+        5.46,
+        5.32,
+        5.30,
+        5.29,
+        5.23,
+        5.29,
+        5.19,
     };
 
     double Ch0[16] = {
-        1171,
-        1274,
-        1352,
-        1444,
-        1502,
-        1642,
-        1731,
-        1843,
-        1892,
-        1936,
-        1965,
-        1999,
-        1995,
-        2006,
-        2052,
-        2064,
+        1254,
+        1255,
+        1255,
+        1255,
+        1255,
+        1256,
+        1257,
+        1257,
+        1258,
+        1258,
+        1258,
+        1259,
+        1259,
+        1259,
+        1259,
+        1260,
     };
-
-    double errRIS[16];
 
     double HV[16] = {
         2000,
@@ -69,14 +68,35 @@ void computeGraph() {
         5000,
     };
 
+    double errsigma[16] = {
+        0.017,
+        0.016,
+        0.015,
+        0.014,
+        0.014,
+        0.013,
+        0.012,
+        0.012,
+        0.012,
+        0.011,
+        0.011,
+        0.011,
+        0.011,
+        0.010,
+        0.011,
+        0.010,
+    };
+
     double errHV[16];
     double risoluzione[16];
+    double FWHM[16];
+    double errRIS[16];
 
     for (unsigned int i = 0; i < 16; i++) {
-        errHV[i] = 0;
+	FWHM[i] = 2.35*sigma[i];
 	risoluzione[i] = FWHM[i]/Ch0[i];
-	errRIS[i] = 0;
-	//sqrt(pow((2.35*error)/Ch0[i],2)+pow((FWHM[i]*error)/(Ch0[i]*Ch0[i]),2));
+	errHV[i] = 0;
+	errRIS[i] = sqrt(pow((2.35*errsigma[i])/Ch0[i],2)+pow((FWHM[i]*sigma[i])/(Ch0[i]*Ch0[i]),2));
 	OutFile << risoluzione[i] << endl;
     }
 

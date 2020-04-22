@@ -1,0 +1,10 @@
+#############
+# per tutti #
+#############
+
+    funcFit->SetParameter(0, 7800);
+    funcFit->SetParameter(1, 1250);
+    funcFit->SetParameter(2, 10);
+    funcFit->SetParameter(3, 150);
+
+
