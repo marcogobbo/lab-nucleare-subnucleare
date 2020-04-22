@@ -1,0 +1,64 @@
+#######
+# 005 #
+#######
+
+    funcFit->SetParameter(0, 13500);
+    funcFit->SetParameter(1, 1258);
+    funcFit->SetParameter(2, 10);
+    funcFit->SetParameter(3, 100);
+
+#######
+# 010 #
+#######
+
+    funcFit->SetParameter(0, 13500);
+    funcFit->SetParameter(1, 1260);
+    funcFit->SetParameter(2, 10);
+    funcFit->SetParameter(3, 100);
+    funcFit->SetParameter(4, 1100);
+    funcFit->SetParameter(5, 1275);
+    funcFit->SetParameter(6, 20);
+
+#######
+# 020 #
+#######
+
+    funcFit->SetParameter(0, 15000);
+    funcFit->SetParameter(1, 1257);
+    funcFit->SetParameter(2, 10);
+    funcFit->SetParameter(3, 100);
+    funcFit->SetParameter(4, 1000);
+    funcFit->SetParameter(5, 1260);
+    funcFit->SetParameter(6, 20);
+
+#######
+# 030 #
+#######
+
+    funcFit->SetParameter(0, 1100);
+    funcFit->SetParameter(1, 1281);
+    funcFit->SetParameter(2, 20);
+    funcFit->SetParameter(3, 100);
+    funcFit->SetParameter(4, 1400);
+    funcFit->SetParameter(5, 1310);
+    funcFit->SetParameter(6, 50);
+
+    funcFit->SetParLimits(5, 1300, 1320);
+    funcFit->SetParLimits(6, 0, 50);
+
+#######
+# 060 #
+#######
+
+    funcFit->SetParameter(0, 8000);
+    funcFit->SetParameter(1, 1290);
+    funcFit->SetParameter(2, 27);
+    funcFit->SetParameter(3, 100);
+    funcFit->SetParameter(4, 500);
+    funcFit->SetParameter(5, 1313);
+    funcFit->SetParameter(6, 40);
+
+    funcFit->SetParLimits(0, 7900, 8000);
+    funcFit->SetParLimits(5, 1308, 1320);
+    funcFit->SetParLimits(6, 0, 30);
+

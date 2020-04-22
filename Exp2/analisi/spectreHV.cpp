@@ -16,7 +16,7 @@ double totalFit (double* x, double* par) {
     return gaussFit(x, par) + pol0(x, &par[3]);
 }
 
-void computeHisto(string valueHV, int bin, double limInf, double limSup) {
+void computeHisto (string valueHV, int bin, double limInf, double limSup) {
     Analyzer HV;
     string fileName = "data/HPGe-Bias/" + valueHV + ".dat";
 
@@ -37,7 +37,7 @@ void computeHisto(string valueHV, int bin, double limInf, double limSup) {
     TString titleGraph = "HV: " + valueHV + "V";
     TString namePDF = "graphs/spectreHV/graph_HV" + valueHV + ".pdf";
 
-    TH1D* histoHV = new TH1D("Data", titleGraph, nBin, min, max);
+    TH1D* histoHV = new TH1D("Data", titleGraph, nBin, 0, 8192);
 
     for (unsigned int i = 0; i < data.size(); i++) {
         histoHV->SetBinContent(i, data[i]);
@@ -59,7 +59,7 @@ void computeHisto(string valueHV, int bin, double limInf, double limSup) {
     funcFit->SetParName(2,"Std Dev");
     funcFit->SetParName(3,"Noise");
     funcFit->SetParameter(0, 7800);
-    funcFit->SetParameter(1, 1170);
+    funcFit->SetParameter(1, 1250);
     funcFit->SetParameter(2, 10);
     funcFit->SetParameter(4, 150);
 
@@ -75,20 +75,5 @@ void computeHisto(string valueHV, int bin, double limInf, double limSup) {
 
 
 int main() {
-    computeHisto("2000", 8192, 1100, 1250);
-    computeHisto("2000", 8192, 0, 9000);
-    computeHisto("2000", 8192, 0, 9000);
-    computeHisto("2000", 8192, 0, 9000);
-    computeHisto("2000", 8192, 0, 9000);
-    computeHisto("2000", 8192, 0, 9000);
-    computeHisto("2000", 8192, 0, 9000);
-    computeHisto("2000", 8192, 0, 9000);
-    computeHisto("2000", 8192, 0, 9000);
-    computeHisto("2000", 8192, 0, 9000);
-    computeHisto("2000", 8192, 0, 9000);
-    computeHisto("2000", 8192, 0, 9000);
-    computeHisto("2000", 8192, 0, 9000);
-    computeHisto("2000", 8192, 0, 9000);
-    computeHisto("2000", 8192, 0, 9000);
-    computeHisto("2000", 8192, 0, 9000);
+    computeHisto("2000", 8192, 1150, 1350);
 }
