@@ -1,0 +1,74 @@
+############
+### 22Na ###
+############
+    Primo Picco (Annichilazione del positrone)
+    computeHisto("22Na", 1230, 1300);
+############
+    funcFit->SetParName(0,"Amp");
+    funcFit->SetParName(1,"Mean");
+    funcFit->SetParName(2,"Std Dev");
+    funcFit->SetParName(3,"Noise");
+    funcFit->SetParameter(0, 3600);
+    funcFit->SetParameter(1, 1264);
+    funcFit->SetParameter(2, 15);
+    funcFit->SetParameter(3, 100);
+############
+    Secondo Picco
+    computeHisto("22Na", 3230, 3290);
+############
+    funcFit->SetParName(0,"Amp");
+    funcFit->SetParName(1,"Mean");
+    funcFit->SetParName(2,"Std Dev");
+    funcFit->SetParName(3,"Noise");
+    funcFit->SetParameter(0, 900);
+    funcFit->SetParameter(1, 3261);
+    funcFit->SetParameter(2, 15);
+    funcFit->SetParameter(3, 100);
+############
+
+############
+### 60C0 ###
+############
+    Primo Picco
+    computeHisto("60Co", 2970, 3025);
+############
+    funcFit->SetParName(0,"Amp");
+    funcFit->SetParName(1,"Mean");
+    funcFit->SetParName(2,"Std Dev");
+    funcFit->SetParName(3,"Noise");
+    funcFit->SetParameter(0, 4200);
+    funcFit->SetParameter(1, 2993);
+    funcFit->SetParameter(2, 15);
+    funcFit->SetParameter(3, 100);
+############
+
+############
+### 60C0 ###
+############
+    Secondo Picco
+    computeHisto("60Co", 3365, 3460);
+############
+    funcFit->SetParName(0,"Amp");
+    funcFit->SetParName(1,"Mean");
+    funcFit->SetParName(2,"Std Dev");
+    funcFit->SetParName(3,"Noise");
+    funcFit->SetParameter(0, 3500);
+    funcFit->SetParameter(1, 3412);
+    funcFit->SetParameter(2, 15);
+    funcFit->SetParameter(3, 100);
+
+
+#############
+### 228Th ###
+#############
+    Sono 5 picchi in questa regione
+    computeHisto("228Th", 500, 1500);
+############
+    funcFit->SetParName(0,"Amp");
+    funcFit->SetParName(1,"Mean");
+    funcFit->SetParName(2,"Std Dev");
+    funcFit->SetParName(3,"Noise");
+    funcFit->SetParameter(0, 3500);
+    funcFit->SetParameter(1, 3412);
+    funcFit->SetParameter(2, 15);
+    funcFit->SetParameter(3, 100);
