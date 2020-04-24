@@ -49,9 +49,9 @@ int main() {
     histoYYYYY->SetFillColor(kYellow-10);
     histoYYYYY->GetXaxis()->SetTitle("Channels [mV]");
     histoYYYYY->GetYaxis()->SetTitle("Counts");
-    histoYYYYY->GetXaxis()->SetRangeUser(0, 16384);
+    histoYYYYY->GetXaxis()->SetRangeUser(15000, 16384);
 
-    canvasSource->Print("graphs/spectreYYYYY/graph_YYYYY.pdf");
+    canvasSource->Print("graphs/spectreYYYYY/graph_YYYYY_test16.pdf");
 
     delete histoYYYYY;
     delete canvasSource;
