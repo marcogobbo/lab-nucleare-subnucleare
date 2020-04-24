@@ -1,0 +1,84 @@
+PER TUTTI RICORDARSI DI CAMBIARE IL NOME DEL FILE
+AD ESEMPIO _test.pdf PER FARE DEI TEST
+
+###########
+## UW878 ##
+###########
+    Picco 1
+###########
+    TF1* funcFit = new TF1("funcFit", totalFit, 210, 300, 4);
+    funcFit->SetParName(0,"Amp");
+    funcFit->SetParName(1,"Mean");
+    funcFit->SetParName(2,"Std Dev");
+    funcFit->SetParName(3,"Noise");
+    funcFit->SetParameter(0, 8000);
+    funcFit->SetParameter(1, 251);
+    funcFit->SetParameter(2, 15);
+    funcFit->SetParameter(3, 200);
+
+###########
+    Picco 2
+###########
+    TF1* funcFit = new TF1("funcFit", totalFit, 360, 460, 4);
+    funcFit->SetParName(0,"Amp");
+    funcFit->SetParName(1,"Mean");
+    funcFit->SetParName(2,"Std Dev");
+    funcFit->SetParName(3,"Noise");
+    funcFit->SetParameter(0, 250);
+    funcFit->SetParameter(1, 410);
+    funcFit->SetParameter(2, 30);
+    funcFit->SetParameter(3, 150);
+    funcFit->SetParLimits(1, 405, 415);
+
+###########
+    Picco 3
+###########
+    TF1* funcFit = new TF1("funcFit", totalFit, 3490, 3590, 4);
+    funcFit->SetParName(0,"Amp");
+    funcFit->SetParName(1,"Mean");
+    funcFit->SetParName(2,"Std Dev");
+    funcFit->SetParName(3,"Noise");
+    funcFit->SetParameter(0, 6300);
+    funcFit->SetParameter(1, 3540);
+    funcFit->SetParameter(2, 10);
+    funcFit->SetParameter(3, 30);
+
+###########
+    Picco 4
+###########
+    TF1* funcFit = new TF1("funcFit", totalFit, 6270, 6400, 4);
+    funcFit->SetParName(0,"Amp");
+    funcFit->SetParName(1,"Mean");
+    funcFit->SetParName(2,"Std Dev");
+    funcFit->SetParName(3,"Noise");
+    funcFit->SetParameter(0, 2200);
+    funcFit->SetParameter(1, 6330);
+    funcFit->SetParameter(2, 10);
+    funcFit->SetParameter(3, 10);
+
+###########
+    Picco 5
+###########
+    TF1* funcFit = new TF1("funcFit", totalFit, 7160, 7250, 4);
+    funcFit->SetParName(0,"Amp");
+    funcFit->SetParName(1,"Mean");
+    funcFit->SetParName(2,"Std Dev");
+    funcFit->SetParName(3,"Noise");
+    funcFit->SetParameter(0, 1750);
+    funcFit->SetParameter(1, 7200);
+    funcFit->SetParameter(2, 10);
+    funcFit->SetParameter(3, 10);
+
+###########
+    Picco 6
+###########
+    TF1* funcFit = new TF1("funcFit", totalFit, 13560, 13650, 4);
+    funcFit->SetParName(0,"Amp");
+    funcFit->SetParName(1,"Mean");
+    funcFit->SetParName(2,"Std Dev");
+    funcFit->SetParName(3,"Noise");
+    funcFit->SetParameter(0, 14);
+    funcFit->SetParameter(1, 13610);
+    funcFit->SetParameter(2, 10);
+    funcFit->SetParameter(3, 0);
+    funcFit->SetParLimits(0, 14, 15);
