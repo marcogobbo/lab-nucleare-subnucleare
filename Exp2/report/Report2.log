@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2020.3.24)  23 APR 2020 16:37
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2020.3.24)  24 APR 2020 12:10
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -144,41 +144,140 @@ LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
 ))
+(c:/texlive/2019/texmf-dist/tex/latex/amscls/amsthm.sty
+Package: amsthm 2017/10/31 v2.20.4
+\thm@style=\toks23
+\thm@bodyfont=\toks24
+\thm@headfont=\toks25
+\thm@notefont=\toks26
+\thm@headpunct=\toks27
+\thm@preskip=\skip52
+\thm@postskip=\skip53
+\thm@headsep=\skip54
+\dth@everypar=\toks28
+)
+(c:/texlive/2019/texmf-dist/tex/latex/physics/physics.sty
+Package: physics 
+
+(c:/texlive/2019/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
+(c:/texlive/2019/texmf-dist/tex/latex/l3kernel/expl3.sty
+Package: expl3 2020-02-25 L3 programming layer (loader) 
+
 (c:/texlive/2019/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def
 File: l3backend-pdfmode.def 2020-02-23 L3 backend support: PDF mode
 \l__kernel_color_stack_int=\count192
 \l__pdf_internal_box=\box49
+))
+Package: xparse 2020-02-25 L3 Experimental document command parser
+\l__xparse_current_arg_int=\count193
+\g__xparse_grabber_int=\count194
+\l__xparse_m_args_int=\count195
+\l__xparse_v_nesting_int=\count196
 )
-(./Report2.aux)
+
+LaTeX3 Warning: Argument delimiter '\big ' for the command '\@quantity' should
+(LaTeX3)        be a single character.
+
+
+LaTeX3 Warning: Argument delimiter '\Big ' for the command '\@quantity' should
+(LaTeX3)        be a single character.
+
+
+LaTeX3 Warning: Argument delimiter '\bigg ' for the command '\@quantity'
+(LaTeX3)        should be a single character.
+
+
+LaTeX3 Warning: Argument delimiter '\Bigg ' for the command '\@quantity'
+(LaTeX3)        should be a single character.
+
+
+LaTeX3 Warning: Argument delimiter '\big ' for the command '\@braces' should
+(LaTeX3)        be a single character.
+
+
+LaTeX3 Warning: Argument delimiter '\Big ' for the command '\@braces' should
+(LaTeX3)        be a single character.
+
+
+LaTeX3 Warning: Argument delimiter '\bigg ' for the command '\@braces' should
+(LaTeX3)        be a single character.
+
+
+LaTeX3 Warning: Argument delimiter '\Bigg ' for the command '\@braces' should
+(LaTeX3)        be a single character.
+
+
+LaTeX3 Warning: Argument delimiter '\big ' for the command '\fbraces' should
+(LaTeX3)        be a single character.
+
+
+LaTeX3 Warning: Argument delimiter '\Big ' for the command '\fbraces' should
+(LaTeX3)        be a single character.
+
+
+LaTeX3 Warning: Argument delimiter '\bigg ' for the command '\fbraces' should
+(LaTeX3)        be a single character.
+
+
+LaTeX3 Warning: Argument delimiter '\Bigg ' for the command '\fbraces' should
+(LaTeX3)        be a single character.
+
+
+LaTeX3 Warning: Argument delimiter '\ket ' for the command '\bra' should be a
+(LaTeX3)        single character.
+
+) (c:/texlive/2019/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2020/01/02 v5.9 Page Geometry
+
+(c:/texlive/2019/texmf-dist/tex/generic/iftex/ifvtex.sty
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+
+(c:/texlive/2019/texmf-dist/tex/generic/iftex/iftex.sty
+Package: iftex 2019/11/07 v1.0c TeX engine tests
+))
+\Gm@cnth=\count197
+\Gm@cntv=\count198
+\c@Gm@tempcnt=\count199
+\Gm@bindingoffset=\dimen159
+\Gm@wd@mp=\dimen160
+\Gm@odd@mp=\dimen161
+\Gm@even@mp=\dimen162
+\Gm@layoutwidth=\dimen163
+\Gm@layoutheight=\dimen164
+\Gm@layouthoffset=\dimen165
+\Gm@layoutvoffset=\dimen166
+\Gm@dimlist=\toks29
+) (./Report2.aux)
 \openout1 = `Report2.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
- (c:/texlive/2019/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+
+(c:/texlive/2019/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count193
-\scratchdimen=\dimen159
+\scratchcounter=\count266
+\scratchdimen=\dimen167
 \scratchbox=\box50
-\nofMPsegments=\count194
-\nofMParguments=\count195
-\everyMPshowfont=\toks23
-\MPscratchCnt=\count196
-\MPscratchDim=\dimen160
-\MPnumerator=\count197
-\makeMPintoPDFobject=\count198
-\everyMPtoPDFconversion=\toks24
+\nofMPsegments=\count267
+\nofMParguments=\count268
+\everyMPshowfont=\toks30
+\MPscratchCnt=\count269
+\MPscratchDim=\dimen168
+\MPnumerator=\count270
+\makeMPintoPDFobject=\count271
+\everyMPtoPDFconversion=\toks31
 ) (c:/texlive/2019/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
@@ -188,41 +287,138 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-LaTeX Font Info:    Trying to load font information for U+msa on input line 12.
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(89.62709pt, 418.25368pt, 89.6271pt)
+* v-part:(T,H,B)=(101.40665pt, 591.5302pt, 152.11pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=418.25368pt
+* \textheight=591.5302pt
+* \oddsidemargin=17.3571pt
+* \evensidemargin=17.3571pt
+* \topmargin=-7.86334pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=10.0pt
+* \footskip=30.0pt
+* \marginparwidth=57.0pt
+* \marginparsep=11.0pt
+* \columnsep=10.0pt
+* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
+LaTeX Font Info:    Trying to load font information for U+msa on input line 17.
 
 (c:/texlive/2019/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 12.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 17.
 
 
 (c:/texlive/2019/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1
 
-{c:/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2] [3] (./Repo
-rt2.aux) ) 
+{c:/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+<grafici/hv.jpg, id=11, 562.60187pt x 342.78062pt>
+File: grafici/hv.jpg Graphic file (type jpg)
+<use grafici/hv.jpg>
+Package pdftex.def Info: grafici/hv.jpg  used on input line 35.
+(pdftex.def)             Requested size: 253.1685pt x 154.24985pt.
+<grafici/st.jpg, id=12, 567.11874pt x 337.26pt>
+File: grafici/st.jpg Graphic file (type jpg)
+<use grafici/st.jpg>
+Package pdftex.def Info: grafici/st.jpg  used on input line 41.
+(pdftex.def)             Requested size: 255.20107pt x 151.7656pt.
+ [2 <./grafici/hv.jpg> <./grafici/st.jpg>]
+<grafici/risoluzionehv.jpg, id=17, 548.0475pt x 381.92688pt>
+File: grafici/risoluzionehv.jpg Graphic file (type jpg)
+<use grafici/risoluzionehv.jpg>
+Package pdftex.def Info: grafici/risoluzionehv.jpg  used on input line 53.
+(pdftex.def)             Requested size: 246.6191pt x 171.8655pt.
+<grafici/piccoNa.jpg, id=18, 567.11874pt x 340.27126pt>
+File: grafici/piccoNa.jpg Graphic file (type jpg)
+<use grafici/piccoNa.jpg>
+Package pdftex.def Info: grafici/piccoNa.jpg  used on input line 72.
+(pdftex.def)             Requested size: 255.20107pt x 153.12064pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<grafici/piccoCo.jpg, id=19, 575.14874pt x 348.80313pt>
+File: grafici/piccoCo.jpg Graphic file (type jpg)
+<use grafici/piccoCo.jpg>
+Package pdftex.def Info: grafici/piccoCo.jpg  used on input line 78.
+(pdftex.def)             Requested size: 258.81454pt x 156.95995pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<grafici/piccoTh.jpg, id=20, 579.16376pt x 351.81438pt>
+File: grafici/piccoTh.jpg Graphic file (type jpg)
+<use grafici/piccoTh.jpg>
+Package pdftex.def Info: grafici/piccoTh.jpg  used on input line 84.
+(pdftex.def)             Requested size: 260.62128pt x 158.315pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<grafici/rettacalibrazionesources.jpg, id=21, 547.04375pt x 383.93437pt>
+File: grafici/rettacalibrazionesources.jpg Graphic file (type jpg)
+<use grafici/rettacalibrazionesources.jpg>
+Package pdftex.def Info: grafici/rettacalibrazionesources.jpg  used on input li
+ne 92.
+(pdftex.def)             Requested size: 246.1674pt x 172.76886pt.
+[3 <./grafici/risoluzionehv.jpg>]
+
+LaTeX Warning: Text page 4 contains only floats.
+
+[4 <./grafici/piccoNa.jpg> <./grafici/piccoCo.jpg> <./grafici/piccoTh.jpg>]
+<grafici/risoluzionesources.jpg, id=30, 545.03625pt x 381.425pt>
+File: grafici/risoluzionesources.jpg Graphic file (type jpg)
+<use grafici/risoluzionesources.jpg>
+Package pdftex.def Info: grafici/risoluzionesources.jpg  used on input line 117
+.
+(pdftex.def)             Requested size: 245.26405pt x 171.63965pt.
+
+[5 <./grafici/rettacalibrazionesources.jpg>] [6 <./grafici/risoluzionesources.j
+pg>] (./Report2.aux) ) 
 Here is how much of TeX's memory you used:
- 2413 strings out of 480994
- 30812 string characters out of 5916032
- 267699 words of memory out of 5000000
- 17918 multiletter control sequences out of 15000+600000
- 540228 words of font info for 55 fonts, out of 8000000 for 9000
+ 4043 strings out of 480994
+ 57342 string characters out of 5916032
+ 307466 words of memory out of 5000000
+ 19510 multiletter control sequences out of 15000+600000
+ 540882 words of font info for 57 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 30i,6n,31p,1734b,201s stack positions out of 5000i,500n,10000p,200000b,80000s
-{c:/texlive/2019/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc
-}<c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texl
-ive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2019/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2019/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2019/texmf-dist/fonts/ty
-pe1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public
-/amsfonts/cm/cmr17.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/cm-super/
-sfrm1000.pfb>
-Output written on Report2.pdf (3 pages, 81419 bytes).
+ 43i,6n,50p,1734b,226s stack positions out of 5000i,500n,10000p,200000b,80000s
+{c:/texlive/2019/texmf-dist/fonts/enc/dvips/cm-super/cm-s
+uper-ts1.enc}<c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.
+pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/t
+exlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/20
+19/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2019/texmf-
+dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2019/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2019/texmf-dist/fonts/type1/pub
+lic/amsfonts/cm/cmr17.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfon
+ts/cm/cmr7.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy1
+0.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><c:/
+texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb><c:/texlive/2
+019/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
+Output written on Report2.pdf (6 pages, 973861 bytes).
 PDF statistics:
- 43 PDF objects out of 1000 (max. 8388607)
- 30 compressed objects within 1 object stream
+ 80 PDF objects out of 1000 (max. 8388607)
+ 51 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 41 words of extra memory for PDF output out of 10000 (max. 10000000)
 
