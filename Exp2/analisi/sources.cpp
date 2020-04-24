@@ -35,7 +35,7 @@ void computeHisto (string nameSource, double limInf, double limSup) {
     gStyle->SetOptFit(1112);
     
     TString titleGraph = nameSource;
-    TString namePDF = "graphs/spectreSources/graph_" + nameSource + ".pdf";
+    TString namePDF = "graphs/spectreSources/graph_" + nameSource + "_6760.pdf";
 
     TH1D* histoSource = new TH1D("Data", titleGraph, nBin, 0, 8192);
 
@@ -58,10 +58,11 @@ void computeHisto (string nameSource, double limInf, double limSup) {
     funcFit->SetParName(1,"Mean");
     funcFit->SetParName(2,"Std Dev");
     funcFit->SetParName(3,"Noise");
-    funcFit->SetParameter(0, 900);
-    funcFit->SetParameter(1, 3261);
-    funcFit->SetParameter(2, 15);
-    funcFit->SetParameter(3, 100);
+    funcFit->SetParameter(0, 50);
+    funcFit->SetParameter(1, 6757);
+    funcFit->SetParameter(2, 10);
+    funcFit->SetParameter(3, 0);
+
 
     histoSource->Fit("funcFit");
 
@@ -75,5 +76,5 @@ void computeHisto (string nameSource, double limInf, double limSup) {
 
 
 int main() {
-    computeHisto("228Th", 0, 8192);
+    computeHisto("228Th", 6710, 6810);
 }

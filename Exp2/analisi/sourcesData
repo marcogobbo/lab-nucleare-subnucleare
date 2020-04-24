@@ -1,3 +1,6 @@
+PER TUTTI RICORDARSI DI CAMBIARE IL NOME DEL FILE
+AD ESEMPIO 554.PDF PER IL 228TH
+
 ############
 ### 22Na ###
 ############
@@ -72,3 +75,80 @@
     funcFit->SetParameter(1, 3412);
     funcFit->SetParameter(2, 15);
     funcFit->SetParameter(3, 100);
+
+#############
+### 228Th ###
+#############
+    554
+    computeHisto("228Th", 500, 600);
+############
+    funcFit->SetParName(0,"Amp");
+    funcFit->SetParName(1,"Mean");
+    funcFit->SetParName(2,"Std Dev");
+    funcFit->SetParName(3,"Noise");
+    funcFit->SetParameter(0, 900);
+    funcFit->SetParameter(1, 550);
+    funcFit->SetParameter(2, 15);
+    funcFit->SetParameter(3, 100);
+
+
+#############
+### 228Th ###
+#############
+    1265
+    computeHisto("228Th", 1230, 1300);
+############
+    funcFit->SetParName(0,"Amp");
+    funcFit->SetParName(1,"Mean");
+    funcFit->SetParName(2,"Std Dev");
+    funcFit->SetParName(3,"Noise");
+    funcFit->SetParameter(0, 720);
+    funcFit->SetParameter(1, 1255);
+    funcFit->SetParameter(2, 20);
+    funcFit->SetParameter(3, 100);
+
+
+#############
+### 228Th ###
+#############
+    1454
+    computeHisto("228Th", 1400, 1500);
+############
+    funcFit->SetParName(0,"Amp");
+    funcFit->SetParName(1,"Mean");
+    funcFit->SetParName(2,"Std Dev");
+    funcFit->SetParName(3,"Noise");
+    funcFit->SetParameter(0, 200);
+    funcFit->SetParameter(1, 1450);
+    funcFit->SetParameter(2, 20);
+    funcFit->SetParameter(3, 10);
+
+#############
+### 228Th ###
+#############
+    1830
+    computeHisto("228Th", 1780, 1880);
+############
+    funcFit->SetParName(0,"Amp");
+    funcFit->SetParName(1,"Mean");
+    funcFit->SetParName(2,"Std Dev");
+    funcFit->SetParName(3,"Noise");
+    funcFit->SetParameter(0, 50);
+    funcFit->SetParameter(1, 1828);
+    funcFit->SetParameter(2, 10);
+    funcFit->SetParameter(3, 20);
+
+#############
+### 228Th ###
+#############
+    6760
+    computeHisto("228Th", 6710, 6810);
+############
+    funcFit->SetParName(0,"Amp");
+    funcFit->SetParName(1,"Mean");
+    funcFit->SetParName(2,"Std Dev");
+    funcFit->SetParName(3,"Noise");
+    funcFit->SetParameter(0, 50);
+    funcFit->SetParameter(1, 6757);
+    funcFit->SetParameter(2, 10);
+    funcFit->SetParameter(3, 0);
