@@ -5,6 +5,8 @@ AD ESEMPIO _test.pdf PER FARE DEI TEST
 ## UW878 ##
 ###########
     Picco 1
+    AREA: 47535
+    CONTEGGI: 518825 
 ###########
     TF1* funcFit = new TF1("funcFit", totalFit, 210, 300, 4);
     funcFit->SetParName(0,"Amp");
@@ -18,6 +20,8 @@ AD ESEMPIO _test.pdf PER FARE DEI TEST
 
 ###########
     Picco 2
+    AREA: 2697
+    CONTEGGI: 518825 
 ###########
     TF1* funcFit = new TF1("funcFit", totalFit, 360, 460, 4);
     funcFit->SetParName(0,"Amp");
@@ -32,6 +36,8 @@ AD ESEMPIO _test.pdf PER FARE DEI TEST
 
 ###########
     Picco 3
+    AREA: 55242
+    CONTEGGI: 518825 
 ###########
     TF1* funcFit = new TF1("funcFit", totalFit, 3490, 3590, 4);
     funcFit->SetParName(0,"Amp");
@@ -45,6 +51,8 @@ AD ESEMPIO _test.pdf PER FARE DEI TEST
 
 ###########
     Picco 4
+    AREA: 21551
+    CONTEGGI: 518825 
 ###########
     TF1* funcFit = new TF1("funcFit", totalFit, 6270, 6400, 4);
     funcFit->SetParName(0,"Amp");
@@ -58,6 +66,8 @@ AD ESEMPIO _test.pdf PER FARE DEI TEST
 
 ###########
     Picco 5
+    AREA: 19062
+    CONTEGGI: 518825 
 ###########
     TF1* funcFit = new TF1("funcFit", totalFit, 7160, 7250, 4);
     funcFit->SetParName(0,"Amp");
@@ -71,6 +81,8 @@ AD ESEMPIO _test.pdf PER FARE DEI TEST
 
 ###########
     Picco 6
+    AREA: 116
+    CONTEGGI: 518825 
 ###########
     TF1* funcFit = new TF1("funcFit", totalFit, 13560, 13650, 4);
     funcFit->SetParName(0,"Amp");

@@ -31,7 +31,8 @@ int main() {
         cout << "Errore nel caricare il file: " << fileName.c_str() << endl;
     };
 
-    gStyle->SetOptFit(1112);
+    //gStyle->SetOptFit(1112);
+    gStyle->SetOptStat("");
 
     TH1D* histoUW878 = new TH1D("Data", "UW878", 16384, 0, 16384);
 
@@ -47,25 +48,25 @@ int main() {
     histoUW878->SetFillColor(kYellow-10);
     histoUW878->GetXaxis()->SetTitle("Channels [mV]");
     histoUW878->GetYaxis()->SetTitle("Counts");
-    histoUW878->GetXaxis()->SetRangeUser(0, 16384);
+    histoUW878->GetXaxis()->SetRangeUser(210, 300);
 
-    /*TF1* funcFit = new TF1("funcFit", totalFit, 13560, 13650, 4);
+    TF1* funcFit = new TF1("funcFit", totalFit, 210, 300, 4);
     funcFit->SetParName(0,"Amp");
     funcFit->SetParName(1,"Mean");
     funcFit->SetParName(2,"Std Dev");
     funcFit->SetParName(3,"Noise");
-    funcFit->SetParameter(0, 14);
-    funcFit->SetParameter(1, 13610);
-    funcFit->SetParameter(2, 10);
-    funcFit->SetParameter(3, 0);
+    funcFit->SetParameter(0, 8000);
+    funcFit->SetParameter(1, 251);
+    funcFit->SetParameter(2, 15);
+    funcFit->SetParameter(3, 200);
 
-    funcFit->SetParLimits(0, 14, 15);*/
-    //histoUW878->Fit("funcFit");
+    histoUW878->Fit("funcFit");
+    cout << "AREA: " << histoUW878->Integral(245, 265) << endl;
     //canvasSource->SetLogy();
-    canvasSource->Print("graphs/spectreUW878/graph_UW878.pdf");
+    canvasSource->Print("graphsNoData/spectreUW878/graph_UW878_peak1.pdf");
 
     // Libero la memoria
     delete histoUW878;
-    //delete funcFit;
+    delete funcFit;
     delete canvasSource;
 }
