@@ -47,7 +47,7 @@ int main() {
     histoUW878->SetFillColor(kYellow-10);
     histoUW878->GetXaxis()->SetTitle("Channels [mV]");
     histoUW878->GetYaxis()->SetTitle("Counts");
-    histoUW878->GetXaxis()->SetRangeUser(13560, 13650);
+    histoUW878->GetXaxis()->SetRangeUser(0, 16384);
 
     /*TF1* funcFit = new TF1("funcFit", totalFit, 13560, 13650, 4);
     funcFit->SetParName(0,"Amp");
@@ -60,9 +60,9 @@ int main() {
     funcFit->SetParameter(3, 0);
 
     funcFit->SetParLimits(0, 14, 15);*/
-    histoUW878->Fit("funcFit");
-
-    canvasSource->Print("graphs/spectreUW878/graph_UW878_test.pdf");
+    //histoUW878->Fit("funcFit");
+    //canvasSource->SetLogy();
+    canvasSource->Print("graphs/spectreUW878/graph_UW878.pdf");
 
     // Libero la memoria
     delete histoUW878;

@@ -18,6 +18,8 @@ AD ESEMPIO 554.PDF PER IL 228TH
 ############
     Secondo Picco
     computeHisto("22Na", 3230, 3290);
+    AREA: 7718
+    CONTEGGI: 190440
 ############
     funcFit->SetParName(0,"Amp");
     funcFit->SetParName(1,"Mean");
@@ -34,6 +36,8 @@ AD ESEMPIO 554.PDF PER IL 228TH
 ############
     Primo Picco
     computeHisto("60Co", 2970, 3025);
+    AREA: 30994
+    CONTEGGI: 405631
 ############
     funcFit->SetParName(0,"Amp");
     funcFit->SetParName(1,"Mean");
@@ -50,6 +54,8 @@ AD ESEMPIO 554.PDF PER IL 228TH
 ############
     Secondo Picco
     computeHisto("60Co", 3365, 3460);
+    AREA: 27129
+    CONTEGGI: 405631
 ############
     funcFit->SetParName(0,"Amp");
     funcFit->SetParName(1,"Mean");
@@ -81,6 +87,8 @@ AD ESEMPIO 554.PDF PER IL 228TH
 #############
     554
     computeHisto("228Th", 500, 600);
+    AREA: 4491
+    CONTEGGI: 51288
 ############
     funcFit->SetParName(0,"Amp");
     funcFit->SetParName(1,"Mean");
@@ -97,6 +105,8 @@ AD ESEMPIO 554.PDF PER IL 228TH
 #############
     1265
     computeHisto("228Th", 1230, 1300);
+    AREA: 568
+    CONTEGGI: 51288
 ############
     funcFit->SetParName(0,"Amp");
     funcFit->SetParName(1,"Mean");
@@ -113,6 +123,8 @@ AD ESEMPIO 554.PDF PER IL 228TH
 #############
     1454
     computeHisto("228Th", 1400, 1500);
+    AREA: 1276
+    CONTEGGI: 51288
 ############
     funcFit->SetParName(0,"Amp");
     funcFit->SetParName(1,"Mean");
@@ -128,6 +140,8 @@ AD ESEMPIO 554.PDF PER IL 228TH
 #############
     1830
     computeHisto("228Th", 1780, 1880);
+    AREA: 278
+    CONTEGGI: 51288
 ############
     funcFit->SetParName(0,"Amp");
     funcFit->SetParName(1,"Mean");
@@ -143,6 +157,8 @@ AD ESEMPIO 554.PDF PER IL 228TH
 #############
     6760
     computeHisto("228Th", 6710, 6810);
+    AREA: 385
+    CONTEGGI: 51288
 ############
     funcFit->SetParName(0,"Amp");
     funcFit->SetParName(1,"Mean");

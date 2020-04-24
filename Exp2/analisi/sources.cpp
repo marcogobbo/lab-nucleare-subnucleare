@@ -32,10 +32,10 @@ void computeHisto (string nameSource, double limInf, double limSup) {
     // Imposto il numero di bin
     const int nBin = 8192;
 
-    gStyle->SetOptFit(1112);
-    
+    //gStyle->SetOptFit(1112);
+    gStyle->SetOptStat("");
     TString titleGraph = nameSource;
-    TString namePDF = "graphs/spectreSources/graph_" + nameSource + "_6760.pdf";
+    TString namePDF = "graphsNoData/spectreSources/graph_" + nameSource + "_6760.pdf";
 
     TH1D* histoSource = new TH1D("Data", titleGraph, nBin, 0, 8192);
 
@@ -65,6 +65,7 @@ void computeHisto (string nameSource, double limInf, double limSup) {
 
 
     histoSource->Fit("funcFit");
+    cout << "AREA: " << histoSource->Integral(6745, 6770) << endl;
 
     canvasSource->Print(namePDF);
 

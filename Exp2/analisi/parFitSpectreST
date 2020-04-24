@@ -62,3 +62,19 @@
     funcFit->SetParLimits(5, 1308, 1320);
     funcFit->SetParLimits(6, 0, 30);
 
+#######
+# 100 #
+#######
+
+    funcFit->SetParameter(0, 8000);
+    funcFit->SetParameter(1, 1290);
+    funcFit->SetParameter(2, 27);
+    funcFit->SetParameter(3, 100);
+    funcFit->SetParameter(4, 500);
+    funcFit->SetParameter(5, 1313);
+    funcFit->SetParameter(6, 40);
+
+    funcFit->SetParLimits(0, 7900, 8000);
+    funcFit->SetParLimits(5, 1308, 1320);
+    funcFit->SetParLimits(6, 0, 30);
+

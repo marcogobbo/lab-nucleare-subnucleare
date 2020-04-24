@@ -53,7 +53,7 @@ void computeHisto (string valueST, int bin, double limInf, double limSup) {
     histoST->GetYaxis()->SetTitle("Counts");
     histoST->GetXaxis()->SetRangeUser(limInf, limSup);
 
-    /*TF1* funcFit = new TF1("funcFit", totalFit, limInf, limSup, 4);
+    TF1* funcFit = new TF1("funcFit", totalFit, limInf, limSup, 4);
     funcFit->SetParName(0,"Amp");
     funcFit->SetParName(1,"Mean");
     funcFit->SetParName(2,"Std Dev");
@@ -64,13 +64,13 @@ void computeHisto (string valueST, int bin, double limInf, double limSup) {
 
     // Blocco da sostituire con i dati presenti in parFitSpectreST.txt
     //INIZIO
-    funcFit->SetParameter(0, 13500);
-    funcFit->SetParameter(1, 1258);
-    funcFit->SetParameter(2, 10);
-    funcFit->SetParameter(3, 100);*/
-    /*funcFit->SetParameter(4, 1100);
+    funcFit->SetParameter(0, 1000);
+    funcFit->SetParameter(1, 1248);
+    funcFit->SetParameter(2, 55);
+    funcFit->SetParameter(3, 100);
+    funcFit->SetParameter(4, 1000);
     funcFit->SetParameter(5, 1275);
-    funcFit->SetParameter(6, 20);*/
+    funcFit->SetParameter(6, 50);
 
     /*funcFit->SetParLimits(0, , );
     funcFit->SetParLimits(5, , );
@@ -78,13 +78,13 @@ void computeHisto (string valueST, int bin, double limInf, double limSup) {
     // FINE
 
 
-    //histoST->Fit("funcFit");
+    histoST->Fit("funcFit");
 
     canvasST->Print(namePDF);
 
     // Libero la memoria
     delete histoST;
-    //delete funcFit;
+    delete funcFit;
     delete canvasST;
 }
 
@@ -95,5 +95,5 @@ int main() {
     //computeHisto("020", 8192, 1220, 1300);
     //computeHisto("030", 8192, 1170, 1400);
     //computeHisto("060", 8192, 1200, 1400);
-    computeHisto("100", 8192, 0, 8192);
+    computeHisto("100", 8192, 1100, 1400);
 }
