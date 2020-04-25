@@ -33,8 +33,8 @@ int main() {
         cout << "Errore nel caricare il file: " << fileName1.c_str() << endl;
     };
 
-    gStyle->SetOptFit(1112);
-    //gStyle->SetOptStat("");
+    //gStyle->SetOptFit(1112);
+    gStyle->SetOptStat("");
 
     TH1D* histoYYYYY = new TH1D("Data", "YYYYY", 16384, 0, 16384);
 
@@ -52,7 +52,7 @@ int main() {
     histoYYYYY->GetYaxis()->SetTitle("Counts");
     histoYYYYY->GetXaxis()->SetRangeUser(360, 460);
 
-    /*TF1* funcFit = new TF1("funcFit", totalFit, 1530, 1610, 13);
+    TF1* funcFit = new TF1("funcFit", totalFit, 1530, 1610, 13);
     funcFit->SetParName(0,"Amp");
     funcFit->SetParName(1,"Mean");
     funcFit->SetParName(2,"Std Dev");
@@ -71,9 +71,9 @@ int main() {
     funcFit->SetParameter(11, 440);
     funcFit->SetParameter(12, 7);
     
-    histoYYYYY->Fit("funcFit");*/
+    histoYYYYY->Fit("funcFit");
 
-    canvasSource->Print("graphs/spectreYYYYY/graph_YYYYY_peak10.pdf");
+    canvasSource->Print("graphsNoData/spectreYYYYY/graph_YYYYY_peak9.pdf");
 
     delete histoYYYYY;
     delete canvasSource;

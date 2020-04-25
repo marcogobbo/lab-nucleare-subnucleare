@@ -13,7 +13,7 @@ double pol0 (double*x, double* par) {
 }
 
 double totalFit (double* x, double* par) {
-    return gaussFit(x, par) + pol0(x, &par[3]) + gaussFit(x, &par[4]) + gaussFit(x, &par[7]) + gaussFit(x, &par[10]);
+    return gaussFit(x, par) + pol0(x, &par[3]) + gaussFit(x, &par[4]) + gaussFit(x, &par[7]);
 }
 
 
@@ -33,8 +33,8 @@ int main() {
         cout << "Errore nel caricare il file: " << fileName1.c_str() << endl;
     };
 
-    gStyle->SetOptFit(1112);
-    //gStyle->SetOptStat("");
+    //gStyle->SetOptFit(1112);
+    gStyle->SetOptStat("");
 
     TH1D* histoYYYYY = new TH1D("Data", "YYYYY", 16384, 0, 16384);
 
@@ -50,30 +50,21 @@ int main() {
     histoYYYYY->SetFillColor(kYellow-10);
     histoYYYYY->GetXaxis()->SetTitle("Channels [mV]");
     histoYYYYY->GetYaxis()->SetTitle("Counts");
-    histoYYYYY->GetXaxis()->SetRangeUser(360, 460);
+    histoYYYYY->GetXaxis()->SetRangeUser(1530, 1610);
 
-    /*TF1* funcFit = new TF1("funcFit", totalFit, 1530, 1610, 13);
+    TF1* funcFit = new TF1("funcFit", totalFit, 1530, 1610, 4);
     funcFit->SetParName(0,"Amp");
     funcFit->SetParName(1,"Mean");
     funcFit->SetParName(2,"Std Dev");
     funcFit->SetParName(3,"Noise");
-    funcFit->SetParameter(0, 800);
-    funcFit->SetParameter(1, 390);
+    funcFit->SetParameter(0, 710);
+    funcFit->SetParameter(1, 1568);
     funcFit->SetParameter(2, 5);
-    funcFit->SetParameter(3, 300);
-    funcFit->SetParameter(4, 1800);
-    funcFit->SetParameter(5, 405);
-    funcFit->SetParameter(6, 5);
-    funcFit->SetParameter(7, 1400);
-    funcFit->SetParameter(8, 420);
-    funcFit->SetParameter(9, 5);
-    funcFit->SetParameter(10, 1400);
-    funcFit->SetParameter(11, 440);
-    funcFit->SetParameter(12, 7);
+    funcFit->SetParameter(3, 100);
     
-    histoYYYYY->Fit("funcFit");*/
+    histoYYYYY->Fit("funcFit");
 
-    canvasSource->Print("graphs/spectreYYYYY/graph_YYYYY_peak10.pdf");
+    canvasSource->Print("graphsNoData/spectreYYYYY/graph_YYYYY_peak8.pdf");
 
     delete histoYYYYY;
     delete canvasSource;
