@@ -50,9 +50,9 @@ int main() {
     histoYYYYY->SetFillColor(kYellow-10);
     histoYYYYY->GetXaxis()->SetTitle("Channels [mV]");
     histoYYYYY->GetYaxis()->SetTitle("Counts");
-    histoYYYYY->GetXaxis()->SetRangeUser(1525, 1700);
+    histoYYYYY->GetXaxis()->SetRangeUser(1350, 1525);
 
-    /*TF1* funcFit = new TF1("funcFit", totalFit, 1350, 1525, 10);
+    TF1* funcFit = new TF1("funcFit", totalFit, 1350, 1525, 10);
     funcFit->SetParName(0,"Amp");
     funcFit->SetParName(1,"Mean");
     funcFit->SetParName(2,"Std Dev");
@@ -68,9 +68,9 @@ int main() {
     funcFit->SetParameter(8, 1500);
     funcFit->SetParameter(9, 5);
     
-    histoYYYYY->Fit("funcFit");*/
+    histoYYYYY->Fit("funcFit");
 
-    canvasSource->Print("graphs/spectreYYYYY/graph_YYYYY_peak8.pdf");
+    canvasSource->Print("graphs/spectreYYYYY/graph_YYYYY_peak7.pdf");
 
     delete histoYYYYY;
     delete canvasSource;
