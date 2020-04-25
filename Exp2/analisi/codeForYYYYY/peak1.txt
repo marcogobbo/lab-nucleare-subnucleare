@@ -13,7 +13,7 @@ double pol0 (double*x, double* par) {
 }
 
 double totalFit (double* x, double* par) {
-    return gaussFit(x, par) + pol0(x, &par[3]) + gaussFit(x, &par[4]);
+    return gaussFit(x, par) + pol0(x, &par[3]) + gaussFit(x, &par[4])+ gaussFit(x, &par[7]);
 }
 
 
@@ -50,25 +50,30 @@ int main() {
     histoYYYYY->SetFillColor(kYellow-10);
     histoYYYYY->GetXaxis()->SetTitle("Channels [mV]");
     histoYYYYY->GetYaxis()->SetTitle("Counts");
-    histoYYYYY->GetXaxis()->SetRangeUser(4850, 4950);
+    histoYYYYY->GetXaxis()->SetRangeUser(300, 380);
 
-    TF1* funcFit = new TF1("funcFit", totalFit, 4850, 4950, 7);
+    TF1* funcFit = new TF1("funcFit", totalFit, 210, 300, 10);
     funcFit->SetParName(0,"Amp");
     funcFit->SetParName(1,"Mean");
     funcFit->SetParName(2,"Std Dev");
     funcFit->SetParName(3,"Noise");
-    funcFit->SetParameter(0, 1450);
-    funcFit->SetParameter(1, 4903);
-    funcFit->SetParameter(2, 12);
-    funcFit->SetParameter(3, 100);
-    funcFit->SetParameter(4, 50);
-    funcFit->SetParameter(5, 4865);
-    funcFit->SetParameter(6, 7);
-    
+    funcFit->SetParName(4,"Amp");
+    funcFit->SetParName(5,"Mean");
+    funcFit->SetParName(6,"Std Dev");
+    funcFit->SetParameter(0, 3000);
+    funcFit->SetParameter(1, 337);
+    funcFit->SetParameter(2, 3);
+    funcFit->SetParameter(3, 300);
+    funcFit->SetParameter(4, 4500);
+    funcFit->SetParameter(5, 350);
+    funcFit->SetParameter(6, 5);
+    funcFit->SetParameter(7, 500);
+    funcFit->SetParameter(8, 328);
+    funcFit->SetParameter(9, 6);
 
     histoYYYYY->Fit("funcFit");
 
-    canvasSource->Print("graphsNoData/spectreYYYYY/graph_YYYYY_peak5.pdf");
+    canvasSource->Print("graphsNoData/spectreYYYYY/graph_YYYYY_peak1.pdf");
 
     delete histoYYYYY;
     delete canvasSource;
