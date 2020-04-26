@@ -7,6 +7,7 @@
 \usepackage{amsthm}
 \usepackage{physics}
 \usepackage{geometry}
+\usepackage{latexsym}
 
 \newcommand*{\unit}[1]{\ensuremath{\mathrm{\,#1}}}
 
@@ -21,7 +22,7 @@ La seguente esperienza ha come scopo quello di studiare la caratterizzazione di 
 \subsection{Strumentazione}
 \begin{itemize}
 \item Crate NIM per alimentazione di elettronica standard
-\item Rivelatore coassiale HPGe 
+\item Rivelatore coassiale HPGe (Ortec Coaxial HPGe Detector GEM20P)
 \item Generatore HV Label Model 8124 per tensione di polarizzazione
 \item Amplificatore CAEN Model N968
 \item ADC/MCA CAEN Model N957
@@ -42,7 +43,7 @@ Il segnale è acquisito mediante una catena di lettura classica. In questo caso 
     \caption{Shaping time 30 $\mu$s}
 \end{figure}
 
-Per i grafici relativi alla tensione di polarizzazione è stato necessario effettuare uno "zoom" sulla zona dove si registra il picco. In questa zona, il picco è stato estrapolato attraverso una funzione gaussiana sommata ad un polinomio di grado 0, che tiene conto del fondo. Nei grafici relativi allo shaping time il procedimento è stato analogo, ma nel fittare la funzione è stato necessario considerare due gaussiane, con la seconda che ci ha permesso di considerare nel fit il pile-up, fenomeno per il quale il rivelatore non è "pronto" a ricevere due misure successive, e va quindi a sommare un evento sulla coda di quello precedente, andando in alcuni casi a deformare il picco in questione. Attraverso questo processo siamo arrivati ad avere a disposizione 16 valori per la tensione di polarizzazione e 6 per lo shaping time. Per entrambe le raccolte dati, andiamo a costruire il grafico della risoluzione in funzione della tensione di polarizzazione e dello shaping time, rispettivamente. La risoluzione è stata calcolata con la seguente relazione: 
+Per i grafici relativi alla tensione di polarizzazione è stato necessario effettuare uno "zoom" sulla zona dove si registra il picco. In questa zona, il picco è stato estrapolato attraverso una funzione gaussiana sommata ad un polinomio di grado 0, che tiene conto del fondo. Nei grafici relativi allo shaping time il procedimento è stato analogo, ma nel fittare la funzione è stato necessario considerare, oltre al polinomio di grado 0 che continua a considerare il fondo, due gaussiane, con la seconda che ci ha permesso di considerare nel fit il contributo dovuto al pile-up, fenomeno per il quale il rivelatore non è "pronto" a ricevere due misure successive, e va quindi a sommare un evento sulla coda di quello precedente, andando in alcuni casi a deformare il picco in questione. Attraverso questo processo siamo arrivati ad avere a disposizione 16 valori per la tensione di polarizzazione e 6 per lo shaping time. Per entrambe le raccolte dati, andiamo a costruire il grafico della risoluzione in funzione della tensione di polarizzazione e dello shaping time, rispettivamente. La risoluzione è stata calcolata con la seguente relazione: 
 
 \begin{equation}
 	R=\frac{\textrm{FWHM}}{\textrm{Channel}}
@@ -54,7 +55,11 @@ Per i grafici relativi alla tensione di polarizzazione è stato necessario effet
     \caption{Risoluzione in funzione della tensione di polarizzazione}
 \end{figure}
 
--inserire grafico risoluzione st-
+\begin{figure}[h!]
+    \centering
+    \includegraphics[scale=0.45]{grafici/risoluzionest}
+    \caption{Risoluzione in funzione dello shaping time}
+\end{figure}
 
 I grafici sono stati interpolati con la seguente funzione: 
 \begin{equation}
@@ -62,7 +67,7 @@ I grafici sono stati interpolati con la seguente funzione:
 \end{equation}
 con x che indica in un caso la tensione e nell'altro lo shaping time.
 
-Il nostro obiettivo era di ricavare i valori che minimizzassero la risoluzione. Nel caso della tensione di polarizzazione la risoluzione decresce, fino ad assestarsi intorno ad un valore costante oltre i 4000V, che può quindi essere preso come valore di riferimento. Nel caso dello shaping time la risoluzione ha un minimo in corrispondenza di uno shaping time di 2 $\mu$s, ed oltre quel valore torna a crescere, a causa del pile-up che diventa sempre più significativo.
+Il nostro obiettivo era di ricavare i valori che minimizzassero la risoluzione. Nel caso della tensione di polarizzazione la risoluzione decresce, fino ad assestarsi intorno ad un valore costante oltre i 4000V, che può quindi essere preso come valore di riferimento. Nel caso dello shaping time la risoluzione ha un minimo in corrispondenza di uno shaping time di 2 $\mu$s, ed oltre quel valore torna a crescere, a causa del pile-up che diventa sempre più significativo. Sottolineaiamo che in questo caso non è stato inserito il valore riferito ad uno shaping time di 100 $\mu$s, non essendo stato possibile identificare con precisione la $\sigma$ di quel picco.
 \subsection{Calibrazione in energia del rivelatore}
 \subsubsection{Curva di calibrazione}
 Abbiamo a disposizione gli spettri di 3 sorgenti note: 22Na, 60Co e 228Th. Gli spettri sono riportati in appendice. Come fatto precedentemente, andiamo ad effettuare uno "zoom" su ognuno dei picchi per poterne ottenere la posizione e la sigma. Per il torio in particolar modo, abbiamo tenuto conto solo dei picchi più intensi e distinguibili. Di seguito riportiamo un esempio:
@@ -127,15 +132,205 @@ Per interpolare il grafico è stata utilizzata la relazione
 Con a, b e c che rispettivamente indicano i contributi legati alla statistica, alla raccolta delle cariche e al rumore. Sono riportati di seguito i valori:
 
 $$
-	a=1.63 \times 10{-5} \pm 2.20 \times 10^{-2}
+	a=1.63 \times 10{-5} \pm 2.20 \times 10^{-2} [\sqrt{KeV}]
 $$
 $$
 	b=9.01 \times 10^{-4} \pm 7.66 \times 10{-5}
 $$
 $$
-	c= 2.29 \pm 3.38 \times 10^{-2}
+	c= 2.29 \pm 3.38 \times 10^{-2} [KeV]
 $$
 
 Da cui risulta evidente che il contributo principale alla risoluzione sia legato al rumore elettronico.
 
+\subsubsection{Efficienza}
+Per lo studio dell'efficienza assoluta sono stati considerati il numero di quanti totali emessi dalla sorgente, tenendo conto dell'attività della stessa e della durata della misura, ed il numero di conteggi riferito ad ogni picco. L'efficienza assoluta di picco è stata dunque calcolata con la seguente formula:
+
+\begin{equation}
+	Efficienza=\frac{Conteggi picco}{Numero di eventi totali}=\frac{Conteggi picco}{Attivita \cdot durata misura}
+\end{equation}
+
+I valori ottenuti sono stati normalizzati per il Branching Ratio (B.R.) di ogni singolo decadimento, per rendere coerente il grafico. Il grafico viene riportato in scala logaritmica, e la funzione empirica utilizzata per interpolarlo è:
+
+\begin{equation}
+	\ln{Efficienza}=a + b\ln{Energia} + c\ln^{2}{Energia}
+\end{equation}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.45]{grafici/efficienzasources}
+    \caption{Efficienza in funzione di E}
+\end{figure}
+
+L'andamento dell'efficienza non è quello atteso. Alcuni punti si discostano dall'andamento che prevede l'efficienza assoluta del rivelatore diminuire all'aumentare dell'energia, non adattandosi al modello teorico. Non è stato possibile attribuire una incertezza precisa alle misure attraverso gli strumenti di ROOT, ed anche questo ha contribuito alla non riuscita della stima dell'efficienza del rivelatore.
+
+\section{Parte 2}
+\subsection{Strumentazione}
+\begin{itemize}
+\item Crate NIM Ortec Modle 4001A
+\item Rivelatore coassiale HPGe (Silena)
+\item Generatore HV Ortec Model 659 per tensione di polarizzazione
+\item Amplificatore Ortec Model 570
+\item ADC/MCA Ortec 920E
+\item Sorgente multigamma
+\item Sorgente ignota
+\end{itemize}
+\subsection{Calibrazione in energia del rivelatore}
+\subsubsection{Curva di calibrazione}
+Il segnale è acquisito, come della parte 1 dell'esperienza, da una catena di lettura classica, con i componenti integrati nello stesso modo. Come prima cosa, è nostra necessita costruire una curva di calibrazione Energia vs. Canali. Allo scopo viene utilizzata una sorgente multigamma: la sorgente è composta da diversi radionuclidi, ognuno con la sua attività ed una energia tabulata per i gamma emessi. Vengono calcolate, per ogni radionuclide, le attività riferite al giorno in cui è stata effettuata la misura. Viene utilizzata la formula del decadimento:
+
+\begin{equation}
+	A(t)=A_{0}e^{-t/\tau}
+\end{equation}
+
+dove $A_{0}$ rappresenta l'attività al tempo 0 del radionuclide, indicata su una scheda di certificazione, e $\tau$ è una caratteristica legata al tempo di dimezzamento del radionuclide. Al giorno della misura, risultano attivi i seguenti radionuclidi:
+
+\begin{center}
+    \begin{tabular}{cccc}
+        \toprule
+        Nuclide & $A_{0}$[Bq] & $\bar{A}$[Bq] & $E_{\gamma}$[MeV]\\
+        \midrule
+         241-Am & $3.45 \times 10^3$ & 3410 & 0.060\\
+	  109-Cd & $1.58 \times 10^4$ & 322 & 0.088\\
+	  137-Cs & $2.72 \times 10^3$ & 2300 & 0.662\\
+	  60-Co & $3.21 \times 10^3$ & 1284 & 1.173\\
+	  60-Co & $3.21 \times 10^3$ & 1284 & 1.333\\
+        \bottomrule
+    \end{tabular}\\
+\end{center}
+
+A questo punto, viene analizzato lo spettro della sorgente multigamma utilizzata, individuando i picchi e, analogamente alla parte 1, effettuando uno "zoom" per individuare la posizione del picco e la relativa $\sigma$:
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.45]{grafici/piccouw878}
+    \caption{Uno dei picchi individuati}
+\end{figure}
+
+Vengono individuati 6 picchi, uno dei quali corrisponde ad una energia di 2505 KeV. L'andamento della curva di calibrazione è il seguente:
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.45]{grafici/rettacalibrazionemultigamma}
+    \caption{Energia vs. Canali}
+\end{figure}
+
+Si ottengono i seguenti parametri:
+
+$$
+	m=0.18 \pm 7.19 \times 10^{-5}\, \unit{Kev/V}
+$$
+$$
+	q=13.35 \pm 0.28\, \unit{Kev}
+$$
+L'andamento della curva è chiaramente lineare. Il picco presente a 2505 KeV non è fra quelli attesi nella misura. La sua origine è dovuta al fatto che in alcuni casi la risoluzione temporale del rivelatore non è sufficientemente bassa da distinguere in maniera precisa due eventi successivi, come sono in questo caso l'emissione dei due gamma della sorgente di 60-Co. In questi casi il rivelatore legge i due eventi come un evento singolo, registrando un'energia pari alla somma dei due gamma del cobalto, circa pari a 2500 KeV.
+
+\subsubsection{Risoluzione}
+Analogamente alla parte 1, utilizziamo la relazione (1) per calcolare la risoluzione di ogni picco. Utilizziamo invece la relazione (4) per interpolare il grafico ottenuto:
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.45]{grafici/risoluzionemultigamma}
+    \caption{Risoluzione in funzione di E}
+\end{figure}
+
+Con a, b e c che rispettivamente indicano i contributi legati alla statistica, alla raccolta delle cariche e al rumore. Sono riportati di seguito i valori:
+
+$$
+	a=2.08 \times 10^{-2} \pm 1.17 \times 10^{-2} [\sqrt{KeV}]
+$$
+$$
+	b=9.76 \times 10^{-4} \pm 2.02 \times 10^{-4}
+$$
+$$
+	c= 1.15 \pm 4.69 \times 10^{-2} [KeV]
+$$
+
+Anche in questo caso il contributo più rilevante è quello legato al rumore elettronico.
+
+\subsubsection{Efficienza}
+Sono state utilizzate la relazione (5) per il calcolo dell'efficienza assoluta di ogni picco, normalizzando anche in questo caso per il Branching Ratio, e la relazione (6) per interpolare il grafico:
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.45]{grafici/efficienzamultigamma}
+    \caption{Efficienza in funzione di E}
+\end{figure}
+
+In questo caso si può notare come uno solo dei punti considerati, quello corrispondente al picco relativo al 109-Cd, si discosti in maniera importante dall'andamento atteso. Risulta più evidente rispetto alla parte 1 l'andamento decrescente dell'efficienza all'aumentare dell'energia, suppur anche in questo caso non sia stato possibile determinare con precisione una incertezza per le varie misure.
+
+\subsection{Sorgente ignota}
+\subsubsection{Riconoscimento}
+A nostra disposizione abbiamo una acquisizione di dati senza sorgente ed una con la sorgente. In questo modo, sottraendo i conteggi senza sorgente per ogni canale a quelli con la sorgente, siamo in grado di ottenere i contributi effettivi della sorgente stessa. Andiamo ad ottenere il seguente spettro:
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.45]{grafici/sorgenteignota}
+    \caption{Spettro sorgente ignota}
+\end{figure}
+
+Il numero di picchi è molto elevato: andiamo ad analizzare principalmente quelli più intensi ed evidenti. Come nelle parti precedenti, la posizione del picco con la relativa $\sigma$ vengono ricavate interpolando con una gaussiana il grafico ingrandito nella regione di interesse. Attraverso i canali individuati risaliamo alle energie corrispondenti, utilizzando la curva di calibrazione ricavata nella sezione 3.2.1. Nella seguente tabella indichiamo nella terza colonna il nuclide responsabile dell'emissione del gamma di quella precisa energia:
+
+\begin{center}
+    \begin{tabular}{ccc}
+        \toprule
+        Canale [V] & Energia[KeV] & Nuclide\\
+        \midrule
+	  338 & 75.20 & 228-Th\\
+	  350 & 77.45 & 228-Ac\\
+	  390 & 84.78 & 228-Th\\
+	  633 & 129.39 & 228-Ac\\
+	  1232 & 239.05 & 212-Pb\\
+	  1244 & 241.25 & 224-Ra\\
+	  1404 & 270.56 & 228-Ac\\
+	  1443 & 277.71 & 208-Tl\\
+	  1567 & 300.42 & 212-Pb\\
+	  1775 & 338.53 & 228-Ac\\
+	  3111 & 583.29 & 208-Tl\\
+	  4902 & 911.40 & 228-Ac\\
+	  5195 & 965.07 & 228-Ac\\
+	  5218 & 969.29 & 228-Ac\\
+	  14200 & 2614.79 & 208-Tl\\
+        \bottomrule
+    \end{tabular}\\
+\end{center}
+
+Tutti i nuclidi individuati fanno parte della catena radioattiva del torio. Considerando che la sorgente utilizzata non può avere un tempo di dimezzamento troppo breve, altrimenti la sorgente si esaurirebbe velocemente, è ipotizzabile che la sorgente in questione sia del 228-Ra.
+
+\subsubsection{Risoluzione}
+
+Anche in questo caso andiamo a calcolare l'andamento della risoluzione del rivelatore in funzione dell'energia, usando la relazione (1) per calcolarla e la relazione (4) per interpolare il grafico:
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.45]{grafici/risoluzioneignota}
+    \caption{Risoluzione in funzione di E}
+\end{figure}
+
+Con a, b e c che rispettivamente indicano i contributi legati alla statistica, alla raccolta delle cariche e al rumore. Sono riportati di seguito i valori:
+
+$$
+	a=3.29 \times 10^{-2} \pm 9.87 \times 10^{-4} [\sqrt{KeV}]
+$$
+$$
+	b=6.53 \times 10^{-4} \pm 2.86 \times 10^{-5}
+$$
+$$
+	c= 1.14 \pm 8.03 \times 10^{-3} [KeV]
+$$
+
+\subsubsection{Determinazione del fattore di Fano}
+
+Nella relazione (4) abbiamo indicato come il coefficiente a del nostro modello fosse relativo alla componente statistica della risoluzione. Più precisamente, si può definire:
+$$
+	a=\sqrt{2.35 \cdot F \cdot w}
+$$
+
+dove F è il fattore di Fano e w rappresenta invece il lavoro necessario per produrre una coppia elettrone-lacuna, che nei rivelatori al germanio ha un valore di 2.96 eV. Pertanto abbiamo:
+
+$$
+	F=\frac{a^2}{2.35 \cdot w}
+$$
+
+Il valore del fattore di Fano calcolato è dunque 0.156 $\pm$ 0.009.
 \end{document}
