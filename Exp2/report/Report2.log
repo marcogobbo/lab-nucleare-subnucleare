@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2020.3.24)  26 APR 2020 17:12
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2020.3.24)  27 APR 2020 11:13
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -349,117 +349,137 @@ File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 <grafici/hv.jpg, id=11, 562.60187pt x 342.78062pt>
 File: grafici/hv.jpg Graphic file (type jpg)
 <use grafici/hv.jpg>
-Package pdftex.def Info: grafici/hv.jpg  used on input line 36.
+Package pdftex.def Info: grafici/hv.jpg  used on input line 45.
 (pdftex.def)             Requested size: 253.1685pt x 154.24985pt.
 <grafici/st.jpg, id=12, 567.11874pt x 337.26pt>
 File: grafici/st.jpg Graphic file (type jpg)
 <use grafici/st.jpg>
-Package pdftex.def Info: grafici/st.jpg  used on input line 42.
+Package pdftex.def Info: grafici/st.jpg  used on input line 51.
 (pdftex.def)             Requested size: 255.20107pt x 151.7656pt.
  [2 <./grafici/hv.jpg> <./grafici/st.jpg>]
 <grafici/risoluzionehv.jpg, id=17, 548.0475pt x 381.92688pt>
 File: grafici/risoluzionehv.jpg Graphic file (type jpg)
 <use grafici/risoluzionehv.jpg>
-Package pdftex.def Info: grafici/risoluzionehv.jpg  used on input line 54.
+Package pdftex.def Info: grafici/risoluzionehv.jpg  used on input line 63.
 (pdftex.def)             Requested size: 246.6191pt x 171.8655pt.
 <grafici/risoluzionest.jpg, id=18, 557.08125pt x 388.95313pt>
 File: grafici/risoluzionest.jpg Graphic file (type jpg)
 <use grafici/risoluzionest.jpg>
-Package pdftex.def Info: grafici/risoluzionest.jpg  used on input line 60.
+Package pdftex.def Info: grafici/risoluzionest.jpg  used on input line 69.
 (pdftex.def)             Requested size: 250.68425pt x 175.02728pt.
  [3 <./grafici/risoluzionehv.jpg> <./grafici/risoluzionest.jpg>]
-<grafici/piccoNa.jpg, id=23, 567.11874pt x 340.27126pt>
+<grafici/sodiocompleto.jpg, id=23, 527.9725pt x 332.74312pt>
+File: grafici/sodiocompleto.jpg Graphic file (type jpg)
+<use grafici/sodiocompleto.jpg>
+Package pdftex.def Info: grafici/sodiocompleto.jpg  used on input line 89.
+(pdftex.def)             Requested size: 237.58542pt x 149.73302pt.
+<grafici/cobaltocompleto.jpg, id=24, 516.42938pt x 329.23pt>
+File: grafici/cobaltocompleto.jpg Graphic file (type jpg)
+<use grafici/cobaltocompleto.jpg>
+Package pdftex.def Info: grafici/cobaltocompleto.jpg  used on input line 95.
+(pdftex.def)             Requested size: 232.39107pt x 148.15211pt.
+<grafici/toriocompleto.jpg, id=25, 520.44438pt x 332.24126pt>
+File: grafici/toriocompleto.jpg Graphic file (type jpg)
+<use grafici/toriocompleto.jpg>
+Package pdftex.def Info: grafici/toriocompleto.jpg  used on input line 101.
+(pdftex.def)             Requested size: 234.1978pt x 149.50717pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[4 <./grafici/sodiocompleto.jpg> <./grafici/cobaltocompleto.jpg>]
+<grafici/piccoNa.jpg, id=30, 567.11874pt x 340.27126pt>
 File: grafici/piccoNa.jpg Graphic file (type jpg)
 <use grafici/piccoNa.jpg>
-Package pdftex.def Info: grafici/piccoNa.jpg  used on input line 77.
+Package pdftex.def Info: grafici/piccoNa.jpg  used on input line 109.
 (pdftex.def)             Requested size: 255.20107pt x 153.12064pt.
-<grafici/piccoCo.jpg, id=24, 575.14874pt x 348.80313pt>
+<grafici/piccoCo.jpg, id=31, 575.14874pt x 348.80313pt>
 File: grafici/piccoCo.jpg Graphic file (type jpg)
 <use grafici/piccoCo.jpg>
-Package pdftex.def Info: grafici/piccoCo.jpg  used on input line 83.
+Package pdftex.def Info: grafici/piccoCo.jpg  used on input line 115.
 (pdftex.def)             Requested size: 258.81454pt x 156.95995pt.
-<grafici/piccoTh.jpg, id=25, 579.16376pt x 351.81438pt>
+ [5 <./grafici/toriocompleto.jpg> <./grafici/piccoNa.jpg>]
+<grafici/piccoTh.jpg, id=35, 579.16376pt x 351.81438pt>
 File: grafici/piccoTh.jpg Graphic file (type jpg)
 <use grafici/piccoTh.jpg>
-Package pdftex.def Info: grafici/piccoTh.jpg  used on input line 89.
+Package pdftex.def Info: grafici/piccoTh.jpg  used on input line 121.
 (pdftex.def)             Requested size: 260.62128pt x 158.315pt.
- [4 <./grafici/piccoNa.jpg> <./grafici/piccoCo.jpg>]
-<grafici/rettacalibrazionesources.jpg, id=30, 547.04375pt x 383.93437pt>
+<grafici/rettacalibrazionesources.jpg, id=36, 547.04375pt x 383.93437pt>
 File: grafici/rettacalibrazionesources.jpg Graphic file (type jpg)
 <use grafici/rettacalibrazionesources.jpg>
 Package pdftex.def Info: grafici/rettacalibrazionesources.jpg  used on input li
-ne 97.
+ne 129.
 (pdftex.def)             Requested size: 246.1674pt x 172.76886pt.
- [5 <./grafici/piccoTh.jpg> <./grafici/rettacalibrazionesources.jpg>]
-<grafici/risoluzionesources.jpg, id=38, 545.03625pt x 381.425pt>
+ [6 <./grafici/piccoCo.jpg> <./grafici/piccoTh.jpg>]
+<grafici/risoluzionesources.jpg, id=40, 545.03625pt x 381.425pt>
 File: grafici/risoluzionesources.jpg Graphic file (type jpg)
 <use grafici/risoluzionesources.jpg>
-Package pdftex.def Info: grafici/risoluzionesources.jpg  used on input line 122
+Package pdftex.def Info: grafici/risoluzionesources.jpg  used on input line 156
 .
 (pdftex.def)             Requested size: 245.26405pt x 171.63965pt.
- [6 <./grafici/risoluzionesources.jpg>]
-<grafici/efficienzasources.jpg, id=42, 533.49312pt x 392.46625pt>
+ [7 <./grafici/rettacalibrazionesources.jpg>]
+<grafici/efficienzasources.jpg, id=49, 533.49312pt x 392.46625pt>
 File: grafici/efficienzasources.jpg Graphic file (type jpg)
 <use grafici/efficienzasources.jpg>
-Package pdftex.def Info: grafici/efficienzasources.jpg  used on input line 161.
+Package pdftex.def Info: grafici/efficienzasources.jpg  used on input line 197.
 
 (pdftex.def)             Requested size: 240.06969pt x 176.60817pt.
- [7 <./grafici/efficienzasources.jpg>]
-<grafici/piccouw878.jpg, id=47, 552.56438pt x 348.80313pt>
+ [8 <./grafici/risoluzionesources.jpg>] [9 <./grafici/efficienzasources.jpg>]
+<grafici/piccouw878.jpg, id=56, 552.56438pt x 348.80313pt>
 File: grafici/piccouw878.jpg Graphic file (type jpg)
 <use grafici/piccouw878.jpg>
-Package pdftex.def Info: grafici/piccouw878.jpg  used on input line 206.
+Package pdftex.def Info: grafici/piccouw878.jpg  used on input line 248.
 (pdftex.def)             Requested size: 248.65166pt x 156.95995pt.
 
-Overfull \hbox (12.24716pt too wide) in paragraph at lines 210--211
+Overfull \hbox (12.24716pt too wide) in paragraph at lines 252--253
 []\OT1/cmr/m/n/10 Vengono in-di-vid-uati 6 pic-chi, uno dei quali cor-risponde 
 ad una en-er-gia di 2505 KeV. L'andamento
  []
 
-<grafici/rettacalibrazionemultigamma.jpg, id=48, 554.07pt x 400.49625pt>
+<grafici/rettacalibrazionemultigamma.jpg, id=57, 554.07pt x 400.49625pt>
 File: grafici/rettacalibrazionemultigamma.jpg Graphic file (type jpg)
 <use grafici/rettacalibrazionemultigamma.jpg>
 Package pdftex.def Info: grafici/rettacalibrazionemultigamma.jpg  used on input
- line 214.
+ line 256.
 (pdftex.def)             Requested size: 249.3292pt x 180.22165pt.
-[8 <./grafici/piccouw878.jpg>]
-<grafici/risoluzionemultigamma.jpg, id=53, 527.47063pt x 385.94188pt>
+[10 <./grafici/piccouw878.jpg>]
+<grafici/risoluzionemultigamma.jpg, id=62, 527.47063pt x 385.94188pt>
 File: grafici/risoluzionemultigamma.jpg Graphic file (type jpg)
 <use grafici/risoluzionemultigamma.jpg>
 Package pdftex.def Info: grafici/risoluzionemultigamma.jpg  used on input line 
-233.
+277.
 (pdftex.def)             Requested size: 237.35959pt x 173.67224pt.
- [9 <./grafici/rettacalibrazionemultigamma.jpg>]
-<grafici/efficienzamultigamma.jpg, id=57, 531.9875pt x 382.42876pt>
+ [11 <./grafici/rettacalibrazionemultigamma.jpg>]
+<grafici/efficienzamultigamma.jpg, id=66, 531.9875pt x 382.42876pt>
 File: grafici/efficienzamultigamma.jpg Graphic file (type jpg)
 <use grafici/efficienzamultigamma.jpg>
-Package pdftex.def Info: grafici/efficienzamultigamma.jpg  used on input line 2
-56.
+Package pdftex.def Info: grafici/efficienzamultigamma.jpg  used on input line 3
+02.
 (pdftex.def)             Requested size: 239.39217pt x 172.09134pt.
-
-[10 <./grafici/risoluzionemultigamma.jpg> <./grafici/efficienzamultigamma.jpg>]
-<grafici/sorgenteignota.jpg, id=61, 556.57938pt x 312.66812pt>
+ [12 <./grafici/risoluzionemultigamma.jpg> <./grafici/efficienzamultigamma.jpg>
+]
+<grafici/sorgenteignota.jpg, id=70, 556.57938pt x 312.66812pt>
 File: grafici/sorgenteignota.jpg Graphic file (type jpg)
 <use grafici/sorgenteignota.jpg>
-Package pdftex.def Info: grafici/sorgenteignota.jpg  used on input line 268.
+Package pdftex.def Info: grafici/sorgenteignota.jpg  used on input line 317.
 (pdftex.def)             Requested size: 250.4584pt x 140.69936pt.
-[11 <./grafici/sorgenteignota.jpg>]
-<grafici/risoluzioneignota.jpg, id=65, 540.0175pt x 387.94937pt>
+ [13 <./grafici/sorgenteignota.jpg>]
+<grafici/risoluzioneignota.jpg, id=75, 540.0175pt x 387.94937pt>
 File: grafici/risoluzioneignota.jpg Graphic file (type jpg)
 <use grafici/risoluzioneignota.jpg>
-Package pdftex.def Info: grafici/risoluzioneignota.jpg  used on input line 306.
+Package pdftex.def Info: grafici/risoluzioneignota.jpg  used on input line 357.
 
 (pdftex.def)             Requested size: 243.00562pt x 174.5756pt.
- [12 <./grafici/risoluzioneignota.jpg>]
-[13] (./Report2.aux) ) 
+ [14 <./grafici/risoluzioneignota.jpg>]
+[15] (./Report2.aux) ) 
 Here is how much of TeX's memory you used:
- 4148 strings out of 480994
- 60103 string characters out of 5916032
+ 4176 strings out of 480994
+ 60826 string characters out of 5916032
  307489 words of memory out of 5000000
- 19596 multiletter control sequences out of 15000+600000
+ 19621 multiletter control sequences out of 15000+600000
  541518 words of font info for 63 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 43i,9n,50p,1734b,226s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 43i,9n,50p,1745b,226s stack positions out of 5000i,500n,10000p,200000b,80000s
 {c:/texlive/2019/texmf-dist/fonts/enc/dvips/cm-super/cm-s
 uper-ts1.enc}<c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.
 pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/t
@@ -473,10 +493,10 @@ ts/cm/cmr17.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7
 texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><c:/texlive/20
 19/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb><c:/texlive/2019/texmf-
 dist/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on Report2.pdf (13 pages, 1677463 bytes).
+Output written on Report2.pdf (15 pages, 1891301 bytes).
 PDF statistics:
- 116 PDF objects out of 1000 (max. 8388607)
- 71 compressed objects within 1 object stream
+ 125 PDF objects out of 1000 (max. 8388607)
+ 75 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 81 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 96 words of extra memory for PDF output out of 10000 (max. 10000000)
 
