@@ -1,0 +1,753 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2020.3.24)  28 APR 2020 14:27
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**Report2.tex
+(./Report2.tex
+LaTeX2e <2020-02-02> patch level 5
+L3 programming layer <2020-02-25>
+(c:/texlive/2019/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2019/12/20 v1.4l Standard LaTeX document class
+(c:/texlive/2019/texmf-dist/tex/latex/base/size10.clo
+File: size10.clo 2019/12/20 v1.4l Standard LaTeX file (size option)
+)
+\c@part=\count167
+\c@section=\count168
+\c@subsection=\count169
+\c@subsubsection=\count170
+\c@paragraph=\count171
+\c@subparagraph=\count172
+\c@figure=\count173
+\c@table=\count174
+\abovecaptionskip=\skip47
+\belowcaptionskip=\skip48
+\bibindent=\dimen134
+)
+(c:/texlive/2019/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2019/11/30 v1.2a Enhanced LaTeX Graphics (DPC,SPQR)
+
+(c:/texlive/2019/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks15
+)
+(c:/texlive/2019/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2019/11/30 v1.4a Standard LaTeX Graphics (DPC,SPQR)
+
+(c:/texlive/2019/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+(c:/texlive/2019/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 105.
+
+(c:/texlive/2019/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen135
+\Gin@req@width=\dimen136
+)
+(c:/texlive/2019/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count175
+\float@exts=\toks16
+\float@box=\box45
+\@float@everytoks=\toks17
+\@floatcapt=\box46
+)
+(c:/texlive/2019/texmf-dist/tex/latex/booktabs/booktabs.sty
+Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
+\heavyrulewidth=\dimen137
+\lightrulewidth=\dimen138
+\cmidrulewidth=\dimen139
+\belowrulesep=\dimen140
+\belowbottomsep=\dimen141
+\aboverulesep=\dimen142
+\abovetopsep=\dimen143
+\cmidrulesep=\dimen144
+\cmidrulekern=\dimen145
+\defaultaddspace=\dimen146
+\@cmidla=\count176
+\@cmidlb=\count177
+\@aboverulesep=\dimen147
+\@belowrulesep=\dimen148
+\@thisruleclass=\count178
+\@lastruleclass=\count179
+\@thisrulewidth=\dimen149
+)
+(c:/texlive/2019/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2020/01/20 v2.17e AMS math features
+\@mathmargin=\skip49
+
+For additional information on amsmath, use the `?' option.
+(c:/texlive/2019/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01 AMS text
+
+(c:/texlive/2019/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks18
+\ex@=\dimen150
+))
+(c:/texlive/2019/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen151
+)
+(c:/texlive/2019/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2016/03/08 v2.02 operator names
+)
+\inf@bad=\count180
+LaTeX Info: Redefining \frac on input line 227.
+\uproot@=\count181
+\leftroot@=\count182
+LaTeX Info: Redefining \overline on input line 389.
+\classnum@=\count183
+\DOTSCASE@=\count184
+LaTeX Info: Redefining \ldots on input line 486.
+LaTeX Info: Redefining \dots on input line 489.
+LaTeX Info: Redefining \cdots on input line 610.
+\Mathstrutbox@=\box47
+\strutbox@=\box48
+\big@size=\dimen152
+LaTeX Font Info:    Redeclaring font encoding OML on input line 733.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 734.
+\macc@depth=\count185
+\c@MaxMatrixCols=\count186
+\dotsspace@=\muskip16
+\c@parentequation=\count187
+\dspbrk@lvl=\count188
+\tag@help=\toks19
+\row@=\count189
+\column@=\count190
+\maxfields@=\count191
+\andhelp@=\toks20
+\eqnshift@=\dimen153
+\alignsep@=\dimen154
+\tagshift@=\dimen155
+\tagwidth@=\dimen156
+\totwidth@=\dimen157
+\lineht@=\dimen158
+\@envbody=\toks21
+\multlinegap=\skip50
+\multlinetaggap=\skip51
+\mathdisplay@stack=\toks22
+LaTeX Info: Redefining \[ on input line 2859.
+LaTeX Info: Redefining \] on input line 2860.
+)
+(c:/texlive/2019/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+
+(c:/texlive/2019/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+))
+(c:/texlive/2019/texmf-dist/tex/latex/amscls/amsthm.sty
+Package: amsthm 2017/10/31 v2.20.4
+\thm@style=\toks23
+\thm@bodyfont=\toks24
+\thm@headfont=\toks25
+\thm@notefont=\toks26
+\thm@headpunct=\toks27
+\thm@preskip=\skip52
+\thm@postskip=\skip53
+\thm@headsep=\skip54
+\dth@everypar=\toks28
+)
+(c:/texlive/2019/texmf-dist/tex/latex/physics/physics.sty
+Package: physics 
+
+(c:/texlive/2019/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
+(c:/texlive/2019/texmf-dist/tex/latex/l3kernel/expl3.sty
+Package: expl3 2020-02-25 L3 programming layer (loader) 
+
+(c:/texlive/2019/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def
+File: l3backend-pdfmode.def 2020-02-23 L3 backend support: PDF mode
+\l__kernel_color_stack_int=\count192
+\l__pdf_internal_box=\box49
+))
+Package: xparse 2020-02-25 L3 Experimental document command parser
+\l__xparse_current_arg_int=\count193
+\g__xparse_grabber_int=\count194
+\l__xparse_m_args_int=\count195
+\l__xparse_v_nesting_int=\count196
+)
+
+LaTeX3 Warning: Argument delimiter '\big ' for the command '\@quantity' should
+(LaTeX3)        be a single character.
+
+
+LaTeX3 Warning: Argument delimiter '\Big ' for the command '\@quantity' should
+(LaTeX3)        be a single character.
+
+
+LaTeX3 Warning: Argument delimiter '\bigg ' for the command '\@quantity'
+(LaTeX3)        should be a single character.
+
+
+LaTeX3 Warning: Argument delimiter '\Bigg ' for the command '\@quantity'
+(LaTeX3)        should be a single character.
+
+
+LaTeX3 Warning: Argument delimiter '\big ' for the command '\@braces' should
+(LaTeX3)        be a single character.
+
+
+LaTeX3 Warning: Argument delimiter '\Big ' for the command '\@braces' should
+(LaTeX3)        be a single character.
+
+
+LaTeX3 Warning: Argument delimiter '\bigg ' for the command '\@braces' should
+(LaTeX3)        be a single character.
+
+
+LaTeX3 Warning: Argument delimiter '\Bigg ' for the command '\@braces' should
+(LaTeX3)        be a single character.
+
+
+LaTeX3 Warning: Argument delimiter '\big ' for the command '\fbraces' should
+(LaTeX3)        be a single character.
+
+
+LaTeX3 Warning: Argument delimiter '\Big ' for the command '\fbraces' should
+(LaTeX3)        be a single character.
+
+
+LaTeX3 Warning: Argument delimiter '\bigg ' for the command '\fbraces' should
+(LaTeX3)        be a single character.
+
+
+LaTeX3 Warning: Argument delimiter '\Bigg ' for the command '\fbraces' should
+(LaTeX3)        be a single character.
+
+
+LaTeX3 Warning: Argument delimiter '\ket ' for the command '\bra' should be a
+(LaTeX3)        single character.
+
+) (c:/texlive/2019/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2020/01/02 v5.9 Page Geometry
+
+(c:/texlive/2019/texmf-dist/tex/generic/iftex/ifvtex.sty
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+
+(c:/texlive/2019/texmf-dist/tex/generic/iftex/iftex.sty
+Package: iftex 2019/11/07 v1.0c TeX engine tests
+))
+\Gm@cnth=\count197
+\Gm@cntv=\count198
+\c@Gm@tempcnt=\count199
+\Gm@bindingoffset=\dimen159
+\Gm@wd@mp=\dimen160
+\Gm@odd@mp=\dimen161
+\Gm@even@mp=\dimen162
+\Gm@layoutwidth=\dimen163
+\Gm@layoutheight=\dimen164
+\Gm@layouthoffset=\dimen165
+\Gm@layoutvoffset=\dimen166
+\Gm@dimlist=\toks29
+)
+(c:/texlive/2019/texmf-dist/tex/latex/base/latexsym.sty
+Package: latexsym 1998/08/17 v2.2e Standard LaTeX package (lasy symbols)
+\symlasy=\mathgroup6
+LaTeX Font Info:    Overwriting symbol font `lasy' in version `bold'
+(Font)                  U/lasy/m/n --> U/lasy/b/n on input line 52.
+)
+No file Report2.aux.
+\openout1 = `Report2.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+(c:/texlive/2019/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count266
+\scratchdimen=\dimen167
+\scratchbox=\box50
+\nofMPsegments=\count267
+\nofMParguments=\count268
+\everyMPshowfont=\toks30
+\MPscratchCnt=\count269
+\MPscratchDim=\dimen168
+\MPnumerator=\count270
+\makeMPintoPDFobject=\count271
+\everyMPtoPDFconversion=\toks31
+) (c:/texlive/2019/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+85.
+
+(c:/texlive/2019/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(85.35826pt, 426.79135pt, 85.35826pt)
+* v-part:(T,H,B)=(113.81102pt, 631.65118pt, 99.58464pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=426.79135pt
+* \textheight=631.65118pt
+* \oddsidemargin=13.08827pt
+* \evensidemargin=13.08827pt
+* \topmargin=4.54103pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=10.0pt
+* \footskip=30.0pt
+* \marginparwidth=57.0pt
+* \marginparsep=11.0pt
+* \columnsep=10.0pt
+* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+LaTeX Font Info:    Trying to load font information for U+msa on input line 19.
+
+(c:/texlive/2019/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 19.
+
+
+(c:/texlive/2019/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Font Info:    Trying to load font information for U+lasy on input line 19
+.
+
+(c:/texlive/2019/texmf-dist/tex/latex/base/ulasy.fd
+File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
+) [1
+
+{c:/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+<grafici/hv.jpg, id=11, 562.60187pt x 342.78062pt>
+File: grafici/hv.jpg Graphic file (type jpg)
+<use grafici/hv.jpg>
+Package pdftex.def Info: grafici/hv.jpg  used on input line 46.
+(pdftex.def)             Requested size: 337.56372pt x 205.66995pt.
+<grafici/st.jpg, id=12, 567.11874pt x 337.26pt>
+File: grafici/st.jpg Graphic file (type jpg)
+<use grafici/st.jpg>
+Package pdftex.def Info: grafici/st.jpg  used on input line 52.
+(pdftex.def)             Requested size: 340.27386pt x 202.35756pt.
+ [2 <./grafici/hv.jpg> <./grafici/st.jpg>]
+<grafici/risoluzionehv.jpg, id=17, 548.0475pt x 381.92688pt>
+File: grafici/risoluzionehv.jpg Graphic file (type jpg)
+<use grafici/risoluzionehv.jpg>
+Package pdftex.def Info: grafici/risoluzionehv.jpg  used on input line 64.
+(pdftex.def)             Requested size: 274.02307pt x 190.96297pt.
+<grafici/risoluzionest.jpg, id=18, 557.08125pt x 388.95313pt>
+File: grafici/risoluzionest.jpg Graphic file (type jpg)
+<use grafici/risoluzionest.jpg>
+Package pdftex.def Info: grafici/risoluzionest.jpg  used on input line 70.
+(pdftex.def)             Requested size: 278.53995pt x 194.47607pt.
+ [3 <./grafici/risoluzionehv.jpg> <./grafici/risoluzionest.jpg>]
+<grafici/sodiocompleto.jpg, id=23, 527.9725pt x 332.74312pt>
+File: grafici/sodiocompleto.jpg Graphic file (type jpg)
+<use grafici/sodiocompleto.jpg>
+Package pdftex.def Info: grafici/sodiocompleto.jpg  used on input line 90.
+(pdftex.def)             Requested size: 316.78593pt x 199.6474pt.
+ [4 <./grafici/sodiocompleto.jpg>]
+<grafici/cobaltocompleto.jpg, id=29, 516.42938pt x 329.23pt>
+File: grafici/cobaltocompleto.jpg Graphic file (type jpg)
+<use grafici/cobaltocompleto.jpg>
+Package pdftex.def Info: grafici/cobaltocompleto.jpg  used on input line 96.
+(pdftex.def)             Requested size: 309.86002pt x 197.53952pt.
+<grafici/toriocompleto.jpg, id=30, 520.44438pt x 332.24126pt>
+File: grafici/toriocompleto.jpg Graphic file (type jpg)
+<use grafici/toriocompleto.jpg>
+Package pdftex.def Info: grafici/toriocompleto.jpg  used on input line 102.
+(pdftex.def)             Requested size: 312.26904pt x 199.34628pt.
+<grafici/piccoNa.jpg, id=31, 567.11874pt x 340.27126pt>
+File: grafici/piccoNa.jpg Graphic file (type jpg)
+<use grafici/piccoNa.jpg>
+Package pdftex.def Info: grafici/piccoNa.jpg  used on input line 110.
+(pdftex.def)             Requested size: 396.98041pt x 238.18825pt.
+ [5 <./grafici/cobaltocompleto.jpg> <./grafici/toriocompleto.jpg>]
+<grafici/piccoCo.jpg, id=35, 575.14874pt x 348.80313pt>
+File: grafici/piccoCo.jpg Graphic file (type jpg)
+<use grafici/piccoCo.jpg>
+Package pdftex.def Info: grafici/piccoCo.jpg  used on input line 116.
+(pdftex.def)             Requested size: 402.60138pt x 244.16052pt.
+<grafici/piccoTh.jpg, id=36, 579.16376pt x 351.81438pt>
+File: grafici/piccoTh.jpg Graphic file (type jpg)
+<use grafici/piccoTh.jpg>
+Package pdftex.def Info: grafici/piccoTh.jpg  used on input line 122.
+(pdftex.def)             Requested size: 405.41187pt x 246.26837pt.
+ [6 <./grafici/piccoNa.jpg> <./grafici/piccoCo.jpg>]
+<grafici/rettacalibrazionesources.jpg, id=40, 534.49687pt x 388.95313pt>
+File: grafici/rettacalibrazionesources.jpg Graphic file (type jpg)
+<use grafici/rettacalibrazionesources.jpg>
+Package pdftex.def Info: grafici/rettacalibrazionesources.jpg  used on input li
+ne 130.
+(pdftex.def)             Requested size: 240.52136pt x 175.02728pt.
+ [7 <./grafici/piccoTh.jpg> <./grafici/rettacalibrazionesources.jpg>]
+<grafici/risoluzionesources.jpg, id=47, 545.03625pt x 381.425pt>
+File: grafici/risoluzionesources.jpg Graphic file (type jpg)
+<use grafici/risoluzionesources.jpg>
+Package pdftex.def Info: grafici/risoluzionesources.jpg  used on input line 157
+.
+(pdftex.def)             Requested size: 327.02428pt x 228.85675pt.
+ [8 <./grafici/risoluzionesources.jpg>]
+<grafici/efficienzasources.jpg, id=53, 533.49312pt x 392.46625pt>
+File: grafici/efficienzasources.jpg Graphic file (type jpg)
+<use grafici/efficienzasources.jpg>
+Package pdftex.def Info: grafici/efficienzasources.jpg  used on input line 198.
+
+(pdftex.def)             Requested size: 240.06969pt x 176.60817pt.
+ [9 <./grafici/efficienzasources.jpg>]
+<grafici/piccouw878.jpg, id=57, 552.56438pt x 348.80313pt>
+File: grafici/piccouw878.jpg Graphic file (type jpg)
+<use grafici/piccouw878.jpg>
+Package pdftex.def Info: grafici/piccouw878.jpg  used on input line 249.
+(pdftex.def)             Requested size: 331.54118pt x 209.2835pt.
+<grafici/rettacalibrazionemultigamma.jpg, id=58, 534.49687pt x 386.94562pt>
+File: grafici/rettacalibrazionemultigamma.jpg Graphic file (type jpg)
+<use grafici/rettacalibrazionemultigamma.jpg>
+Package pdftex.def Info: grafici/rettacalibrazionemultigamma.jpg  used on input
+ line 257.
+(pdftex.def)             Requested size: 240.52136pt x 174.12392pt.
+ [10 <./grafici/piccouw878.jpg>]
+<grafici/risoluzionemultigamma.jpg, id=63, 527.47063pt x 385.94188pt>
+File: grafici/risoluzionemultigamma.jpg Graphic file (type jpg)
+<use grafici/risoluzionemultigamma.jpg>
+Package pdftex.def Info: grafici/risoluzionemultigamma.jpg  used on input line 
+278.
+(pdftex.def)             Requested size: 237.35959pt x 173.67224pt.
+ [11 <./grafici/rettacalibrazionemultigamma.jpg> <./grafici/risoluzionemultigam
+ma.jpg>]
+<grafici/efficienzamultigamma.jpg, id=67, 531.9875pt x 382.42876pt>
+File: grafici/efficienzamultigamma.jpg Graphic file (type jpg)
+<use grafici/efficienzamultigamma.jpg>
+Package pdftex.def Info: grafici/efficienzamultigamma.jpg  used on input line 3
+03.
+(pdftex.def)             Requested size: 239.39217pt x 172.09134pt.
+<grafici/sorgenteignota.jpg, id=68, 556.57938pt x 312.66812pt>
+File: grafici/sorgenteignota.jpg Graphic file (type jpg)
+<use grafici/sorgenteignota.jpg>
+Package pdftex.def Info: grafici/sorgenteignota.jpg  used on input line 318.
+(pdftex.def)             Requested size: 333.9502pt x 187.60231pt.
+ [12 <./grafici/efficienzamultigamma.jpg>]
+<grafici/risoluzioneignota.jpg, id=72, 540.0175pt x 387.94937pt>
+File: grafici/risoluzioneignota.jpg Graphic file (type jpg)
+<use grafici/risoluzioneignota.jpg>
+Package pdftex.def Info: grafici/risoluzioneignota.jpg  used on input line 358.
+
+(pdftex.def)             Requested size: 243.00562pt x 174.5756pt.
+ [13 <./grafici/sorgenteignota.jpg>]
+<appendice/2000.png, id=77, 870.25125pt x 514.92375pt>
+File: appendice/2000.png Graphic file (type png)
+<use appendice/2000.png>
+Package pdftex.def Info: appendice/2000.png  used on input line 397.
+(pdftex.def)             Requested size: 391.60945pt x 231.71355pt.
+<appendice/2200.png, id=79, 870.25125pt x 515.9275pt>
+File: appendice/2200.png Graphic file (type png)
+<use appendice/2200.png>
+Package pdftex.def Info: appendice/2200.png  used on input line 401.
+(pdftex.def)             Requested size: 391.60945pt x 232.16522pt.
+ [14 <./grafici/risoluzioneignota.jpg>]
+<appendice/2400.png, id=83, 869.2475pt x 515.9275pt>
+File: appendice/2400.png Graphic file (type png)
+<use appendice/2400.png>
+Package pdftex.def Info: appendice/2400.png  used on input line 405.
+(pdftex.def)             Requested size: 391.15776pt x 232.16522pt.
+<appendice/2600.png, id=84, 869.2475pt x 513.92pt>
+File: appendice/2600.png Graphic file (type png)
+<use appendice/2600.png>
+Package pdftex.def Info: appendice/2600.png  used on input line 409.
+(pdftex.def)             Requested size: 391.15776pt x 231.26186pt.
+ [15 <./appendice/2000.png> <./appendice/2200.png>]
+<appendice/2800.png, id=90, 869.2475pt x 513.92pt>
+File: appendice/2800.png Graphic file (type png)
+<use appendice/2800.png>
+Package pdftex.def Info: appendice/2800.png  used on input line 413.
+(pdftex.def)             Requested size: 391.15776pt x 231.26186pt.
+<appendice/3000.png, id=91, 869.2475pt x 514.92375pt>
+File: appendice/3000.png Graphic file (type png)
+<use appendice/3000.png>
+Package pdftex.def Info: appendice/3000.png  used on input line 417.
+(pdftex.def)             Requested size: 391.15776pt x 231.71355pt.
+ [16 <./appendice/2400.png> <./appendice/2600.png>]
+<appendice/3200.png, id=97, 869.2475pt x 516.93124pt>
+File: appendice/3200.png Graphic file (type png)
+<use appendice/3200.png>
+Package pdftex.def Info: appendice/3200.png  used on input line 421.
+(pdftex.def)             Requested size: 391.15776pt x 232.6169pt.
+<appendice/3400.png, id=98, 868.24374pt x 513.92pt>
+File: appendice/3400.png Graphic file (type png)
+<use appendice/3400.png>
+Package pdftex.def Info: appendice/3400.png  used on input line 425.
+(pdftex.def)             Requested size: 390.70607pt x 231.26186pt.
+ [17 <./appendice/2800.png> <./appendice/3000.png>]
+<appendice/3600.png, id=104, 869.2475pt x 514.92375pt>
+File: appendice/3600.png Graphic file (type png)
+<use appendice/3600.png>
+Package pdftex.def Info: appendice/3600.png  used on input line 429.
+(pdftex.def)             Requested size: 391.15776pt x 231.71355pt.
+<appendice/3800.png, id=105, 868.24374pt x 514.92375pt>
+File: appendice/3800.png Graphic file (type png)
+<use appendice/3800.png>
+Package pdftex.def Info: appendice/3800.png  used on input line 433.
+(pdftex.def)             Requested size: 390.70607pt x 231.71355pt.
+ [18 <./appendice/3200.png> <./appendice/3400.png>]
+<appendice/4000.png, id=111, 868.24374pt x 512.91624pt>
+File: appendice/4000.png Graphic file (type png)
+<use appendice/4000.png>
+Package pdftex.def Info: appendice/4000.png  used on input line 437.
+(pdftex.def)             Requested size: 390.70607pt x 230.81018pt.
+<appendice/4200.png, id=112, 870.25125pt x 513.92pt>
+File: appendice/4200.png Graphic file (type png)
+<use appendice/4200.png>
+Package pdftex.def Info: appendice/4200.png  used on input line 441.
+(pdftex.def)             Requested size: 391.60945pt x 231.26186pt.
+ [19 <./appendice/3600.png> <./appendice/3800.png>]
+<appendice/4400.png, id=119, 869.2475pt x 513.92pt>
+File: appendice/4400.png Graphic file (type png)
+<use appendice/4400.png>
+Package pdftex.def Info: appendice/4400.png  used on input line 445.
+(pdftex.def)             Requested size: 391.15776pt x 231.26186pt.
+<appendice/4600.png, id=120, 868.24374pt x 514.92375pt>
+File: appendice/4600.png Graphic file (type png)
+<use appendice/4600.png>
+Package pdftex.def Info: appendice/4600.png  used on input line 449.
+(pdftex.def)             Requested size: 390.70607pt x 231.71355pt.
+ [20 <./appendice/4000.png> <./appendice/4200.png>]
+<appendice/4800.png, id=126, 868.24374pt x 511.9125pt>
+File: appendice/4800.png Graphic file (type png)
+<use appendice/4800.png>
+Package pdftex.def Info: appendice/4800.png  used on input line 453.
+(pdftex.def)             Requested size: 390.70607pt x 230.35849pt.
+<appendice/5000.png, id=127, 869.2475pt x 513.92pt>
+File: appendice/5000.png Graphic file (type png)
+<use appendice/5000.png>
+Package pdftex.def Info: appendice/5000.png  used on input line 457.
+(pdftex.def)             Requested size: 391.15776pt x 231.26186pt.
+ [21 <./appendice/4400.png> <./appendice/4600.png>]
+<appendice/5.png, id=133, 868.24374pt x 514.92375pt>
+File: appendice/5.png Graphic file (type png)
+<use appendice/5.png>
+Package pdftex.def Info: appendice/5.png  used on input line 464.
+(pdftex.def)             Requested size: 390.70607pt x 231.71355pt.
+<appendice/10.png, id=134, 868.24374pt x 514.92375pt>
+File: appendice/10.png Graphic file (type png)
+<use appendice/10.png>
+Package pdftex.def Info: appendice/10.png  used on input line 468.
+(pdftex.def)             Requested size: 390.70607pt x 231.71355pt.
+ [22 <./appendice/4800.png> <./appendice/5000.png>]
+<appendice/20.png, id=140, 868.24374pt x 513.92pt>
+File: appendice/20.png Graphic file (type png)
+<use appendice/20.png>
+Package pdftex.def Info: appendice/20.png  used on input line 472.
+(pdftex.def)             Requested size: 390.70607pt x 231.26186pt.
+<appendice/30.png, id=141, 870.25125pt x 514.92375pt>
+File: appendice/30.png Graphic file (type png)
+<use appendice/30.png>
+Package pdftex.def Info: appendice/30.png  used on input line 476.
+(pdftex.def)             Requested size: 391.60945pt x 231.71355pt.
+ [23 <./appendice/5.png> <./appendice/10.png>]
+<appendice/60.png, id=147, 868.24374pt x 513.92pt>
+File: appendice/60.png Graphic file (type png)
+<use appendice/60.png>
+Package pdftex.def Info: appendice/60.png  used on input line 480.
+(pdftex.def)             Requested size: 390.70607pt x 231.26186pt.
+<appendice/100.png, id=148, 867.24pt x 512.91624pt>
+File: appendice/100.png Graphic file (type png)
+<use appendice/100.png>
+Package pdftex.def Info: appendice/100.png  used on input line 484.
+(pdftex.def)             Requested size: 390.2544pt x 230.81018pt.
+ [24 <./appendice/20.png> <./appendice/30.png>]
+<appendice/Na.png, id=154, 870.25125pt x 513.92pt>
+File: appendice/Na.png Graphic file (type png)
+<use appendice/Na.png>
+Package pdftex.def Info: appendice/Na.png  used on input line 491.
+(pdftex.def)             Requested size: 391.60945pt x 231.26186pt.
+<appendice/Na2.png, id=155, 869.2475pt x 514.92375pt>
+File: appendice/Na2.png Graphic file (type png)
+<use appendice/Na2.png>
+Package pdftex.def Info: appendice/Na2.png  used on input line 495.
+(pdftex.def)             Requested size: 391.15776pt x 231.71355pt.
+
+[25 <./appendice/60.png> <./appendice/100.png>]
+<appendice/Co.png, id=162, 868.24374pt x 513.92pt>
+File: appendice/Co.png Graphic file (type png)
+<use appendice/Co.png>
+Package pdftex.def Info: appendice/Co.png  used on input line 502.
+(pdftex.def)             Requested size: 390.70607pt x 231.26186pt.
+<appendice/Co2.png, id=163, 869.2475pt x 512.91624pt>
+File: appendice/Co2.png Graphic file (type png)
+<use appendice/Co2.png>
+Package pdftex.def Info: appendice/Co2.png  used on input line 506.
+(pdftex.def)             Requested size: 391.15776pt x 230.81018pt.
+ [26 <./appendice/Na.png> <./appendice/Na2.png>]
+<appendice/Th1.png, id=169, 870.25125pt x 513.92pt>
+File: appendice/Th1.png Graphic file (type png)
+<use appendice/Th1.png>
+Package pdftex.def Info: appendice/Th1.png  used on input line 513.
+(pdftex.def)             Requested size: 391.60945pt x 231.26186pt.
+<appendice/Th2.png, id=170, 867.24pt x 512.91624pt>
+File: appendice/Th2.png Graphic file (type png)
+<use appendice/Th2.png>
+Package pdftex.def Info: appendice/Th2.png  used on input line 517.
+(pdftex.def)             Requested size: 390.2544pt x 230.81018pt.
+ [27 <./appendice/Co.png> <./appendice/Co2.png>]
+<appendice/Th3.png, id=176, 868.24374pt x 513.92pt>
+File: appendice/Th3.png Graphic file (type png)
+<use appendice/Th3.png>
+Package pdftex.def Info: appendice/Th3.png  used on input line 521.
+(pdftex.def)             Requested size: 390.70607pt x 231.26186pt.
+<appendice/Th4.png, id=177, 868.24374pt x 513.92pt>
+File: appendice/Th4.png Graphic file (type png)
+<use appendice/Th4.png>
+Package pdftex.def Info: appendice/Th4.png  used on input line 525.
+(pdftex.def)             Requested size: 390.70607pt x 231.26186pt.
+ [28 <./appendice/Th1.png> <./appendice/Th2.png>]
+<appendice/Th5.png, id=183, 869.2475pt x 513.92pt>
+File: appendice/Th5.png Graphic file (type png)
+<use appendice/Th5.png>
+Package pdftex.def Info: appendice/Th5.png  used on input line 529.
+(pdftex.def)             Requested size: 391.15776pt x 231.26186pt.
+ [29 <./appendice/Th3.png> <./appendice/Th4.png>]
+<appendice/u1.png, id=189, 868.24374pt x 512.91624pt>
+File: appendice/u1.png Graphic file (type png)
+<use appendice/u1.png>
+Package pdftex.def Info: appendice/u1.png  used on input line 536.
+(pdftex.def)             Requested size: 390.70607pt x 230.81018pt.
+<appendice/u2.png, id=190, 868.24374pt x 512.91624pt>
+File: appendice/u2.png Graphic file (type png)
+<use appendice/u2.png>
+Package pdftex.def Info: appendice/u2.png  used on input line 540.
+(pdftex.def)             Requested size: 390.70607pt x 230.81018pt.
+<appendice/u3.png, id=191, 867.24pt x 512.91624pt>
+File: appendice/u3.png Graphic file (type png)
+<use appendice/u3.png>
+Package pdftex.def Info: appendice/u3.png  used on input line 544.
+(pdftex.def)             Requested size: 390.2544pt x 230.81018pt.
+ [30 <./appendice/Th5.png> <./appendice/u1.png>]
+<appendice/u4.png, id=197, 869.2475pt x 513.92pt>
+File: appendice/u4.png Graphic file (type png)
+<use appendice/u4.png>
+Package pdftex.def Info: appendice/u4.png  used on input line 548.
+(pdftex.def)             Requested size: 391.15776pt x 231.26186pt.
+<appendice/u5.png, id=198, 867.24pt x 511.9125pt>
+File: appendice/u5.png Graphic file (type png)
+<use appendice/u5.png>
+Package pdftex.def Info: appendice/u5.png  used on input line 552.
+(pdftex.def)             Requested size: 390.2544pt x 230.35849pt.
+ [31 <./appendice/u2.png> <./appendice/u3.png>]
+<appendice/u6.png, id=205, 869.2475pt x 512.91624pt>
+File: appendice/u6.png Graphic file (type png)
+<use appendice/u6.png>
+Package pdftex.def Info: appendice/u6.png  used on input line 556.
+(pdftex.def)             Requested size: 391.15776pt x 230.81018pt.
+ [32 <./appendice/u4.png> <./appendice/u5.png>]
+<appendice/y1.png, id=211, 869.2475pt x 512.91624pt>
+File: appendice/y1.png Graphic file (type png)
+<use appendice/y1.png>
+Package pdftex.def Info: appendice/y1.png  used on input line 562.
+(pdftex.def)             Requested size: 391.15776pt x 230.81018pt.
+<appendice/y8.png, id=212, 867.24pt x 512.91624pt>
+File: appendice/y8.png Graphic file (type png)
+<use appendice/y8.png>
+Package pdftex.def Info: appendice/y8.png  used on input line 566.
+(pdftex.def)             Requested size: 390.2544pt x 230.81018pt.
+<appendice/y9.png, id=213, 868.24374pt x 513.92pt>
+File: appendice/y9.png Graphic file (type png)
+<use appendice/y9.png>
+Package pdftex.def Info: appendice/y9.png  used on input line 570.
+(pdftex.def)             Requested size: 390.70607pt x 231.26186pt.
+ [33 <./appendice/u6.png> <./appendice/y1.png>]
+<appendice/y2.png, id=219, 868.24374pt x 513.92pt>
+File: appendice/y2.png Graphic file (type png)
+<use appendice/y2.png>
+Package pdftex.def Info: appendice/y2.png  used on input line 574.
+(pdftex.def)             Requested size: 390.70607pt x 231.26186pt.
+<appendice/y6.png, id=220, 869.2475pt x 513.92pt>
+File: appendice/y6.png Graphic file (type png)
+<use appendice/y6.png>
+Package pdftex.def Info: appendice/y6.png  used on input line 578.
+(pdftex.def)             Requested size: 391.15776pt x 231.26186pt.
+ [34 <./appendice/y8.png> <./appendice/y9.png>]
+<appendice/y7.png, id=226, 869.2475pt x 513.92pt>
+File: appendice/y7.png Graphic file (type png)
+<use appendice/y7.png>
+Package pdftex.def Info: appendice/y7.png  used on input line 582.
+(pdftex.def)             Requested size: 391.15776pt x 231.26186pt.
+<appendice/y3.png, id=227, 869.2475pt x 515.9275pt>
+File: appendice/y3.png Graphic file (type png)
+<use appendice/y3.png>
+Package pdftex.def Info: appendice/y3.png  used on input line 586.
+(pdftex.def)             Requested size: 391.15776pt x 232.16522pt.
+ [35 <./appendice/y2.png> <./appendice/y6.png>]
+<appendice/y4.png, id=233, 868.24374pt x 512.91624pt>
+File: appendice/y4.png Graphic file (type png)
+<use appendice/y4.png>
+Package pdftex.def Info: appendice/y4.png  used on input line 590.
+(pdftex.def)             Requested size: 390.70607pt x 230.81018pt.
+<appendice/y5.png, id=234, 869.2475pt x 513.92pt>
+File: appendice/y5.png Graphic file (type png)
+<use appendice/y5.png>
+Package pdftex.def Info: appendice/y5.png  used on input line 594.
+(pdftex.def)             Requested size: 391.15776pt x 231.26186pt.
+ [36 <./appendice/y7.png> <./appendice/y3.png>]
+<appendice/y10.png, id=240, 869.2475pt x 513.92pt>
+File: appendice/y10.png Graphic file (type png)
+<use appendice/y10.png>
+Package pdftex.def Info: appendice/y10.png  used on input line 598.
+(pdftex.def)             Requested size: 391.15776pt x 231.26186pt.
+ [37 <./appendice/y4.png> <./appendice/y5.png>] [38 <./appendice/y10.png>] (./R
+eport2.aux) ) 
+Here is how much of TeX's memory you used:
+ 4551 strings out of 480994
+ 67389 string characters out of 5916032
+ 307552 words of memory out of 5000000
+ 19951 multiletter control sequences out of 15000+600000
+ 541518 words of font info for 63 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 43i,9n,50p,1752b,226s stack positions out of 5000i,500n,10000p,200000b,80000s
+{c:/texlive/2019/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.
+enc}<c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/t
+exlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/20
+19/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2019/texmf-
+dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2019/texmf-dist/font
+s/type1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/2019/texmf-dist/fonts/type1/pu
+blic/amsfonts/cm/cmr10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfo
+nts/cm/cmr12.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr
+17.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb><c:/
+texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/201
+9/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2019/texmf-d
+ist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><c:/texlive/2019/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmti10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/pub
+lic/cm-super/sfrm1000.pfb>
+Output written on Report2.pdf (38 pages, 5007205 bytes).
+PDF statistics:
+ 300 PDF objects out of 1000 (max. 8388607)
+ 131 compressed objects within 2 object streams
+ 0 named destinations out of 1000 (max. 500000)
+ 331 words of extra memory for PDF output out of 10000 (max. 10000000)
+
