@@ -21,7 +21,7 @@
 %%% INTRODUZIONE E PRESUPPOSTO TEORICO %%%
 
 \section{Introduzione}
-La seguente esperienza ha come scopo quello di studiare la caratterizzazione di due diversi rivelatori al germanio. Per avere un quadro pi\`u completo, illustriamo brevemente le caratteristiche di questi tipi di rivelatori. Si tratta di una classe di rivelatori a semiconduttore, il germanio in questo caso, che sfrutta la tecnologia della giunzione P-N. La giunzione P-N \`e costituita da due zone: una con un eccesso di lacune ed una con un eccesso di elettroni. Lacune ed elettroni vengono ottenuti mediante diverse tecniche di drogaggio del materiale utilizzato. La zona chiave della giunzione P-N \`e quella di confine tra le due zone: i portatori di carica possono diffondere nella zona adiacente, attraverso una corrente di diffusione, creando, in ultima istanza, una differenza di potenziale che genera un campo elettrico, il quale a sua volta genera una corrente di trascinamente che si oppone a quella di diffusione. Le caratteristiche delle due zone e dei portatori di carica dipendono dalle caratteristiche costitutive della giunzione. La giunzione pu\`o poi essere sottoposta a polarizzazione diretta o inversa: nel nostro caso siamo interessati a polarizzare inversamente la giunzione, cos\`i che nel nostro rivelatore non ci sia nessuna corrente sovrapposta a quella di raccolta delle cariche. Il rivelatore va poi tenuto in un dewar che lo mantiene ad una temperatura di 77K, attraverso un bagno di azoto liquido. Questo perch\'e nei semiconduttori la banda di valenza e di conduzione sono separate da un gap in energia, che nel germanio \`e talmente basso (0.67 eV) che mantenendo il rivelatore a temperatura ambiente l'agitazione termica sarebbe sufficiente a superare questo gap, ostacolando le nostre misure.
+La seguente esperienza ha come scopo quello di studiare la caratterizzazione di due diversi rivelatori al germanio. Per avere un quadro pi\`u completo, illustriamo brevemente le caratteristiche di questi tipi di rivelatori. Si tratta di una classe di rivelatori a semiconduttore, il germanio in questo caso, che sfrutta la tecnologia della giunzione P-N. La giunzione P-N \`e costituita da due zone: una con un eccesso di lacune ed una con un eccesso di elettroni. Lacune ed elettroni vengono ottenuti mediante diverse tecniche di drogaggio del materiale utilizzato. La zona chiave della giunzione P-N \`e quella di confine tra le due zone: i portatori di carica possono diffondere nella zona adiacente, attraverso una corrente di diffusione, creando, in ultima istanza, una differenza di potenziale che genera un campo elettrico, il quale a sua volta genera una corrente di trascinamento che si oppone a quella di diffusione. Le caratteristiche delle due zone e dei portatori di carica dipendono dalle caratteristiche costitutive della giunzione. La giunzione pu\`o poi essere sottoposta a polarizzazione diretta o inversa: nel nostro caso siamo interessati a polarizzare inversamente la giunzione, cos\`i che nel nostro rivelatore non ci sia nessuna corrente sovrapposta a quella di raccolta delle cariche. Il rivelatore va poi tenuto in un dewar che lo mantiene ad una temperatura di 77K, attraverso un bagno di azoto liquido. Questo perch\'e nei semiconduttori la banda di valenza e di conduzione sono separate da un gap in energia: nel germanio il gap \`e talmente basso (0.67 eV) che mantenendo il rivelatore a temperatura ambiente l'agitazione termica sarebbe sufficiente a superarlo, ostacolando le nostre misure.
 \section{Parte 1}
 
 %%% STRUMENTAZIONE PRIMA PARTE %%%
@@ -76,7 +76,7 @@ Il segnale \`e acquisito mediante una catena di lettura classica. In questo caso
 	R=\sqrt{\frac{\textrm{a}}{\textrm{x}}+\textrm{bx}}
 \end{equation}
 con x che indica in un caso la tensione e nell'altro lo shaping time.
-
+\noindent I valori di $\chi^2$-ridotto e \textit{P-Value} mostrano come il modello teorico sia conforme ai dati a nostra disposizione.
 \noindent Il nostro obiettivo era di ricavare i valori che minimizzassero la risoluzione. Nel caso della tensione di polarizzazione la risoluzione decresce, fino ad assestarsi intorno ad un valore costante oltre i 4000V, che pu\`o quindi essere preso come valore di riferimento. Nel caso dello shaping time la risoluzione ha un minimo in corrispondenza di uno shaping time di 2 $\mu$s, ed oltre quel valore torna a crescere, a causa del pile-up che diventa sempre pi\`u significativo. Sottolineaiamo che in questo caso non \`e stato inserito il valore riferito ad uno shaping time di 100 $\mu$s, non essendo stato possibile identificare con precisione la $\sigma$ di quel picco. Si precisa pertanto che a valori di quest'ultimo non si effettuano mai misure per via della presenza sempre pi\`u evidente del pile-up.
 \subsection{Calibrazione in energia del rivelatore}
 
@@ -199,7 +199,7 @@ Per lo studio dell'efficienza assoluta sono stati considerati il numero di quant
     \caption{Efficienza in funzione di E}
 \end{figure}
 
-\noindent L'andamento dell'efficienza non \`e quello atteso. Alcuni punti si discostano dall'andamento che prevede l'efficienza assoluta del rivelatore diminuire all'aumentare dell'energia, non adattandosi al modello teorico. Non \`e stato possibile attribuire una incertezza precisa alle misure attraverso gli strumenti di ROOT, ed anche questo ha contribuito alla non riuscita della stima dell'efficienza del rivelatore.
+\noindent L'andamento dell'efficienza, come testimoniano i pessimi valori di $\chi^2$-ridotto e \textit{P-Value}, non \`e quello atteso. Alcuni punti si discostano dall'andamento che prevede l'efficienza assoluta del rivelatore diminuire all'aumentare dell'energia, non adattandosi al modello teorico. Non \`e stato possibile attribuire una incertezza precisa alle misure attraverso gli strumenti di ROOT, ed anche questo ha contribuito alla non riuscita della stima dell'efficienza del rivelatore.
 
 \section{Parte 2}
 
@@ -220,13 +220,13 @@ Per lo studio dell'efficienza assoluta sono stati considerati il numero di quant
 %%% CURVA DI CALIBRAZIONE CON MULTIGAMMA %%%
  
 \subsubsection{Curva di calibrazione}
-Il segnale \`e acquisito, come della parte 1 dell'esperienza, da una catena di lettura classica, con i componenti integrati nello stesso modo. Come prima cosa, \`e nostra necessit\`a costruire una curva di calibrazione Energia vs. Canali. Allo scopo viene utilizzata una sorgente multigamma: la sorgente \`e composta da diversi radionuclidi, ognuno con la sua attivit\`e ed una energia tabulata per i gamma emessi. Vengono calcolate, per ogni radionuclide, le attività riferite al giorno in cui \`e stata effettuata la misura. Viene utilizzata la formula del decadimento:
+Il segnale \`e acquisito, come della parte 1 dell'esperienza, da una catena di lettura classica, con i componenti integrati nello stesso modo. Come prima cosa, \`e nostra necessit\`a costruire una curva di calibrazione Energia vs. Canali. Allo scopo viene utilizzata una sorgente multigamma: la sorgente \`e composta da diversi radionuclidi, ognuno con la sua attivit\`a ed una energia tabulata per i gamma emessi. Vengono calcolate, per ogni radionuclide, le attività riferite al giorno in cui \`e stata effettuata la misura. Viene utilizzata la formula del decadimento:
 
 \begin{equation}
 	A(t)=A_{0}e^{-t/\tau}
 \end{equation}
 
-\noindent dove $A_{0}$ rappresenta l'attivit\`e al tempo 0 del radionuclide, indicata su una scheda di certificazione, e $\tau$ \`e una caratteristica legata al tempo di dimezzamento del radionuclide. Al giorno della misura, risultano attivi i seguenti radionuclidi:
+\noindent dove $A_{0}$ rappresenta l'attivit\`a al tempo 0 del radionuclide, indicata sulla scheda di certificazione, e $\tau$ \`e una caratteristica legata al tempo di dimezzamento del radionuclide. Al giorno della misura, risultano attivi i seguenti radionuclidi:
 
 \begin{center}
     \begin{tabular}{cccc}
@@ -242,6 +242,7 @@ Il segnale \`e acquisito, come della parte 1 dell'esperienza, da una catena di l
     \end{tabular}\\
 \end{center}
 
+\noindent Con $\bar{A}$ si \`e indicata l'attivit\`a al momento della misura.
 \noindent A questo punto, viene analizzato lo spettro della sorgente multigamma utilizzata, individuando i picchi e, analogamente alla parte 1, effettuando un ingrandimento per individuare la posizione del picco e la relativa $\sigma$:
 
 \begin{figure}[H]
@@ -304,7 +305,7 @@ Sono state utilizzate la relazione (5) per il calcolo dell'efficienza assoluta d
     \caption{Efficienza in funzione di E}
 \end{figure}
 
-\noindent In questo caso si pu\`o notare come uno solo dei punti considerati, quello corrispondente al picco relativo al 109-Cd, si discosti in maniera importante dall'andamento atteso. Risulta pi\`u evidente rispetto alla parte 1 l'andamento decrescente dell'efficienza all'aumentare dell'energia, suppur anche in questo caso non sia stato possibile determinare con precisione una incertezza per le varie misure.
+\noindent Anche in questo caso si pu\`o notare dai valori di $\chi^2$-ridotto e \textit{P-Value} come l'andamento non sia quello atteso, nonostante solo uno dei punti considerati, quello corrispondente al picco relativo al 109-Cd, si discosti in maniera importante da esso. Risulta pi\`u evidente rispetto alla parte 1 l'andamento decrescente dell'efficienza all'aumentare dell'energia, suppur anche in questo caso non sia stato possibile determinare con precisione una incertezza per le varie misure.
 
 \subsection{Sorgente ignota}
 
