@@ -1,0 +1,353 @@
+PWD /Users/marcogobbo/Desktop/Laboratorio 3/lab3/Exp2/report
+INPUT /usr/local/texlive/2017/texmf.cnf
+INPUT /usr/local/texlive/2017/texmf-dist/web2c/texmf.cnf
+INPUT /usr/local/texlive/2017/texmf-var/web2c/pdftex/pdflatex.fmt
+INPUT /Users/marcogobbo/Desktop/Laboratorio 3/lab3/Exp2/report/Report2.tex
+OUTPUT /Users/marcogobbo/Desktop/Laboratorio 3/lab3/Exp2/report/Report2.log
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/base/article.cls
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/base/article.cls
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/base/size10.clo
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/base/size10.clo
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/graphics/graphicx.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/graphics/graphicx.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/graphics/keyval.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/graphics/keyval.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/graphics/graphics.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/graphics/graphics.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/graphics/trig.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/graphics/trig.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/graphics-def/pdftex.def
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/graphics-def/pdftex.def
+INPUT /usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/float/float.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/float/float.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/booktabs/booktabs.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/booktabs/booktabs.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/amsmath/amsmath.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/amsmath/amsmath.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/amsmath/amstext.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/amsmath/amstext.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/amsmath/amsgen.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/amsmath/amsgen.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/amsmath/amsbsy.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/amsmath/amsbsy.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/amsmath/amsopn.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/amsmath/amsopn.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/amsfonts/amssymb.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/amsfonts/amssymb.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/amscls/amsthm.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/amscls/amsthm.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/physics/physics.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/physics/physics.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/l3kernel/expl3.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/l3kernel/expl3.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/l3kernel/expl3-code.tex
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/l3kernel/expl3-code.tex
+INPUT /usr/local/texlive/2017/texmf-dist/tex/generic/unicode-data/UnicodeData.txt
+INPUT /usr/local/texlive/2017/texmf-dist/tex/generic/unicode-data/CaseFolding.txt
+INPUT /usr/local/texlive/2017/texmf-dist/tex/generic/unicode-data/SpecialCasing.txt
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/l3kernel/l3pdfmode.def
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/l3kernel/l3pdfmode.def
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/geometry/geometry.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/geometry/geometry.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/ifvtex.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/ifvtex.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/base/latexsym.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/base/latexsym.sty
+INPUT /Users/marcogobbo/Desktop/Laboratorio 3/lab3/Exp2/report/Report2.aux
+INPUT /Users/marcogobbo/Desktop/Laboratorio 3/lab3/Exp2/report/Report2.aux
+OUTPUT /Users/marcogobbo/Desktop/Laboratorio 3/lab3/Exp2/report/Report2.aux
+INPUT /usr/local/texlive/2017/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+INPUT /usr/local/texlive/2017/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+INPUT /usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/oberdiek/grfext.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/oberdiek/grfext.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+INPUT /usr/local/texlive/2017/texmf-dist/fonts/map/fontname/texfonts.map
+INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmr17.tfm
+INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmr12.tfm
+INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmr8.tfm
+INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmr6.tfm
+INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmmi12.tfm
+INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmmi8.tfm
+INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmmi6.tfm
+INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm
+INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmsy8.tfm
+INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmsy6.tfm
+INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmex10.tfm
+INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm
+INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/amsfonts/umsa.fd
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/amsfonts/umsa.fd
+INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
+INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
+INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam7.tfm
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/amsfonts/umsb.fd
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/amsfonts/umsb.fd
+INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
+INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
+INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/base/ulasy.fd
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/base/ulasy.fd
+INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/latex-fonts/lasy10.tfm
+INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/latex-fonts/lasy8.tfm
+INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/latex-fonts/lasy6.tfm
+INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmr12.tfm
+INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
+INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/base/omscmr.fd
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/base/omscmr.fd
+INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
+INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
+INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
+INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam7.tfm
+INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam5.tfm
+INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
+INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
+INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm5.tfm
+INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/latex-fonts/lasy10.tfm
+INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/latex-fonts/lasy7.tfm
+INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/latex-fonts/lasy5.tfm
+OUTPUT /Users/marcogobbo/Desktop/Laboratorio 3/lab3/Exp2/report/Report2.pdf
+INPUT /usr/local/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map
+INPUT /Users/marcogobbo/Desktop/Laboratorio 3/lab3/Exp2/report/grafici/hv.jpg
+INPUT /Users/marcogobbo/Desktop/Laboratorio 3/lab3/Exp2/report/grafici/hv.jpg
+INPUT /Users/marcogobbo/Desktop/Laboratorio 3/lab3/Exp2/report/grafici/hv.jpg
+INPUT /Users/marcogobbo/Desktop/Laboratorio 3/lab3/Exp2/report/grafici/st.jpg
+INPUT /Users/marcogobbo/Desktop/Laboratorio 3/lab3/Exp2/report/grafici/st.jpg
+INPUT /Users/marcogobbo/Desktop/Laboratorio 3/lab3/Exp2/report/grafici/st.jpg
+INPUT /Users/marcogobbo/Desktop/Laboratorio 3/lab3/Exp2/report/grafici/risoluzionehv.jpg
+INPUT /Users/marcogobbo/Desktop/Laboratorio 3/lab3/Exp2/report/grafici/risoluzionehv.jpg
+INPUT /Users/marcogobbo/Desktop/Laboratorio 3/lab3/Exp2/report/grafici/risoluzionehv.jpg
+INPUT /Users/marcogobbo/Desktop/Laboratorio 3/lab3/Exp2/report/grafici/risoluzionest.jpg
+INPUT /Users/marcogobbo/Desktop/Laboratorio 3/lab3/Exp2/report/grafici/risoluzionest.jpg
+INPUT /Users/marcogobbo/Desktop/Laboratorio 3/lab3/Exp2/report/grafici/risoluzionest.jpg
+INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm
+INPUT /Users/marcogobbo/Desktop/Laboratorio 3/lab3/Exp2/report/grafici/sodiocompleto.jpg
+INPUT /Users/marcogobbo/Desktop/Laboratorio 3/lab3/Exp2/report/grafici/sodiocompleto.jpg
+INPUT /Users/marcogobbo/Desktop/Laboratorio 3/lab3/Exp2/report/grafici/sodiocompleto.jpg
+INPUT /Users/marcogobbo/Desktop/Laboratorio 3/lab3/Exp2/report/grafici/cobaltocompleto.jpg
+INPUT /Users/marcogobbo/Desktop/Laboratorio 3/lab3/Exp2/report/grafici/cobaltocompleto.jpg
+INPUT /Users/marcogobbo/Desktop/Laboratorio 3/lab3/Exp2/report/grafici/cobaltocompleto.jpg
+INPUT /Users/marcogobbo/Desktop/Laboratorio 3/lab3/Exp2/report/grafici/toriocompleto.jpg
+INPUT /Users/marcogobbo/Desktop/Laboratorio 3/lab3/Exp2/report/grafici/toriocompleto.jpg
+INPUT /Users/marcogobbo/Desktop/Laboratorio 3/lab3/Exp2/report/grafici/toriocompleto.jpg
+INPUT /Users/marcogobbo/Desktop/Laboratorio 3/lab3/Exp2/report/grafici/piccoNa.jpg
+INPUT /Users/marcogobbo/Desktop/Laboratorio 3/lab3/Exp2/report/grafici/piccoNa.jpg
+INPUT /Users/marcogobbo/Desktop/Laboratorio 3/lab3/Exp2/report/grafici/piccoNa.jpg
+INPUT /Users/marcogobbo/Desktop/Laboratorio 3/lab3/Exp2/report/grafici/piccoCo.jpg
+INPUT /Users/marcogobbo/Desktop/Laboratorio 3/lab3/Exp2/report/grafici/piccoCo.jpg
+INPUT /Users/marcogobbo/Desktop/Laboratorio 3/lab3/Exp2/report/grafici/piccoCo.jpg
+INPUT /Users/marcogobbo/Desktop/Laboratorio 3/lab3/Exp2/report/grafici/piccoTh.jpg
+INPUT /Users/marcogobbo/Desktop/Laboratorio 3/lab3/Exp2/report/grafici/piccoTh.jpg
+INPUT /Users/marcogobbo/Desktop/Laboratorio 3/lab3/Exp2/report/grafici/piccoTh.jpg
+INPUT /Users/marcogobbo/Desktop/Laboratorio 3/lab3/Exp2/report/grafici/rettacalibrazionesources.jpg
+INPUT /Users/marcogobbo/Desktop/Laboratorio 3/lab3/Exp2/report/grafici/rettacalibrazionesources.jpg
+INPUT /Users/marcogobbo/Desktop/Laboratorio 3/lab3/Exp2/report/grafici/rettacalibrazionesources.jpg
+INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmti10.tfm
+INPUT /Users/marcogobbo/Desktop/Laboratorio 3/lab3/Exp2/report/grafici/risoluzionesources.jpg
+INPUT /Users/marcogobbo/Desktop/Laboratorio 3/lab3/Exp2/report/grafici/risoluzionesources.jpg
+INPUT /Users/marcogobbo/Desktop/Laboratorio 3/lab3/Exp2/report/grafici/risoluzionesources.jpg
+INPUT /Users/marcogobbo/Desktop/Laboratorio 3/lab3/Exp2/report/grafici/efficienzasources.jpg
+INPUT /Users/marcogobbo/Desktop/Laboratorio 3/lab3/Exp2/report/grafici/efficienzasources.jpg
+INPUT /Users/marcogobbo/Desktop/Laboratorio 3/lab3/Exp2/report/grafici/efficienzasources.jpg
+INPUT /Users/marcogobbo/Desktop/Laboratorio 3/lab3/Exp2/report/grafici/piccouw878.jpg
+INPUT /Users/marcogobbo/Desktop/Laboratorio 3/lab3/Exp2/report/grafici/piccouw878.jpg
+INPUT /Users/marcogobbo/Desktop/Laboratorio 3/lab3/Exp2/report/grafici/piccouw878.jpg
+INPUT /Users/marcogobbo/Desktop/Laboratorio 3/lab3/Exp2/report/grafici/rettacalibrazionemultigamma.jpg
+INPUT /Users/marcogobbo/Desktop/Laboratorio 3/lab3/Exp2/report/grafici/rettacalibrazionemultigamma.jpg
+INPUT /Users/marcogobbo/Desktop/Laboratorio 3/lab3/Exp2/report/grafici/rettacalibrazionemultigamma.jpg
+INPUT /Users/marcogobbo/Desktop/Laboratorio 3/lab3/Exp2/report/grafici/risoluzionemultigamma.jpg
+INPUT /Users/marcogobbo/Desktop/Laboratorio 3/lab3/Exp2/report/grafici/risoluzionemultigamma.jpg
+INPUT /Users/marcogobbo/Desktop/Laboratorio 3/lab3/Exp2/report/grafici/risoluzionemultigamma.jpg
+INPUT /Users/marcogobbo/Desktop/Laboratorio 3/lab3/Exp2/report/grafici/efficienzamultigamma.jpg
+INPUT /Users/marcogobbo/Desktop/Laboratorio 3/lab3/Exp2/report/grafici/efficienzamultigamma.jpg
+INPUT /Users/marcogobbo/Desktop/Laboratorio 3/lab3/Exp2/report/grafici/efficienzamultigamma.jpg
+INPUT /Users/marcogobbo/Desktop/Laboratorio 3/lab3/Exp2/report/grafici/sorgenteignota.jpg
+INPUT /Users/marcogobbo/Desktop/Laboratorio 3/lab3/Exp2/report/grafici/sorgenteignota.jpg
+INPUT /Users/marcogobbo/Desktop/Laboratorio 3/lab3/Exp2/report/grafici/sorgenteignota.jpg
+INPUT /Users/marcogobbo/Desktop/Laboratorio 3/lab3/Exp2/report/grafici/risoluzioneignota.jpg
+INPUT /Users/marcogobbo/Desktop/Laboratorio 3/lab3/Exp2/report/grafici/risoluzioneignota.jpg
+INPUT /Users/marcogobbo/Desktop/Laboratorio 3/lab3/Exp2/report/grafici/risoluzioneignota.jpg
+INPUT /Users/marcogobbo/Desktop/Laboratorio 3/lab3/Exp2/report/appendice/2000.png
+INPUT /Users/marcogobbo/Desktop/Laboratorio 3/lab3/Exp2/report/appendice/2000.png
+INPUT /Users/marcogobbo/Desktop/Laboratorio 3/lab3/Exp2/report/appendice/2000.png
+INPUT /Users/marcogobbo/Desktop/Laboratorio 3/lab3/Exp2/report/appendice/2200.png
+INPUT /Users/marcogobbo/Desktop/Laboratorio 3/lab3/Exp2/report/appendice/2200.png
+INPUT /Users/marcogobbo/Desktop/Laboratorio 3/lab3/Exp2/report/appendice/2200.png
+INPUT /Users/marcogobbo/Desktop/Laboratorio 3/lab3/Exp2/report/appendice/2400.png
+INPUT /Users/marcogobbo/Desktop/Laboratorio 3/lab3/Exp2/report/appendice/2400.png
+INPUT /Users/marcogobbo/Desktop/Laboratorio 3/lab3/Exp2/report/appendice/2400.png
+INPUT /Users/marcogobbo/Desktop/Laboratorio 3/lab3/Exp2/report/appendice/2600.png
+INPUT /Users/marcogobbo/Desktop/Laboratorio 3/lab3/Exp2/report/appendice/2600.png
+INPUT /Users/marcogobbo/Desktop/Laboratorio 3/lab3/Exp2/report/appendice/2600.png
+INPUT /Users/marcogobbo/Desktop/Laboratorio 3/lab3/Exp2/report/appendice/2800.png
+INPUT /Users/marcogobbo/Desktop/Laboratorio 3/lab3/Exp2/report/appendice/2800.png
+INPUT /Users/marcogobbo/Desktop/Laboratorio 3/lab3/Exp2/report/appendice/2800.png
+INPUT /Users/marcogobbo/Desktop/Laboratorio 3/lab3/Exp2/report/appendice/3000.png
+INPUT /Users/marcogobbo/Desktop/Laboratorio 3/lab3/Exp2/report/appendice/3000.png
+INPUT /Users/marcogobbo/Desktop/Laboratorio 3/lab3/Exp2/report/appendice/3000.png
+INPUT /Users/marcogobbo/Desktop/Laboratorio 3/lab3/Exp2/report/appendice/3200.png
+INPUT /Users/marcogobbo/Desktop/Laboratorio 3/lab3/Exp2/report/appendice/3200.png
+INPUT /Users/marcogobbo/Desktop/Laboratorio 3/lab3/Exp2/report/appendice/3200.png
+INPUT /Users/marcogobbo/Desktop/Laboratorio 3/lab3/Exp2/report/appendice/3400.png
+INPUT /Users/marcogobbo/Desktop/Laboratorio 3/lab3/Exp2/report/appendice/3400.png
+INPUT /Users/marcogobbo/Desktop/Laboratorio 3/lab3/Exp2/report/appendice/3400.png
+INPUT /Users/marcogobbo/Desktop/Laboratorio 3/lab3/Exp2/report/appendice/3600.png
+INPUT /Users/marcogobbo/Desktop/Laboratorio 3/lab3/Exp2/report/appendice/3600.png
+INPUT /Users/marcogobbo/Desktop/Laboratorio 3/lab3/Exp2/report/appendice/3600.png
+INPUT /Users/marcogobbo/Desktop/Laboratorio 3/lab3/Exp2/report/appendice/3800.png
+INPUT /Users/marcogobbo/Desktop/Laboratorio 3/lab3/Exp2/report/appendice/3800.png
+INPUT /Users/marcogobbo/Desktop/Laboratorio 3/lab3/Exp2/report/appendice/3800.png
+INPUT /Users/marcogobbo/Desktop/Laboratorio 3/lab3/Exp2/report/appendice/4000.png
+INPUT /Users/marcogobbo/Desktop/Laboratorio 3/lab3/Exp2/report/appendice/4000.png
+INPUT /Users/marcogobbo/Desktop/Laboratorio 3/lab3/Exp2/report/appendice/4000.png
+INPUT /Users/marcogobbo/Desktop/Laboratorio 3/lab3/Exp2/report/appendice/4200.png
+INPUT /Users/marcogobbo/Desktop/Laboratorio 3/lab3/Exp2/report/appendice/4200.png
+INPUT /Users/marcogobbo/Desktop/Laboratorio 3/lab3/Exp2/report/appendice/4200.png
+INPUT /Users/marcogobbo/Desktop/Laboratorio 3/lab3/Exp2/report/appendice/4400.png
+INPUT /Users/marcogobbo/Desktop/Laboratorio 3/lab3/Exp2/report/appendice/4400.png
+INPUT /Users/marcogobbo/Desktop/Laboratorio 3/lab3/Exp2/report/appendice/4400.png
+INPUT /Users/marcogobbo/Desktop/Laboratorio 3/lab3/Exp2/report/appendice/4600.png
+INPUT /Users/marcogobbo/Desktop/Laboratorio 3/lab3/Exp2/report/appendice/4600.png
+INPUT /Users/marcogobbo/Desktop/Laboratorio 3/lab3/Exp2/report/appendice/4600.png
+INPUT /Users/marcogobbo/Desktop/Laboratorio 3/lab3/Exp2/report/appendice/4800.png
+INPUT /Users/marcogobbo/Desktop/Laboratorio 3/lab3/Exp2/report/appendice/4800.png
+INPUT /Users/marcogobbo/Desktop/Laboratorio 3/lab3/Exp2/report/appendice/4800.png
+INPUT /Users/marcogobbo/Desktop/Laboratorio 3/lab3/Exp2/report/appendice/5000.png
+INPUT /Users/marcogobbo/Desktop/Laboratorio 3/lab3/Exp2/report/appendice/5000.png
+INPUT /Users/marcogobbo/Desktop/Laboratorio 3/lab3/Exp2/report/appendice/5000.png
+INPUT /Users/marcogobbo/Desktop/Laboratorio 3/lab3/Exp2/report/appendice/5.png
+INPUT /Users/marcogobbo/Desktop/Laboratorio 3/lab3/Exp2/report/appendice/5.png
+INPUT /Users/marcogobbo/Desktop/Laboratorio 3/lab3/Exp2/report/appendice/5.png
+INPUT /Users/marcogobbo/Desktop/Laboratorio 3/lab3/Exp2/report/appendice/10.png
+INPUT /Users/marcogobbo/Desktop/Laboratorio 3/lab3/Exp2/report/appendice/10.png
+INPUT /Users/marcogobbo/Desktop/Laboratorio 3/lab3/Exp2/report/appendice/10.png
+INPUT /Users/marcogobbo/Desktop/Laboratorio 3/lab3/Exp2/report/appendice/20.png
+INPUT /Users/marcogobbo/Desktop/Laboratorio 3/lab3/Exp2/report/appendice/20.png
+INPUT /Users/marcogobbo/Desktop/Laboratorio 3/lab3/Exp2/report/appendice/20.png
+INPUT /Users/marcogobbo/Desktop/Laboratorio 3/lab3/Exp2/report/appendice/30.png
+INPUT /Users/marcogobbo/Desktop/Laboratorio 3/lab3/Exp2/report/appendice/30.png
+INPUT /Users/marcogobbo/Desktop/Laboratorio 3/lab3/Exp2/report/appendice/30.png
+INPUT /Users/marcogobbo/Desktop/Laboratorio 3/lab3/Exp2/report/appendice/60.png
+INPUT /Users/marcogobbo/Desktop/Laboratorio 3/lab3/Exp2/report/appendice/60.png
+INPUT /Users/marcogobbo/Desktop/Laboratorio 3/lab3/Exp2/report/appendice/60.png
+INPUT /Users/marcogobbo/Desktop/Laboratorio 3/lab3/Exp2/report/appendice/100.png
+INPUT /Users/marcogobbo/Desktop/Laboratorio 3/lab3/Exp2/report/appendice/100.png
+INPUT /Users/marcogobbo/Desktop/Laboratorio 3/lab3/Exp2/report/appendice/100.png
+INPUT /Users/marcogobbo/Desktop/Laboratorio 3/lab3/Exp2/report/appendice/Na.png
+INPUT /Users/marcogobbo/Desktop/Laboratorio 3/lab3/Exp2/report/appendice/Na.png
+INPUT /Users/marcogobbo/Desktop/Laboratorio 3/lab3/Exp2/report/appendice/Na.png
+INPUT /Users/marcogobbo/Desktop/Laboratorio 3/lab3/Exp2/report/appendice/Na2.png
+INPUT /Users/marcogobbo/Desktop/Laboratorio 3/lab3/Exp2/report/appendice/Na2.png
+INPUT /Users/marcogobbo/Desktop/Laboratorio 3/lab3/Exp2/report/appendice/Na2.png
+INPUT /Users/marcogobbo/Desktop/Laboratorio 3/lab3/Exp2/report/appendice/Co.png
+INPUT /Users/marcogobbo/Desktop/Laboratorio 3/lab3/Exp2/report/appendice/Co.png
+INPUT /Users/marcogobbo/Desktop/Laboratorio 3/lab3/Exp2/report/appendice/Co.png
+INPUT /Users/marcogobbo/Desktop/Laboratorio 3/lab3/Exp2/report/appendice/Co2.png
+INPUT /Users/marcogobbo/Desktop/Laboratorio 3/lab3/Exp2/report/appendice/Co2.png
+INPUT /Users/marcogobbo/Desktop/Laboratorio 3/lab3/Exp2/report/appendice/Co2.png
+INPUT /Users/marcogobbo/Desktop/Laboratorio 3/lab3/Exp2/report/appendice/Th1.png
+INPUT /Users/marcogobbo/Desktop/Laboratorio 3/lab3/Exp2/report/appendice/Th1.png
+INPUT /Users/marcogobbo/Desktop/Laboratorio 3/lab3/Exp2/report/appendice/Th1.png
+INPUT /Users/marcogobbo/Desktop/Laboratorio 3/lab3/Exp2/report/appendice/Th2.png
+INPUT /Users/marcogobbo/Desktop/Laboratorio 3/lab3/Exp2/report/appendice/Th2.png
+INPUT /Users/marcogobbo/Desktop/Laboratorio 3/lab3/Exp2/report/appendice/Th2.png
+INPUT /Users/marcogobbo/Desktop/Laboratorio 3/lab3/Exp2/report/appendice/Th3.png
+INPUT /Users/marcogobbo/Desktop/Laboratorio 3/lab3/Exp2/report/appendice/Th3.png
+INPUT /Users/marcogobbo/Desktop/Laboratorio 3/lab3/Exp2/report/appendice/Th3.png
+INPUT /Users/marcogobbo/Desktop/Laboratorio 3/lab3/Exp2/report/appendice/Th4.png
+INPUT /Users/marcogobbo/Desktop/Laboratorio 3/lab3/Exp2/report/appendice/Th4.png
+INPUT /Users/marcogobbo/Desktop/Laboratorio 3/lab3/Exp2/report/appendice/Th4.png
+INPUT /Users/marcogobbo/Desktop/Laboratorio 3/lab3/Exp2/report/appendice/Th5.png
+INPUT /Users/marcogobbo/Desktop/Laboratorio 3/lab3/Exp2/report/appendice/Th5.png
+INPUT /Users/marcogobbo/Desktop/Laboratorio 3/lab3/Exp2/report/appendice/Th5.png
+INPUT /Users/marcogobbo/Desktop/Laboratorio 3/lab3/Exp2/report/appendice/u1.png
+INPUT /Users/marcogobbo/Desktop/Laboratorio 3/lab3/Exp2/report/appendice/u1.png
+INPUT /Users/marcogobbo/Desktop/Laboratorio 3/lab3/Exp2/report/appendice/u1.png
+INPUT /Users/marcogobbo/Desktop/Laboratorio 3/lab3/Exp2/report/appendice/u2.png
+INPUT /Users/marcogobbo/Desktop/Laboratorio 3/lab3/Exp2/report/appendice/u2.png
+INPUT /Users/marcogobbo/Desktop/Laboratorio 3/lab3/Exp2/report/appendice/u2.png
+INPUT /Users/marcogobbo/Desktop/Laboratorio 3/lab3/Exp2/report/appendice/u3.png
+INPUT /Users/marcogobbo/Desktop/Laboratorio 3/lab3/Exp2/report/appendice/u3.png
+INPUT /Users/marcogobbo/Desktop/Laboratorio 3/lab3/Exp2/report/appendice/u3.png
+INPUT /Users/marcogobbo/Desktop/Laboratorio 3/lab3/Exp2/report/appendice/u4.png
+INPUT /Users/marcogobbo/Desktop/Laboratorio 3/lab3/Exp2/report/appendice/u4.png
+INPUT /Users/marcogobbo/Desktop/Laboratorio 3/lab3/Exp2/report/appendice/u4.png
+INPUT /Users/marcogobbo/Desktop/Laboratorio 3/lab3/Exp2/report/appendice/u5.png
+INPUT /Users/marcogobbo/Desktop/Laboratorio 3/lab3/Exp2/report/appendice/u5.png
+INPUT /Users/marcogobbo/Desktop/Laboratorio 3/lab3/Exp2/report/appendice/u5.png
+INPUT /Users/marcogobbo/Desktop/Laboratorio 3/lab3/Exp2/report/appendice/u6.png
+INPUT /Users/marcogobbo/Desktop/Laboratorio 3/lab3/Exp2/report/appendice/u6.png
+INPUT /Users/marcogobbo/Desktop/Laboratorio 3/lab3/Exp2/report/appendice/u6.png
+INPUT /Users/marcogobbo/Desktop/Laboratorio 3/lab3/Exp2/report/appendice/y1.png
+INPUT /Users/marcogobbo/Desktop/Laboratorio 3/lab3/Exp2/report/appendice/y1.png
+INPUT /Users/marcogobbo/Desktop/Laboratorio 3/lab3/Exp2/report/appendice/y1.png
+INPUT /Users/marcogobbo/Desktop/Laboratorio 3/lab3/Exp2/report/appendice/y8.png
+INPUT /Users/marcogobbo/Desktop/Laboratorio 3/lab3/Exp2/report/appendice/y8.png
+INPUT /Users/marcogobbo/Desktop/Laboratorio 3/lab3/Exp2/report/appendice/y8.png
+INPUT /Users/marcogobbo/Desktop/Laboratorio 3/lab3/Exp2/report/appendice/y9.png
+INPUT /Users/marcogobbo/Desktop/Laboratorio 3/lab3/Exp2/report/appendice/y9.png
+INPUT /Users/marcogobbo/Desktop/Laboratorio 3/lab3/Exp2/report/appendice/y9.png
+INPUT /Users/marcogobbo/Desktop/Laboratorio 3/lab3/Exp2/report/appendice/y2.png
+INPUT /Users/marcogobbo/Desktop/Laboratorio 3/lab3/Exp2/report/appendice/y2.png
+INPUT /Users/marcogobbo/Desktop/Laboratorio 3/lab3/Exp2/report/appendice/y2.png
+INPUT /Users/marcogobbo/Desktop/Laboratorio 3/lab3/Exp2/report/appendice/y6.png
+INPUT /Users/marcogobbo/Desktop/Laboratorio 3/lab3/Exp2/report/appendice/y6.png
+INPUT /Users/marcogobbo/Desktop/Laboratorio 3/lab3/Exp2/report/appendice/y6.png
+INPUT /Users/marcogobbo/Desktop/Laboratorio 3/lab3/Exp2/report/appendice/y7.png
+INPUT /Users/marcogobbo/Desktop/Laboratorio 3/lab3/Exp2/report/appendice/y7.png
+INPUT /Users/marcogobbo/Desktop/Laboratorio 3/lab3/Exp2/report/appendice/y7.png
+INPUT /Users/marcogobbo/Desktop/Laboratorio 3/lab3/Exp2/report/appendice/y3.png
+INPUT /Users/marcogobbo/Desktop/Laboratorio 3/lab3/Exp2/report/appendice/y3.png
+INPUT /Users/marcogobbo/Desktop/Laboratorio 3/lab3/Exp2/report/appendice/y3.png
+INPUT /Users/marcogobbo/Desktop/Laboratorio 3/lab3/Exp2/report/appendice/y4.png
+INPUT /Users/marcogobbo/Desktop/Laboratorio 3/lab3/Exp2/report/appendice/y4.png
+INPUT /Users/marcogobbo/Desktop/Laboratorio 3/lab3/Exp2/report/appendice/y4.png
+INPUT /Users/marcogobbo/Desktop/Laboratorio 3/lab3/Exp2/report/appendice/y5.png
+INPUT /Users/marcogobbo/Desktop/Laboratorio 3/lab3/Exp2/report/appendice/y5.png
+INPUT /Users/marcogobbo/Desktop/Laboratorio 3/lab3/Exp2/report/appendice/y5.png
+INPUT /Users/marcogobbo/Desktop/Laboratorio 3/lab3/Exp2/report/appendice/y10.png
+INPUT /Users/marcogobbo/Desktop/Laboratorio 3/lab3/Exp2/report/appendice/y10.png
+INPUT /Users/marcogobbo/Desktop/Laboratorio 3/lab3/Exp2/report/appendice/y10.png
+INPUT /Users/marcogobbo/Desktop/Laboratorio 3/lab3/Exp2/report/Report2.aux
+INPUT /usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
+INPUT /usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
+INPUT /usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb
+INPUT /usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb
+INPUT /usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb
+INPUT /usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb
+INPUT /usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb
+INPUT /usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb
+INPUT /usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb
+INPUT /usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb
+INPUT /usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb
+INPUT /usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb
+INPUT /usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb

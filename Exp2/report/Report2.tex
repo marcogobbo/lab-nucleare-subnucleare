@@ -139,7 +139,7 @@ Il grafico \`e stato interpolato con la seguente funzione
 ottenendo i seguenti parametri:
 
 $$
-	m=0.3829 \pm 2.3 \times 10^{-4}\, \unit{keV/V} %% V o mV???%%
+	m=0.3829 \pm 2.3 \times 10^{-4}\, \unit{keV/mV}
 $$
 $$
 	q=26.62 \pm 0.64\, \unit{keV}
@@ -261,7 +261,7 @@ Il segnale \`e acquisito, come della parte 1 dell'esperienza, da una catena di l
 \noindent Si sfrutta la relazione (3) per interpolare il grafico. Si ottengono i seguenti parametri:
 
 $$
-	m=0.18 \pm 7.19 \times 10^{-5}\, \unit{kev/V}
+	m=0.18 \pm 7.19 \times 10^{-5}\, \unit{kev/mV}
 $$
 $$
 	q=13.35 \pm 0.28\, \unit{keV}
@@ -319,28 +319,28 @@ A nostra disposizione abbiamo una acquisizione di dati senza sorgente ed una con
     \caption{Spettro sorgente ignota}
 \end{figure}
 
-\noindent Il numero di picchi \`e molto elevato: andiamo ad analizzare principalmente quelli pi\`u intensi ed evidenti. Come nelle parti precedenti, la posizione del picco con la relativa $\sigma$ vengono ricavate dal grafico ingrandito nella regione di interesse, interpolando con una gaussiana e un polinomio di grado zero che tenga conto del rumore. Attraverso i canali individuati risaliamo alle energie corrispondenti, utilizzando la curva di calibrazione ricavata nella sezione 3.2.1. Nella seguente tabella indichiamo nella terza colonna il nuclide responsabile dell'emissione del gamma di quella precisa energia:
+\noindent Il numero di picchi \`e molto elevato: andiamo ad analizzare principalmente quelli pi\`u intensi ed evidenti. Come nelle parti precedenti, la posizione del picco con la relativa $\sigma$ vengono ricavate dal grafico ingrandito nella regione di interesse, interpolando con una gaussiana e un polinomio di grado zero che tenga conto del rumore. Attraverso i canali individuati risaliamo alle energie corrispondenti con i relativi errori (propagazione degli errori), utilizzando la curva di calibrazione ricavata nella sezione 3.2.1. Nella seguente tabella indichiamo nell'ultima colonna il nuclide responsabile dell'emissione del gamma di quella precisa energia:
 
 \begin{center}
-    \begin{tabular}{ccc}
+    \begin{tabular}{c c c c c}
         \toprule
-        Canale [mV] & Energia [keV] & Nuclide\\
+        Canale [mV] & $\sigma_{\textrm{Canale}}$ [mV] & Energia [keV] & $\sigma_{\textrm{Energia}}$ [keV] & Nuclide\\
         \midrule
-	  338 & 75.20 & 228-Th\\
-	  350 & 77.45 & 228-Ac\\
-	  390 & 84.78 & 228-Th\\
-	  633 & 129.39 & 228-Ac\\
-	  1232 & 239.05 & 212-Pb\\
-	  1244 & 241.25 & 224-Ra\\
-	  1404 & 270.56 & 228-Ac\\
-	  1443 & 277.71 & 208-Tl\\
-	  1567 & 300.42 & 212-Pb\\
-	  1775 & 338.53 & 228-Ac\\
-	  3111 & 583.29 & 208-Tl\\
-	  4902 & 911.40 & 228-Ac\\
-	  5195 & 965.07 & 228-Ac\\
-	  5218 & 969.29 & 228-Ac\\
-	  14200 & 2614.79 & 208-Tl\\
+	  338 & 3 & 75.20 & 0.54 & 228-Th\\
+	  350 & 3 & 77.45 & 0.54 & 228-Ac\\
+	  390 & 3 & 84.78 & 0.63 & 228-Th\\
+	  633 & 3 & 129.39 & 0.53 & 228-Ac\\
+	  1232 & 3 & 239.05 & 0.57 & 212-Pb\\
+	  1244 & 3 & 241.25 & 0.54 & 224-Ra\\
+	  1404 & 3 & 270.56 & 0.58 & 228-Ac\\
+	  1443 & 3 & 277.71 & 0.63 & 208-Tl\\
+	  1567 & 3 & 300.42 & 0.60 & 212-Pb\\
+	  1775 & 3 & 338.53 & 0.60 & 228-Ac\\
+	  3111 & 3 & 583.29 & 0.67 & 208-Tl\\
+	  4902 & 4 & 911.40 & 0.75 & 228-Ac\\
+	  5195 & 4 & 965.07 & 0.77 & 228-Ac\\
+	  5218 & 4 & 969.29 & 0.77 & 228-Ac\\
+	  14200 & 6 & 2614.79 & 1.13 & 208-Tl\\
         \bottomrule
     \end{tabular}\\
 \end{center}
@@ -386,7 +386,7 @@ $$
 	F=\frac{a^2}{2.35 \times w}
 $$
 
-\noindent Il valore del fattore di Fano calcolato \`e dunque 0.156 $\pm$ 0.009.
+\noindent Il valore del fattore di Fano calcolato \`e dunque 0.156 $\pm$ 0.009. Il cui errore è sempre ricavato per propagazione degli errori.
 
 %%% APPENDICE %%%
 
