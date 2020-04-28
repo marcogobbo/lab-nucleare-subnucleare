@@ -8,8 +8,9 @@
 \usepackage{physics}
 \usepackage{geometry}
 \usepackage{latexsym}
-
+\renewcommand{\figurename}{Figura}
 \newcommand*{\unit}[1]{\ensuremath{\mathrm{\,#1}}}
+\geometry{a4paper,tmargin=4cm,bmargin=3.5cm, lmargin=3cm,rmargin=3cm}
 
 \title{High-Purity germanium detectors}
 \author{Gianluca Cavallaro \\ Marco Gobbo}
@@ -20,7 +21,7 @@
 %%% INTRODUZIONE E PRESUPPOSTO TEORICO %%%
 
 \section{Introduzione}
-La seguente esperienza ha come scopo quello di studiare la caratterizzazione di due diversi rivelatori al germanio. Per avere un quadro pi\`u completo, illustriamo brevemente le caratteristiche di questi tipi di rivelatori. Si tratta di una classe di rivelatori a semiconduttore, il germanio in questo caso, che sfrutta la tecnologia della giunzione P-N. La giunzione P-N \`e costituita da due zone, una con un eccesso di lacune ed una con un eccesso di elettroni. Lacune ed elettroni vengono ottenuti mediante diverse tecniche di drogaggio del materiale utilizzato. La zona chiave della giunzione P-N \`e quella di confine tra le due zone: i portatori di carica possono diffondere nella zona adiacente, attraverso una corrente di diffusione, creando, in ultima istanza, una differenza di potenziale che genera un campo elettrico, che a sua volta genera una corrente di trascinamente che si oppone a quella di diffusione. Le caratteristiche delle due zone e dei portatori di carica dipende dalle caratteristiche costitutive della giunzione. La giunzione pu\`o poi essere sottoposta a polarizzazione diretta o inversa: nel nostro caso siamo interessati a polarizzare inversamente la giunzione, cos\`i che nel nostro rivelatore non ci sia nessuna corrente sovrapposta a quella di raccolta delle cariche. Il rivelatore va poi tenuto in un dewar che lo mantiene ad una temperatura di 77K, attraverso un bagno di azoto liquido. Questo perch\`e nei semiconduttori la banda di valenza e di conduzione sono separate da un gap in energia, che nel germanio \`e talmente basso (0.67 eV) che mantenendo il rivelatore a temperatura ambiente l'agitazione termica sarebbe sufficiente a superare questo gap, ostacolando le nostre misure.
+La seguente esperienza ha come scopo quello di studiare la caratterizzazione di due diversi rivelatori al germanio. Per avere un quadro pi\`u completo, illustriamo brevemente le caratteristiche di questi tipi di rivelatori. Si tratta di una classe di rivelatori a semiconduttore, il germanio in questo caso, che sfrutta la tecnologia della giunzione P-N. La giunzione P-N \`e costituita da due zone: una con un eccesso di lacune ed una con un eccesso di elettroni. Lacune ed elettroni vengono ottenuti mediante diverse tecniche di drogaggio del materiale utilizzato. La zona chiave della giunzione P-N \`e quella di confine tra le due zone: i portatori di carica possono diffondere nella zona adiacente, attraverso una corrente di diffusione, creando, in ultima istanza, una differenza di potenziale che genera un campo elettrico, il quale a sua volta genera una corrente di trascinamente che si oppone a quella di diffusione. Le caratteristiche delle due zone e dei portatori di carica dipendono dalle caratteristiche costitutive della giunzione. La giunzione pu\`o poi essere sottoposta a polarizzazione diretta o inversa: nel nostro caso siamo interessati a polarizzare inversamente la giunzione, cos\`i che nel nostro rivelatore non ci sia nessuna corrente sovrapposta a quella di raccolta delle cariche. Il rivelatore va poi tenuto in un dewar che lo mantiene ad una temperatura di 77K, attraverso un bagno di azoto liquido. Questo perch\'e nei semiconduttori la banda di valenza e di conduzione sono separate da un gap in energia, che nel germanio \`e talmente basso (0.67 eV) che mantenendo il rivelatore a temperatura ambiente l'agitazione termica sarebbe sufficiente a superare questo gap, ostacolando le nostre misure.
 \section{Parte 1}
 
 %%% STRUMENTAZIONE PRIMA PARTE %%%
@@ -38,45 +39,45 @@ La seguente esperienza ha come scopo quello di studiare la caratterizzazione di 
 %%% SCELTA DEI MIGLIORI VALORI DI TENSIONE E SHAPING TIME %%%
 
 \subsection{Scelta delle condizione ottimali di lavoro}
-Il segnale \`e acquisito mediante una catena di lettura classica. In questo caso abbiamo un dispositivo che integra detector e pre-amplificatore, uno che integra amplificatore e shaper e un ADC/MCA a parte. L'obiettivo di questa prima parte \`e quello di individuare le condizioni ottimali per tensione di polarizzazione e shaping time per proseguire nell'esperienza. Individuare le condizioni di lavoro ottimali significa individuare quelle che minimizzano la risoluzione. Abbiamo a nostra disposizione degli spettri di una sorgente di 22Na, raccolti in corrispondenza di diversi valori di polarizzazione, da 2000V a 5000V, e di shaping time, rispettivamente 0.5, 1, 2, 3, 6, e 10 $\mu$s. 
+Il segnale \`e acquisito mediante una catena di lettura classica. In questo caso abbiamo un dispositivo che integra detector e pre-amplificatore, uno che integra amplificatore e shaper e un ADC/MCA a parte. L'obiettivo di questa prima parte \`e quello di individuare le condizioni ottimali per tensione di polarizzazione e shaping time per proseguire nell'esperienza. Individuare le condizioni di lavoro ottimali significa individuare quelle che minimizzano la risoluzione. Abbiamo a nostra disposizione degli spettri di una sorgente di 22Na, raccolti in corrispondenza di diversi valori di polarizzazione, da 2000V a 5000V, e di shaping time, rispettivamente 0.5, 1, 2, 3, 6, e 10 $\mu$s. Di seguito sono riportati un esempio di High Voltage e Shaping Time (i restati sono in Appendice).
 
-\begin{figure}[h!]
+\begin{figure}[!h]
     \centering
-    \includegraphics[scale=0.45]{grafici/hv}
+    \includegraphics[scale=0.6]{grafici/hv}
     \caption{Tensione di polarizzazione 2000V}
 \end{figure}
 
-\begin{figure}[h!]
+\begin{figure}[!h]
     \centering
-    \includegraphics[scale=0.45]{grafici/st}
+    \includegraphics[scale=0.6]{grafici/st}
     \caption{Shaping time 30 $\mu$s}
 \end{figure}
 
-Per i grafici relativi alla tensione di polarizzazione \`e stato necessario effettuare uno "zoom" sulla zona dove si registra il picco. In questa zona, il picco \`e stato estrapolato attraverso una funzione gaussiana sommata ad un polinomio di grado 0, che tiene conto del fondo. Nei grafici relativi allo shaping time il procedimento \`e stato analogo, ma nell'interpolare la funzione \`e stato necessario considerare, oltre al polinomio di grado 0 che continua a considerare il fondo, due gaussiane, con la seconda che ci ha permesso di considerare nel fit il contributo dovuto al pile-up, fenomeno per il quale il rivelatore non \`e "pronto" a ricevere due misure successive, e va quindi a sommare un evento sulla coda di quello precedente, andando in alcuni casi a deformare il picco in questione. Attraverso questo processo siamo arrivati ad avere a disposizione 16 valori per la tensione di polarizzazione e 6 per lo shaping time. Per entrambe le raccolte dati, andiamo a costruire il grafico della risoluzione in funzione della tensione di polarizzazione e dello shaping time, rispettivamente. La risoluzione \`e stata calcolata con la seguente relazione: 
+\noindent Per i grafici relativi alla tensione di polarizzazione \`e stato necessario effettuare uno "zoom" nella regione dove si registra il picco. In questa zona, il picco \`e stato estrapolato attraverso una funzione gaussiana sommata ad un polinomio di grado 0, che tiene conto del fondo. Nei grafici relativi allo shaping time il procedimento \`e stato analogo, ma nell'interpolare la funzione \`e stato necessario considerare, oltre al polinomio di grado 0 che continua a considerare il fondo, due gaussiane, con la seconda che ci ha permesso di considerare nel fit il contributo dovuto al pile-up, fenomeno per il quale il rivelatore non \`e "pronto" a ricevere due misure successive, e va quindi a sommare un evento sulla coda di quello precedente, andando in alcuni casi a deformare il picco in questione. Possiamo osservare dunque che le assunzioni sugli andamenti delle distribuzionei sono quasi corrette dal momento che i valori di $\chi^2$-ridotto non sono eccessivamente alti. Attraverso questo processo siamo arrivati ad avere a disposizione 16 valori per la tensione di polarizzazione e 6 per lo shaping time. Per entrambe le raccolte dati, andiamo a costruire il grafico della risoluzione in funzione della tensione di polarizzazione e dello shaping time, rispettivamente. La risoluzione \`e stata calcolata con la seguente relazione: 
 
 \begin{equation}
 	R=\frac{\textrm{FWHM}}{\textrm{Channel}}
 \end{equation}
 
-\begin{figure}[h!]
+\begin{figure}[!ht]
     \centering
-    \includegraphics[scale=0.45]{grafici/risoluzionehv}
+    \includegraphics[scale=0.5]{grafici/risoluzionehv}
     \caption{Risoluzione in funzione della tensione di polarizzazione}
 \end{figure}
 
-\begin{figure}[h!]
+\begin{figure}[!ht]
     \centering
-    \includegraphics[scale=0.45]{grafici/risoluzionest}
+    \includegraphics[scale=0.5]{grafici/risoluzionest}
     \caption{Risoluzione in funzione dello shaping time}
 \end{figure}
 
-I grafici sono stati interpolati con la seguente funzione: 
+\noindent I grafici sono stati interpolati con la seguente funzione: 
 \begin{equation}
 	R=\sqrt{\frac{\textrm{a}}{\textrm{x}}+\textrm{bx}}
 \end{equation}
 con x che indica in un caso la tensione e nell'altro lo shaping time.
 
-Il nostro obiettivo era di ricavare i valori che minimizzassero la risoluzione. Nel caso della tensione di polarizzazione la risoluzione decresce, fino ad assestarsi intorno ad un valore costante oltre i 4000V, che pu\`o quindi essere preso come valore di riferimento. Nel caso dello shaping time la risoluzione ha un minimo in corrispondenza di uno shaping time di 2 $\mu$s, ed oltre quel valore torna a crescere, a causa del pile-up che diventa sempre pi\`u significativo. Sottolineaiamo che in questo caso non \`e stato inserito il valore riferito ad uno shaping time di 100 $\mu$s, non essendo stato possibile identificare con precisione la $\sigma$ di quel picco.
+\noindent Il nostro obiettivo era di ricavare i valori che minimizzassero la risoluzione. Nel caso della tensione di polarizzazione la risoluzione decresce, fino ad assestarsi intorno ad un valore costante oltre i 4000V, che pu\`o quindi essere preso come valore di riferimento. Nel caso dello shaping time la risoluzione ha un minimo in corrispondenza di uno shaping time di 2 $\mu$s, ed oltre quel valore torna a crescere, a causa del pile-up che diventa sempre pi\`u significativo. Sottolineaiamo che in questo caso non \`e stato inserito il valore riferito ad uno shaping time di 100 $\mu$s, non essendo stato possibile identificare con precisione la $\sigma$ di quel picco. Si precisa pertanto che a valori di quest'ultimo non si effettuano mai misure per via della presenza sempre pi\`u evidente del pile-up.
 \subsection{Calibrazione in energia del rivelatore}
 
 %%% CURVA DI CALIBRAZIONE CON Na, Co, Th %%%
@@ -84,45 +85,45 @@ Il nostro obiettivo era di ricavare i valori che minimizzassero la risoluzione. 
 \subsubsection{Curva di calibrazione}
 Abbiamo a disposizione 3 sorgenti note: 22Na, 60Co e 228Th. Di queste 3 sorgenti andiamo a considerare gli spettri:
 
-\begin{figure}[h!]
+\begin{figure}[!h]
     \centering
-    \includegraphics[scale=0.45]{grafici/sodiocompleto}
+    \includegraphics[scale=0.6]{grafici/sodiocompleto}
     \caption{Spettro 22Na}
 \end{figure}
-
-\begin{figure}[h!]
+\newpage
+\begin{figure}[!h]
     \centering
-    \includegraphics[scale=0.45]{grafici/cobaltocompleto}
+    \includegraphics[scale=0.6]{grafici/cobaltocompleto}
     \caption{Spettro 60Co}
 \end{figure}
 
-\begin{figure}[h!]
+\begin{figure}[!h]
     \centering
-    \includegraphics[scale=0.45]{grafici/toriocompleto}
+    \includegraphics[scale=0.6]{grafici/toriocompleto}
     \caption{Spettro 228Th}
 \end{figure}
 
-Come fatto precedentemente, andiamo ad effettuare un ingrandimento su ognuno dei picchi per poterne ottenere la posizione e la sigma. Per quanto riguarda il sodio \`e stato considerato il secondo picco, in quanto il primo rappresenta il picco dovuto all'annichilazione del positrone a 511 KeV. Per il torio, abbiamo tenuto conto solo dei picchi pi\`u intensi e distinguibili. Di seguito riportiamo un esempio per ogni sorgente:
+\noindent Come fatto precedentemente, andiamo ad effettuare un ingrandimento su ognuno dei picchi per poterne ottenere posizione e sigma. Per quanto riguarda il sodio \`e stato considerato il secondo picco, in quanto il primo rappresenta il picco dovuto all'annichilazione del positrone a 511 KeV. Per il torio, abbiamo tenuto conto solo dei picchi pi\`u intensi e distinguibili. Di seguito riportiamo un esempio per ogni sorgente (i restanti sono in Appendice):
 
 \begin{figure}[H]
     \centering
-    \includegraphics[scale=0.45]{grafici/piccoNa}
+    \includegraphics[scale=0.7]{grafici/piccoNa}
     \caption{Il picco del 22Na}
 \end{figure}
 
 \begin{figure}[H]
     \centering
-    \includegraphics[scale=0.45]{grafici/piccoCo}
+    \includegraphics[scale=0.7]{grafici/piccoCo}
     \caption{Uno dei due picchi del 60Co}
 \end{figure}
 
 \begin{figure}[H]
     \centering
-    \includegraphics[scale=0.45]{grafici/piccoTh}
+    \includegraphics[scale=0.7]{grafici/piccoTh}
     \caption{Uno dei picchi del 228Th}
 \end{figure}
 
-Ognuno dei picchi individuati corrisponde ad una energia ben precisa. Nel seguente grafico viene riportata la curva di calibrazione, Energia vs. Canali:
+\noindent Ognuno dei picchi individuati corrisponde ad una energia ben precisa. Nel seguente grafico viene riportata la curva di calibrazione, Energia vs. Canali:
 
 \begin{figure}[H]
     \centering
@@ -132,50 +133,50 @@ Ognuno dei picchi individuati corrisponde ad una energia ben precisa. Nel seguen
 
 Il grafico \`e stato interpolato con la seguente funzione 
 \begin{equation}
-	Energia=m\cdot Canale + q
+	\textrm{Energia} = m \times \textrm{Canale} + q
 \end{equation}
 
 ottenendo i seguenti parametri:
 
 $$
-	m=0.3829 \pm 2.3 \times 10^{-4}\, \unit{Kev/V}
+	m=0.3829 \pm 2.3 \times 10^{-4}\, \unit{keV/V} %% V o mV???%%
 $$
 $$
-	q=26.62 \pm 0.64\, \unit{Kev}
+	q=26.62 \pm 0.64\, \unit{keV}
 $$
 
-I valori di $\chi$\textsuperscript{2} ridotto e \textit{P-Value} riportati nel grafico mostrano come l'andamento lineare della relazione sia consistente. La relazione che intercorre fra energia e canali \`e dunque lineare.
+\noindent I valori di $\chi$\textsuperscript{2} ridotto e \textit{P-Value} riportati nel grafico mostrano come l'andamento lineare della relazione sia consistente. La relazione che intercorre fra energia e canali \`e dunque lineare.
 
 %%% RISOLUZIONE CON Na, Co, Th %%%
 
 \subsubsection{Risoluzione}
-Vogliamo andare ad indagare la dipendenza della risoluzione in funzione dei valori di energia. La risoluzione \`e caratterizzata da 3 componenti: una statistica, che dipende linearmente dall'energia, una legata alla raccolta delle cariche, che dipende quadraticamente dall'energia, ed infine una legata al rumore elettronico, indipendente dall'energia. La risoluzione \`e stata calcolata con la relazione (1). Per quanto riguarda le incertezza si \`e tenuto conto della deviazione standard e dell'errore su quest'ultima. 
+Vogliamo andare ad indagare la dipendenza della risoluzione in funzione dei valori di energia. La risoluzione \`e caratterizzata da 3 componenti: una statistica, che dipende linearmente dall'energia, una legata alla raccolta delle cariche, che dipende quadraticamente dall'energia, ed infine una legata al rumore elettronico, indipendente dall'energia. La risoluzione \`e stata calcolata con la relazione (1). Per quanto riguarda le incertezze si \`e tenuto conto della deviazione standard e dell'errore su quest'ultima. 
 
 \begin{figure}[H]
     \centering
-    \includegraphics[scale=0.45]{grafici/risoluzionesources}
+    \includegraphics[scale=0.6]{grafici/risoluzionesources}
     \caption{Risoluzione in funzione di E}
 \end{figure}
 
-Per interpolare il grafico \`e stata utilizzata la relazione
+\noindent Per interpolare il grafico \`e stata utilizzata la relazione
 
 \begin{equation}
 	R=\sqrt{\frac{a^2}{E}+b^2+\frac{c^2}{E^2}}
 \end{equation}
 
-Con a, b e c che rispettivamente indicano i contributi legati alla statistica, alla raccolta delle cariche e al rumore. Sono riportati di seguito i valori:
+\noindent Con a, b e c che rispettivamente indicano i contributi legati alla statistica, alla raccolta delle cariche e al rumore. Sono riportati di seguito i valori:
 
 $$
-	a=1.63 \times 10{-5} \pm 2.20 \times 10^{-2} [\sqrt{KeV}]
+	a=1.63 \times 10{-5} \pm 2.20 \times 10^{-2} \unit{keV^{\frac{1}{2}}}
 $$
 $$
-	b=9.01 \times 10^{-4} \pm 7.66 \times 10{-5}
+	b=9.01 \times 10^{-4} \pm 7.66 \times 10^{-5}
 $$
 $$
-	c= 2.29 \pm 3.38 \times 10^{-2} [KeV]
+	c= 2.29 \pm 3.38 \times 10^{-2} \unit{keV}
 $$
 
-Dal valore dei parametri si nota come il parametro c sia diversi ordini di grandezza maggiore degli altri due, mostrando come il contributo principale alla risoluzione sia da attribuire alla componente legata al rumore elettronico.
+\noindent Dal valore dei parametri si nota come il parametro c sia diversi ordini di grandezza maggiore degli altri due, mostrando come il contributo principale alla risoluzione sia da attribuire alla componente legata al rumore elettronico.
 
 %%% EFFICIENZA CON Na, Co, Th %%%
 
@@ -183,13 +184,13 @@ Dal valore dei parametri si nota come il parametro c sia diversi ordini di grand
 Per lo studio dell'efficienza assoluta sono stati considerati il numero di quanti totali emessi dalla sorgente, tenendo conto dell'attivit\`a della stessa e della durata della misura, ed il numero di conteggi riferito ad ogni picco. L'efficienza assoluta di picco \`e stata dunque calcolata con la seguente formula:
 
 \begin{equation}
-	Efficienza=\frac{Conteggi picco}{Numero di eventi totali}=\frac{Conteggi picco}{Attivita \cdot durata misura}
+	\textrm{Efficienza}=\frac{\textrm{Conteggi picco}}{\textrm{Numero di eventi totali}}=\frac{\textrm{Conteggi picco}}{\textrm{Attivit\`a} \times \textrm{durata misura}}
 \end{equation}
 
-I valori ottenuti sono stati normalizzati per il Branching Ratio (B.R.) di ogni singolo decadimento, per rendere coerente il grafico. Il grafico viene riportato in scala logaritmica, e la funzione empirica utilizzata per interpolarlo \`e:
+\noindent I valori ottenuti sono stati normalizzati per il Branching Ratio (B.R.) di ogni singolo decadimento, per rendere coerente il grafico. Il grafico viene riportato in scala logaritmica, e la funzione empirica utilizzata per interpolarlo \`e:
 
 \begin{equation}
-	\ln{Efficienza}=a + b\ln{Energia} + c\ln^{2}{Energia}
+	\ln{\textrm{Efficienza}}=a + b\ln{\textrm{Energia}} + c\ln^{2}{\textrm{Energia}}
 \end{equation}
 
 \begin{figure}[H]
@@ -198,7 +199,7 @@ I valori ottenuti sono stati normalizzati per il Branching Ratio (B.R.) di ogni 
     \caption{Efficienza in funzione di E}
 \end{figure}
 
-L'andamento dell'efficienza non \`e quello atteso. Alcuni punti si discostano dall'andamento che prevede l'efficienza assoluta del rivelatore diminuire all'aumentare dell'energia, non adattandosi al modello teorico. Non \`e stato possibile attribuire una incertezza precisa alle misure attraverso gli strumenti di ROOT, ed anche questo ha contribuito alla non riuscita della stima dell'efficienza del rivelatore.
+\noindent L'andamento dell'efficienza non \`e quello atteso. Alcuni punti si discostano dall'andamento che prevede l'efficienza assoluta del rivelatore diminuire all'aumentare dell'energia, non adattandosi al modello teorico. Non \`e stato possibile attribuire una incertezza precisa alle misure attraverso gli strumenti di ROOT, ed anche questo ha contribuito alla non riuscita della stima dell'efficienza del rivelatore.
 
 \section{Parte 2}
 
@@ -219,13 +220,13 @@ L'andamento dell'efficienza non \`e quello atteso. Alcuni punti si discostano da
 %%% CURVA DI CALIBRAZIONE CON MULTIGAMMA %%%
  
 \subsubsection{Curva di calibrazione}
-Il segnale \`e acquisito, come della parte 1 dell'esperienza, da una catena di lettura classica, con i componenti integrati nello stesso modo. Come prima cosa, \`e nostra necessita costruire una curva di calibrazione Energia vs. Canali. Allo scopo viene utilizzata una sorgente multigamma: la sorgente \`e composta da diversi radionuclidi, ognuno con la sua attivit\`e ed una energia tabulata per i gamma emessi. Vengono calcolate, per ogni radionuclide, le attività riferite al giorno in cui \`e stata effettuata la misura. Viene utilizzata la formula del decadimento:
+Il segnale \`e acquisito, come della parte 1 dell'esperienza, da una catena di lettura classica, con i componenti integrati nello stesso modo. Come prima cosa, \`e nostra necessit\`a costruire una curva di calibrazione Energia vs. Canali. Allo scopo viene utilizzata una sorgente multigamma: la sorgente \`e composta da diversi radionuclidi, ognuno con la sua attivit\`e ed una energia tabulata per i gamma emessi. Vengono calcolate, per ogni radionuclide, le attività riferite al giorno in cui \`e stata effettuata la misura. Viene utilizzata la formula del decadimento:
 
 \begin{equation}
 	A(t)=A_{0}e^{-t/\tau}
 \end{equation}
 
-dove $A_{0}$ rappresenta l'attivit\`e al tempo 0 del radionuclide, indicata su una scheda di certificazione, e $\tau$ \`e una caratteristica legata al tempo di dimezzamento del radionuclide. Al giorno della misura, risultano attivi i seguenti radionuclidi:
+\noindent dove $A_{0}$ rappresenta l'attivit\`e al tempo 0 del radionuclide, indicata su una scheda di certificazione, e $\tau$ \`e una caratteristica legata al tempo di dimezzamento del radionuclide. Al giorno della misura, risultano attivi i seguenti radionuclidi:
 
 \begin{center}
     \begin{tabular}{cccc}
@@ -241,15 +242,15 @@ dove $A_{0}$ rappresenta l'attivit\`e al tempo 0 del radionuclide, indicata su u
     \end{tabular}\\
 \end{center}
 
-A questo punto, viene analizzato lo spettro della sorgente multigamma utilizzata, individuando i picchi e, analogamente alla parte 1, effettuando un ingrandimento per individuare la posizione del picco e la relativa $\sigma$:
+\noindent A questo punto, viene analizzato lo spettro della sorgente multigamma utilizzata, individuando i picchi e, analogamente alla parte 1, effettuando un ingrandimento per individuare la posizione del picco e la relativa $\sigma$:
 
 \begin{figure}[H]
     \centering
-    \includegraphics[scale=0.45]{grafici/piccouw878}
+    \includegraphics[scale=0.6]{grafici/piccouw878}
     \caption{Uno dei picchi individuati}
 \end{figure}
 
-Vengono individuati 6 picchi, uno dei quali corrisponde ad una energia di 2505 KeV. L'andamento della curva di calibrazione \`e il seguente:
+\noindent Vengono individuati 6 picchi, uno dei quali corrisponde ad una energia di 2505 KeV. L'andamento della curva di calibrazione \`e il seguente:
 
 \begin{figure}[H]
     \centering
@@ -257,15 +258,15 @@ Vengono individuati 6 picchi, uno dei quali corrisponde ad una energia di 2505 K
     \caption{Energia vs. Canali}
 \end{figure}
 
-Si sfrutta la relazione (3) per interpolare il grafico. Si ottengono i seguenti parametri:
+\noindent Si sfrutta la relazione (3) per interpolare il grafico. Si ottengono i seguenti parametri:
 
 $$
-	m=0.18 \pm 7.19 \times 10^{-5}\, \unit{Kev/V}
+	m=0.18 \pm 7.19 \times 10^{-5}\, \unit{kev/V}
 $$
 $$
-	q=13.35 \pm 0.28\, \unit{Kev}
+	q=13.35 \pm 0.28\, \unit{keV}
 $$
-L'andamento della curva \`e chiaramente lineare. Il picco presente a 2505 KeV, non previsto fra quelli attesi nella misura, \`e attribuibile al fatto che in alcuni casi la risoluzione temporale del rivelatore non \`e sufficientemente alta da distinguere in maniera precisa due eventi successivi, come sono in questo caso l'emissione dei due gamma della sorgente di 60-Co. In questi casi il rivelatore legge i due eventi come un evento singolo, registrando un'energia pari alla somma dei due gamma del cobalto, circa pari a 2500 KeV.
+L'andamento della curva \`e chiaramente lineare giustificato anche dal valore di $\chi^2$-ridotto prossimo a 1. Il picco presente a 2505 KeV, non previsto fra quelli attesi nella misura, \`e attribuibile al fatto che in alcuni casi la risoluzione temporale del rivelatore non \`e sufficientemente alta da distinguere in maniera precisa due eventi successivi, come sono in questo caso l'emissione dei due gamma della sorgente di 60-Co. In questi casi il rivelatore legge i due eventi come un evento singolo, registrando un'energia pari alla somma dei due gamma del cobalto, circa pari a 2500 KeV.
 
 %%% RISOLUZIONE CON MULTIGAMMA %%%
 
@@ -278,19 +279,19 @@ Analogamente alla parte 1, utilizziamo la relazione (1) per calcolare la risoluz
     \caption{Risoluzione in funzione di E}
 \end{figure}
 
-Con a, b e c che rispettivamente indicano i contributi legati alla statistica, alla raccolta delle cariche e al rumore. Sono riportati di seguito i valori:
+\noindent Con a, b e c che rispettivamente indicano i contributi legati alla statistica, alla raccolta delle cariche e al rumore. Sono riportati di seguito i valori:
 
 $$
-	a=2.08 \times 10^{-2} \pm 1.17 \times 10^{-2} [\sqrt{KeV}]
+	a=2.08 \times 10^{-2} \pm 1.17 \times 10^{-2} \unit{keV^{\frac{1}{2}}}
 $$
 $$
 	b=9.76 \times 10^{-4} \pm 2.02 \times 10^{-4}
 $$
 $$
-	c= 1.15 \pm 4.69 \times 10^{-2} [KeV]
+	c= 1.15 \pm 4.69 \times 10^{-2} \unit{keV}
 $$
 
-Anche in questo caso il contributo pi\`u rilevante \`e quello legato al rumore elettronico.
+\noindent Anche in questo caso il contributo pi\`u rilevante \`e quello legato al rumore elettronico.
 
 %%% EFFICIENZA CON MULTIGAMMA %%%
 
@@ -303,7 +304,7 @@ Sono state utilizzate la relazione (5) per il calcolo dell'efficienza assoluta d
     \caption{Efficienza in funzione di E}
 \end{figure}
 
-In questo caso si pu\`o notare come uno solo dei punti considerati, quello corrispondente al picco relativo al 109-Cd, si discosti in maniera importante dall'andamento atteso. Risulta pi\`u evidente rispetto alla parte 1 l'andamento decrescente dell'efficienza all'aumentare dell'energia, suppur anche in questo caso non sia stato possibile determinare con precisione una incertezza per le varie misure.
+\noindent In questo caso si pu\`o notare come uno solo dei punti considerati, quello corrispondente al picco relativo al 109-Cd, si discosti in maniera importante dall'andamento atteso. Risulta pi\`u evidente rispetto alla parte 1 l'andamento decrescente dell'efficienza all'aumentare dell'energia, suppur anche in questo caso non sia stato possibile determinare con precisione una incertezza per le varie misure.
 
 \subsection{Sorgente ignota}
 
@@ -314,16 +315,16 @@ A nostra disposizione abbiamo una acquisizione di dati senza sorgente ed una con
 
 \begin{figure}[H]
     \centering
-    \includegraphics[scale=0.45]{grafici/sorgenteignota}
+    \includegraphics[scale=0.6]{grafici/sorgenteignota}
     \caption{Spettro sorgente ignota}
 \end{figure}
 
-Il numero di picchi \`e molto elevato: andiamo ad analizzare principalmente quelli pi\`u intensi ed evidenti. Come nelle parti precedenti, la posizione del picco con la relativa $\sigma$ vengono ricavate interpolando con una gaussiana il grafico ingrandito nella regione di interesse. Attraverso i canali individuati risaliamo alle energie corrispondenti, utilizzando la curva di calibrazione ricavata nella sezione 3.2.1. Nella seguente tabella indichiamo nella terza colonna il nuclide responsabile dell'emissione del gamma di quella precisa energia:
+\noindent Il numero di picchi \`e molto elevato: andiamo ad analizzare principalmente quelli pi\`u intensi ed evidenti. Come nelle parti precedenti, la posizione del picco con la relativa $\sigma$ vengono ricavate dal grafico ingrandito nella regione di interesse, interpolando con una gaussiana e un polinomio di grado zero che tenga conto del rumore. Attraverso i canali individuati risaliamo alle energie corrispondenti, utilizzando la curva di calibrazione ricavata nella sezione 3.2.1. Nella seguente tabella indichiamo nella terza colonna il nuclide responsabile dell'emissione del gamma di quella precisa energia:
 
 \begin{center}
     \begin{tabular}{ccc}
         \toprule
-        Canale [V] & Energia[KeV] & Nuclide\\
+        Canale [mV] & Energia [keV] & Nuclide\\
         \midrule
 	  338 & 75.20 & 228-Th\\
 	  350 & 77.45 & 228-Ac\\
@@ -344,7 +345,7 @@ Il numero di picchi \`e molto elevato: andiamo ad analizzare principalmente quel
     \end{tabular}\\
 \end{center}
 
-Tutti i nuclidi individuati fanno parte della catena radioattiva del torio. Considerando che la sorgente utilizzata non pu\`o avere un tempo di dimezzamento troppo breve, altrimenti la sorgente si esaurirebbe velocemente, \`e ipotizzabile che la sorgente in questione sia del 228-Ra.
+\noindent Tutti i nuclidi individuati fanno parte della catena radioattiva del torio. Considerando che la sorgente utilizzata non pu\`o avere un tempo di dimezzamento troppo breve, altrimenti la sorgente si esaurirebbe velocemente, \`e ipotizzabile che la sorgente in questione sia del 228-Ra.
 
 %%% RISOLUZIONE SORGENTE IGNOTA%%%
 
@@ -358,16 +359,16 @@ Anche in questo caso andiamo a calcolare l'andamento della risoluzione del rivel
     \caption{Risoluzione in funzione di E}
 \end{figure}
 
-Con a, b e c che rispettivamente indicano i contributi legati alla statistica, alla raccolta delle cariche e al rumore. Sono riportati di seguito i valori:
+\noindent Con a, b e c che rispettivamente indicano i contributi legati alla statistica, alla raccolta delle cariche e al rumore. Sono riportati di seguito i valori:
 
 $$
-	a=3.29 \times 10^{-2} \pm 9.87 \times 10^{-4} [\sqrt{KeV}]
+	a=3.29 \times 10^{-2} \pm 9.87 \times 10^{-4} \unit{keV^{\frac{1}{2}}}
 $$
 $$
 	b=6.53 \times 10^{-4} \pm 2.86 \times 10^{-5}
 $$
 $$
-	c= 1.14 \pm 8.03 \times 10^{-3} [KeV]
+	c= 1.14 \pm 8.03 \times 10^{-3} \unit{keV}
 $$
 
 %%% DETERMINAZIONE FATTORE DI FANO %%%
@@ -376,14 +377,226 @@ $$
 
 Nella relazione (4) abbiamo indicato come il coefficiente a del nostro modello fosse relativo alla componente statistica della risoluzione. Pi\`u precisamente, si può definire:
 $$
-	a=\sqrt{2.35 \cdot F \cdot w}
+	a=\sqrt{2.35 \times F \times w}
 $$
 
-F rappresenta il fattore di Fano, un coefficiente che nel calcolo tiene conto della statistica poissoniana, mentre w rappresenta l'energia necessaria per produrre una coppia elettrone-lacuna nel materiale. Nel germanio il valore di w \`e di 2.96 eV.
+\noindent $F$ rappresenta il fattore di Fano, un coefficiente che nel calcolo tiene conto della statistica poissoniana, mentre $w$ rappresenta l'energia necessaria per produrre una coppia elettrone-lacuna nel materiale. Nel germanio il valore di $w$ \`e di 2.96 eV.
 
 $$
-	F=\frac{a^2}{2.35 \cdot w}
+	F=\frac{a^2}{2.35 \times w}
 $$
 
-Il valore del fattore di Fano calcolato è dunque 0.156 $\pm$ 0.009.
+\noindent Il valore del fattore di Fano calcolato \`e dunque 0.156 $\pm$ 0.009.
+
+%%% APPENDICE %%%
+
+\section{Appendice}
+\subsection{High Voltage}
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.45]{appendice/2000}
+\end{figure}
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.45]{appendice/2200}
+\end{figure}
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.45]{appendice/2400}
+\end{figure}
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.45]{appendice/2600}
+\end{figure}
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.45]{appendice/2800}
+\end{figure}
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.45]{appendice/3000}
+\end{figure}
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.45]{appendice/3200}
+\end{figure}
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.45]{appendice/3400}
+\end{figure}
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.45]{appendice/3600}
+\end{figure}
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.45]{appendice/3800}
+\end{figure}
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.45]{appendice/4000}
+\end{figure}
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.45]{appendice/4200}
+\end{figure}
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.45]{appendice/4400}
+\end{figure}
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.45]{appendice/4600}
+\end{figure}
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.45]{appendice/4800}
+\end{figure}
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.45]{appendice/5000}
+\end{figure}
+
+%%% SHAPING TIME %%%
+\subsection{Shaping Time}
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.45]{appendice/5}
+\end{figure}
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.45]{appendice/10}
+\end{figure}
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.45]{appendice/20}
+\end{figure}
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.45]{appendice/30}
+\end{figure}
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.45]{appendice/60}
+\end{figure}
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.45]{appendice/100}
+\end{figure}
+
+%%% PICCHI DEL 22Na %%%
+\subsection{Picchi del 22Na}
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.45]{appendice/Na}
+\end{figure}
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.45]{appendice/Na2}
+\end{figure}
+
+%%% PICCHI DEL 60Co
+\subsection{Picchi del 60Co}
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.45]{appendice/Co}
+\end{figure}
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.45]{appendice/Co2}
+\end{figure}
+
+%%% PICCHI DEL 228Th
+\subsection{Picchi del 228Th}
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.45]{appendice/Th1}
+\end{figure}
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.45]{appendice/Th2}
+\end{figure}
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.45]{appendice/Th3}
+\end{figure}
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.45]{appendice/Th4}
+\end{figure}
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.45]{appendice/Th5}
+\end{figure}
+
+%%% PICCHI DELLA SORGENTE UW878
+\subsection{Picchi della sorgente UW878}
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.45]{appendice/u1}
+\end{figure}
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.45]{appendice/u2}
+\end{figure}
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.45]{appendice/u3}
+\end{figure}
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.45]{appendice/u4}
+\end{figure}
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.45]{appendice/u5}
+\end{figure}
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.45]{appendice/u6}
+\end{figure}
+
+\subsection{Picchi della sorgente ignota}
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.45]{appendice/y1}
+\end{figure}
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.45]{appendice/y8}
+\end{figure}
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.45]{appendice/y9}
+\end{figure}
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.45]{appendice/y2}
+\end{figure}
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.45]{appendice/y6}
+\end{figure}
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.45]{appendice/y7}
+\end{figure}
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.45]{appendice/y3}
+\end{figure}
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.45]{appendice/y4}
+\end{figure}
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.45]{appendice/y5}
+\end{figure}
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.45]{appendice/y10}
+\end{figure}
+
+
 \end{document}
