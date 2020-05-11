@@ -69,11 +69,11 @@ void computeHisto (string element, string nameSource, string peak, int bin, doub
     funcFit->SetParName(1,"Mean");
     funcFit->SetParName(2,"Std Dev");
     funcFit->SetParName(3,"Noise");
-    funcFit->SetParameter(0, 330);
-    funcFit->SetParameter(1, 3372);
+    funcFit->SetParameter(0, 250);
+    funcFit->SetParameter(1, 3222);
     funcFit->SetParameter(2, 10);
     funcFit->SetParameter(3, 10);
-    funcFit->SetParLimits(0, 330, 350);
+    funcFit->SetParLimits(0, 200, 400);
 
     histoSpectre->Fit("funcFit");*/
 
@@ -97,14 +97,14 @@ int main() {
 
 
     // PICCO 1 SODIO ACQUA 4 cm
-    //computeHisto ("acqua", "sodio_acqua_04cm", "1", 8192, 2941, 2980, false, false);
-    //computeHisto ("acqua", "sodio_acqua_04cm", "1", 8192, 2941, 2980, false, true);
+    //computeHisto ("acqua", "sodio_acqua_04cm", "1", 8192, 1225, 1265, false, false);
+    //computeHisto ("acqua", "sodio_acqua_04cm", "1", 8192, 1225, 1265, false, true);
 
 
 
     // PICCO 2 SODIO ACQUA 4 cm
-    //computeHisto ("acqua", "sodio_acqua_04cm", "2", 8192, 3353, 3393, false, false);
-    //computeHisto ("acqua", "sodio_acqua_04cm", "2", 8192, 3353, 3393, false, true);
+    //computeHisto ("acqua", "sodio_acqua_04cm", "2", 8192, 3200, 3240, false, false);
+    //computeHisto ("acqua", "sodio_acqua_04cm", "2", 8192, 3200, 3240, false, true);
 
 
 
@@ -115,14 +115,14 @@ int main() {
 
 
     // PICCO 1 SODIO ACQUA 8 cm
-    //computeHisto ("acqua", "sodio_acqua_08cm", "1", 8192, 2941, 2980, false, false);
-    //computeHisto ("acqua", "sodio_acqua_08cm", "1", 8192, 2941, 2980, false, true);
+    //computeHisto ("acqua", "sodio_acqua_08cm", "1", 8192, 1225, 1265, false, false);
+    //computeHisto ("acqua", "sodio_acqua_08cm", "1", 8192, 1225, 1265, false, true);
 
 
 
     // PICCO 2 SODIO ACQUA 8 cm
-    //computeHisto ("acqua", "sodio_acqua_08cm", "2", 8192, 3353, 3393, false, false);
-    //computeHisto ("acqua", "sodio_acqua_08cm", "2", 8192, 3353, 3393, false, true);
+    //computeHisto ("acqua", "sodio_acqua_08cm", "2", 8192, 3200, 3240, false, false);
+    //computeHisto ("acqua", "sodio_acqua_08cm", "2", 8192, 3200, 3240, false, true);
 
 
 
@@ -133,14 +133,14 @@ int main() {
 
 
     // PICCO 1 SODIO ACQUA 12 cm
-    //computeHisto ("acqua", "sodio_acqua_12cm", "1", 8192, 2941, 2980, false, false);
-    //computeHisto ("acqua", "sodio_acqua_12cm", "1", 8192, 2941, 2980, false, true);
+    //computeHisto ("acqua", "sodio_acqua_12cm", "1", 8192, 1225, 1265, false, false);
+    //computeHisto ("acqua", "sodio_acqua_12cm", "1", 8192, 1225, 1265, false, true);
 
 
 
     // PICCO 2 SODIO ACQUA 12 cm
-    //computeHisto ("acqua", "sodio_acqua_12cm", "2", 8192, 3353, 3393, false, false);
-    //computeHisto ("acqua", "sodio_acqua_12cm", "2", 8192, 3353, 3393, false, true);
+    //computeHisto ("acqua", "sodio_acqua_12cm", "2", 8192, 3200, 3240, false, false);
+    //computeHisto ("acqua", "sodio_acqua_12cm", "2", 8192, 3200, 3240, false, true);
 
 
 
@@ -151,14 +151,14 @@ int main() {
 
 
     // PICCO 1 SODIO ACQUA 16 cm
-    //computeHisto ("acqua", "sodio_acqua_16cm", "1", 8192, 2941, 2980, false, false);
-    //computeHisto ("acqua", "sodio_acqua_16cm", "1", 8192, 2941, 2980, false, true);
+    //computeHisto ("acqua", "sodio_acqua_16cm", "1", 8192, 1225, 1265, false, false);
+    //computeHisto ("acqua", "sodio_acqua_16cm", "1", 8192, 1225, 1265, false, true);
 
 
 
     // PICCO 2 SODIO ACQUA 16 cm
-    //computeHisto ("acqua", "sodio_acqua_16cm", "2", 8192, 3353, 3393, false, false);
-    //computeHisto ("acqua", "sodio_acqua_16cm", "2", 8192, 3353, 3393, false, true);
+    //computeHisto ("acqua", "sodio_acqua_16cm", "2", 8192, 3200, 3240, false, false);
+    //computeHisto ("acqua", "sodio_acqua_16cm", "2", 8192, 3200, 3240, false, true);
 
 
 
@@ -169,12 +169,12 @@ int main() {
 
 
     // PICCO 1 SODIO ACQUA 20 cm
-    //computeHisto ("acqua", "sodio_acqua_20cm", "1", 8192, 2941, 2980, false, false);
-    //computeHisto ("acqua", "sodio_acqua_20cm", "1", 8192, 2941, 2980, false, true);
+    //computeHisto ("acqua", "sodio_acqua_20cm", "1", 8192, 1225, 1265, false, false);
+    //computeHisto ("acqua", "sodio_acqua_20cm", "1", 8192, 1225, 1265, false, true);
 
 
 
     // PICCO 2 SODIO ACQUA 20 cm
-    //computeHisto ("acqua", "sodio_acqua_20cm", "2", 8192, 3353, 3393, false, false);
-    //computeHisto ("acqua", "sodio_acqua_20cm", "2", 8192, 3353, 3393, false, true);
+    //computeHisto ("acqua", "sodio_acqua_20cm", "2", 8192, 3200, 3240, false, false);
+    //computeHisto ("acqua", "sodio_acqua_20cm", "2", 8192, 3200, 3240, false, true);
 }
