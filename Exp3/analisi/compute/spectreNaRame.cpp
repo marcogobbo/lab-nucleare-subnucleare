@@ -13,7 +13,7 @@ double pol0 (double*x, double* par) {
 }
 
 double totalFit (double* x, double* par) {
-    return gaussFit(x, par) + pol0(x, &par[3]);
+    return gaussFit(x, par) + pol0(x, &par[3]) + gaussFit(x, &par[4]);
 }
 
 void computeHisto (string element, string nameSource, string peak, int bin, double limInf, double limSup, bool logScale, bool noData) {
@@ -64,18 +64,23 @@ void computeHisto (string element, string nameSource, string peak, int bin, doub
     histoSpectre->GetXaxis()->SetRangeUser(limInf, limSup);
 
     // Da commentare se si vuole lo spettro totale o da sostituire con il fit corretto presente in compute/codeFit/...
-    /*TF1* funcFit = new TF1("funcFit", totalFit, limInf, limSup, 4);
+    /*TF1* funcFit = new TF1("funcFit", totalFit, limInf, limSup, 7);
     funcFit->SetParName(0,"Amp");
     funcFit->SetParName(1,"Mean");
     funcFit->SetParName(2,"Std Dev");
     funcFit->SetParName(3,"Noise");
-    funcFit->SetParameter(0, 250);
+    funcFit->SetParName(4,"Amp_PileUp");
+    funcFit->SetParName(5,"Mean_PileUp");
+    funcFit->SetParName(6,"Std Dev_PileUp");
+    funcFit->SetParameter(0, 7000);
     funcFit->SetParameter(1, 3222);
     funcFit->SetParameter(2, 10);
     funcFit->SetParameter(3, 10);
-    funcFit->SetParLimits(0, 200, 400);
+    funcFit->SetParameter(4, 400);
+    funcFit->SetParameter(5, 3238);
+    funcFit->SetParameter(6, 10);*/
 
-    histoSpectre->Fit("funcFit");*/
+    histoSpectre->Fit("funcFit");
 
     if (logScale) {
         canvasSpectre->SetLogy();
@@ -90,89 +95,89 @@ void computeHisto (string element, string nameSource, string peak, int bin, doub
 
 
 int main() {
-    // SODIO RAME 1 cm
-    //computeHisto ("rame", "sodio_rame_01cm", "", 8192, 0, 8192, false, false);
-    computeHisto ("rame", "sodio_rame_01cm", "", 8192, 0, 8192, false, true);
+    // SODIO RAME 1.1 cm
+    //computeHisto ("rame", "sodio_rame_011cm", "", 8192, 0, 8192, false, false);
+    //computeHisto ("rame", "sodio_rame_011cm", "", 8192, 0, 8192, false, true);
 
 
 
-    // PICCO 1 SODIO RAME 1 cm
-    //computeHisto ("rame", "sodio_rame_01cm", "1", 8192, 1225, 1265, false, false);
-    //computeHisto ("rame", "sodio_rame_01cm", "1", 8192, 1225, 1265, false, true);
+    // PICCO 1 SODIO RAME 1.1 cm
+    //computeHisto ("rame", "sodio_rame_011cm", "1", 8192, 1225, 1300, false, false);
+    //computeHisto ("rame", "sodio_rame_011cm", "1", 8192, 1225, 1300, false, true);
 
 
 
-    // PICCO 2 SODIO RAME 1 cm
-    //computeHisto ("rame", "sodio_rame_01cm", "2", 8192, 3200, 3240, false, false);
-    //computeHisto ("rame", "sodio_rame_01cm", "2", 8192, 3200, 3240, false, true);
+    // PICCO 2 SODIO RAME 1.1 cm
+    //computeHisto ("rame", "sodio_rame_011cm", "2", 8192, 3200, 3300, false, false);
+    //computeHisto ("rame", "sodio_rame_011cm", "2", 8192, 3200, 3300, false, true);
 
 
 
-    // SODIO RAME 2 cm
-    //computeHisto ("rame", "sodio_rame_02cm", "", 8192, 0, 8192, false, false);
-    //computeHisto ("rame", "sodio_rame_02cm", "", 8192, 0, 8192, false, true);
+    // SODIO RAME 2.2 cm
+    //computeHisto ("rame", "sodio_rame_022cm", "", 8192, 0, 8192, false, false);
+    //computeHisto ("rame", "sodio_rame_022cm", "", 8192, 0, 8192, false, true);
 
 
 
-    // PICCO 1 SODIO RAME 2 cm
-    //computeHisto ("rame", "sodio_rame_02cm", "1", 8192, 1225, 1265, false, false);
-    //computeHisto ("rame", "sodio_rame_02cm", "1", 8192, 1225, 1265, false, true);
+    // PICCO 1 SODIO RAME 2.2 cm
+    //computeHisto ("rame", "sodio_rame_022cm", "1", 8192, 1225, 1300, false, false);
+    //computeHisto ("rame", "sodio_rame_022cm", "1", 8192, 1225, 1300, false, true);
 
 
 
-    // PICCO 2 SODIO RAME 2 cm
-    //computeHisto ("rame", "sodio_rame_02cm", "2", 8192, 3200, 3240, false, false);
-    //computeHisto ("rame", "sodio_rame_02cm", "2", 8192, 3200, 3240, false, true);
+    // PICCO 2 SODIO RAME 2.2 cm
+    //computeHisto ("rame", "sodio_rame_022cm", "2", 8192, 3200, 3300, false, false);
+    //computeHisto ("rame", "sodio_rame_022cm", "2", 8192, 3200, 3300, false, true);
 
 
 
-    // SODIO RAME 3 cm
-    //computeHisto ("rame", "sodio_rame_03cm", "", 8192, 0, 8192, false, false);
-    //computeHisto ("rame", "sodio_rame_03cm", "", 8192, 0, 8192, false, true);
+    // SODIO RAME 3.3 cm
+    //computeHisto ("rame", "sodio_rame_033cm", "", 8192, 0, 8192, false, false);
+    //computeHisto ("rame", "sodio_rame_033cm", "", 8192, 0, 8192, false, true);
 
 
 
-    // PICCO 1 SODIO RAME 3 cm
-    //computeHisto ("rame", "sodio_rame_03cm", "1", 8192, 1225, 1265, false, false);
-    //computeHisto ("rame", "sodio_rame_03cm", "1", 8192, 1225, 1265, false, true);
+    // PICCO 1 SODIO RAME 3.3 cm
+    //computeHisto ("rame", "sodio_rame_033cm", "1", 8192, 1200, 1300, false, false);
+    //computeHisto ("rame", "sodio_rame_033cm", "1", 8192, 1200, 1300, false, true);
 
 
-    // PICCO 2 SODIO RAME 3 cm
-    //computeHisto ("rame", "sodio_rame_03cm", "2", 8192, 3200, 3240, false, false);
-    //computeHisto ("rame", "sodio_rame_03cm", "2", 8192, 3200, 3240, false, true);
-
-
-
-    // SODIO RAME 4 cm
-    //computeHisto ("rame", "sodio_rame_04cm", "", 8192, 0, 8192, false, false);
-    //computeHisto ("rame", "sodio_rame_04cm", "", 8192, 0, 8192, false, true);
+    // PICCO 2 SODIO RAME 3.3 cm
+    //computeHisto ("rame", "sodio_rame_033cm", "2", 8192, 3200, 3300, false, false);
+    //computeHisto ("rame", "sodio_rame_033cm", "2", 8192, 3200, 3300, false, true);
 
 
 
-    // PICCO 1 SODIO RAME 4 cm
-    //computeHisto ("rame", "sodio_rame_04cm", "1", 8192, 1225, 1265, false, false);
-    //computeHisto ("rame", "sodio_rame_04cm", "1", 8192, 1225, 1265, false, true);
+    // SODIO RAME 4.4 cm
+    //computeHisto ("rame", "sodio_rame_044cm", "", 8192, 0, 8192, false, false);
+    //computeHisto ("rame", "sodio_rame_044cm", "", 8192, 0, 8192, false, true);
 
 
 
-    // PICCO 2 SODIO RAME 4 cm
-    //computeHisto ("rame", "sodio_rame_04cm", "2", 8192, 3200, 3240, false, false);
-    //computeHisto ("rame", "sodio_rame_04cm", "2", 8192, 3200, 3240, false, true);
-
-
-    // SODIO RAME 5 cm
-    //computeHisto ("rame", "sodio_rame_05cm", "", 8192, 0, 8192, false, false);
-    //computeHisto ("rame", "sodio_rame_05cm", "", 8192, 0, 8192, false, true);
+    // PICCO 1 SODIO RAME 4.4 cm
+    //computeHisto ("rame", "sodio_rame_044cm", "1", 8192, 1200, 1300, false, false);
+    //computeHisto ("rame", "sodio_rame_044cm", "1", 8192, 1200, 1300, false, true);
 
 
 
-    // PICCO 1 SODIO RAME 5 cm
-    //computeHisto ("rame", "sodio_rame_05cm", "1", 8192, 1225, 1265, false, false);
-    //computeHisto ("rame", "sodio_rame_05cm", "1", 8192, 1225, 1265, false, true);
+    // PICCO 2 SODIO RAME 4.4 cm
+    //computeHisto ("rame", "sodio_rame_044cm", "2", 8192, 3200, 3300, false, false);
+    //computeHisto ("rame", "sodio_rame_044cm", "2", 8192, 3200, 3300, false, true);
+
+
+    // SODIO RAME 5.4 cm
+    //computeHisto ("rame", "sodio_rame_054cm", "", 8192, 0, 8192, false, false);
+    //computeHisto ("rame", "sodio_rame_054cm", "", 8192, 0, 8192, false, true);
 
 
 
-    // PICCO 2 SODIO RAME 5 cm
-    //computeHisto ("rame", "sodio_rame_05cm", "2", 8192, 3200, 3240, false, false);
-    //computeHisto ("rame", "sodio_rame_05cm", "2", 8192, 3200, 3240, false, true);
+    // PICCO 1 SODIO RAME 5.4 cm
+    //computeHisto ("rame", "sodio_rame_054cm", "1", 8192, 1200, 1300, false, false);
+    //computeHisto ("rame", "sodio_rame_054cm", "1", 8192, 1200, 1300, false, true);
+
+
+
+    // PICCO 2 SODIO RAME 5.4 cm
+    //computeHisto ("rame", "sodio_rame_054cm", "2", 8192, 3200, 3300, false, false);
+    //computeHisto ("rame", "sodio_rame_054cm", "2", 8192, 3200, 3300, false, true);
 }
