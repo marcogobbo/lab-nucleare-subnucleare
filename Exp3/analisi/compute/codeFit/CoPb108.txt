@@ -1,0 +1,36 @@
+PICCO 1
+
+    TF1* funcFit = new TF1("funcFit", totalFit, limInf, limSup, 7);
+    funcFit->SetParName(0,"Amp");
+    funcFit->SetParName(1,"Mean");
+    funcFit->SetParName(2,"Std Dev");
+    funcFit->SetParName(3,"Noise");
+    funcFit->SetParName(4,"Amp_PileUp");
+    funcFit->SetParName(5,"Mean_PileUp");
+    funcFit->SetParName(6,"Std Dev_PileUp");
+    funcFit->SetParameter(0, 7000);
+    funcFit->SetParameter(1, 2960);
+    funcFit->SetParameter(2, 5);
+    funcFit->SetParameter(3, 200);
+    funcFit->SetParameter(4, 1500);
+    funcFit->SetParameter(5, 2978);
+    funcFit->SetParameter(6, 10);
+
+PICCO 2
+
+    TF1* funcFit = new TF1("funcFit", totalFit, limInf, limSup, 7);
+    funcFit->SetParName(0,"Amp");
+    funcFit->SetParName(1,"Mean");
+    funcFit->SetParName(2,"Std Dev");
+    funcFit->SetParName(3,"Noise");
+    funcFit->SetParName(4,"Amp_PileUp");
+    funcFit->SetParName(5,"Mean_PileUp");
+    funcFit->SetParName(6,"Std Dev_PileUp");
+    funcFit->SetParameter(0, 6000);
+    funcFit->SetParameter(1, 3370);
+    funcFit->SetParameter(2, 5);
+    funcFit->SetParameter(3, 50);
+    funcFit->SetParameter(4, 1100);
+    funcFit->SetParameter(5, 3388);
+    funcFit->SetParameter(6, 10);
+
