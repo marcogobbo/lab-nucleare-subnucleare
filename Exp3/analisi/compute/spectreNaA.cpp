@@ -177,4 +177,26 @@ int main() {
     // PICCO 2 SODIO ACQUA 20 cm
     //computeHisto ("acqua", "sodio_acqua_20cm", "2", 8192, 3200, 3240, false, false);
     //computeHisto ("acqua", "sodio_acqua_20cm", "2", 8192, 3200, 3240, false, true);
+    
+
+
+    // PICCO 1460KeV 4 cm
+    //computeHisto ("acqua", "sodio_acqua_04cm", "3", 8192, 3650, 3750, false, false);
+    //computeHisto ("acqua", "sodio_acqua_04cm", "3", 8192, 3650, 3750, false, true);
+
+    // PICCO 1460KeV 8 cm
+    //computeHisto ("acqua", "sodio_acqua_08cm", "3", 8192, 3650, 3750, false, false);
+    //computeHisto ("acqua", "sodio_acqua_08cm", "3", 8192, 3650, 3750, false, true);
+
+    // PICCO 1460KeV 12 cm
+    //computeHisto ("acqua", "sodio_acqua_12cm", "3", 8192, 3650, 3750, false, false);
+    //computeHisto ("acqua", "sodio_acqua_12cm", "3", 8192, 3650, 3750, false, true);
+
+    // PICCO 1460KeV 16 cm
+    //computeHisto ("acqua", "sodio_acqua_16cm", "3", 8192, 3650, 3750, false, false);
+    //computeHisto ("acqua", "sodio_acqua_16cm", "3", 8192, 3650, 3750, false, true);
+
+    // PICCO 1460KeV 20 cm
+    //computeHisto ("acqua", "sodio_acqua_20cm", "3", 8192, 3650, 3750, false, false);
+    //computeHisto ("acqua", "sodio_acqua_20cm", "3", 8192, 3650, 3750, false, true);
 }
