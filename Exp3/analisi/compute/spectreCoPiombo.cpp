@@ -82,6 +82,19 @@ void computeHisto (string element, string nameSource, string peak, int bin, doub
 
     histoSpectre->Fit("funcFit");*/
 
+    // Calcolo le aree
+    TF1* gaussian = new TF1("gaussian", gaussFit, limInf, limSup, 3);
+    gaussian->SetParameter(0, funcFit->GetParameter(0));
+    gaussian->SetParameter(1, funcFit->GetParameter(1));
+    gaussian->SetParameter(2, funcFit->GetParameter(2));
+    gaussian->SetParError(0, funcFit->GetParError(0));
+    gaussian->SetParError(1, funcFit->GetParError(1));
+    gaussian->SetParError(2, funcFit->GetParError(2));
+
+    ofstream OutFile("areeCoPiombo.txt");
+    OutFile << namePDF <<":\t"<< gaussian->Integral(1230, 1260) << " +/- " << funcFit->IntegralError(1230, 1260) << endl;
+    OutFile.close();
+
     if (logScale) {
         canvasSpectre->SetLogy();
     }

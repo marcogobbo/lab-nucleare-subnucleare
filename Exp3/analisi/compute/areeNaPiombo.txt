@@ -1,0 +1,1 @@
+../graphsNoData/spectre_sodio_piombo_021cm1.pdf:	207123 +/- 511.238

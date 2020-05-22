@@ -64,7 +64,7 @@ void computeHisto (string element, string nameSource, string peak, int bin, doub
     histoSpectre->GetXaxis()->SetRangeUser(limInf, limSup);
 
     // Da commentare se si vuole lo spettro totale o da sostituire con il fit corretto presente in compute/codeFit/...
-    /*TF1* funcFit = new TF1("funcFit", totalFit, limInf, limSup, 7);
+    TF1* funcFit = new TF1("funcFit", totalFit, limInf, limSup, 7);
     funcFit->SetParName(0,"Amp");
     funcFit->SetParName(1,"Mean");
     funcFit->SetParName(2,"Std Dev");
@@ -72,15 +72,28 @@ void computeHisto (string element, string nameSource, string peak, int bin, doub
     funcFit->SetParName(4,"Amp_PileUp");
     funcFit->SetParName(5,"Mean_PileUp");
     funcFit->SetParName(6,"Std Dev_PileUp");
-    funcFit->SetParameter(0, 5000);
-    funcFit->SetParameter(1, 3222);
+    funcFit->SetParameter(0, 24000);
+    funcFit->SetParameter(1, 1247);
     funcFit->SetParameter(2, 10);
     funcFit->SetParameter(3, 10);
-    funcFit->SetParameter(4, 200);
-    funcFit->SetParameter(5, 3230);
+    funcFit->SetParameter(4, 400);
+    funcFit->SetParameter(5, 1260);
     funcFit->SetParameter(6, 10);
+    
+    histoSpectre->Fit(funcFit);
 
-    histoSpectre->Fit("funcFit");*/
+    // Calcolo le aree
+    TF1* gaussian = new TF1("gaussian", gaussFit, limInf, limSup, 3);
+    gaussian->SetParameter(0, funcFit->GetParameter(0));
+    gaussian->SetParameter(1, funcFit->GetParameter(1));
+    gaussian->SetParameter(2, funcFit->GetParameter(2));
+    gaussian->SetParError(0, funcFit->GetParError(0));
+    gaussian->SetParError(1, funcFit->GetParError(1));
+    gaussian->SetParError(2, funcFit->GetParError(2));
+
+    ofstream OutFile("areeNaPiombo.txt");
+    OutFile << namePDF <<":\t"<< gaussian->Integral(1230, 1260) << " +/- " << funcFit->IntegralError(1230, 1260) << endl;
+    OutFile.close();
 
     if (logScale) {
         canvasSpectre->SetLogy();
@@ -118,7 +131,7 @@ int main() {
 
     // PICCO 1 SODIO PIOMBO 0.21 cm
     //computeHisto ("piombo", "sodio_piombo_021cm", "1", 8192, 1225, 1300, false, false);
-    //computeHisto ("piombo", "sodio_piombo_021cm", "1", 8192, 1225, 1300, false, true);
+    computeHisto ("piombo", "sodio_piombo_021cm", "1", 8192, 1225, 1300, false, true);
 
 
     // PICCO 2 SODIO PIOMBO 0.21 cm
