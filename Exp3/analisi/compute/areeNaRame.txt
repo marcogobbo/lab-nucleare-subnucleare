@@ -1,0 +1,13 @@
+../graphs/spectre_sodio_rame_011cm1.pdf:	247601 +/- 567.531
+../graphs/spectre_sodio_rame_022cm1.pdf:	238159 +/- 560.388
+../graphs/spectre_sodio_rame_033cm1.pdf:	219232 +/- 531.355
+../graphs/spectre_sodio_rame_044cm1.pdf:	196893 +/- 511.432
+../graphs/spectre_sodio_rame_054cm1.pdf:	184529 +/- 490.667
+
+
+../graphs/spectre_sodio_rame_011cm2.pdf:	59197.7 +/- 267.604
+../graphs/spectre_sodio_rame_022cm2.pdf:	57874.2 +/- 260.243
+../graphs/spectre_sodio_rame_033cm2.pdf:	55738 +/- 259.476
+../graphs/spectre_sodio_rame_044cm2.pdf:	53534.5 +/- 249.051
+../graphs/spectre_sodio_rame_054cm2.pdf:	52392 +/- 246.87
+

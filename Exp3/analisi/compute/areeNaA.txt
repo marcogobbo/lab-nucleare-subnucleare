@@ -1,0 +1,11 @@
+../graphs/spectre_sodio_acqua_04cm1.pdf:	20174.4 +/- 272.333
+../graphs/spectre_sodio_acqua_08cm1.pdf:	14272.3 +/- 229.874
+../graphs/spectre_sodio_acqua_12cm1.pdf:	9438.53 +/- 99.9601
+../graphs/spectre_sodio_acqua_16cm1.pdf:	6669.1 +/- 158.277
+../graphs/spectre_sodio_acqua_20cm1.pdf:	4638.96 +/- 71.1312
+
+../graphs/spectre_sodio_acqua_04cm2.pdf:	6080.33 +/- 145.59
+../graphs/spectre_sodio_acqua_08cm2.pdf:	4813.54 +/- 130.701
+../graphs/spectre_sodio_acqua_12cm2.pdf:	3769.91 +/- 112.821
+../graphs/spectre_sodio_acqua_16cm2.pdf:	2960.57 +/- 101.81
+../graphs/spectre_sodio_acqua_20cm2.pdf:	2179.57 +/- 47.6721

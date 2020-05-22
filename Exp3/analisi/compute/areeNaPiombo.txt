@@ -1,1 +1,11 @@
-../graphsNoData/spectre_sodio_piombo_021cm1.pdf:	207123 +/- 511.238
+../graphs/spectre_sodio_piombo_01cm1.pdf:	245774 +/- 562.284
+../graphs/spectre_sodio_piombo_021cm1.pdf:	207123 +/- 511.238
+../graphs/spectre_sodio_piombo_033cm1.pdf:	185472 +/- 487.445
+../graphs/spectre_sodio_piombo_058cm1.pdf:	128385 +/- 401.402
+../graphs/spectre_sodio_piombo_108cm1.pdf:	51660.2 +/- 253.892
+
+../graphs/spectre_sodio_piombo_01cm2.pdf:	63216.4 +/- 288.641
+../graphs/spectre_sodio_piombo_021cm2.pdf:	64176.7 +/- 287.75
+../graphs/spectre_sodio_piombo_033cm2.pdf:	64583.6 +/- 286
+../graphs/spectre_sodio_piombo_058cm2.pdf:	59677.9 +/- 266.446
+../graphs/spectre_sodio_piombo_108cm2.pdf:	47367 +/- 212.903
