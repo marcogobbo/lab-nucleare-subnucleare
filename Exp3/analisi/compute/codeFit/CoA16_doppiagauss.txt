@@ -30,6 +30,6 @@ PICCO 2
     funcFit->SetParameter(1, 3367);
     funcFit->SetParameter(2, 10);
     funcFit->SetParameter(3, 10);
-    funcFit->SetParameter(4, 600);
+    funcFit->SetParameter(4, 450);
     funcFit->SetParameter(5, 3374);
     funcFit->SetParameter(6, 5);

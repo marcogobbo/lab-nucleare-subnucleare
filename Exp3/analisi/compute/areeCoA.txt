@@ -1,0 +1,19 @@
+../graphs/spectre_cobalto_acqua_04cm1.pdf:	8488.44 +/- 93.9857
+../graphs/spectre_cobalto_acqua_08cm1.pdf:	6655.03 +/- 83.5828
+../graphs/spectre_cobalto_acqua_12cm1.pdf:	3861.78 +/- 72.2814
+../graphs/spectre_cobalto_acqua_16cm1.pdf:	2723.07 +/- 62.6072
+../graphs/spectre_cobalto_acqua_20cm1.pdf:	1665.36 +/- 54.7798
+../graphs/spectre_cobalto_acqua_04cm2.pdf:	7700.77 +/- 87.8704
+../graphs/spectre_cobalto_acqua_08cm2.pdf:	6123 +/- 78.8846
+../graphs/spectre_cobalto_acqua_12cm2.pdf:	3638.2 +/- 68.9891
+../graphs/spectre_cobalto_acqua_16cm2.pdf:	2818.36 +/- 62.348
+../graphs/spectre_cobalto_acqua_20cm2.pdf:	2053.58 +/- 54.7323
+
+VECCHI PICCHI 12, 16, 20
+
+../graphs/spectre_cobalto_acqua_12cm1.pdf:	5302.73 +/- 51.9204
+../graphs/spectre_cobalto_acqua_16cm1.pdf:	4242.99 +/- 47.839
+../graphs/spectre_cobalto_acqua_20cm1.pdf:	2964.44 +/- 56.1584
+../graphs/spectre_cobalto_acqua_12cm2.pdf:	4896.18 +/- 46.4039
+../graphs/spectre_cobalto_acqua_16cm2.pdf:	3840.77 +/- 41.6712
+../graphs/spectre_cobalto_acqua_20cm2.pdf:	2991.68 +/- 39.7747

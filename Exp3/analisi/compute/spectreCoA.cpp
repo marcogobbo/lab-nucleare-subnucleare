@@ -1,4 +1,4 @@
-// c++ -o compute spectreCA.cpp ../../../lib/analyzer.cc `root-config --cflags --glibs`
+// c++ -o compute spectreCoA.cpp ../../../lib/analyzer.cc `root-config --cflags --glibs`
 
 #include "../../../lib/analyzer.h"
 
@@ -64,7 +64,7 @@ void computeHisto (string element, string nameSource, string peak, int bin, doub
     histoSpectre->GetXaxis()->SetRangeUser(limInf, limSup);
 
     // Da commentare se si vuole lo spettro totale o da sostituire con il fit corretto presente in compute/codeFit/...
-    /*TF1* funcFit = new TF1("funcFit", totalFit, limInf, limSup, 4);
+    TF1* funcFit = new TF1("funcFit", totalFit, limInf, limSup, 4);
     funcFit->SetParName(0,"Amp");
     funcFit->SetParName(1,"Mean");
     funcFit->SetParName(2,"Std Dev");
@@ -75,7 +75,7 @@ void computeHisto (string element, string nameSource, string peak, int bin, doub
     funcFit->SetParameter(3, 10);
     funcFit->SetParLimits(0, 330, 350);
 
-    histoSpectre->Fit("funcFit");*/
+    histoSpectre->Fit("funcFit");
 
     // Calcolo le aree
     TF1* gaussian = new TF1("gaussian", gaussFit, limInf, limSup, 3);
@@ -88,14 +88,14 @@ void computeHisto (string element, string nameSource, string peak, int bin, doub
 
     fstream OutFile;
     OutFile.open("areeCoA.txt", fstream::app);
-    OutFile << namePDF <<":\t"<< gaussian->Integral(1230, 1260) << " +/- " << funcFit->IntegralError(1230, 1260) << endl;
+    OutFile << namePDF <<":\t"<< gaussian->Integral(3360, 3385) << " +/- " << funcFit->IntegralError(3360, 3385) << endl;
     OutFile.close();
 
     if (logScale) {
         canvasSpectre->SetLogy();
     }
 
-    canvasSpectre->Print(namePDF);
+    //canvasSpectre->Print(namePDF);
 
     // Libero la memoria
     delete histoSpectre;
@@ -189,7 +189,7 @@ int main() {
 
 
     // PICCO 2 COBALTO ACQUA 20 cm
-    //computeHisto ("acqua", "cobalto_acqua_20cm", "2", 8192, 3353, 3393, false, false);
+    computeHisto ("acqua", "cobalto_acqua_20cm", "2", 8192, 3353, 3393, false, false);
     //computeHisto ("acqua", "cobalto_acqua_20cm", "2", 8192, 3353, 3393, false, true);
 
 

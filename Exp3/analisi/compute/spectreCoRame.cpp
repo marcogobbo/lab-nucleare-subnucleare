@@ -64,7 +64,7 @@ void computeHisto (string element, string nameSource, string peak, int bin, doub
     histoSpectre->GetXaxis()->SetRangeUser(limInf, limSup);
 
     // Da commentare se si vuole lo spettro totale o da sostituire con il fit corretto presente in compute/codeFit/...
-    /*TF1* funcFit = new TF1("funcFit", totalFit, limInf, limSup, 7);
+    TF1* funcFit = new TF1("funcFit", totalFit, limInf, limSup, 7);
     funcFit->SetParName(0,"Amp");
     funcFit->SetParName(1,"Mean");
     funcFit->SetParName(2,"Std Dev");
@@ -72,15 +72,15 @@ void computeHisto (string element, string nameSource, string peak, int bin, doub
     funcFit->SetParName(4,"Amp_PileUp");
     funcFit->SetParName(5,"Mean_PileUp");
     funcFit->SetParName(6,"Std Dev_PileUp");
-    funcFit->SetParameter(0, 12000);
-    funcFit->SetParameter(1, 2960);
+    funcFit->SetParameter(0, 10000);
+    funcFit->SetParameter(1, 3370);
     funcFit->SetParameter(2, 5);
-    funcFit->SetParameter(3, 200);
-    funcFit->SetParameter(4, 2500);
-    funcFit->SetParameter(5, 2978);
+    funcFit->SetParameter(3, 50);
+    funcFit->SetParameter(4, 2200);
+    funcFit->SetParameter(5, 3388);
     funcFit->SetParameter(6, 10);
 
-    histoSpectre->Fit("funcFit");*/
+    histoSpectre->Fit("funcFit");
 
     // Calcolo le aree
     TF1* gaussian = new TF1("gaussian", gaussFit, limInf, limSup, 3);
@@ -93,14 +93,14 @@ void computeHisto (string element, string nameSource, string peak, int bin, doub
 
     fstream OutFile;
     OutFile.open("areeCoRame.txt", fstream::app);
-    OutFile << namePDF <<":\t"<< gaussian->Integral(1230, 1260) << " +/- " << funcFit->IntegralError(1230, 1260) << endl;
+    OutFile << namePDF <<":\t"<< gaussian->Integral(3360, 3380) << " +/- " << funcFit->IntegralError(3360, 3380) << endl;
     OutFile.close();
 
     if (logScale) {
         canvasSpectre->SetLogy();
     }
 
-    canvasSpectre->Print(namePDF);
+    //canvasSpectre->Print(namePDF);
 
     // Libero la memoria
     delete histoSpectre;
@@ -184,6 +184,6 @@ int main() {
 
 
     // PICCO 2 COBALTO RAME 0.54 cm
-    //computeHisto ("rame", "cobalto_rame_054cm", "2", 8192, 3353, 3420, false, false);
+    computeHisto ("rame", "cobalto_rame_054cm", "2", 8192, 3353, 3420, false, false);
     //computeHisto ("rame", "cobalto_rame_054cm", "2", 8192, 3353, 3420, false, true); 
 }

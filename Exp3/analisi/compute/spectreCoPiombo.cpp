@@ -64,7 +64,7 @@ void computeHisto (string element, string nameSource, string peak, int bin, doub
     histoSpectre->GetXaxis()->SetRangeUser(limInf, limSup);
 
     // Da commentare se si vuole lo spettro totale o da sostituire con il fit corretto presente in compute/codeFit/...
-    /*TF1* funcFit = new TF1("funcFit", totalFit, limInf, limSup, 7);
+    TF1* funcFit = new TF1("funcFit", totalFit, limInf, limSup, 7);
     funcFit->SetParName(0,"Amp");
     funcFit->SetParName(1,"Mean");
     funcFit->SetParName(2,"Std Dev");
@@ -80,7 +80,7 @@ void computeHisto (string element, string nameSource, string peak, int bin, doub
     funcFit->SetParameter(5, 3388);
     funcFit->SetParameter(6, 10);
 
-    histoSpectre->Fit("funcFit");*/
+    histoSpectre->Fit("funcFit");
 
     // Calcolo le aree
     TF1* gaussian = new TF1("gaussian", gaussFit, limInf, limSup, 3);
@@ -93,14 +93,14 @@ void computeHisto (string element, string nameSource, string peak, int bin, doub
 
     fstream OutFile;
     OutFile.open("areeCoPiombo.txt", fstream::app);
-    OutFile << namePDF <<":\t"<< gaussian->Integral(1230, 1260) << " +/- " << funcFit->IntegralError(1230, 1260) << endl;
+    OutFile << namePDF <<":\t"<< gaussian->Integral(3360, 3380) << " +/- " << funcFit->IntegralError(3360, 3380) << endl;
     OutFile.close();
 
     if (logScale) {
         canvasSpectre->SetLogy();
     }
 
-    canvasSpectre->Print(namePDF);
+    //canvasSpectre->Print(namePDF);
 
     // Libero la memoria
     delete histoSpectre;
@@ -184,6 +184,6 @@ int main() {
 
 
     // PICCO 2 COBALTO PIOMBO 1.08 cm
-    //computeHisto ("piombo", "cobalto_piombo_108cm", "2", 8192, 3353, 3420, false, false);
+    computeHisto ("piombo", "cobalto_piombo_108cm", "2", 8192, 3353, 3420, false, false);
     //computeHisto ("piombo", "cobalto_piombo_108cm", "2", 8192, 3353, 3420, false, true);
 }

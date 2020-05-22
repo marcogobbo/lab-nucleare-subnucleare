@@ -76,17 +76,30 @@ void computeHisto (string element, string nameSource, string peak, int bin, doub
     funcFit->SetParameter(1, 3367);
     funcFit->SetParameter(2, 10);
     funcFit->SetParameter(3, 10);
-    funcFit->SetParameter(4, 600);
+    funcFit->SetParameter(4, 450);
     funcFit->SetParameter(5, 3374);
     funcFit->SetParameter(6, 5);
 
     histoSpectre->Fit("funcFit");
 
+    TF1* gaussian = new TF1("gaussian", gaussFit, limInf, limSup, 3);
+    gaussian->SetParameter(0, funcFit->GetParameter(4));
+    gaussian->SetParameter(1, funcFit->GetParameter(5));
+    gaussian->SetParameter(2, funcFit->GetParameter(6));
+    gaussian->SetParError(0, funcFit->GetParError(4));
+    gaussian->SetParError(1, funcFit->GetParError(5));
+    gaussian->SetParError(2, funcFit->GetParError(6));
+
+    fstream OutFile;
+    OutFile.open("areeCoA.txt", fstream::app);
+    OutFile << namePDF <<":\t"<< gaussian->Integral(3360, 3385) << " +/- " << funcFit->IntegralError(3360, 3385) << endl;
+    OutFile.close();
+
     if (logScale) {
         canvasSpectre->SetLogy();
     }
 
-    canvasSpectre->Print(namePDF);
+    //canvasSpectre->Print(namePDF);
 
     // Libero la memoria
     delete histoSpectre;
@@ -162,7 +175,7 @@ int main() {
 
 
     // PICCO 2 COBALTO ACQUA 16 cm
-    //computeHisto ("acqua", "cobalto_acqua_16cm", "2", 8192, 3353, 3393, false, false);
+    computeHisto ("acqua", "cobalto_acqua_16cm", "2", 8192, 3353, 3393, false, false);
     //computeHisto ("acqua", "cobalto_acqua_16cm", "2", 8192, 3353, 3393, false, true);
 
 
@@ -180,6 +193,6 @@ int main() {
 
 
     // PICCO 2 COBALTO ACQUA 20 cm
-    computeHisto ("acqua", "cobalto_acqua_20cm", "2", 8192, 3353, 3393, false, false);
+    //computeHisto ("acqua", "cobalto_acqua_20cm", "2", 8192, 3353, 3393, false, false);
     //computeHisto ("acqua", "cobalto_acqua_20cm", "2", 8192, 3353, 3393, false, true);
 }
