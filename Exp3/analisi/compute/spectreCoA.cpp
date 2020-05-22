@@ -64,7 +64,7 @@ void computeHisto (string element, string nameSource, string peak, int bin, doub
     histoSpectre->GetXaxis()->SetRangeUser(limInf, limSup);
 
     // Da commentare se si vuole lo spettro totale o da sostituire con il fit corretto presente in compute/codeFit/...
-    TF1* funcFit = new TF1("funcFit", totalFit, limInf, limSup, 4);
+    /*TF1* funcFit = new TF1("funcFit", totalFit, limInf, limSup, 4);
     funcFit->SetParName(0,"Amp");
     funcFit->SetParName(1,"Mean");
     funcFit->SetParName(2,"Std Dev");
@@ -75,7 +75,7 @@ void computeHisto (string element, string nameSource, string peak, int bin, doub
     funcFit->SetParameter(3, 10);
     funcFit->SetParLimits(0, 330, 350);
 
-    histoSpectre->Fit("funcFit");
+    histoSpectre->Fit("funcFit");*/
 
     // Calcolo le aree
     TF1* gaussian = new TF1("gaussian", gaussFit, limInf, limSup, 3);
@@ -190,4 +190,26 @@ int main() {
     // PICCO 2 COBALTO ACQUA 20 cm
     //computeHisto ("acqua", "cobalto_acqua_20cm", "2", 8192, 3353, 3393, false, false);
     //computeHisto ("acqua", "cobalto_acqua_20cm", "2", 8192, 3353, 3393, false, true);
+
+
+
+    // PICCO 1460KeV 4 cm
+    //computeHisto ("acqua", "cobalto_acqua_04cm", "3", 8192, 3650, 3750, false, false);
+    //computeHisto ("acqua", "cobalto_acqua_04cm", "3", 8192, 3650, 3750, false, true);
+
+    // PICCO 1460KeV 8 cm
+    //computeHisto ("acqua", "cobalto_acqua_08cm", "3", 8192, 3650, 3750, false, false);
+    //computeHisto ("acqua", "cobalto_acqua_08cm", "3", 8192, 3650, 3750, false, true);
+
+    // PICCO 1460KeV 12 cm
+    //computeHisto ("acqua", "cobalto_acqua_12cm", "3", 8192, 3650, 3750, false, false);
+    //computeHisto ("acqua", "cobalto_acqua_12cm", "3", 8192, 3650, 3750, false, true);
+
+    // PICCO 1460KeV 16 cm
+    //computeHisto ("acqua", "cobalto_acqua_16cm", "3", 8192, 3650, 3750, false, false);
+    //computeHisto ("acqua", "cobalto_acqua_16cm", "3", 8192, 3650, 3750, false, true);
+
+    // PICCO 1460KeV 20 cm
+    //computeHisto ("acqua", "cobalto_acqua_20cm", "3", 8192, 3650, 3750, false, false);
+    //computeHisto ("acqua", "cobalto_acqua_20cm", "3", 8192, 3650, 3750, false, true);
 }

@@ -1,0 +1,168 @@
+\documentclass[a4paper,10pt]{article}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{booktabs}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{physics}
+\usepackage{geometry}
+\usepackage{latexsym}
+\renewcommand{\figurename}{Figura}
+\newcommand*{\unit}[1]{\ensuremath{\mathrm{\,#1}}}
+\geometry{a4paper,tmargin=4cm,bmargin=3.5cm, lmargin=3cm,rmargin=3cm}
+
+\title{Interazione gamma con la materia}
+\author{Gianluca Cavallaro \\ Marco Gobbo}
+\date{19 Maggio 2020}
+\begin{document}
+\maketitle
+
+%%%INTRODUZIONE E PRESUPPOSTO TEORICO%%%
+
+\section{Introduzione}
+\subsection{Scopo dell'esperienza e rivelatore}
+Lo scopo di questa esperienza è quello di indagare le caratteristiche dell'interazione gamma con la materia, utilizzando differenti sorgenti e differenti materiali come bersaglio. Per fare questo si sfrutta un rivelatore al germanio, rivelatore a semiconduttore che sfrutta la tecnologia della giunzione P-N, sottoposta ad un drogaggio opportuno. Nella giunzione P-N è presente una regione, la zona di svuotamento, dove non sono presenti cariche libere: una volta che una radiazione gamma attraversa questa zona crea delle coppie elettrone-lacuna, le quali, accellerate da una differenza di potenziale opportuna, generano una corrente che permette in ultima istanza di risalire all'energia depositata dal gamma nel rivelatore. In spettroscopia la giunzione va polarizzata inversamente, di modo tale che all'interno del rivelatore non ci sia nessuna corrente che si sovrappone a quella generata dalla raccolta di cariche, così da ottenere misure corrette. L'utilizzo del germanio come semiconduttore comporta che il rivelatore sia mantenuto ad una temperatura molto bassa, di circa 77K, durante il suo utilizzo: questo è dovuto al fatto che il germanio ha un gap energetico fra banda di conduzione e banda di valenza molto basso (0.67 eV), e se il rivelatore fosse lasciato a temperatura ambiente la sola agitazione termica sarebbe sufficiente a superarlo, ostacolando le misure. Si ottiene questa condizione attraverso un bagno di azoto liquido.
+
+\subsection{La radiazione gamma}
+La radiazione gamma, attraversando la materia viene attenuata, con modalità e caratteristiche che dipendono dall'energia della radiazione, nonchè dal materiale utilizzato come schermo. Se andiamo a considerare un fascio di gamma di intensità iniziale $I_0$, attraversando un certo materiale il fascio sarà attenuato secondo la seguente relazione:
+
+\begin{equation}
+	I(x)=I_{0}e^{-\mu x}
+\end{equation}
+
+dove $\mu$ indica il coefficiente di attenuazione lineare, caratteristico del mezzo utilizzato e variabile con la sua densità, e $x$ indica lo spessore di materiale attraversato. Rilevante è il coefficiente di attenuazione massico, $\mu/\rho$, ottenuto tramite il coefficiente di attenuazione lineare: esso è costante per un determinato mezzo, indipendentemente dalla densità dello stesso. 
+
+Nella loro interazione con la materia, i gamma possono andare incontro a diversi processi, principalmente 3: effetto fotoelettrico, scattering compton e produzione di coppie. Per quanto riguarda l'effetto fotoelettrico, il gamma interagisce con un elettrone atomico, cedendo completamente la sua energia all'elettrone che viene liberato dall'atomo. L'atomo ionizzato andrà incontro a processi di ricombinazione per riempire la lacuna lasciata dal fotoelettrone liberato, emettendo in questo caso dei gamma caratteristici. Nello scattering compton il gamma interagisce con un fotone del mezzo, cedendogli parte della sua energia, e venendo deviato di un certo angolo rispetto alla sua direzione iniziale. L'energia ceduta dipende dall'angolo di scattering del gamma. La produzione di coppie è un processo che può avvenire solo se l'energia del gamma in questione è superiore ad una certa soglia, che in questo caso è 1.022 MeV, ossia due volte la massa dell'elettrone. In questo processo il gamma crea una coppia  elettrone-positrone, con quest'ultimo che, essendo poco stabile, decadrà rapidamente in due gamma da 511 KeV. 
+
+Per l'interazione dei gamma con la materia è necessario introdurre la sezione d'urto, ossia la probabilità di interazione del gamma con un bersaglio del mezzo considerato. La sezione d'urto è legata al coefficiente di attenuazione lineare attraverso la relazione:
+
+\begin{equation}
+	\sigma_{tot}=\frac{\mu}{\rho} \cdot \frac{A}{N_{Av}}
+\end{equation}
+
+dove A indica il numero di massa del materiale usato come bersaglio, e $N_{Av}$ indica il numero di Avogadro. Si nota in particolar modo come la sezione d'urto sia proporzionale al coefficiente di attenuazione massico. Nel caso dell'interazione gamma va sottolineato che, essendo possibili diverse interazioni, la sezione d'urto totale dipende dalla sezione d'urto caratteristica di ogni singolo processo. Le singole sezioni d'urto hanno una dipendenza diversa dall'energia del gamma incidente e dallo Z del materiale:
+
+\begin{equation}
+	\sigma_{fotoelettrico}\quad  \alpha \quad  \frac{Z^5}{E_{\gamma}^{3.5}}
+\end{equation}
+
+\begin{equation}
+	\sigma_{compton}\quad  \alpha \quad  \frac{Z}{E}
+\end{equation}
+
+\begin{equation}
+	\sigma_{coppie}\quad  \alpha \quad  Z^2 \cdot ln(E)
+\end{equation}
+
+\begin{equation}
+	\sigma_{tot} = \sigma_{fotoelettrico} + \sigma_{compton} + \sigma_{coppie}
+\end{equation}
+
+E' possibile fare a priori alcune considerazioni: per materiali ad alto Z sarà preponderante l'effetto fotoelettrico, mentre in materiale a Z inferiore diventa sempre più importante il contributo del Compton o della produzione di coppie. Anche a seconda del range di energie considerato può essere più significativo il contributo del fotoelettrico, a basse energie, o del Compton e della produzione di coppie, ad energie sempre più alte.
+
+%%% STRUMENTAZIONE %%%
+
+\section{Strumentazione}
+\begin{itemize}
+\item Crate NIM per alimentazione di elettronica standard
+\item Rivelatore coassiale HPGe (Ortec Coaxial HPGe Detector GEM20P)
+\item Generatore HV Label Model 8124 per tensione di polarizzazione
+\item Amplificatore CAEN Model N968
+\item ADC/MCA CAEN Model N957
+\item Sorgenti di calibrazione: 22Na, 60Co, 228Th
+\item Becker graduato per contenere acqua
+\item Dischi di rame e piombo
+\end{itemize}
+
+%%% ELABORAZIONE DATI %%%
+
+\section{Raccolta dati ed elaborazione}
+\subsection{Coefficiente di attenuazione lineare}
+Abbiamo a disposizione 3 diverse sorgenti di radiazione (22Na, 60Co, 228Th) e 3 materiali da interporre fra sorgente e rivelatore (acqua, rame, piombo). Dei 3 materiali si possono cambiare gli spessori utilizzati: 4, 8, 12, 16, 20 cm per l'acqua, 0.11, 0.22, 0.33, 0.44, 0.54 cm per il rame, 0.1, 0.21, 0.33, 0.58, 1.08 cm per il piombo. Tali spessori sono raggiunti riempiendo un becker nel caso dell'acqua, impilando dei dischi nel caso di rame e piombo. Mantenendo la sorgente ad una distanza fissata dal rivelatore e modificando di volta in volta lo spessore del materiale, si raccoglie lo spettro gamma. Per ogni picco visibile dei vari spettri, si procede, tramite una interpolazione gaussiana, ad individuare l'area sottesa al picco. In accordo con la relazione (1), all'aumentare dello spessore di materiale da attraversare il numero di gamma che arrivano al rivelatore sarà sempre minore, e di conseguenza sarà minore l'area sottesa alla gaussiana. Tenendo conto che le misure sono durate 6 minuti per quanto riguarda l'acqua e 2 minuti per rame e piombo, tramite la seguente relazione si procede a calcolare il rate di conteggi al secondo:
+
+\begin{equation}
+	\textrm{Rate} = \frac{\textrm{Area}}{\textrm{Durata  misura}}
+\end{equation}
+
+---inserire qualche grafico di esempio---
+
+Per calcolare il coefficiente di attenuazione lineare dei vari materiali alle varie energie, si costruisce un grafico del rate in funzione dello spessore. Per interpolare è stata utilizzata la relazione (1):
+
+---grafici---
+
+---osservazioni e conclusioni su questa parte---
+
+\subsection{Picco a 1460KeV}
+
+Negli spettri a nostra disposizione si nota la presenza di un picco non atteso, attorno ad una energia di 1460 KeV. La presenza di questo picco è dovuta alla presenza di 40K nell'ambiente. Come fatto nel punto precendente, andiamo a calcolare il rate di conteggi al secondo di questo picco, mettendolo in funzione dello spessore del materiale:
+
+---grafico---
+
+Si nota come il rate del 40K sia pressochè costante: questo è dovuto al fatto che, essendo questo picco dovuto alla radioattività ambientale, non è prodotto dalla sorgente in questione e di conseguenza non deve attraversare il materiale venendo attenuato. Dunque, per misure della stessa durata temporale il numero di conteggi al secondo di questo isotopo sarà costante. Tra i vari spettri a nostra disposizione il picco a 1460 keV risulta evidente solo nei 3 sopracitati, dove il materiale bersaglio era l'acqua. Ciò è dovuto al fatto che essendo il rate costante, la misura con l'acqua ha permesso di raccogliere un numero maggiore di conteggi rispetto alle misure con rame e torio, durate di meno. In questi spettri i pochi conteggi a disposizione si confondono con i conteggi dovuti al rumore, rendendo indistinguibile il picco.
+
+\subsection{Coefficiente di attenuazione massico e sezione d'urto}
+Avendo a disposizione i coefficienti di attenuazione lineare $\mu$ ricavati nella sezione 3.1, andiamo a calcolare i coefficienti di attenuazione massici $\mu/\rho$. Per i 3 materiali si utilizzano come densità:
+
+$$
+	\rho_{acqua} = 1\, \unit{g/cm^3}
+$$
+$$
+	\rho_{rame} = 8,96\, \unit{g/cm^3}
+$$
+$$
+	\rho_{piombo} = 11,34\, \unit{g/cm^3}
+$$
+
+I risultati ottenuti vengono messi in un grafico in funzione dell'energia, ottenendo in totale 3 grafici, uno per ciascun materiale bersaglio. Come sottolineato nell'introduzione, attraverso la relazione (2), la sezione d'urto è proporzionale a $\mu/\rho$. In questi 3 grafici, avendo fissato di volta in volta il materiale, la sezione d'urto è ottenuta semplicemente moltiplicando i valori ottenuti per un valore costante $A/N_{Av}$; per questo l'andamento in funzione dell'energia può essere ricavato semplicemente dal grafico del coefficiente di attenuazione massico.
+
+\subsubsection{Acqua}
+Riportiamo di seguito il grafico di $\mu/\rho$ in funzione dell'energia per l'acqua:
+
+---grafico---
+
+Il grafico è stato interpolato, tenendo conto delle relazioni (3), (4) e (5), con la seguente funzione:
+
+\begin{equation}
+	\sigma = \frac{a}{E^{3.5}} + \frac{b}{E}
+\end{equation}
+poichè, nel range di energie considerate sono prevalenti l'effetto fotoelettrico e Compton. 
+
+---osservazioni---
+
+\subsubsection{Rame}
+Riportiamo di seguito il grafico di $\mu/\rho$ in funzione dell'energia per il rame:
+
+---grafico---
+
+Il grafico è stato interpolato, tenendo conto delle relazioni (3), (4) e (5), con la seguente funzione:
+
+\begin{equation}
+	\sigma = \frac{a}{E^{3.5}} + \frac{b}{E}
+\end{equation}
+poichè, nel range di energie considerate sono prevalenti .... 
+
+---osservazioni---
+\subsubsection{Piombo}
+Riportiamo di seguito il grafico di $\mu/\rho$ in funzione dell'energia il piombo:
+
+---grafico---
+
+Il grafico è stato interpolato, tenendo conto delle relazioni (3), (4) e (5), con la seguente funzione:
+
+\begin{equation}
+	\sigma = \frac{a}{E^{3.5}} + \frac{b}{E}
+\end{equation}
+poichè, nel range di energie considerate sono prevalenti .... 
+
+---osservazioni---
+
+\subsection{Sezione d'urto in funzione di Z}
+In questo caso ci proponiamo invece di studiare la dipendenza dalla Z del materiale della sezione d'urto. Fissata l'energia di un certo picco, andiamo a calcolare la sezione d'urto attraverso la relazione (2). Come A è stata utilizzata la massa molecolare dell'acqua e la massa atomica di rame e piombo, pesata in base all'abbondanza dei vari isotopi. Per ogni picco avremo a disposizione 3 valori, ognuno corrispondente ad uno dei 3 materiali usati come bersaglio. Si ottengono i seguenti grafici:
+
+---inserire i 7 grafici dei picchi---
+
+A seconda dell'energia del picco in questione si interpola con funzioni differenti.
+
+---osservazioni---
+\end{document}
