@@ -91,7 +91,9 @@ void computeHisto (string element, string nameSource, string peak, int bin, doub
     gaussian->SetParError(1, funcFit->GetParError(1));
     gaussian->SetParError(2, funcFit->GetParError(2));
 
-    ofstream OutFile("areeThPiombo.txt");
+
+    fstream OutFile;
+    OutFile.open("areeThPiombo.txt", fstream::app);
     OutFile << namePDF <<":\t"<< gaussian->Integral(1230, 1260) << " +/- " << funcFit->IntegralError(1230, 1260) << endl;
     OutFile.close();
 
