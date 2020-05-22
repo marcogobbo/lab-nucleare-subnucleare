@@ -1,0 +1,17 @@
+../graphs/spectre_torio_rame_011cm1.pdf:	21694.5 +/- 152.732
+../graphs/spectre_torio_rame_022cm1.pdf:	17527.3 +/- 138.114
+../graphs/spectre_torio_rame_033cm1.pdf:	13805.7 +/- 123.36
+../graphs/spectre_torio_rame_044cm1.pdf:	11254.2 +/- 112.239
+../graphs/spectre_torio_rame_054cm1.pdf:	10967.3 +/- 110.975
+
+../graphs/spectre_torio_rame_011cm2.pdf:	5842.68 +/- 78.5519
+../graphs/spectre_torio_rame_022cm2.pdf:	4965.08 +/- 72.5871
+../graphs/spectre_torio_rame_033cm2.pdf:	4265.32 +/- 66.7192
+../graphs/spectre_torio_rame_044cm2.pdf:	3710.1 +/- 62.9362
+../graphs/spectre_torio_rame_054cm2.pdf:	3769.13 +/- 63.4877
+
+../graphs/spectre_torio_rame_011cm3.pdf:	1921.7 +/- 44.4446
+../graphs/spectre_torio_rame_022cm3.pdf:	1716.23 +/- 41.8088
+../graphs/spectre_torio_rame_033cm3.pdf:	1526.62 +/- 39.5512
+../graphs/spectre_torio_rame_044cm3.pdf:	1341.54 +/- 37.3025
+../graphs/spectre_torio_rame_054cm3.pdf:	1379.01 +/- 37.5658

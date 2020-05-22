@@ -1,0 +1,16 @@
+../graphs/spectre_torio_piombo_01cm1.pdf:	11438.4 +/- 112.192
+../graphs/spectre_torio_piombo_021cm1.pdf:	3200.12 +/- 62.7421
+../graphs/spectre_torio_piombo_033cm1.pdf:	2214.38 +/- 54.5716
+../graphs/spectre_torio_piombo_058cm1.pdf:	423.564 +/- 30.3701
+
+../graphs/spectre_torio_piombo_01cm2.pdf:	5733.01 +/- 77.5443
+../graphs/spectre_torio_piombo_021cm2.pdf:	3691.61 +/- 62.6523
+../graphs/spectre_torio_piombo_033cm2.pdf:	4038.38 +/- 65.4533
+../graphs/spectre_torio_piombo_058cm2.pdf:	2584.62 +/- 52.9945
+../graphs/spectre_torio_piombo_108cm2.pdf:	983.11 +/- 33.5467
+
+../graphs/spectre_torio_piombo_01cm3.pdf:	1897.42 +/- 44.064
+../graphs/spectre_torio_piombo_021cm3.pdf:	1498.43 +/- 39.2017
+../graphs/spectre_torio_piombo_033cm3.pdf:	1676.32 +/- 41.4165
+../graphs/spectre_torio_piombo_058cm3.pdf:	1288.42 +/- 36.2965
+../graphs/spectre_torio_piombo_108cm3.pdf:	828.686 +/- 29.4298
