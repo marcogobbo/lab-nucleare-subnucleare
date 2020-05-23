@@ -6,51 +6,51 @@ using namespace std;
 
 int main() {
     vector <double> ampPeak1 = {
-        70.64,
-        72.7,
-        64.05,
-        44.45,
-        37.81
+        613.059/120,
+        611.725/120,
+        467.16/120,
+        360.756/120,
+        278.914/120
     };
 
     vector <double> errAmpPeak1 = {
-        5.56,
-        5.0,
-        5.00,
-        4.58,
-        4.44
+        31.9948/120,
+        34.1003/120,
+        31.1151/120,
+        30.4207/120,
+        28.3754/120
     };
 
     vector <double> ampPeak2 = {
-        28.35,
-        33.66,
-        32.2,
-        20.66,
-        22.28
+        328.233/120,
+        274.07/120,
+        265.417/120,
+        163.736/120,
+        151.774/120
     };
 
     vector <double> errAmpPeak2 = {
-        2.57,
-        2.92,
-        2.7,
-        2.34,
-        2.51
+        18.019/120,
+        18.4706/120,
+        18.7071/120,
+        15.6942/120,
+        15.1095/120
     };
 
     vector <double> ampPeak3 = {
-        9.34,
-        11.12,
-        12.95,
-        9.18,
-        12.95
+        107.345/120,
+        92.0533/120,
+        79.4958/120,
+        68.3814/120,
+        61.1263/120
     };
 
     vector <double> errAmpPeak3 = {
-        1.475,
-        1.54,
-        1.69,
-        1.28,
-        1.73
+        13.828/120,
+        11.534/120,
+        12.4751/120,
+        11.9257/120,
+        11.5486/120
     };
 
     vector <double> spessori = {
@@ -70,7 +70,7 @@ int main() {
     TGraphErrors *graph3 = new TGraphErrors(5, &spessori[0], &ampPeak3[0], &errSpessori[0], &errAmpPeak3[0]);
 
     graph1->GetXaxis()->SetRangeUser(0, 30);
-    graph1->GetYaxis()->SetRangeUser(0, 100);
+    graph1->GetYaxis()->SetRangeUser(0, 6);
 
     TF1 *fit1 = new TF1("fitFnc1", "[0]*exp(-[1]*x)", 0, 30);
     TF1 *fit2 = new TF1("fitFnc2", "[0]*exp(-[1]*x)", 0, 30);
@@ -80,13 +80,13 @@ int main() {
     fit2->SetLineColor(8);
     fit3->SetLineColor(2);
 
-    fit1->SetParameter(0, 72.7);
-    fit2->SetParameter(0, 33.66);
-    fit2->SetParameter(0, 1.475);
+    fit1->SetParameter(0, 613.059/120);
+    fit2->SetParameter(0, 328.233/120);
+    fit2->SetParameter(0, 107.345/120);
 
-    fit1->SetParameter(1, 0.010);
-    fit2->SetParameter(1, 0.010);
-    fit2->SetParameter(1, 0.010);
+    fit1->SetParameter(1, 0.60);
+    fit2->SetParameter(1, 0.60);
+    fit2->SetParameter(1, 0.60);
 
     graph1->SetTitle("Attenuazione con acqua ^{228}Th");
     graph1->GetYaxis()->SetTitle("Rate");
