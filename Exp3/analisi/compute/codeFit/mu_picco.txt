@@ -1,0 +1,151 @@
+238 keV
+
+    double Mu[3] = {
+	//acqua
+	0.103,
+	//rame
+	1.74,
+	//piombo
+	7.2,
+};
+
+    double err_Mu[3] = {
+	//acqua
+	0.007,
+	//rame
+	0.04,
+	//piombo
+	0.2,
+};
+
+
+
+511 keV
+
+    double Mu[3] = {
+	//acqua
+	0.0925,
+	//rame
+	0.73,
+	//piombo
+	1.59,
+};
+
+    double err_Mu[3] = {
+	//acqua
+	0.001,
+	//rame
+	0.013,
+	//piombo
+	0.012,
+};
+
+
+
+583 keV
+
+    double Mu[3] = {
+	//acqua
+	0.0728,
+	//rame
+	1.13,
+	//piombo
+	1.69,
+};
+
+    double err_Mu[3] = {
+	//acqua
+	0.005,
+	//rame
+	0.05,
+	//piombo
+	0.03,
+};
+
+
+
+1173 keV
+
+    double Mu[3] = {
+	//acqua
+	0.0623,
+	//rame
+	0.403,
+	//piombo
+	0.488,
+};
+
+    double err_Mu[3] = {
+	//acqua
+	0.001,
+	//rame
+	0.015,
+	//piombo
+	0.008,
+};
+
+
+
+1274 keV
+
+    double Mu[3] = {
+	//acqua
+	0.064,
+	//rame
+	0.301,
+	//piombo
+	0.326,
+};
+
+    double err_Mu[3] = {
+	//acqua
+	0.002,
+	//rame
+	0.014,
+	//piombo
+	0.006,
+};
+
+
+
+1332 keV
+
+    double Mu[3] = {
+	//acqua
+	0.0668,
+	//rame
+	0.352,
+	//piombo
+	0.435,
+};
+
+    double err_Mu[3] = {
+	//acqua
+	0.001,
+	//rame
+	0.016,
+	//piombo
+	0.008,
+};
+
+
+
+2614 keV
+
+    double Mu[3] = {
+	//acqua
+	0.0359,
+	//rame
+	0.872,
+	//piombo
+	0.748,
+};
+
+    double err_Mu[3] = {
+	//acqua
+	0.01,
+	//rame
+	0.08,
+	//piombo
+	0.04,
+};

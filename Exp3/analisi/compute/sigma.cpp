@@ -23,7 +23,7 @@ void computeGraph() {
 	8.96,
 	//piombo
 	11.34,
-}
+};
 
     double A[3] = {
 	//acqua
@@ -32,46 +32,46 @@ void computeGraph() {
 	64.55,
 	//piombo
 	207.02,
-}
+};
 
 //Cambiare di volta in volta i valori del Mu e dell'errore per ogni valore di energia del picco dal file mu_picco.txt
 
     double Mu[3] = {
 	//acqua
-	,
+	0.0359,
 	//rame
-	,
+	0.872,
 	//piombo
-	,
-}
+	0.748,
+};
 
     double err_Mu[3] = {
 	//acqua
-	,
+	0.01,
 	//rame
-	,
+	0.08,
 	//piombo
-	,
-}
+	0.04,
+};
     double Sigma[3];
     double err_Sigma[3];
     double err_Z[3];
     for (unsigned int i = 0; i < 3; i++) {
 	//Moltiplico per 10^24 per avere la sezione d'urto in barn
-	Sigma[i] = (Mu[i]/Rho[i])*(A[i]/TMath::Na())*(10^24);
-	err_Sigma[i] = (err_Mu[i]/Rho[i])*(A[i]/TMath::Na())*(10^24);
+	Sigma[i] = (Mu[i]/Rho[i])*(A[i]/(6.022*pow(10, 23)))*pow(10, 24);
+	err_Sigma[i] = (err_Mu[i]/Rho[i])*(A[i]/(6.022*pow(10, 23)))*pow(10, 24);
 	err_Z[i] = 0;
     }
 
 //Eventualmenti eliminare alcuni pezzi a seconda dell'energia che si sta valutando
 
-    TF1 fitFun("fitFun", "[0]*(x^5) + [1]*x + [2]*(x^2)", 0, 200000);
-    fitFun.SetParameter(0,);
-    fitFun.SetParameter(1,);
-    fitFun.SetParameter(2,);
+    TF1 fitFun("fitFun", "[0]*x", 0, 200000);
+    //fitFun.SetParameter(0,);
+    //fitFun.SetParameter(1,);
+    //fitFun.SetParameter(2,);
 
     gStyle->SetOptFit(1112);
-    gStyle->SetStatX(0.9);
+    gStyle->SetStatX(0.5);
     gStyle->SetStatY(0.9);
 
     TCanvas myCanv2;
@@ -79,7 +79,7 @@ void computeGraph() {
     TGraphErrors graph(3, Z, Sigma, err_Z, err_Sigma);
 
     graph.SetTitle("Sezione d'urto in funzione di Z");
-    graph.GetYaxis()->SetTitle("Sezione d'urto [barn]");
+    graph.GetYaxis()->SetTitle("#sigma [barn]");
     graph.GetXaxis()->SetTitle("Z");
    
     graph.SetMarkerSize(10);
@@ -92,7 +92,7 @@ void computeGraph() {
 
 //Aggiungere dopo _ il valore di energia del picco per avere grafici distinti
 
-    myCanv2.Print("../graphs/sigma_.pdf");
+    myCanv2.Print("../graphs/sigma_2614keV.pdf");
 
 }
 
