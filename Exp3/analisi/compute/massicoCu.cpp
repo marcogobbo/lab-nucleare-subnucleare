@@ -22,42 +22,43 @@ void computeGraph() {
 
     double Mu[8] = {
 	//Na
-	,
-	,
+	0.73,
+	0.301,
 	//Co
-	,
-	,
+	0.403,
+	0.352,
 	//Th
-	,
-	,
-	,
+	1.74,
+	1.13,
+	0.872,
 };
 
     double err_Mu[8] = {
 	//Na
-	,
-	,
+	0.013,
+	0.014,
 	//Co
-	,
-	,
+	0.015,
+	0.016,
 	//Th
-	,
-	,
-	,
-}
+	0.04,
+	0.05,
+	0.08,
+};
+
     double Rho = 8.96;
-    double Mu/Rho[8];
-    double err_Mu/rho[8];
+    double Massico[8];
+    double err_Massico[8];
     double err_Energy[8];
     for (unsigned int i = 0; i < 8; i++) {
-	Mu/Rho[i] = Mu[i]/Rho;
-	err_Mu/Rho[i] = err_Mu[i]/Rho;
+	Massico[i] = Mu[i]/Rho;
+	err_Massico[i] = err_Mu[i]/Rho;
 	err_Energy[i] = 0;
     }
 
     TF1 fitFun("fitFun", "[0]/(x^3.5) + [1]/x", 0, 200000);
-    fitFun.SetParameter(0,);
-    fitFun.SetParameter(1,);
+    //fitFun.SetParameter(0,);
+    //fitFun.SetParameter(1,);
 
     gStyle->SetOptFit(1112);
     gStyle->SetStatX(0.9);
@@ -65,11 +66,12 @@ void computeGraph() {
 
     TCanvas myCanv2;
 
-    TGraphErrors graph(8, Energy, Mu/Rho, err_Energy, err_Mu/Rho);
+    TGraphErrors graph(8, Energy, Massico, err_Energy, err_Massico);
 
     graph.SetTitle("Coefficiente di attenuazione massico rame");
-    graph.GetYaxis()->SetTitle("Attenuazione massico [cm^2/g]");
-    graph.GetXaxis()->SetTitle("Energia [KeV]");
+    graph.GetYaxis()->SetTitle("#mu/#rho [cm^{2}/g]");
+    graph.GetXaxis()->SetTitle("Energia [keV]");
+    graph.GetYaxis()->SetRangeUser(0, 0.2);
    
     graph.SetMarkerSize(10);
     graph.Draw("AP");

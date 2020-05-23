@@ -22,38 +22,38 @@ void computeGraph() {
 
     double Mu[8] = {
 	//Na
-	,
-	,
+	0.0925,
+	0.064,
 	//Co
-	,
-	,
+	0.0623,
+	0.0668,
 	//Th
-	,
-	,
-	,
+	0.0675,
+	0.0495,
+	0.0359,
 };
 
     double err_Mu[8] = {
 	//Na
-	,
-	,
+	0.001,
+	0.002,
 	//Co
-	,
-	,
+	0.001,
+	0.001,
 	//Th
-	,
-	,
-	,
-}
+	0.005,
+	0.006,
+	0.01,
+};
 
     double err_Energy[8];
     for (unsigned int i = 0; i < 8; i++) {
 	err_Energy[i] = 0;
     }
 
-    TF1 fitFun("fitFun", "[0]/(x^3.5) + [1]/x", 0, 200000);
-    fitFun.SetParameter(0,);
-    fitFun.SetParameter(1,);
+    TF1 fitFun("fitFun", "[0]/x", 0, 200000);
+    //fitFun.SetParameter(0,);
+    //fitFun.SetParameter(1,);
 
     gStyle->SetOptFit(1112);
     gStyle->SetStatX(0.9);
@@ -64,15 +64,15 @@ void computeGraph() {
     TGraphErrors graph(8, Energy, Mu, err_Energy, err_Mu);
 
     graph.SetTitle("Coefficiente di attenuazione massico acqua");
-    graph.GetYaxis()->SetTitle("Attenuazione massico [cm^2/g]");
-    graph.GetXaxis()->SetTitle("Energia [KeV]");
+    graph.GetYaxis()->SetTitle("#mu/#rho [cm^{2}/g]");
+    graph.GetXaxis()->SetTitle("Energia [eV]");
    
     graph.SetMarkerSize(10);
     graph.Draw("AP");
     graph.Fit("fitFun");
     graph.GetFunction("fitFun")->SetLineColor(9);
     graph.GetFunction("fitFun")->SetParName(0,"a");
-    graph.GetFunction("fitFun")->SetParName(1,"b");
+    //graph.GetFunction("fitFun")->SetParName(1,"b");
 
     myCanv2.Print("../graphs/massicoAcqua.pdf");
 
