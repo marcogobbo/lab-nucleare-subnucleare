@@ -28,8 +28,8 @@ void computeGraph() {
 	0.0623,
 	0.0668,
 	//Th
-	0.0675,
-	0.0495,
+	0.103,
+	0.0728,
 	0.0359,
 };
 
@@ -41,8 +41,8 @@ void computeGraph() {
 	0.001,
 	0.001,
 	//Th
+	0.007,
 	0.005,
-	0.006,
 	0.01,
 };
 
@@ -65,7 +65,7 @@ void computeGraph() {
 
     graph.SetTitle("Coefficiente di attenuazione massico acqua");
     graph.GetYaxis()->SetTitle("#mu/#rho [cm^{2}/g]");
-    graph.GetXaxis()->SetTitle("Energia [eV]");
+    graph.GetXaxis()->SetTitle("Energia [keV]");
    
     graph.SetMarkerSize(10);
     graph.Draw("AP");
