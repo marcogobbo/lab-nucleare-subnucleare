@@ -41,10 +41,10 @@ void computeHisto (string element, string nameSource, string peak, int bin, doub
     TString titleGraph = nameSource;
     TString namePDF;
     if (noData) {
-        namePDF = "../graphsNoData/spectre_" + nameSource + peak + ".pdf";
+        namePDF = "../graphsNoData/spectre_" + nameSource + peak + "LOG.pdf";
     }
     else {
-        namePDF = "../graphs/spectre_" + nameSource + peak + ".pdf"; 
+        namePDF = "../graphs/spectre_" + nameSource + peak + "LOG.pdf"; 
     }
     
     TH1D* histoSpectre = new TH1D("Data", titleGraph, nBin, 0, 8192);
@@ -64,7 +64,7 @@ void computeHisto (string element, string nameSource, string peak, int bin, doub
     histoSpectre->GetXaxis()->SetRangeUser(limInf, limSup);
 
     // Da commentare se si vuole lo spettro totale o da sostituire con il fit corretto presente in compute/codeFit/...
-    TF1* funcFit = new TF1("funcFit", totalFit, limInf, limSup, 7);
+    /*TF1* funcFit = new TF1("funcFit", totalFit, limInf, limSup, 7);
     funcFit->SetParName(0,"Amp");
     funcFit->SetParName(1,"Mean");
     funcFit->SetParName(2,"Std Dev");
@@ -94,7 +94,7 @@ void computeHisto (string element, string nameSource, string peak, int bin, doub
     fstream OutFile;
     OutFile.open("areeNaPiombo.txt", fstream::app);
     OutFile << namePDF <<":\t"<< gaussian->Integral(1230, 1260) << " +/- " << funcFit->IntegralError(1230, 1260) << endl;
-    OutFile.close();
+    OutFile.close();*/
 
     if (logScale) {
         canvasSpectre->SetLogy();
@@ -110,8 +110,8 @@ void computeHisto (string element, string nameSource, string peak, int bin, doub
 
 int main() {
     // SODIO PIOMBO 0.1 cm
-    //computeHisto ("piombo", "sodio_piombo_01cm", "", 8192, 0, 8192, false, false);
-    //computeHisto ("piombo", "sodio_piombo_01cm", "", 8192, 0, 8192, false, true);
+    computeHisto ("piombo", "sodio_piombo_01cm", "", 8192, 0, 8192, true, false);
+    computeHisto ("piombo", "sodio_piombo_01cm", "", 8192, 0, 8192, true, true);
 
 
     // PICCO 1 SODIO PIOMBO 0.1 cm
@@ -126,13 +126,13 @@ int main() {
 
 
     // SODIO PIOMBO 0.21 cm
-    //computeHisto ("piombo", "sodio_piombo_021cm", "", 8192, 0, 8192, false, false);
-    //computeHisto ("piombo", "sodio_piombo_021cm", "", 8192, 0, 8192, false, true);
+    computeHisto ("piombo", "sodio_piombo_021cm", "", 8192, 0, 8192, true, false);
+    computeHisto ("piombo", "sodio_piombo_021cm", "", 8192, 0, 8192, true, true);
 
 
     // PICCO 1 SODIO PIOMBO 0.21 cm
     //computeHisto ("piombo", "sodio_piombo_021cm", "1", 8192, 1225, 1300, false, false);
-    computeHisto ("piombo", "sodio_piombo_021cm", "1", 8192, 1225, 1300, false, true);
+    //computeHisto ("piombo", "sodio_piombo_021cm", "1", 8192, 1225, 1300, false, true);
 
 
     // PICCO 2 SODIO PIOMBO 0.21 cm
@@ -142,8 +142,8 @@ int main() {
 
 
     // SODIO PIOMBO 0.33 cm
-    //computeHisto ("piombo", "sodio_piombo_033cm", "", 8192, 0, 8192, false, false);
-    //computeHisto ("piombo", "sodio_piombo_033cm", "", 8192, 0, 8192, false, true);
+    computeHisto ("piombo", "sodio_piombo_033cm", "", 8192, 0, 8192, true, false);
+    computeHisto ("piombo", "sodio_piombo_033cm", "", 8192, 0, 8192, true, true);
 
 
     // PICCO 1 SODIO PIOMBO 0.33 cm
@@ -158,8 +158,8 @@ int main() {
 
 
     // SODIO PIOMBO 0.58 cm
-    //computeHisto ("piombo", "sodio_piombo_058cm", "", 8192, 0, 8192, false, false);
-    //computeHisto ("piombo", "sodio_piombo_058cm", "", 8192, 0, 8192, false, true);
+    computeHisto ("piombo", "sodio_piombo_058cm", "", 8192, 0, 8192, true, false);
+    computeHisto ("piombo", "sodio_piombo_058cm", "", 8192, 0, 8192, true, true);
 
 
     // PICCO 1 SODIO PIOMBO 0.58 cm
@@ -175,8 +175,8 @@ int main() {
 
 
     // SODIO PIOMBO 1.08 cm
-    //computeHisto ("piombo", "sodio_piombo_108cm", "", 8192, 0, 8192, false, false);
-    //computeHisto ("piombo", "sodio_piombo_108cm", "", 8192, 0, 8192, false, true);
+    computeHisto ("piombo", "sodio_piombo_108cm", "", 8192, 0, 8192, true, false);
+    computeHisto ("piombo", "sodio_piombo_108cm", "", 8192, 0, 8192, true, true);
 
 
     // PICCO 1 SODIO PIOMBO 1.08 cm

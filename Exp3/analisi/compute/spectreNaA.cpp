@@ -41,10 +41,10 @@ void computeHisto (string element, string nameSource, string peak, int bin, doub
     TString titleGraph = nameSource;
     TString namePDF;
     if (noData) {
-        namePDF = "../graphsNoData/spectre_" + nameSource + peak + ".pdf";
+        namePDF = "../graphsNoData/spectre_" + nameSource + peak + "LOG.pdf";
     }
     else {
-        namePDF = "../graphs/spectre_" + nameSource + peak + ".pdf"; 
+        namePDF = "../graphs/spectre_" + nameSource + peak + "LOG.pdf"; 
     }
     
     TH1D* histoSpectre = new TH1D("Data", titleGraph, nBin, 0, 8192);
@@ -75,7 +75,7 @@ void computeHisto (string element, string nameSource, string peak, int bin, doub
     funcFit->SetParameter(3, 10);
     funcFit->SetParLimits(0, 200, 400);
 
-    histoSpectre->Fit("funcFit");*/
+    histoSpectre->Fit("funcFit");
 
     // Calcolo le aree
     TF1* gaussian = new TF1("gaussian", gaussFit, limInf, limSup, 3);
@@ -89,7 +89,7 @@ void computeHisto (string element, string nameSource, string peak, int bin, doub
     fstream OutFile;
     OutFile.open("areeNaA.txt", fstream::app);
     OutFile << namePDF <<":\t"<< gaussian->Integral(1230, 1260) << " +/- " << funcFit->IntegralError(1230, 1260) << endl;
-    OutFile.close();
+    OutFile.close();*/
 
     if (logScale) {
         canvasSpectre->SetLogy();
@@ -105,8 +105,8 @@ void computeHisto (string element, string nameSource, string peak, int bin, doub
 
 int main() {
     // SODIO ACQUA 4 cm
-    //computeHisto ("acqua", "sodio_acqua_04cm", "", 8192, 0, 8192, false, false);
-    //computeHisto ("acqua", "sodio_acqua_04cm", "", 8192, 0, 8192, false, true);
+    computeHisto ("acqua", "sodio_acqua_04cm", "", 8192, 0, 8192, true, false);
+    computeHisto ("acqua", "sodio_acqua_04cm", "", 8192, 0, 8192, true, true);
 
 
 
@@ -123,8 +123,8 @@ int main() {
 
 
     // SODIO ACQUA 8 cm
-    //computeHisto ("acqua", "sodio_acqua_08cm", "", 8192, 0, 8192, false, false);
-    //computeHisto ("acqua", "sodio_acqua_08cm", "", 8192, 0, 8192, false, true);
+    computeHisto ("acqua", "sodio_acqua_08cm", "", 8192, 0, 8192, true, false);
+    computeHisto ("acqua", "sodio_acqua_08cm", "", 8192, 0, 8192, true, true);
 
 
 
@@ -141,8 +141,8 @@ int main() {
 
 
     // SODIO ACQUA 12 cm
-    //computeHisto ("acqua", "sodio_acqua_12cm", "", 8192, 0, 8192, false, false);
-    //computeHisto ("acqua", "sodio_acqua_12cm", "", 8192, 0, 8192, false, true);
+    computeHisto ("acqua", "sodio_acqua_12cm", "", 8192, 0, 8192, true, false);
+    computeHisto ("acqua", "sodio_acqua_12cm", "", 8192, 0, 8192, true, true);
 
 
 
@@ -159,8 +159,8 @@ int main() {
 
 
     // SODIO ACQUA 16 cm
-    //computeHisto ("acqua", "sodio_acqua_16cm", "", 8192, 0, 8192, false, false);
-    //computeHisto ("acqua", "sodio_acqua_16cm", "", 8192, 0, 8192, false, true);
+    computeHisto ("acqua", "sodio_acqua_16cm", "", 8192, 0, 8192, true, false);
+    computeHisto ("acqua", "sodio_acqua_16cm", "", 8192, 0, 8192, true, true);
 
 
 
@@ -177,8 +177,8 @@ int main() {
 
 
     // SODIO ACQUA 20 cm
-    //computeHisto ("acqua", "sodio_acqua_20cm", "", 8192, 0, 8192, false, false);
-    //computeHisto ("acqua", "sodio_acqua_20cm", "", 8192, 0, 8192, false, true);
+    computeHisto ("acqua", "sodio_acqua_20cm", "", 8192, 0, 8192, true, false);
+    computeHisto ("acqua", "sodio_acqua_20cm", "", 8192, 0, 8192, true, true);
 
 
 

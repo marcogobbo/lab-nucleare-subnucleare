@@ -41,10 +41,10 @@ void computeHisto (string element, string nameSource, string peak, int bin, doub
     TString titleGraph = nameSource;
     TString namePDF;
     if (noData) {
-        namePDF = "../graphsNoData/spectre_" + nameSource + peak + ".pdf";
+        namePDF = "../graphsNoData/spectre_" + nameSource + peak + "LOG.pdf";
     }
     else {
-        namePDF = "../graphs/spectre_" + nameSource + peak + ".pdf"; 
+        namePDF = "../graphs/spectre_" + nameSource + peak + "LOG.pdf"; 
     }
     
     TH1D* histoSpectre = new TH1D("Data", titleGraph, nBin, 0, 8192);
@@ -64,7 +64,7 @@ void computeHisto (string element, string nameSource, string peak, int bin, doub
     histoSpectre->GetXaxis()->SetRangeUser(limInf, limSup);
 
     // Da commentare se si vuole lo spettro totale o da sostituire con il fit corretto presente in compute/codeFit/...
-    TF1* funcFit = new TF1("funcFit", totalFit, limInf, limSup, 4);
+    /*TF1* funcFit = new TF1("funcFit", totalFit, limInf, limSup, 4);
     funcFit->SetParName(0,"Amp");
     funcFit->SetParName(1,"Mean");
     funcFit->SetParName(2,"Std Dev");
@@ -89,13 +89,13 @@ void computeHisto (string element, string nameSource, string peak, int bin, doub
     fstream OutFile;
     OutFile.open("areeCoA.txt", fstream::app);
     OutFile << namePDF <<":\t"<< gaussian->Integral(3360, 3385) << " +/- " << funcFit->IntegralError(3360, 3385) << endl;
-    OutFile.close();
+    OutFile.close();*/
 
     if (logScale) {
         canvasSpectre->SetLogy();
     }
 
-    //canvasSpectre->Print(namePDF);
+    canvasSpectre->Print(namePDF);
 
     // Libero la memoria
     delete histoSpectre;
@@ -105,8 +105,8 @@ void computeHisto (string element, string nameSource, string peak, int bin, doub
 
 int main() {
     // COBALTO ACQUA 4 cm
-    //computeHisto ("acqua", "cobalto_acqua_04cm", "", 8192, 0, 8192, false, false);
-    //computeHisto ("acqua", "cobalto_acqua_04cm", "", 8192, 0, 8192, false, true);
+    computeHisto ("acqua", "cobalto_acqua_04cm", "", 8192, 0, 8192, true, false);
+    computeHisto ("acqua", "cobalto_acqua_04cm", "", 8192, 0, 8192, true, true);
 
 
 
@@ -123,8 +123,8 @@ int main() {
 
 
     // COBALTO ACQUA 8 cm
-    //computeHisto ("acqua", "cobalto_acqua_08cm", "", 8192, 0, 8192, false, false);
-    //computeHisto ("acqua", "cobalto_acqua_08cm", "", 8192, 0, 8192, false, true);
+    computeHisto ("acqua", "cobalto_acqua_08cm", "", 8192, 0, 8192, true, false);
+    computeHisto ("acqua", "cobalto_acqua_08cm", "", 8192, 0, 8192, true, true);
 
 
 
@@ -141,8 +141,8 @@ int main() {
 
 
     // COBALTO ACQUA 12 cm
-    //computeHisto ("acqua", "cobalto_acqua_12cm", "", 8192, 0, 8192, false, false);
-    //computeHisto ("acqua", "cobalto_acqua_12cm", "", 8192, 0, 8192, false, true);
+    computeHisto ("acqua", "cobalto_acqua_12cm", "", 8192, 0, 8192, true, false);
+    computeHisto ("acqua", "cobalto_acqua_12cm", "", 8192, 0, 8192, true, true);
 
 
 
@@ -159,8 +159,8 @@ int main() {
 
 
     // COBALTO ACQUA 16 cm
-    //computeHisto ("acqua", "cobalto_acqua_16cm", "", 8192, 0, 8192, false, false);
-    //computeHisto ("acqua", "cobalto_acqua_16cm", "", 8192, 0, 8192, false, true);
+    computeHisto ("acqua", "cobalto_acqua_16cm", "", 8192, 0, 8192, true, false);
+    computeHisto ("acqua", "cobalto_acqua_16cm", "", 8192, 0, 8192, true, true);
 
 
 
@@ -177,8 +177,8 @@ int main() {
 
 
     // COBALTO ACQUA 20 cm
-    //computeHisto ("acqua", "cobalto_acqua_20cm", "", 8192, 0, 8192, false, false);
-    //computeHisto ("acqua", "cobalto_acqua_20cm", "", 8192, 0, 8192, false, true);
+    computeHisto ("acqua", "cobalto_acqua_20cm", "", 8192, 0, 8192, true, false);
+    computeHisto ("acqua", "cobalto_acqua_20cm", "", 8192, 0, 8192, true, true);
 
 
 
@@ -189,7 +189,7 @@ int main() {
 
 
     // PICCO 2 COBALTO ACQUA 20 cm
-    computeHisto ("acqua", "cobalto_acqua_20cm", "2", 8192, 3353, 3393, false, false);
+    //computeHisto ("acqua", "cobalto_acqua_20cm", "2", 8192, 3353, 3393, false, false);
     //computeHisto ("acqua", "cobalto_acqua_20cm", "2", 8192, 3353, 3393, false, true);
 
 

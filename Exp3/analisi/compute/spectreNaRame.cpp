@@ -41,10 +41,10 @@ void computeHisto (string element, string nameSource, string peak, int bin, doub
     TString titleGraph = nameSource;
     TString namePDF;
     if (noData) {
-        namePDF = "../graphsNoData/spectre_" + nameSource + peak + ".pdf";
+        namePDF = "../graphsNoData/spectre_" + nameSource + peak + "LOG.pdf";
     }
     else {
-        namePDF = "../graphs/spectre_" + nameSource + peak + ".pdf"; 
+        namePDF = "../graphs/spectre_" + nameSource + peak + "LOG.pdf"; 
     }
     
     TH1D* histoSpectre = new TH1D("Data", titleGraph, nBin, 0, 8192);
@@ -80,7 +80,7 @@ void computeHisto (string element, string nameSource, string peak, int bin, doub
     funcFit->SetParameter(5, 1260);
     funcFit->SetParameter(6, 10);
 
-    histoSpectre->Fit("funcFit");*/
+    histoSpectre->Fit("funcFit");
 
     // Calcolo le aree
     TF1* gaussian = new TF1("gaussian", gaussFit, limInf, limSup, 3);
@@ -94,7 +94,7 @@ void computeHisto (string element, string nameSource, string peak, int bin, doub
     fstream OutFile;
     OutFile.open("areeNaRame.txt", fstream::app);
     OutFile << namePDF <<":\t"<< gaussian->Integral(1230, 1260) << " +/- " << funcFit->IntegralError(1230, 1260) << endl;
-    OutFile.close();
+    OutFile.close();*/
 
     if (logScale) {
         canvasSpectre->SetLogy();
@@ -110,8 +110,8 @@ void computeHisto (string element, string nameSource, string peak, int bin, doub
 
 int main() {
     // SODIO RAME 0.11 cm
-    //computeHisto ("rame", "sodio_rame_011cm", "", 8192, 0, 8192, false, false);
-    //computeHisto ("rame", "sodio_rame_011cm", "", 8192, 0, 8192, false, true);
+    computeHisto ("rame", "sodio_rame_011cm", "", 8192, 0, 8192, true, false);
+    computeHisto ("rame", "sodio_rame_011cm", "", 8192, 0, 8192, true, true);
 
 
 
@@ -128,8 +128,8 @@ int main() {
 
 
     // SODIO RAME 0.22 cm
-    //computeHisto ("rame", "sodio_rame_022cm", "", 8192, 0, 8192, false, false);
-    //computeHisto ("rame", "sodio_rame_022cm", "", 8192, 0, 8192, false, true);
+    computeHisto ("rame", "sodio_rame_022cm", "", 8192, 0, 8192, true, false);
+    computeHisto ("rame", "sodio_rame_022cm", "", 8192, 0, 8192, true, true);
 
 
 
@@ -146,8 +146,8 @@ int main() {
 
 
     // SODIO RAME 0.33 cm
-    //computeHisto ("rame", "sodio_rame_033cm", "", 8192, 0, 8192, false, false);
-    //computeHisto ("rame", "sodio_rame_033cm", "", 8192, 0, 8192, false, true);
+    computeHisto ("rame", "sodio_rame_033cm", "", 8192, 0, 8192, true, false);
+    computeHisto ("rame", "sodio_rame_033cm", "", 8192, 0, 8192, true, true);
 
 
 
@@ -163,8 +163,8 @@ int main() {
 
 
     // SODIO RAME 0.44 cm
-    //computeHisto ("rame", "sodio_rame_044cm", "", 8192, 0, 8192, false, false);
-    //computeHisto ("rame", "sodio_rame_044cm", "", 8192, 0, 8192, false, true);
+    computeHisto ("rame", "sodio_rame_044cm", "", 8192, 0, 8192, true, false);
+    computeHisto ("rame", "sodio_rame_044cm", "", 8192, 0, 8192, true, true);
 
 
 
@@ -180,8 +180,8 @@ int main() {
 
 
     // SODIO RAME 0.54 cm
-    //computeHisto ("rame", "sodio_rame_054cm", "", 8192, 0, 8192, false, false);
-    //computeHisto ("rame", "sodio_rame_054cm", "", 8192, 0, 8192, false, true);
+    computeHisto ("rame", "sodio_rame_054cm", "", 8192, 0, 8192, true, false);
+    computeHisto ("rame", "sodio_rame_054cm", "", 8192, 0, 8192, true, true);
 
 
 

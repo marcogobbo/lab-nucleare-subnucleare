@@ -41,10 +41,10 @@ void computeHisto (string element, string nameSource, string peak, int bin, doub
     TString titleGraph = nameSource;
     TString namePDF;
     if (noData) {
-        namePDF = "../graphsNoData/spectre_" + nameSource + peak + ".pdf";
+        namePDF = "../graphsNoData/spectre_" + nameSource + peak + "LOG.pdf";
     }
     else {
-        namePDF = "../graphs/spectre_" + nameSource + peak + ".pdf"; 
+        namePDF = "../graphs/spectre_" + nameSource + peak + "LOG.pdf"; 
     }
     
     TH1D* histoSpectre = new TH1D("Data", titleGraph, nBin, 0, 8192);
@@ -64,7 +64,7 @@ void computeHisto (string element, string nameSource, string peak, int bin, doub
     histoSpectre->GetXaxis()->SetRangeUser(limInf, limSup);
 
     // Da commentare se si vuole lo spettro totale o da sostituire con il fit corretto presente in compute/codeFit/...
-    TF1* funcFit = new TF1("funcFit", totalFit, limInf, limSup, 7);
+    /*TF1* funcFit = new TF1("funcFit", totalFit, limInf, limSup, 7);
     funcFit->SetParName(0,"Amp");
     funcFit->SetParName(1,"Mean");
     funcFit->SetParName(2,"Std Dev");
@@ -94,13 +94,13 @@ void computeHisto (string element, string nameSource, string peak, int bin, doub
     fstream OutFile;
     OutFile.open("areeCoRame.txt", fstream::app);
     OutFile << namePDF <<":\t"<< gaussian->Integral(3360, 3380) << " +/- " << funcFit->IntegralError(3360, 3380) << endl;
-    OutFile.close();
+    OutFile.close();*/
 
     if (logScale) {
         canvasSpectre->SetLogy();
     }
 
-    //canvasSpectre->Print(namePDF);
+    canvasSpectre->Print(namePDF);
 
     // Libero la memoria
     delete histoSpectre;
@@ -110,8 +110,8 @@ void computeHisto (string element, string nameSource, string peak, int bin, doub
 
 int main() {
     // COBALTO RAME 0.11 cm
-    //computeHisto ("rame", "cobalto_rame_011cm", "", 8192, 0, 8192, false, false);
-    //computeHisto ("rame", "cobalto_rame_011cm", "", 8192, 0, 8192, false, true);
+    computeHisto ("rame", "cobalto_rame_011cm", "", 8192, 0, 8192, true, false);
+    computeHisto ("rame", "cobalto_rame_011cm", "", 8192, 0, 8192, true, true);
 
 
     // PICCO 1 COBALTO RAME 0.11 cm
@@ -126,8 +126,8 @@ int main() {
 
 
     // COBALTO RAME 0.22 cm
-    //computeHisto ("rame", "cobalto_rame_022cm", "", 8192, 0, 8192, false, false);
-    //computeHisto ("rame", "cobalto_rame_022cm", "", 8192, 0, 8192, false, true);
+    computeHisto ("rame", "cobalto_rame_022cm", "", 8192, 0, 8192, true, false);
+    computeHisto ("rame", "cobalto_rame_022cm", "", 8192, 0, 8192, true, true);
 
 
     // PICCO 1 COBALTO RAME 0.22 cm
@@ -142,8 +142,8 @@ int main() {
 
 
     // COBALTO RAME 0.33 cm
-    //computeHisto ("rame", "cobalto_rame_033cm", "", 8192, 0, 8192, false, false);
-    //computeHisto ("rame", "cobalto_rame_033cm", "", 8192, 0, 8192, false, true);
+    computeHisto ("rame", "cobalto_rame_033cm", "", 8192, 0, 8192, true, false);
+    computeHisto ("rame", "cobalto_rame_033cm", "", 8192, 0, 8192, true, true);
 
 
     // PICCO 1 COBALTO RAME 0.33 cm
@@ -158,8 +158,8 @@ int main() {
 
 
     // COBALTO RAME 0.44 cm
-    //computeHisto ("rame", "cobalto_rame_044cm", "", 8192, 0, 8192, false, false);
-    //computeHisto ("rame", "cobalto_rame_044cm", "", 8192, 0, 8192, false, true);
+    computeHisto ("rame", "cobalto_rame_044cm", "", 8192, 0, 8192, true, false);
+    computeHisto ("rame", "cobalto_rame_044cm", "", 8192, 0, 8192, true, true);
 
 
     // PICCO 1 COBALTO RAME 0.44 cm
@@ -174,8 +174,8 @@ int main() {
 
 
     // COBALTO RAME 0.54 cm
-    //computeHisto ("rame", "cobalto_rame_054cm", "", 8192, 0, 8192, false, false);
-    //computeHisto ("rame", "cobalto_rame_054cm", "", 8192, 0, 8192, false, true);
+    computeHisto ("rame", "cobalto_rame_054cm", "", 8192, 0, 8192, true, false);
+    computeHisto ("rame", "cobalto_rame_054cm", "", 8192, 0, 8192, true, true);
 
 
     // PICCO 1 COBALTO RAME 0.54 cm
@@ -184,6 +184,6 @@ int main() {
 
 
     // PICCO 2 COBALTO RAME 0.54 cm
-    computeHisto ("rame", "cobalto_rame_054cm", "2", 8192, 3353, 3420, false, false);
+    //computeHisto ("rame", "cobalto_rame_054cm", "2", 8192, 3353, 3420, false, false);
     //computeHisto ("rame", "cobalto_rame_054cm", "2", 8192, 3353, 3420, false, true); 
 }

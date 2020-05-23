@@ -41,10 +41,10 @@ void computeHisto (string element, string nameSource, string peak, int bin, doub
     TString titleGraph = nameSource;
     TString namePDF;
     if (noData) {
-        namePDF = "../graphsNoData/spectre_" + nameSource + peak + ".pdf";
+        namePDF = "../graphsNoData/spectre_" + nameSource + peak + "LOG.pdf";
     }
     else {
-        namePDF = "../graphs/spectre_" + nameSource + peak + ".pdf"; 
+        namePDF = "../graphs/spectre_" + nameSource + peak + "LOG.pdf"; 
     }
     
     TH1D* histoSpectre = new TH1D("Data", titleGraph, nBin, 0, 8192);
@@ -64,22 +64,16 @@ void computeHisto (string element, string nameSource, string peak, int bin, doub
     histoSpectre->GetXaxis()->SetRangeUser(limInf, limSup);
 
     // Da commentare se si vuole lo spettro totale o da sostituire con il fit corretto presente in compute/codeFit/...
-    TF1* funcFit = new TF1("funcFit", totalFit, limInf, limSup, 4);
+    /*TF1* funcFit = new TF1("funcFit", totalFit, limInf, limSup, 4);
     funcFit->SetParName(0,"Amp");
     funcFit->SetParName(1,"Mean");
     funcFit->SetParName(2,"Std Dev");
     funcFit->SetParName(3,"Noise");
-    /*funcFit->SetParName(4,"Amp_PileUp");
-    funcFit->SetParName(5,"Mean_PileUp");
-    funcFit->SetParName(6,"Std Dev_PileUp");*/
-    funcFit->SetParameter(0, 20);
-    funcFit->SetParameter(1, 6685);
-    funcFit->SetParameter(2, 5);
-    funcFit->SetParameter(3, 0);
-    /*funcFit->SetParameter(4, 2500);
-    funcFit->SetParameter(5, 2978);
-    funcFit->SetParameter(6, 10);*/
-
+    funcFit->SetParameter(0, 60);
+    funcFit->SetParameter(1, 3704);
+    funcFit->SetParameter(2, 10);
+    funcFit->SetParameter(3, 3);
+    funcFit->SetNpx(100000);
     histoSpectre->Fit("funcFit");
 
     // Calcolo le aree
@@ -92,15 +86,15 @@ void computeHisto (string element, string nameSource, string peak, int bin, doub
     gaussian->SetParError(2, funcFit->GetParError(2));
 
     fstream OutFile;
-    OutFile.open("areeThA.txt", fstream::app);
-    OutFile << namePDF <<":\t"<< gaussian->Integral(6670, 6700) << " +/- " << funcFit->IntegralError(6670, 6700) << endl;
-    OutFile.close();
+    OutFile.open("areeThA1460.txt", fstream::app);
+    OutFile << namePDF <<":\t"<< gaussian->Integral(3694, 3718) << " +/- " << funcFit->IntegralError(3694, 3718) << endl;
+    OutFile.close();*/
 
     if (logScale) {
         canvasSpectre->SetLogy();
     }
 
-    //canvasSpectre->Print(namePDF);
+    canvasSpectre->Print(namePDF);
 
     // Libero la memoria
     delete histoSpectre;
@@ -110,8 +104,8 @@ void computeHisto (string element, string nameSource, string peak, int bin, doub
 
 int main() {
     // TORIO ACQUA 4 cm
-    //computeHisto ("acqua", "torio_acqua_04cm", "", 8192, 0, 8192, false, false);
-    //computeHisto ("acqua", "torio_acqua_04cm", "", 8192, 0, 8192, false, true);
+    computeHisto ("acqua", "torio_acqua_04cm", "", 8192, 0, 8192, true, false);
+    computeHisto ("acqua", "torio_acqua_04cm", "", 8192, 0, 8192, true, true);
 
 
     // PICCO 1 TORIO ACQUA 4 cm
@@ -132,8 +126,8 @@ int main() {
 
 
     // TORIO ACQUA 8 cm
-    //computeHisto ("acqua", "torio_acqua_08cm", "", 8192, 0, 8192, false, false);
-    //computeHisto ("acqua", "torio_acqua_08cm", "", 8192, 0, 8192, false, true);
+    computeHisto ("acqua", "torio_acqua_08cm", "", 8192, 0, 8192, true, false);
+    computeHisto ("acqua", "torio_acqua_08cm", "", 8192, 0, 8192, true, true);
 
 
     // PICCO 1 TORIO ACQUA 8 cm
@@ -154,8 +148,8 @@ int main() {
 
 
     // TORIO ACQUA 12 cm
-    //computeHisto ("acqua", "torio_acqua_12cm", "", 8192, 0, 8192, false, false);
-    //computeHisto ("acqua", "torio_acqua_12cm", "", 8192, 0, 8192, false, true);
+    computeHisto ("acqua", "torio_acqua_12cm", "", 8192, 0, 8192, true, false);
+    computeHisto ("acqua", "torio_acqua_12cm", "", 8192, 0, 8192, true, true);
 
 
     // PICCO 1 TORIO ACQUA 12 cm
@@ -176,8 +170,8 @@ int main() {
 
 
     // TORIO ACQUA 16 cm
-    //computeHisto ("acqua", "torio_acqua_16cm", "", 8192, 0, 8192, false, false);
-    //computeHisto ("acqua", "torio_acqua_16cm", "", 8192, 0, 8192, false, true);
+    computeHisto ("acqua", "torio_acqua_16cm", "", 8192, 0, 8192, true, false);
+    computeHisto ("acqua", "torio_acqua_16cm", "", 8192, 0, 8192, true, true);
 
 
     // PICCO 1 TORIO ACQUA 16 cm
@@ -198,8 +192,8 @@ int main() {
 
 
     // TORIO ACQUA 20 cm
-    //computeHisto ("acqua", "torio_acqua_20cm", "", 8192, 0, 8192, false, false);
-    //computeHisto ("acqua", "torio_acqua_20cm", "", 8192, 0, 8192, false, true);
+    computeHisto ("acqua", "torio_acqua_20cm", "", 8192, 0, 8192, true, false);
+    computeHisto ("acqua", "torio_acqua_20cm", "", 8192, 0, 8192, true, true);
 
 
     // PICCO 1 TORIO ACQUA 20 cm
@@ -213,7 +207,7 @@ int main() {
 
 
     // PICCO 3 TORIO ACQUA 20 cm
-    computeHisto ("acqua", "torio_acqua_20cm", "3", 8192, 6640, 6720, false, false);
+    //computeHisto ("acqua", "torio_acqua_20cm", "3", 8192, 6640, 6720, false, false);
     //computeHisto ("acqua", "torio_acqua_20cm", "3", 8192, 6640, 6720, false, true);
 
 

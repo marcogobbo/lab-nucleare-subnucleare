@@ -1,0 +1,5 @@
+../graphs/spectre_torio_acqua_04cm3.pdf:	352.422 +/- 20.4647
+../graphs/spectre_torio_acqua_08cm3.pdf:	363.095 +/- 20.6757
+../graphs/spectre_torio_acqua_12cm3.pdf:	346.355 +/- 20.4028
+../graphs/spectre_torio_acqua_16cm3.pdf:	365.474 +/- 20.8051
+../graphs/spectre_torio_acqua_20cm3.pdf:	363.796 +/- 20.8165

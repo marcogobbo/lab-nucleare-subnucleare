@@ -41,10 +41,10 @@ void computeHisto (string element, string nameSource, string peak, int bin, doub
     TString titleGraph = nameSource;
     TString namePDF;
     if (noData) {
-        namePDF = "../graphsNoData/spectre_" + nameSource + peak + ".pdf";
+        namePDF = "../graphsNoData/spectre_" + nameSource + peak + "LOG.pdf";
     }
     else {
-        namePDF = "../graphs/spectre_" + nameSource + peak + ".pdf"; 
+        namePDF = "../graphs/spectre_" + nameSource + peak + "LOG.pdf"; 
     }
     
     TH1D* histoSpectre = new TH1D("Data", titleGraph, nBin, 0, 8192);
@@ -69,16 +69,16 @@ void computeHisto (string element, string nameSource, string peak, int bin, doub
     funcFit->SetParName(1,"Mean");
     funcFit->SetParName(2,"Std Dev");
     funcFit->SetParName(3,"Noise");
-    /*funcFit->SetParName(4,"Amp_PileUp");
+    funcFit->SetParName(4,"Amp_PileUp");
     funcFit->SetParName(5,"Mean_PileUp");
-    funcFit->SetParName(6,"Std Dev_PileUp");*/
-    /*funcFit->SetParameter(0, 150);
+    funcFit->SetParName(6,"Std Dev_PileUp");
+    funcFit->SetParameter(0, 150);
     funcFit->SetParameter(1, 6685);
     funcFit->SetParameter(2, 5);
     funcFit->SetParameter(3, 5);
-    /*funcFit->SetParameter(4, 2500);
+    funcFit->SetParameter(4, 2500);
     funcFit->SetParameter(5, 2978);
-    funcFit->SetParameter(6, 10);*/
+    funcFit->SetParameter(6, 10);
 
     //histoSpectre->Fit("funcFit");
 
@@ -94,7 +94,7 @@ void computeHisto (string element, string nameSource, string peak, int bin, doub
     fstream OutFile;
     OutFile.open("areeThRame.txt", fstream::app);
     OutFile << namePDF <<":\t"<< gaussian->Integral(1230, 1260) << " +/- " << funcFit->IntegralError(1230, 1260) << endl;
-    OutFile.close();
+    OutFile.close();*/
 
     if (logScale) {
         canvasSpectre->SetLogy();
@@ -110,8 +110,8 @@ void computeHisto (string element, string nameSource, string peak, int bin, doub
 
 int main() {
     // TORIO RAME 0.11 cm
-    //computeHisto ("rame", "torio_rame_011cm", "", 8192, 0, 8192, false, false);
-    //computeHisto ("rame", "torio_rame_011cm", "", 8192, 0, 8192, false, true);
+    computeHisto ("rame", "torio_rame_011cm", "", 8192, 0, 8192, true, false);
+    computeHisto ("rame", "torio_rame_011cm", "", 8192, 0, 8192, true, true);
 
 
     // PICCO 1 TORIO RAME 0.11 cm
@@ -132,8 +132,8 @@ int main() {
 
 
     // TORIO RAME 0.22 cm
-    //computeHisto ("rame", "torio_rame_022cm", "", 8192, 0, 8192, false, false);
-    //computeHisto ("rame", "torio_rame_022cm", "", 8192, 0, 8192, false, true);
+    computeHisto ("rame", "torio_rame_022cm", "", 8192, 0, 8192, true, false);
+    computeHisto ("rame", "torio_rame_022cm", "", 8192, 0, 8192, true, true);
 
 
     // PICCO 1 TORIO RAME 0.22 cm
@@ -154,8 +154,8 @@ int main() {
 
 
     // TORIO RAME 0.33 cm
-    //computeHisto ("rame", "torio_rame_033cm", "", 8192, 0, 8192, false, false);
-    //computeHisto ("rame", "torio_rame_033cm", "", 8192, 0, 8192, false, true);
+    computeHisto ("rame", "torio_rame_033cm", "", 8192, 0, 8192, true, false);
+    computeHisto ("rame", "torio_rame_033cm", "", 8192, 0, 8192, true, true);
 
 
     // PICCO 1 TORIO RAME 0.33 cm
@@ -176,8 +176,8 @@ int main() {
 
 
     // TORIO RAME 0.44 cm
-    //computeHisto ("rame", "torio_rame_044cm", "", 8192, 0, 8192, false, false);
-    //computeHisto ("rame", "torio_rame_044cm", "", 8192, 0, 8192, false, true);
+    computeHisto ("rame", "torio_rame_044cm", "", 8192, 0, 8192, true, false);
+    computeHisto ("rame", "torio_rame_044cm", "", 8192, 0, 8192, true, true);
 
 
     // PICCO 1 TORIO RAME 0.44 cm
@@ -198,8 +198,8 @@ int main() {
 
 
     // TORIO RAME 0.54 cm
-    //computeHisto ("rame", "torio_rame_054cm", "", 8192, 0, 8192, false, false);
-    //computeHisto ("rame", "torio_rame_054cm", "", 8192, 0, 8192, false, true);
+    computeHisto ("rame", "torio_rame_054cm", "", 8192, 0, 8192, true, false);
+    computeHisto ("rame", "torio_rame_054cm", "", 8192, 0, 8192, true, true);
 
 
     // PICCO 1 TORIO RAME 0.54 cm
