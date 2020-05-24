@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2020.3.24)  21 MAY 2020 17:39
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2020.3.24)  24 MAY 2020 17:27
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -345,31 +345,192 @@ LaTeX Font Info:    Trying to load font information for U+lasy on input line 19
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 ) [1
 
-{c:/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2] [3] [4] (./
-Report3.aux) ) 
+{c:/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2]
+<grafici/sodioacqua.jpg, id=19, 561.59813pt x 341.275pt>
+File: grafici/sodioacqua.jpg Graphic file (type jpg)
+<use grafici/sodioacqua.jpg>
+Package pdftex.def Info: grafici/sodioacqua.jpg  used on input line 86.
+(pdftex.def)             Requested size: 336.96147pt x 204.76657pt.
+<grafici/cobaltorame.jpg, id=20, 573.14125pt x 337.26pt>
+File: grafici/cobaltorame.jpg Graphic file (type jpg)
+<use grafici/cobaltorame.jpg>
+Package pdftex.def Info: grafici/cobaltorame.jpg  used on input line 92.
+(pdftex.def)             Requested size: 343.8874pt x 202.35756pt.
+<grafici/toriopiombo.jpg, id=21, 575.65062pt x 343.2825pt>
+File: grafici/toriopiombo.jpg Graphic file (type jpg)
+<use grafici/toriopiombo.jpg>
+Package pdftex.def Info: grafici/toriopiombo.jpg  used on input line 98.
+(pdftex.def)             Requested size: 345.39304pt x 205.97107pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[3 <./grafici/sodioacqua.jpg> <./grafici/cobaltorame.jpg>]
+<grafici/piccocobalto.jpg, id=25, 540.0175pt x 309.65688pt>
+File: grafici/piccocobalto.jpg Graphic file (type jpg)
+<use grafici/piccocobalto.jpg>
+Package pdftex.def Info: grafici/piccocobalto.jpg  used on input line 106.
+(pdftex.def)             Requested size: 324.013pt x 185.79555pt.
+<grafici/piccotorio.jpg, id=26, 519.44063pt x 306.64563pt>
+File: grafici/piccotorio.jpg Graphic file (type jpg)
+<use grafici/piccotorio.jpg>
+Package pdftex.def Info: grafici/piccotorio.jpg  used on input line 112.
+(pdftex.def)             Requested size: 311.66678pt x 183.98878pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[4 <./grafici/toriopiombo.jpg> <./grafici/piccocobalto.jpg>]
+<grafici/attenuazionesodioacqua.jpg, id=30, 516.42938pt x 335.2525pt>
+File: grafici/attenuazionesodioacqua.jpg Graphic file (type jpg)
+<use grafici/attenuazionesodioacqua.jpg>
+Package pdftex.def Info: grafici/attenuazionesodioacqua.jpg  used on input line
+ 126.
+(pdftex.def)             Requested size: 309.86002pt x 201.15305pt.
+<grafici/attenuazionesodiorame.jpg, id=31, 534.99875pt x 342.78062pt>
+File: grafici/attenuazionesodiorame.jpg Graphic file (type jpg)
+<use grafici/attenuazionesodiorame.jpg>
+Package pdftex.def Info: grafici/attenuazionesodiorame.jpg  used on input line 
+132.
+(pdftex.def)             Requested size: 321.00172pt x 205.66995pt.
+ [5 <./grafici/piccotorio.jpg> <./grafici/attenuazionesodioacqua.jpg>]
+<grafici/attenuazionesodiopiombo.jpg, id=35, 519.9425pt x 337.76187pt>
+File: grafici/attenuazionesodiopiombo.jpg Graphic file (type jpg)
+<use grafici/attenuazionesodiopiombo.jpg>
+Package pdftex.def Info: grafici/attenuazionesodiopiombo.jpg  used on input lin
+e 138.
+(pdftex.def)             Requested size: 311.96791pt x 202.65868pt.
+<grafici/attenuazionecobaltoacqua.jpg, id=36, 517.43312pt x 337.76187pt>
+File: grafici/attenuazionecobaltoacqua.jpg Graphic file (type jpg)
+<use grafici/attenuazionecobaltoacqua.jpg>
+Package pdftex.def Info: grafici/attenuazionecobaltoacqua.jpg  used on input li
+ne 144.
+(pdftex.def)             Requested size: 310.46225pt x 202.65868pt.
+ [6 <./grafici/attenuazionesodiorame.jpg> <./grafici/attenuazionesodiopiombo.jp
+g>]
+<grafici/attenuazionecobaltorame.jpg, id=40, 513.41812pt x 341.77687pt>
+File: grafici/attenuazionecobaltorame.jpg Graphic file (type jpg)
+<use grafici/attenuazionecobaltorame.jpg>
+Package pdftex.def Info: grafici/attenuazionecobaltorame.jpg  used on input lin
+e 150.
+(pdftex.def)             Requested size: 308.05324pt x 205.0677pt.
+<grafici/attenuazionecobaltopiombo.jpg, id=41, 521.95pt x 336.75812pt>
+File: grafici/attenuazionecobaltopiombo.jpg Graphic file (type jpg)
+<use grafici/attenuazionecobaltopiombo.jpg>
+Package pdftex.def Info: grafici/attenuazionecobaltopiombo.jpg  used on input l
+ine 156.
+(pdftex.def)             Requested size: 313.17241pt x 202.05643pt.
+ [7 <./grafici/attenuazionecobaltoacqua.jpg> <./grafici/attenuazionecobaltorame
+.jpg>]
+<grafici/attenuazionetorioacqua.jpg, id=46, 534.99875pt x 337.26pt>
+File: grafici/attenuazionetorioacqua.jpg Graphic file (type jpg)
+<use grafici/attenuazionetorioacqua.jpg>
+Package pdftex.def Info: grafici/attenuazionetorioacqua.jpg  used on input line
+ 162.
+(pdftex.def)             Requested size: 321.00172pt x 202.35756pt.
+<grafici/attenuazionetoriorame.jpg, id=47, 537.50812pt x 341.275pt>
+File: grafici/attenuazionetoriorame.jpg Graphic file (type jpg)
+<use grafici/attenuazionetoriorame.jpg>
+Package pdftex.def Info: grafici/attenuazionetoriorame.jpg  used on input line 
+168.
+(pdftex.def)             Requested size: 322.50735pt x 204.76657pt.
+ [8 <./grafici/attenuazionecobaltopiombo.jpg> <./grafici/attenuazionetorioacqua
+.jpg>]
+<grafici/attenuazionetoriopiombo.jpg, id=51, 512.41437pt x 340.77313pt>
+File: grafici/attenuazionetoriopiombo.jpg Graphic file (type jpg)
+<use grafici/attenuazionetoriopiombo.jpg>
+Package pdftex.def Info: grafici/attenuazionetoriopiombo.jpg  used on input lin
+e 174.
+(pdftex.def)             Requested size: 307.45099pt x 204.46545pt.
+<grafici/1460keV.jpg, id=52, 520.44438pt x 311.66437pt>
+File: grafici/1460keV.jpg Graphic file (type jpg)
+<use grafici/1460keV.jpg>
+Package pdftex.def Info: grafici/1460keV.jpg  used on input line 186.
+(pdftex.def)             Requested size: 312.26904pt x 187.00006pt.
+ [9 <./grafici/attenuazionetoriorame.jpg> <./grafici/attenuazionetoriopiombo.jp
+g>]
+<grafici/massicoacqua.jpg, id=56, 526.46687pt x 374.90062pt>
+File: grafici/massicoacqua.jpg Graphic file (type jpg)
+<use grafici/massicoacqua.jpg>
+Package pdftex.def Info: grafici/massicoacqua.jpg  used on input line 212.
+(pdftex.def)             Requested size: 315.88255pt x 224.94211pt.
+ [10 <./grafici/1460keV.jpg>]
+<grafici/massicorame.jpg, id=61, 527.9725pt x 382.42876pt>
+File: grafici/massicorame.jpg Graphic file (type jpg)
+<use grafici/massicorame.jpg>
+Package pdftex.def Info: grafici/massicorame.jpg  used on input line 228.
+(pdftex.def)             Requested size: 316.78593pt x 229.45901pt.
+ [11 <./grafici/massicoacqua.jpg>]
+<grafici/massicopiombo.jpg, id=65, 513.92pt x 380.92313pt>
+File: grafici/massicopiombo.jpg Graphic file (type jpg)
+<use grafici/massicopiombo.jpg>
+Package pdftex.def Info: grafici/massicopiombo.jpg  used on input line 244.
+(pdftex.def)             Requested size: 308.35437pt x 228.55562pt.
+ [12 <./grafici/massicorame.jpg>]
+<grafici/picco238.jpg, id=69, 530.48187pt x 386.94562pt>
+File: grafici/picco238.jpg Graphic file (type jpg)
+<use grafici/picco238.jpg>
+Package pdftex.def Info: grafici/picco238.jpg  used on input line 260.
+(pdftex.def)             Requested size: 318.29156pt x 232.16916pt.
+ [13 <./grafici/massicopiombo.jpg>]
+<grafici/picco511.jpg, id=74, 517.935pt x 383.93437pt>
+File: grafici/picco511.jpg Graphic file (type jpg)
+<use grafici/picco511.jpg>
+Package pdftex.def Info: grafici/picco511.jpg  used on input line 266.
+(pdftex.def)             Requested size: 310.76338pt x 230.3624pt.
+<grafici/picco583.jpg, id=75, 529.47812pt x 382.93062pt>
+File: grafici/picco583.jpg Graphic file (type jpg)
+<use grafici/picco583.jpg>
+Package pdftex.def Info: grafici/picco583.jpg  used on input line 272.
+(pdftex.def)             Requested size: 317.68932pt x 229.76013pt.
+ [14 <./grafici/picco238.jpg> <./grafici/picco511.jpg>]
+<grafici/picco1173.jpg, id=79, 516.93124pt x 375.90437pt>
+File: grafici/picco1173.jpg Graphic file (type jpg)
+<use grafici/picco1173.jpg>
+Package pdftex.def Info: grafici/picco1173.jpg  used on input line 278.
+(pdftex.def)             Requested size: 310.16113pt x 225.54436pt.
+<grafici/picco1274.jpg, id=80, 521.44812pt x 388.95313pt>
+File: grafici/picco1274.jpg Graphic file (type jpg)
+<use grafici/picco1274.jpg>
+Package pdftex.def Info: grafici/picco1274.jpg  used on input line 284.
+(pdftex.def)             Requested size: 312.87129pt x 233.37366pt.
+ [15 <./grafici/picco583.jpg> <./grafici/picco1173.jpg>]
+<grafici/picco1332.jpg, id=84, 532.48938pt x 392.46625pt>
+File: grafici/picco1332.jpg Graphic file (type jpg)
+<use grafici/picco1332.jpg>
+Package pdftex.def Info: grafici/picco1332.jpg  used on input line 290.
+(pdftex.def)             Requested size: 319.4961pt x 235.48155pt.
+<grafici/picco2614.jpg, id=85, 521.44812pt x 378.91562pt>
+File: grafici/picco2614.jpg Graphic file (type jpg)
+<use grafici/picco2614.jpg>
+Package pdftex.def Info: grafici/picco2614.jpg  used on input line 296.
+(pdftex.def)             Requested size: 312.87129pt x 227.35112pt.
+
+[16 <./grafici/picco1274.jpg> <./grafici/picco1332.jpg>] [17 <./grafici/picco26
+14.jpg>] (./Report3.aux) ) 
 Here is how much of TeX's memory you used:
- 3998 strings out of 480994
- 56239 string characters out of 5916032
+ 4229 strings out of 480994
+ 62412 string characters out of 5916032
  308553 words of memory out of 5000000
- 19466 multiletter control sequences out of 15000+600000
+ 19669 multiletter control sequences out of 15000+600000
  541172 words of font info for 62 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 43i,6n,50p,1473b,201s stack positions out of 5000i,500n,10000p,200000b,80000s
-{c:/texlive/2019/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1
-.enc}<c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/
-texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2
-019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2019/texmf
--dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/2019/texmf-dist/font
-s/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/pu
-blic/amsfonts/cm/cmr12.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfo
-nts/cm/cmr17.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr
-7.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:
-/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><c:/texlive/2
-019/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on Report3.pdf (4 pages, 128590 bytes).
+ 43i,6n,50p,1477b,226s stack positions out of 5000i,500n,10000p,200000b,80000s
+{c:/texlive/2019/texmf-dist/fonts/enc/dvips/cm-super/
+cm-super-ts1.enc}<c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmb
+x10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><
+c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texliv
+e/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/2019/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2019/texmf-dist/fo
+nts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2019/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmr17.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/ams
+fonts/cm/cmr7.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cm
+sy10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><
+c:/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
+Output written on Report3.pdf (17 pages, 2403359 bytes).
 PDF statistics:
- 62 PDF objects out of 1000 (max. 8388607)
- 44 compressed objects within 1 object stream
+ 129 PDF objects out of 1000 (max. 8388607)
+ 73 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 126 words of extra memory for PDF output out of 10000 (max. 10000000)
 
