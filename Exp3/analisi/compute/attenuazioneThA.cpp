@@ -102,10 +102,22 @@ int main() {
     graph2->Fit("fitFnc2");
     graph3->Fit("fitFnc3");
 
-    TLegend *leg = new TLegend(0.53, 0.7, 0.9, 0.9);
-    leg->AddEntry(fit1, TString::Format("542 mV   #mu = %.3g #pm %.1g cm^{-1}", fit1->GetParameter(1), fit1->GetParError(1)), "l");
-    leg->AddEntry(fit2, TString::Format("1434 mV   #mu = %.3g #pm %.1g cm^{-1}", fit2->GetParameter(1), fit2->GetParError(1)), "l");
-    leg->AddEntry(fit3, TString::Format("6684 mV   #mu = %.3g #pm %.1g cm^{-1}", fit3->GetParameter(1), fit3->GetParError(1)), "l");
+    cout << "\n" << endl;
+    cout << fit1->GetChisquare()/fit1->GetNDF() << endl;
+    cout << fit2->GetChisquare()/fit2->GetNDF() << endl;
+    cout << fit3->GetChisquare()/fit3->GetNDF() << endl;
+    cout << "\n" << endl;
+
+    cout << "\n" << endl;
+    cout << fit1->GetProb() << endl;
+    cout << fit2->GetProb() << endl;
+    cout << fit3->GetProb() << endl;
+    cout << "\n" << endl;
+
+    TLegend *leg = new TLegend(0.50, 0.7, 0.9, 0.9);
+    leg->AddEntry(fit1, TString::Format("238 keV   #mu = %.3g #pm %.1g cm^{-1}", fit1->GetParameter(1), fit1->GetParError(1)), "l");
+    leg->AddEntry(fit2, TString::Format("583 keV   #mu = %.3g #pm %.1g cm^{-1}", fit2->GetParameter(1), fit2->GetParError(1)), "l");
+    leg->AddEntry(fit3, TString::Format("2614 keV   #mu = %.3g #pm %.1g cm^{-1}", fit3->GetParameter(1), fit3->GetParError(1)), "l");
     leg->Draw();
 
     canvasAtt->Print("../graphs/Attenuazioni/attenuazioneThA.pdf");

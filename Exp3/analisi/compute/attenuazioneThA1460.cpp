@@ -54,8 +54,16 @@ int main() {
 
     graph1->Fit("fitFnc1");
 
+    cout << "\n" << endl;
+    cout << fit1->GetChisquare()/fit1->GetNDF() << endl;
+    cout << "\n" << endl;
+
+    cout << "\n" << endl;
+    cout << fit1->GetProb() << endl;
+    cout << "\n" << endl;
+
     TLegend *leg = new TLegend(0.57, 0.8, 0.9, 0.9);
-    leg->AddEntry(fit1, TString::Format("3705 mV   k = %.3g #pm %.1g cm^{-1}", fit1->GetParameter(0), fit1->GetParError(0)), "l");
+    leg->AddEntry(fit1, TString::Format("1460 keV   k = %.3g #pm %.1g cm^{-1}", fit1->GetParameter(0), fit1->GetParError(0)), "l");
     leg->Draw();
 
     canvasAtt->Print("../graphs/Attenuazioni/attenuazioneThA1460.pdf");

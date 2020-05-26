@@ -77,7 +77,7 @@ void computeHisto (string element, string nameSource, string peak, int bin, doub
 
     histoSpectre->Fit("funcFit");
 
-    // Calcolo le aree
+    // Calcolo le aree*/
     TF1* gaussian = new TF1("gaussian", gaussFit, limInf, limSup, 3);
     gaussian->SetParameter(0, funcFit->GetParameter(0));
     gaussian->SetParameter(1, funcFit->GetParameter(1));

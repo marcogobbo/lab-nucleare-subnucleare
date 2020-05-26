@@ -1,0 +1,229 @@
+%%% Torio %%%
+\subsection{Torio con acqua a 4, 8, 12, 16 e 20 cm di spessore}
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.45]{appendice/spettri/ThA1_4}
+    \caption{Picco a 238 keV}
+\end{figure}
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.45]{appendice/spettri/ThA2_4}
+    \caption{Picco a 583 keV}
+\end{figure}
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.45]{appendice/spettri/ThA3_4}
+    \caption{Picco a 2614 keV}
+\end{figure}
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.45]{appendice/spettri/ThA1_8}
+    \caption{Picco a 238 keV}
+\end{figure}
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.45]{appendice/spettri/ThA2_8}
+    \caption{Picco a 583 keV}
+\end{figure}
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.45]{appendice/spettri/ThA3_8}
+    \caption{Picco a 2614 keV}
+\end{figure}
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.45]{appendice/spettri/ThA1_12}
+    \caption{Picco a 238 keV}
+\end{figure}
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.45]{appendice/spettri/ThA2_12}
+    \caption{Picco a 583 keV}
+\end{figure}
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.45]{appendice/spettri/ThA3_12}
+    \caption{Picco a 2614 keV}
+\end{figure}
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.45]{appendice/spettri/ThA1_16}
+    \caption{Picco a 238 keV}
+\end{figure}
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.45]{appendice/spettri/ThA2_16}
+    \caption{Picco a 583 keV}
+\end{figure}
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.45]{appendice/spettri/ThA3_16}
+    \caption{Picco a 2614 keV}
+\end{figure}
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.45]{appendice/spettri/ThA1_20}
+    \caption{Picco a 238 keV}
+\end{figure}
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.45]{appendice/spettri/ThA2_20}
+    \caption{Picco a 583 keV}
+\end{figure}
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.45]{appendice/spettri/ThA3_20}
+    \caption{Picco a 2614 keV}
+\end{figure}
+\subsection{Torio con rame a 11, 22, 33, 44 e 54 cm di spessore}
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.45]{appendice/spettri/ThCu1_11}
+    \caption{Picco a 238 keV}
+\end{figure}
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.45]{appendice/spettri/ThCu2_11}
+    \caption{Picco a 583 keV}
+\end{figure}
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.45]{appendice/spettri/ThCu3_11}
+    \caption{Picco a 2614 keV}
+\end{figure}
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.45]{appendice/spettri/ThCu1_22}
+    \caption{Picco a 238 keV}
+\end{figure}
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.45]{appendice/spettri/ThCu2_22}
+    \caption{Picco a 583 keV}
+\end{figure}
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.45]{appendice/spettri/ThCu3_22}
+    \caption{Picco a 2614 keV}
+\end{figure}
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.45]{appendice/spettri/ThCu1_33}
+    \caption{Picco a 238 keV}
+\end{figure}
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.45]{appendice/spettri/ThCu2_33}
+    \caption{Picco a 583 keV}
+\end{figure}
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.45]{appendice/spettri/ThCu3_33}
+    \caption{Picco a 2614 keV}
+\end{figure}
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.45]{appendice/spettri/ThCu1_44}
+    \caption{Picco a 238 keV}
+\end{figure}
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.45]{appendice/spettri/ThCu2_44}
+    \caption{Picco a 583 keV}
+\end{figure}
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.45]{appendice/spettri/ThCu3_44}
+    \caption{Picco a 2614 keV}
+\end{figure}
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.45]{appendice/spettri/ThCu1_54}
+    \caption{Picco a 238 keV}
+\end{figure}
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.45]{appendice/spettri/ThCu2_54}
+    \caption{Picco a 583 keV}
+\end{figure}
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.45]{appendice/spettri/ThCu3_54}
+    \caption{Picco a 2614 keV}
+\end{figure}
+\subsection{Torio con piombo a 1, 21, 33, 58 e 108 cm di spessore}
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.45]{appendice/spettri/ThPb1_1}
+    \caption{Picco a 238 keV}
+\end{figure}
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.45]{appendice/spettri/ThPb2_1}
+    \caption{Picco a 583 keV}
+\end{figure}
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.45]{appendice/spettri/ThPb3_1}
+    \caption{Picco a 2614 keV}
+\end{figure}
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.45]{appendice/spettri/ThPb1_21}
+    \caption{Picco a 238 keV}
+\end{figure}
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.45]{appendice/spettri/ThPb2_21}
+    \caption{Picco a 583 keV}
+\end{figure}
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.45]{appendice/spettri/ThPb3_21}
+    \caption{Picco a 2614 keV}
+\end{figure}
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.45]{appendice/spettri/ThPb1_33}
+    \caption{Picco a 238 keV}
+\end{figure}
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.45]{appendice/spettri/ThPb2_33}
+    \caption{Picco a 583 keV}
+\end{figure}
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.45]{appendice/spettri/ThPb3_33}
+    \caption{Picco a 2614 keV}
+\end{figure}
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.45]{appendice/spettri/ThPb1_58}
+    \caption{Picco a 238 keV}
+\end{figure}
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.45]{appendice/spettri/ThPb2_58}
+    \caption{Picco a 583 keV}
+\end{figure}
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.45]{appendice/spettri/ThPb3_58}
+    \caption{Picco a 2614 keV}
+\end{figure}
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.45]{appendice/spettri/ThPb1_108}
+    \caption{Picco a 238 keV}
+\end{figure}
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.45]{appendice/spettri/ThPb2_108}
+    \caption{Picco a 583 keV}
+\end{figure}
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.45]{appendice/spettri/ThPb3_108}
+    \caption{Picco a 2614 keV}
+\end{figure}

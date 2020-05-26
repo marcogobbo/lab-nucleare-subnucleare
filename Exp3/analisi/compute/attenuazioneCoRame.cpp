@@ -78,9 +78,19 @@ int main() {
     graph1->Fit("fitFnc1");
     graph2->Fit("fitFnc2");
 
+    cout << "\n" << endl;
+    cout << fit1->GetChisquare()/fit1->GetNDF() << endl;
+    cout << fit2->GetChisquare()/fit2->GetNDF() << endl;
+    cout << "\n" << endl;
+
+    cout << "\n" << endl;
+    cout << fit1->GetProb() << endl;
+    cout << fit2->GetProb() << endl;
+    cout << "\n" << endl;
+
     TLegend *leg = new TLegend(0.5, 0.8, 0.89, 0.9);
-    leg->AddEntry(fit1, TString::Format("2960 mV   #mu = %.3g #pm %.2g cm^{-1}", fit1->GetParameter(1), fit1->GetParError(1)), "l");
-    leg->AddEntry(fit2, TString::Format("3373 mV   #mu = %.3g #pm %.2g cm^{-1}", fit2->GetParameter(1), fit2->GetParError(1)), "l");
+    leg->AddEntry(fit1, TString::Format("1173 keV   #mu = %.3g #pm %.2g cm^{-1}", fit1->GetParameter(1), fit1->GetParError(1)), "l");
+    leg->AddEntry(fit2, TString::Format("1332 keV   #mu = %.3g #pm %.2g cm^{-1}", fit2->GetParameter(1), fit2->GetParError(1)), "l");
     leg->Draw();
 
     canvasAtt->Print("../graphs/Attenuazioni/attenuazioneCoRame.pdf");

@@ -6,35 +6,35 @@ using namespace std;
 
 int main() {
     vector <double> ampPeak1 = {
-        1983,
-        1412,
-        931.7,
-        693.5,
-        447.2
+        20174.4/360,
+        14272.3/360,
+        9438.53/360,
+        6669.1/360,
+        4638.96/360
     };
 
     vector <double> errAmpPeak1 = {
-        17.9,
-        15.2,
-        12.4,
-        11.0,
-        8.7
+        272.333/360,
+        229.874/360,
+        99.96/360,
+        158.277/360,
+        71.131/360
     };
 
     vector <double> ampPeak2 = {
-        700.4,
-        580.2,
-        444.5,
-        378.1,
-        251
+        6080.33/360,
+        4813.54/360,
+        3769.91/360,
+        2960.57/360,
+        2179.57/360
     };
 
     vector <double> errAmpPeak2 = {
-        11.4,
-        10.7,
-        9.1,
-        8.9,
-        6.9
+        145.59/360,
+        130.701/360,
+        112.821/360,
+        101.81/360,
+        47.672/360
     };
 
     vector <double> spessori = {
@@ -52,8 +52,8 @@ int main() {
     TGraphErrors *graph1 = new TGraphErrors(5, &spessori[0], &ampPeak1[0], &errSpessori[0], &errAmpPeak1[0]);
     TGraphErrors *graph2 = new TGraphErrors(5, &spessori[0], &ampPeak2[0], &errSpessori[0], &errAmpPeak2[0]);
 
-    graph1->GetXaxis()->SetRangeUser(0, 30);
-    graph1->GetYaxis()->SetRangeUser(100, 3000);
+    /*graph1->GetXaxis()->SetRangeUser(0, 30);
+    graph1->GetYaxis()->SetRangeUser(0, 100);*/
 
     TF1 *fit1 = new TF1("fitFnc1", "[0]*exp(-[1]*x)", 0, 30);
     TF1 *fit2 = new TF1("fitFnc2", "[0]*exp(-[1]*x)", 0, 30);
@@ -71,8 +71,11 @@ int main() {
     graph1->GetYaxis()->SetTitle("Rate");
     graph1->GetXaxis()->SetTitle("Spessore [cm]");
 
-    graph1->SetMarkerSize(10);
-    graph2->SetMarkerSize(10);
+    graph1->SetMarkerSize(2);
+    graph1->SetMarkerStyle(5);
+
+    graph2->SetMarkerSize(2);
+    graph2->SetMarkerStyle(4);
 
     graph1->Draw("AP");
     graph2->Draw("P SAME");
@@ -80,9 +83,19 @@ int main() {
     graph1->Fit("fitFnc1");
     graph2->Fit("fitFnc2");
 
+    cout << "\n" << endl;
+    cout << fit1->GetChisquare()/fit1->GetNDF() << endl;
+    cout << fit2->GetChisquare()/fit2->GetNDF() << endl;
+    cout << "\n" << endl;
+
+    cout << "\n" << endl;
+    cout << fit1->GetProb() << endl;
+    cout << fit2->GetProb() << endl;
+    cout << "\n" << endl;
+
     TLegend *leg = new TLegend(0.53, 0.8, 0.9, 0.9);
-    leg->AddEntry(fit1, TString::Format("1246 mV   #mu = %.3g #pm %.1g cm^{-1}", fit1->GetParameter(1), fit1->GetParError(1)), "l");
-    leg->AddEntry(fit2, TString::Format("3223 mV   #mu = %.3g #pm %.1g cm^{-1}", fit2->GetParameter(1), fit2->GetParError(1)), "l");
+    leg->AddEntry(fit1, TString::Format("511 keV   #mu = %.3g #pm %.1g cm^{-1}", fit1->GetParameter(1), fit1->GetParError(1)), "l");
+    leg->AddEntry(fit2, TString::Format("1274 keV   #mu = %.3g #pm %.1g cm^{-1}", fit2->GetParameter(1), fit2->GetParError(1)), "l");
     leg->Draw();
 
     canvasAtt->Print("../graphs/Attenuazioni/attenuazioneNaA.pdf");
