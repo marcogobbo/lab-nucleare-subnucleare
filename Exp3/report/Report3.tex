@@ -10,6 +10,12 @@
 \usepackage{latexsym}
 \renewcommand{\figurename}{Figura}
 \newcommand*{\unit}[1]{\ensuremath{\mathrm{\,#1}}}
+\usepackage{afterpage}
+\newcommand\blankpage{%
+    \null
+    \thispagestyle{empty}%
+    \addtocounter{page}{-1}%
+    \newpage}
 \geometry{a4paper,tmargin=4cm,bmargin=3.5cm, lmargin=3cm,rmargin=3cm}
 
 \title{Interazione gamma con la materia}
@@ -25,13 +31,13 @@
 Lo scopo di questa esperienza \`e quello di indagare le caratteristiche dell'interazione gamma con la materia, utilizzando differenti sorgenti e materiali come bersaglio. Per fare questo si sfrutta un rivelatore al germanio: rivelatore a semiconduttore che sfrutta la tecnologia della giunzione P-N, sottoposta ad un drogaggio opportuno. Nella giunzione P-N \`e presente una regione: la zona di svuotamento, dove non sono presenti cariche libere. Una volta che una radiazione gamma attraversa questa zona crea delle coppie elettrone-lacuna, le quali, accellerate da una differenza di potenziale opportuna, generano una corrente che permette in ultima istanza di risalire all'energia depositata dal gamma nel rivelatore. In spettroscopia la giunzione va polarizzata inversamente, in modo tale che all'interno del rivelatore non ci sia nessuna corrente che si sovrapponga a quella generata dalla raccolta di cariche, cos\`i da ottenere misure corrette. L'utilizzo del germanio come semiconduttore comporta che il rivelatore sia mantenuto ad una temperatura molto bassa, di circa 77 K, durante il suo utilizzo: questo \`e dovuto al fatto che il germanio ha un gap energetico fra banda di conduzione e banda di valenza molto basso (0.67 eV), e se il rivelatore fosse lasciato a temperatura ambiente la sola agitazione termica sarebbe sufficiente a superarlo, ostacolando le misure. Si ottiene questa condizione attraverso un bagno in azoto liquido.
 
 \subsection{La radiazione gamma}
-\noindent La radiazione gamma, attraversando la materia viene attenuata, con modalit\`a e caratteristiche che dipendono dall'energia della radiazione e dal materiale utilizzato come schermo. Se andiamo a considerare un fascio di gamma di intensità iniziale $I_0$, attraversando un certo materiale il fascio sarà attenuato secondo la seguente relazione:
+\noindent La radiazione gamma, attraversando la materia viene attenuata, con modalit\`a e caratteristiche che dipendono dall'energia della radiazione e dal materiale utilizzato come schermo. Se andiamo a considerare un fascio di gamma di intensit\`a iniziale $I_0$, attraversando un certo materiale il fascio sar\`a attenuato secondo la seguente relazione:
 
 \begin{equation}
 	I(x)=I_{0}e^{-\mu x}
 \end{equation}
 
-\noindent dove $\mu$ indica il coefficiente di attenuazione lineare, caratteristico del mezzo utilizzato e variabile con la sua densità, e $x$ indica lo spessore del materiale attraversato. Rilevante \`e il coefficiente di attenuazione massico, $\mu/\rho$, ottenuto tramite il coefficiente di attenuazione lineare: esso \`e costante per un determinato mezzo, indipendentemente dalla densit\`a dello stesso. 
+\noindent dove $\mu$ indica il coefficiente di attenuazione lineare, caratteristico del mezzo utilizzato e variabile con la sua densit\`a, e $x$ indica lo spessore del materiale attraversato. Rilevante \`e il coefficiente di attenuazione massico, $\mu/\rho$, ottenuto tramite il coefficiente di attenuazione lineare: esso \`e costante per un determinato mezzo, indipendentemente dalla densit\`a dello stesso. 
 
 \noindent Nella loro interazione con la materia, i gamma possono andare incontro a diversi processi, principalmente 3: effetto fotoelettrico, scattering compton e produzione di coppie. Per quanto riguarda l'effetto fotoelettrico, il gamma interagisce con un elettrone atomico, cedendo completamente la sua energia all'elettrone che viene liberato dall'atomo. L'atomo ionizzato andr\`a incontro a processi di ricombinazione per riempire la lacuna lasciata dal fotoelettrone liberato, emettendo in questo caso dei gamma caratteristici. Nello scattering compton il gamma interagisce con un fotone del mezzo, cedendogli parte della sua energia, e venendo deviato di un certo angolo rispetto alla sua direzione iniziale. L'energia ceduta dipende dall'angolo di scattering del gamma. La produzione di coppie \`e un processo che pu\`o avvenire solo se l'energia del gamma in questione \`e superiore ad una certa soglia, che in questo caso \`e 1.022 MeV, ossia due volte la massa dell'elettrone. In questo processo il gamma crea una coppia elettrone-positrone, con quest'ultimo che, essendo poco stabile, decadr\`a rapidamente in due gamma da 511 keV ciascuno. 
 
@@ -70,7 +76,7 @@ Lo scopo di questa esperienza \`e quello di indagare le caratteristiche dell'int
 \item Generatore HV Label Model 8124 per tensione di polarizzazione
 \item Amplificatore CAEN Model N968
 \item ADC/MCA CAEN Model N957
-\item Sorgenti di calibrazione: 22Na, 60Co, 228Th
+\item Sorgenti di calibrazione: ${}^{22}$Na, ${}^{60}$Co, ${}^{228}$Th
 \item Becker graduato per contenere acqua
 \item Dischi di rame e piombo
 \end{itemize}
@@ -79,7 +85,7 @@ Lo scopo di questa esperienza \`e quello di indagare le caratteristiche dell'int
 
 \section{Raccolta dati ed elaborazione}
 \subsection{Coefficiente di attenuazione lineare}
-\noindent Abbiamo a disposizione 3 diverse sorgenti di radiazione (22Na, 60Co, 228Th) e 3 materiali da interporre fra sorgente e rivelatore (acqua, rame, piombo). Dei 3 materiali si possono cambiare gli spessori utilizzati: 4, 8, 12, 16, 20 cm per l'acqua; 0.11, 0.22, 0.33, 0.44, 0.54 cm per il rame; 0.1, 0.21, 0.33, 0.58, 1.08 cm per il piombo. Tali spessori sono raggiunti riempiendo un becker nel caso dell'acqua e impilando dei dischi nel caso di rame e piombo. Mantenendo la sorgente ad una distanza fissata dal rivelatore e modificando di volta in volta lo spessore del materiale, si raccoglie lo spettro gamma. Riportiamo di seguito degli esempi:
+\noindent Abbiamo a disposizione 3 diverse sorgenti di radiazione (${}^{22}$Na, ${}^{60}$Co, ${}^{228}$Th) e 3 materiali da interporre fra sorgente e rivelatore (acqua, rame, piombo). Dei 3 materiali si possono cambiare gli spessori utilizzati: 4, 8, 12, 16, 20 cm per l'acqua; 0.11, 0.22, 0.33, 0.44, 0.54 cm per il rame; 0.1, 0.21, 0.33, 0.58, 1.08 cm per il piombo. Tali spessori sono raggiunti riempiendo un becker nel caso dell'acqua e impilando dei dischi nel caso di rame e piombo. Mantenendo la sorgente ad una distanza fissata dal rivelatore e modificando di volta in volta lo spessore del materiale, si raccoglie lo spettro gamma. Riportiamo di seguito degli esempi:
 
 \begin{figure}[!h]
     \centering
@@ -106,14 +112,16 @@ Lo scopo di questa esperienza \`e quello di indagare le caratteristiche dell'int
 \begin{figure}[!h]
     \centering
     \includegraphics[scale=0.6]{grafici/piccocobalto}
-    \caption{Esempio di picco della sorgente di 60Co}
+    \caption{Esempio di picco della sorgente di ${}^{60}$Co}
 \end{figure}
 
 \begin{figure}[!h]
     \centering
     \includegraphics[scale=0.6]{grafici/piccotorio}
-    \caption{Esempio di picco della sorgente di 228Th}
+    \caption{Esempio di picco della sorgente di ${}^{228}$Th}
 \end{figure}
+
+\newpage
 
 \noindent L'interpolazione del picco \`e stata fatta con la somma di una gaussiana e di un polinomio di grado 0, che modellizza il fondo. In diversi casi, come nella Figura 4, \`e stato necessario interpolare con una seconda gaussiana. L'area rilevante ai fini dell'esperienza \`e solo quella della gaussiana principale: per individuarla \`e stato calcolaro l'integrale sotteso ad una gaussiana con i parametri di quella principale, ottenuti dal fit complessivo. Tenendo conto che le misure sono durate 6 minuti per quanto riguarda l'acqua e 2 minuti per rame e piombo, tramite la seguente relazione si procede a calcolare il rate di conteggi al secondo:
 
@@ -121,7 +129,7 @@ Lo scopo di questa esperienza \`e quello di indagare le caratteristiche dell'int
 	\textrm{Rate} = \frac{\textrm{Area}}{\textrm{Durata  misura}}
 \end{equation}
 
-\noindent Per calcolare il coefficiente di attenuazione lineare dei vari materiali alle varie energie, si costruisce un grafico del rate in funzione dello spessore. Per interpolare è stata utilizzata la relazione (1):
+\noindent Per calcolare il coefficiente di attenuazione lineare dei vari materiali alle varie energie, si costruisce un grafico del rate in funzione dello spessore. Per interpolare \`e stata utilizzata la relazione (1):
 
 \begin{figure}[H]
     \centering
@@ -129,10 +137,10 @@ Lo scopo di questa esperienza \`e quello di indagare le caratteristiche dell'int
     \caption{Attenuazione del sodio in acqua}
 \end{figure}
 $$
-	511 keV \qquad \frac{\chi^2}{NDF}  = 1,305 \qquad P-Value = 0,271
+	511\, \unit{keV} \qquad \frac{\chi^2}{\textrm{NDF}}  = 1.305 \qquad \textrm{p-Value} = 0.271
 $$
 $$
-	1274 keV \qquad \frac{\chi^2}{NDF}  = 0,752 \qquad P-Value = 0,521
+	1274\, \unit{keV} \qquad \frac{\chi^2}{\textrm{NDF}}  = 0.752 \qquad \textrm{p-Value} = 0.521
 $$
 \begin{figure}[H]
     \centering
@@ -140,10 +148,10 @@ $$
     \caption{Attenuazione del sodio in rame}
 \end{figure}
 $$
-	511 keV \qquad \frac{\chi^2}{NDF}  = 21,928 \qquad P-Value = 3,40\cdot 10^{-14}
+	511\, \unit{keV} \qquad \frac{\chi^2}{\textrm{NDF}}   = 21.928 \qquad \textrm{p-Value} = 3.40\cdot 10^{-14}
 $$
 $$
-	1274 keV \qquad \frac{\chi^2}{NDF}  = 1,304 \qquad P-Value = 0,271
+	1274\, \unit{keV} \qquad \frac{\chi^2}{\textrm{NDF}}   = 1.304 \qquad \textrm{p-Value} = 0.271
 $$
 \begin{figure}[H]
     \centering
@@ -151,10 +159,10 @@ $$
     \caption{Attenuazione del sodio in piombo}
 \end{figure}
 $$
-	511 keV \qquad \frac{\chi^2}{NDF}  = 59,989 \qquad P-Value = 1,55\cdot 10^{-35}
+	511\, \unit{keV} \qquad \frac{\chi^2}{\textrm{NDF}}   = 59.989 \qquad \textrm{p-Value} = 1.55\cdot 10^{-35}
 $$
 $$
-	1274 keV \qquad \frac{\chi^2}{NDF}  = 115,919 \qquad P-Value = 4,56\cdot 10^{-75}
+	1274\, \unit{keV} \qquad \frac{\chi^2}{\textrm{NDF}}   = 115.919 \qquad \textrm{p-Value} = 4.56\cdot 10^{-75}
 $$
 \begin{figure}[H]
     \centering
@@ -162,10 +170,10 @@ $$
     \caption{Attenuazione del cobalto in acqua}
 \end{figure}
 $$
-	1173 keV \qquad \frac{\chi^2}{NDF}  = 8,380 \qquad P-Value = 1,44\cdot 10^{-5}
+	1173\, \unit{keV} \qquad \frac{\chi^2}{\textrm{NDF}}  = 8.380 \qquad \textrm{p-Value} = 1.44\cdot 10^{-5}
 $$
 $$
-	1332 keV \qquad \frac{\chi^2}{NDF}  = 0,635 \qquad P-Value = 0.591
+	1332\, \unit{keV} \qquad \frac{\chi^2}{\textrm{NDF}}  = 0.635 \qquad \textrm{p-Value} = 0.591
 $$
 \begin{figure}[H]
     \centering
@@ -173,10 +181,10 @@ $$
     \caption{Attenuazione del cobalto in rame}
 \end{figure}
 $$
-	1173 keV \qquad \frac{\chi^2}{NDF}  = 3,872 \qquad P-Value = 0,001
+	1173\, \unit{keV} \qquad \frac{\chi^2}{\textrm{NDF}}   = 3.872 \qquad \textrm{p-Value} = 0.001
 $$
 $$
-	1332 keV \qquad \frac{\chi^2}{NDF}  = 4,796 \qquad P-Value = 0,002
+	1332\, \unit{keV} \qquad \frac{\chi^2}{\textrm{NDF}}   = 4.796 \qquad \textrm{p-Value} = 0.002
 $$
 \begin{figure}[H]
     \centering
@@ -184,10 +192,10 @@ $$
     \caption{Attenuazione del cobalto in piombo}
 \end{figure}
 $$
-	1173 keV \qquad \frac{\chi^2}{NDF}  = 4,175 \qquad P-Value = 0.006
+	1173\, \unit{keV} \qquad \frac{\chi^2}{\textrm{NDF}}   = 4.175 \qquad \textrm{p-Value} = 0.006
 $$
 $$
-	1332 keV \qquad \frac{\chi^2}{NDF}  = 6,203 \qquad P-Value = 3,29\cdot 10^{-4}
+	1332\, \unit{keV} \qquad \frac{\chi^2}{\textrm{NDF}}   = 6.203 \qquad \textrm{p-Value} = 3.29\cdot 10^{-4}
 $$
 \begin{figure}[H]
     \centering
@@ -195,13 +203,13 @@ $$
     \caption{Attenuazione del torio in acqua}
 \end{figure}
 $$
-	238 keV \qquad \frac{\chi^2}{NDF}  = 0,196 \qquad P-Value = 0,898
+	238\, \unit{keV} \qquad \frac{\chi^2}{\textrm{NDF}}   = 0.196 \qquad \textrm{p-Value} = 0.898
 $$
 $$
-	583 keV \qquad \frac{\chi^2}{NDF}  = 0,287 \qquad P-Value = 0,834
+	583\, \unit{keV} \qquad \frac{\chi^2}{\textrm{NDF}}   = 0.287 \qquad \textrm{p-Value} = 0.834
 $$
 $$
-	2614 keV \qquad \frac{\chi^2}{NDF}  = 0,007 \qquad P-Value = 0,999
+	2614\, \unit{keV} \qquad \frac{\chi^2}{\textrm{NDF}}   = 0.007 \qquad \textrm{p-Value} = 0.999
 $$
 \begin{figure}[H]
     \centering
@@ -209,13 +217,13 @@ $$
     \caption{Attenuazione del torio in rame}
 \end{figure}
 $$
-	238 keV \qquad \frac{\chi^2}{NDF}  = 27,275 \qquad P-Value = 1,24\cdot 10^{-17}
+	238\, \unit{keV} \qquad \frac{\chi^2}{\textrm{NDF}}  = 27.275 \qquad \textrm{p-Value} = 1.24\cdot 10^{-17}
 $$
 $$
-	583 keV \qquad \frac{\chi^2}{NDF}  = 11,902 \qquad P-Value = 8,64\cdot 10^{-8}
+	583\, \unit{keV} \qquad \frac{\chi^2}{\textrm{NDF}}  = 11.902 \qquad \textrm{p-Value} = 8.64\cdot 10^{-8}
 $$
 $$
-	2614 keV \qquad \frac{\chi^2}{NDF}  = 3,210 \qquad P-Value = 0,022
+	2614\, \unit{keV} \qquad \frac{\chi^2}{\textrm{NDF}}  = 3.210 \qquad \textrm{p-Value} = 0.022
 $$
 \begin{figure}[H]
     \centering
@@ -223,20 +231,20 @@ $$
     \caption{Attenuazione del torio in piombo}
 \end{figure}
 $$
-	238 keV \qquad \frac{\chi^2}{NDF}  = 45,907 \qquad P-Value = 1,15\cdot 10^{-20}
+	238\, \unit{keV} \qquad \frac{\chi^2}{\textrm{NDF}}  = 45.907 \qquad \textrm{p-Value} = 1.15\cdot 10^{-20}
 $$
 $$
-	583 keV \qquad \frac{\chi^2}{NDF}  = 56,804 \qquad P-Value = 1,03\cdot 10^{-36}
+	583\, \unit{keV} \qquad \frac{\chi^2}{\textrm{NDF}}  = 56.804 \qquad \textrm{p-Value} = 1.03\cdot 10^{-36}
 $$
 $$
-	2614 keV \qquad \frac{\chi^2}{NDF}  = 12,216 \qquad P-Value = 5,46\cdot 10^{-8}
+	2614\, \unit{keV} \qquad \frac{\chi^2}{\textrm{NDF}}  = 12.216 \qquad \textrm{p-Value} = 5.46\cdot 10^{-8}
 $$
 
-\noindent Si pu\`o notare come l'andamento del rate dei vari picchi rispecchi quello esponenziale decrescente. Tuttavia i valori di P-Value e $\chi^2$ ridotto mostrano come diversi punti si discostino dall'andamento atteso. In alcuni casi questo può essere dovuto ad una errata misura dell'area sottesa al picco e nelle sezioni successive risulter\`a ancora pi\`u evidente come tali punti non rispecchino esattamente l'andamento atteso.
+\noindent Si pu\`o notare come l'andamento del rate dei vari picchi rispecchi quello esponenziale decrescente. Tuttavia i valori di p-Value e $\chi^2$ ridotto mostrano come diversi punti si discostino dall'andamento atteso. In alcuni casi questo pu\`o essere dovuto ad una errata misura dell'area sottesa al picco e nelle sezioni successive risulter\`a ancora pi\`u evidente come tali punti non rispecchino esattamente l'andamento atteso.
 
 \subsection{Picco a 1460 keV}
 
-\noindent Negli spettri a nostra disposizione si nota la presenza di un picco non atteso, attorno ad una energia di 1460 keV. La presenza di questo picco \`e dovuta alla presenza di 40K nell'ambiente. Come fatto nel punto precendente, andiamo a calcolare il rate di conteggi al secondo di questo picco, mettendolo in funzione dello spessore del materiale:
+\noindent Negli spettri a nostra disposizione si nota la presenza di un picco non atteso, attorno ad una energia di 1460 keV. La presenza di questo picco \`e dovuta alla presenza di ${}^{40}$K nell'ambiente. Come fatto nel punto precendente, andiamo a calcolare il rate di conteggi al secondo di questo picco, mettendolo in funzione dello spessore del materiale:
 
 \begin{figure}[H]
     \centering
@@ -244,7 +252,7 @@ $$
     \caption{Andamento rate picco a 1460 keV}
 \end{figure}
 
-\noindent L'andamento riportato \`e relativo alla sorgente di torio con acqua come bersaglio. Il picco in questione risulta pi\`u evidente in alcuni spettri rispetto ad altri, dove il rate del fondo \`e paragonabile a quello del ${}^{40}$K, e l'andamento del picco di nostro interesse si confonde con il fondo stesso. Si nota come il rate del ${}^{40}$K sia pressoch\`e costante: questo \`e dovuto al fatto che, essendo questo picco dovuto alla radioattivit\`a ambientale, non è prodotto dalla sorgente in questione e di conseguenza non deve attraversare il materiale venendo attenuato. Dunque, per misure della stessa durata temporale il numero di conteggi al secondo di questo isotopo sarà costante.
+\noindent L'andamento riportato \`e relativo alla sorgente di torio con acqua come bersaglio. Il picco in questione risulta pi\`u evidente in alcuni spettri rispetto ad altri, dove il rate del fondo \`e paragonabile a quello del ${}^{40}$K, e l'andamento del picco di nostro interesse si confonde con il fondo stesso. Si nota come il rate del ${}^{40}$K sia pressoch\'e costante: questo \`e dovuto al fatto che, essendo questo picco dovuto alla radioattivit\`a ambientale, non \`e prodotto dalla sorgente in questione e di conseguenza non deve attraversare il materiale venendo attenuato. Dunque, per misure della stessa durata temporale il numero di conteggi al secondo di questo isotopo sar\`a costante.
 
 \subsection{Coefficiente di attenuazione massico e sezione d'urto}
 Avendo a disposizione i coefficienti di attenuazione lineare $\mu$ ricavati nella sezione 3.1, andiamo a calcolare i coefficienti di attenuazione massici $\mu/\rho$. Per i 3 materiali si utilizzano come densit\`a:
@@ -253,10 +261,10 @@ $$
 	\rho_{acqua} = 1\, \unit{g/cm^3}
 $$
 $$
-	\rho_{rame} = 8,96\, \unit{g/cm^3}
+	\rho_{rame} = 8.96\, \unit{g/cm^3}
 $$
 $$
-	\rho_{piombo} = 11,34\, \unit{g/cm^3}
+	\rho_{piombo} = 11.34\, \unit{g/cm^3}
 $$
 
 \noindent I risultati ottenuti vengono messi in un grafico in funzione dell'energia, ottenendo in totale 3 grafici, uno per ciascun materiale bersaglio. Come sottolineato nell'introduzione, attraverso la relazione (2), la sezione d'urto \`e proporzionale a $\mu/\rho$. In questi 3 grafici, avendo fissato di volta in volta il materiale, la sezione d'urto \`e ottenuta semplicemente moltiplicando i valori ottenuti per un valore costante $A/N_{Av}$; per questo l'andamento in funzione dell'energia pu\`o essere ricavato semplicemente dal grafico del coefficiente di attenuazione massico.
@@ -307,7 +315,7 @@ Riportiamo di seguito il grafico di $\mu/\rho$ in funzione dell'energia il piomb
 \begin{equation}
 	\sigma = \frac{a}{E^{3.5}} + \frac{b}{E}
 \end{equation}
-In questo caso stiamo utilizzando un materiale con Z=82, molto elevato. Per questo, a basse energie l'effetto fotoelettrico si pu\`o notare come sia preponderante, mentre al crescere dell'energia diventa sempre p\`u importante il Compton dato che il termine al denominatore nella relazione diventa sempre pi\`u significativo.
+In questo caso stiamo utilizzando un materiale con Z=82, molto elevato. Per questo, a basse energie l'effetto fotoelettrico si pu\`o notare come sia preponderante, mentre al crescere dell'energia diventa sempre pi\`u importante il Compton dato che il termine al denominatore nella relazione diventa sempre pi\`u significativo.
 
 \subsection{Sezione d'urto in funzione di Z}
 In questo caso ci proponiamo invece di studiare la dipendenza dalla Z del materiale della sezione d'urto. Fissata l'energia di un certo picco, andiamo a calcolare la sezione d'urto attraverso la relazione (2). Come A \`e stata utilizzata la massa molecolare dell'acqua e la massa atomica di rame e piombo, pesata in base all'abbondanza dei vari isotopi. Per ogni picco avremo a disposizione 3 valori, ognuno corrispondente ad uno dei 3 materiali usati come bersaglio. Si ottengono i seguenti grafici:
@@ -967,4 +975,6 @@ In questo caso ci proponiamo invece di studiare la dipendenza dalla Z del materi
     \centering
     \includegraphics[scale=0.45]{appendice/spettri/ThA_1460_20}
 \end{figure}
+\newpage
+\afterpage{\blankpage}
 \end{document}
